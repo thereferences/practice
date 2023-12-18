@@ -1,5 +1,4 @@
 Sphinx>=7.2.1
-sphinx-theme
 sphinx-book-theme
 sphinx-rtd-theme
 pytest>=7.4.1
