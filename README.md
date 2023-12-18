@@ -12,7 +12,11 @@ Foremost, create the scripts
 * Dockerfile
 * .devcontainer/devcontainer.json
 
-Always ascertain that the requirements file list the packages/libraries required for development.
+Always ascertain that the requirements file list the packages/libraries required for development.  Next, initialise Sphinx
+
+```shell
+mkdir docs && cd docs && sphinx-quickstart && cd ..
+```
 
 <br>
 <br>
