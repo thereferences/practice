@@ -36,6 +36,12 @@ Initialise Sphinx
 mkdir docs && cd docs && sphinx-quickstart && cd ..
 ```
 
+Build
+
+```shell
+sphinx-build -E -b html docs/source docs/build/html
+```
+
 References:
 * [Sphinx Design](https://sphinx-design.readthedocs.io/en/rtd-theme/index.html)
 
