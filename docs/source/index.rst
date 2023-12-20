@@ -11,9 +11,13 @@ Code of Practice
    Code of practice ...
 
 
-.. container:: .buttons
+.. button-link:: introduction.html
+   :color: primary
+   :shadow:
 
-   `Introduction <introduction.html>`_
+   introduction
+
+
    :ref:`genindex`
 
 
