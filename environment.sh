@@ -17,6 +17,3 @@ conda remove -y --prefix $prefix --all
   Rebuild environment <practice> via environment.yml
 rebuild
 conda env create -f environment.yml -p $prefix
-# conda create -y --prefix $prefix -c conda-forge  python==3.11.7
-# conda activate development
-# conda install -y --prefix $prefix -c conda-forge --file requirements.txt
