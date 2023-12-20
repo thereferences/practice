@@ -11,6 +11,7 @@ https://www.sphinx-doc.org/en/master/usage/configuration.html#project-informatio
 """
 
 import sphinx_rtd_theme
+import sphinx_design
 
 '''
 Basic
@@ -27,7 +28,8 @@ https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configurat
 '''
 extensions = [
     'sphinx.ext.duration',
-    'sphinx.ext.githubpages'
+    'sphinx.ext.githubpages',
+    'sphinx_design'
 ]
 
 
