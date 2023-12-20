@@ -15,7 +15,7 @@ import sphinx_rtd_theme
 '''
 Basic
 '''
-project = 'Hub'
+project = 'Code of Practice'
 copyright = '2023, greyhypotheses'
 author = 'greyhypotheses'
 release = '0.1'
@@ -67,7 +67,6 @@ html_js_files = ['https://code.jquery.com/jquery-3.7.0.min.js',
                  'js/latex.js']
 
 html_theme_options = {
-    'color_scheme': '',
     'canonical_url': 'https://membranes.github.io/practice/',
     'analytics_id': '',
     'style_external_links': False,
@@ -75,11 +74,10 @@ html_theme_options = {
     'sticky_navigation': True,
     'navigation_depth': 4,
     'includehidden': True,
-    'titles_only': False,
-    'github_url': 'https://www.github.com/membranes/practice'
+    'titles_only': False
 }
 
-html_logo = '_static/logo.svg'
+html_logo = ''
 
 html_context = {
     'landing_page': {
