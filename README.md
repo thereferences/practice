@@ -36,6 +36,23 @@ Initialise Sphinx
 mkdir docs && cd docs && sphinx-quickstart && cd ..
 ```
 
+### Extra
+
+If developing outwith a container, try
+
+````commandline
+conda remove --prefix J:\programs\anaconda3\envs\practice --all
+environment.bat
+````
+
+or
+
+```shell
+source environment.sh
+```
+
+Each script depends on the `environment.yml` version of `requirements.txt`.
+
 <br>
 <br>
 
