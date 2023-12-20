@@ -2,13 +2,13 @@ name: practice
 channels:
   - conda-forge
 dependencies:
-  - python==3.11.*
+  - python==3.11.7
   - pip
   - Sphinx>=7.2.1
   - sphinx-book-theme
   - sphinx-rtd-theme
-  - pytest
-  - coverage
-  - pylint
-  - pytest-cov
-  - flake8
+  - pytest>=7.4.1
+  - coverage>=7.3.1
+  - pytest-cov>=4.1.0
+  - pylint>=3.0.1
+  - flake8>=6.1.0
