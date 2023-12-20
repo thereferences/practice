@@ -12,13 +12,16 @@ Code of Practice
 
 
 .. button-link:: introduction.html
+   :tooltip: An introduction to the Code of Practice pages
    :color: primary
    :shadow:
 
-   introduction
+   Introduction
 
 
-   :ref:`genindex`
+.. button-ref:: genindex
+   :color: primary
+   :shadow:
 
 
 .. toctree::
