@@ -87,7 +87,7 @@ html_context = {
             {'title': 'Introduction',
              'url': ''},
             {'title': 'Data',
-             'url': 'https://github.com/membranes/practice/tree/master/data'},
+             'url': ''},
             {'title': 'Search',
              'url': 'search.html'}
         ]
