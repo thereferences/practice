@@ -36,6 +36,9 @@ Initialise Sphinx
 mkdir docs && cd docs && sphinx-quickstart && cd ..
 ```
 
+References:
+* [Sphinx Design](https://sphinx-design.readthedocs.io/en/rtd-theme/index.html)
+
 <br>
 
 ### Extra
