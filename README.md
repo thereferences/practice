@@ -36,6 +36,8 @@ Initialise Sphinx
 mkdir docs && cd docs && sphinx-quickstart && cd ..
 ```
 
+<br>
+
 ### Extra
 
 If developing outwith a container, try
