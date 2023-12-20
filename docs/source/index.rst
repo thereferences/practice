@@ -1,20 +1,45 @@
 .. Code of Practice documentation master file, created by
    sphinx-quickstart on Mon Dec 18 11:57:35 2023.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+   This page should, at least, contain the root
+   <table of contents tree> directive.
 
-Welcome to Code of Practice's documentation!
-============================================
+Code of Practice
+================
+
+.. container:: .large
+
+   Code of practice ...
+
+
+.. container:: .buttons
+
+   `Introduction <introduction.html>`_
+   :ref:`genindex`
+
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+   :maxdepth: 3
+   :caption: Content
+   :hidden:
+
+   introduction
+   systems
+   languages
 
 
+.. raw:: html
+  <br>
+  <br>
+  <br>
+  <br>
 
-Indices and tables
-==================
+  <br>
+  <br>
+  <br>
+  <br>
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+
+..
+   Comment
+   :ref:`genindex`
+   :ref:`search`
