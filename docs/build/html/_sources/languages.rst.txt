@@ -1,24 +1,32 @@
-.. _languages:
+.. raw:: html
 
+  <br>
+
+.. _languages:
 
 Languages & Programming
 =======================
 
-.. note:: All about languages & programming.
+.. raw:: html
 
-Preliminary notes:
+  <br>
+
+.. note:: All about languages & programming.
 
 .. raw:: html
 
   <br>
-  <br>
+
+
+Preliminary notes:
+
+.. raw:: html
 
   <ul>
     <li>GitGub Actions for (a) automated code analysis and testing, and (b) deploy all code via code images</li>
     <li>Structure packages in line with the package structure of the underlying language.</li>
     <li>Always us the style guides that language pages reference</li>
   </ul>
-
 
 .. raw:: html
 
@@ -30,7 +38,6 @@ Preliminary notes:
    :glob:
 
    languages/*
-
 
 .. raw:: html
 
