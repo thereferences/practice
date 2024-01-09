@@ -23,13 +23,11 @@ Python</a>.  Always refer to the naming conventions guide, for example
         <tr><td>Type Variable Name</td><td>Always pascal case, e.g., HyperParameter.</td></tr>
         <tr><td>Class Name</td><td>Always pascal case.</td></tr>
         <tr><td>Variable Name</td><td>A lower case or snake case string, e.g., <i>length</i>, `number_of_cities` Use two leading underscores for private variables.</td></tr>
-        <tr><td>Constants</td><td>Constants are usually defined on a module level and written in all capital letters with 
-underscores separating words. Examples include MAX_OVERFLOW and TOTAL. </td></tr>
+        <tr><td>Constants</td><td>The PEP pages note that <a href="https://peps.python.org/pep-0008/#constants" target="_blank">constants</a> <q><i>... are usually defined on a 
+module level and written in all capital letters with underscores separating words. Examples include MAX_OVERFLOW and TOTAL.</i></q></td></tr>
 </table>
 
 <br>
-
-> ... aiming to do the right thing, rather than doing things right
 
 
 <br>
