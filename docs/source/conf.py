@@ -87,7 +87,7 @@ html_js_files = ['https://code.jquery.com/jquery-3.7.0.min.js',
                  'js/latex.js']
 
 html_theme_options = {
-    'sidebar_hide_name': True,
+    'sidebar_hide_name': False,
     'navigation_with_keys': True,
     'top_of_page_button': None
 }
