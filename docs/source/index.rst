@@ -10,17 +10,8 @@ Code of Practice
 
    Code of practice ...
 
-
-.. button-link:: introduction.html
-   :tooltip: An introduction to the Code of Practice pages
-   :color: primary
-   :shadow:
-
-   Introduction
-
-
 .. button-ref:: genindex
-   :color: primary
+   :color: black
    :shadow:
 
 
