@@ -62,7 +62,17 @@ or
 source environment.sh
 ```
 
-Each script depends on the `environment.yml` version of `requirements.txt`.
+Each script depends on the `environment.yml`, which uses the same *requirements.txt* as Dockerfile.
+
+<br>
+
+### References
+
+* https://sphinx-themes.org/sample-sites/furo/
+* https://pradyunsg.me/furo/
+* https://sphinx-design.readthedocs.io/en/furo-theme/
+* https://myst-parser.readthedocs.io/en/latest/index.html
+  * https://myst-parser.readthedocs.io/en/latest/syntax/organising_content.html#using-toctree-to-include-other-documents-as-children
 
 <br>
 <br>
