@@ -30,7 +30,24 @@ https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configurat
 extensions = [
     'sphinx.ext.duration',
     'sphinx.ext.githubpages',
-    'sphinx_design'
+    'sphinx_design',
+    'myst_parser'
+]
+
+myst_enable_extensions = [
+    'amsmath',
+    'attrs_inline',
+    'colon_fence',
+    'deflist',
+    'dollarmath',
+    'fieldlist',
+    'html_admonition',
+    'html_image',
+    'replacements',
+    'smartquotes',
+    'strikethrough',
+    'substitution',
+    'tasklist',
 ]
 
 
