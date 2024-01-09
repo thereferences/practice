@@ -70,14 +70,9 @@ html_js_files = ['https://code.jquery.com/jquery-3.7.0.min.js',
                  'js/latex.js']
 
 html_theme_options = {
-    'canonical_url': 'https://membranes.github.io/practice/',
-    'analytics_id': '',
-    'style_external_links': False,
-    'collapse_navigation': True,
-    'sticky_navigation': True,
-    'navigation_depth': 4,
-    'includehidden': True,
-    'titles_only': False
+    'sidebar_hide_name': True,
+    'navigation_with_keys': True,
+    'top_of_page_button': None
 }
 
 html_logo = ''
