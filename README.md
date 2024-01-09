@@ -42,9 +42,6 @@ Build
 sphinx-build -E -b html docs/source docs/build/html
 ```
 
-References:
-* [Sphinx Design](https://sphinx-design.readthedocs.io/en/rtd-theme/index.html)
-
 <br>
 
 ### Extra
@@ -68,6 +65,7 @@ Each script depends on the `environment.yml`, which uses the same *requirements.
 
 ### References
 
+* [Sphinx Design](https://sphinx-design.readthedocs.io/en/rtd-theme/index.html)
 * https://sphinx-themes.org/sample-sites/furo/
 * https://pradyunsg.me/furo/
 * https://sphinx-design.readthedocs.io/en/furo-theme/
