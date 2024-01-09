@@ -74,7 +74,7 @@ html_theme = 'furo'
 
 html_static_path = ['_static']
 
-html_css_files = []
+html_css_files = ['css/generic.css']
 
 html_js_files = ['https://code.jquery.com/jquery-3.7.0.min.js',
                  'https://code.highcharts.com/stock/highstock.js',
