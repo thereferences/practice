@@ -5,19 +5,24 @@
 <br>
 
 :::{note}
-This is a brief introduction to the code of practice pages
+In Progress
 :::
 
 <br>
 
-These pages ensure the team use the same conventions and principles for
+These pages continuously outline the data science team's norms & principles vis-à-vis
 
 <ul class="special">
-    <li>Considering machine learning, data science, projects; especially writing a pre-project design document, i.e., project scope document for conducting a feasibility assessment.  The feasibility study determines whether to proceed.</li>
-    <li>Considering data intelligence project.</li>
-    <li>Designing, developing, and deploying data products within a continuous integration, delivery, and deployment setting.</li>
-    <li>Coding, or rather software development.</li>
-    <li>Naming GitHub repositories.</li>
+    <li>Artificial Intelligence/Machine Learning Projects Consulting; Decision to proceed.</li>
+    <li>Data Intelligence Projects Consulting</li>
+    <li>Continuous Integration, Deployment & Delivery</li>
+    <ul>
+        <li>Images & Containers</li>
+        <li>Infrastructure As Code</li>
+        <li>Source Control</li>
+        <li>Automated Code Analysis</li>
+        <li>etc.</li>
+    </ul>
 </ul>
 
 <br>
