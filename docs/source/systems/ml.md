@@ -5,21 +5,24 @@
 <br>
 
 :::{note}
-The code of practice for evaluating the viability of a machine learning project, and conducting machine learning projects.
--vis ...
+The code of practice in relation to machine learning projects.
 :::
 
 <br>
 
-This page outlines the machine learning code of practice vis-&agrave;-vis ...
+Steps:
 
 <ul class="special">
-    <li>Pre-project steps</li>
-    <li>Tools</li>
-    <li>ETC.</li>
+    <li>The machine learning design, project scope, details: UPCOMING &rarr; A link to an elicitation hub via the Scottish 
+Artificial Intelligence Register + JIRA.</li>
+    <li>Prospective machine learning project feasibility/viability assessment via the design details.</li>
 </ul>
 
-Upcoming: An online Jira template of pre-project tasks, its accompanying Confluence Space, and references.
+A key aspect of the design details elicitation is identifying the groups or people or partners that will be responsible for 
+different parts of the project, and the costs thereof.  If feasible the design details will indicate whether the data 
+science team will be delivering any part of the project, or whether it will oversee the project.  The data science 
+team must carefully consider its current commitments before making a prospective commitment; a prospective commitment 
+becomes a commitment if the prospective project is feasible. 
 
 <br>
 <br>
