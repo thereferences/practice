@@ -3,7 +3,7 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="prev" title="Python" href="python.html" />
+<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="Continuous Integration, Continuous Delivery, Continuous Deployment" href="../ccc.html" /><link rel="prev" title="Python" href="python.html" />
 
     <!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
         <title>Scala - Code of Practice 0.1 documentation</title>
@@ -168,6 +168,10 @@
 <li class="toctree-l2 current current-page"><a class="current reference internal" href="#">Scala</a></li>
 </ul>
 </li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ccc.html">CCC</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of CCC</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ccc/ic.html">Images &amp; Containers</a></li>
+</ul>
+</li>
 </ul>
 
 </div>
@@ -204,10 +208,26 @@
           <br>
 <section class="tex2jax_ignore mathjax_ignore" id="scala">
 <h1>Scala<a class="headerlink" href="#scala" title="Link to this heading">#</a></h1>
-<br>
-<p>Scala has a <a href="https://docs.scala-lang.org/style/" target="_blank">style guide</a>, and it is the team’s style
-reference.  Take note of the naming conventions.  The names of classes, objects, methods, etc., are either pascal case, also known as
-upper camel case, camel case, or lower case; no names with underscores, please.</p>
+<p>Scala has a <a href="https://docs.scala-lang.org/style/" target="_blank">style guide</a>, and for the foreseeable
+future it is the team’s style reference.  Take note of the naming conventions.  The names of classes, objects, methods, etc., are either pascal case, also known as
+upper camel case, camel case, or lower case.  Names do not include underscore, e.g., numberOfPipes <strong>not</strong>
+number_of_pipes.  Examples:</p>
+<table style="width: 85%; border: 0; border-spacing: 5px; margin-left: 35px">
+    <colgroup>
+        <col span="1" style="width: 26.5%;">
+        <col span="1" style="width: 73.5%;">
+    </colgroup>
+    <thead><tr style="text-align: left"><th>Object</th><th>Note</th></tr></thead>
+        <tr><td><a href="https://docs.scala-lang.org/style/naming-conventions.html#classestraits" target="_blank"
+>Classes/Traits</a></td><td>Pascal Case</td></tr>
+        <tr><td><a href="https://docs.scala-lang.org/style/naming-conventions.html#objects" target="_blank">Objects</a></td><td>Pascal 
+Case</td></tr>
+        <tr><td>Packages</td><td>In line with Java's packages naming conventions: <a href="https://www.baeldung.
+com/java-packages#1-naming-conventions" target="_blank">Baeldung</a>, <a href="https://www.javatpoint.
+com/java-naming-conventions#:~:text=code%20snippet%0A%7D-,Package,-It%20should%20be">javapoint</a></td></tr>
+        <tr><td><a href="https://docs.scala-lang.org/style/naming-conventions.html#constants-values-and-variables" target="_blank"
+>Constants</a></td><td>Pascal Case</td></tr>
+</table>
 <br>
 <br>
 <br>
@@ -223,7 +243,15 @@ upper camel case, camel case, or lower case; no names with underscores, please.<
       <footer>
         
         <div class="related-pages">
-          
+          <a class="next-page" href="../ccc.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Continuous Integration, Continuous Delivery, Continuous Deployment</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
           <a class="prev-page" href="python.html">
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
