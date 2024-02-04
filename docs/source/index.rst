@@ -23,6 +23,7 @@ Code of Practice
    introduction
    systems
    languages
+   CCC <ccc.md>
 
 
 .. raw:: html
