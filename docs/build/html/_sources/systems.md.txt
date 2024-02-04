@@ -5,7 +5,7 @@
 <br>
 
 :::{note}
-The pages of this chapter focus on guides for the types of projects that the team conducts. 
+These pages reference guides vis-à-vis the types of projects that the team conducts. 
 :::
 
 <br>
