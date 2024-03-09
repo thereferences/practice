@@ -10,6 +10,8 @@ Code of Practice
 
    Code of practice ...
 
+These pages outline the norms of the artificial intelligence unit's data science team
+
 .. button-ref:: genindex
    :color: black
    :shadow:
