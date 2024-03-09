@@ -5,4 +5,4 @@ dependencies:
   - python>=3.12.*
   - pip
   - pip:
-    - -r /.devcontainer/requirements.txt
+    - -r .devcontainer/requirements.txt
