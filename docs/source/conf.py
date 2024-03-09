@@ -1,10 +1,10 @@
 """
-conf.py
+This is conf.py
 
 Configuration file for the Sphinx documentation builder.
 
 For the full list of built-in configuration values, see the documentation:
-https://www.sphinx-doc.org/en/master/usage/configuration.html
+https://www.sphinx-doc.org/en/master/usage/configuration.html.
 
 Project information
 https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
@@ -12,13 +12,12 @@ https://www.sphinx-doc.org/en/master/usage/configuration.html#project-informatio
 
 import sphinx_rtd_theme
 import sphinx_design
-import furo
 
 '''
 Basic
+copyright = '2023, greyhypotheses'
 '''
 project = 'Code of Practice'
-copyright = '2023, greyhypotheses'
 author = 'greyhypotheses'
 release = '0.1'
 
@@ -70,7 +69,7 @@ Options for HTML output
 https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 '''
 
-html_theme = 'furo'
+html_theme = 'sphinx_book_theme'
 
 html_static_path = ['_static']
 
@@ -87,9 +86,11 @@ html_js_files = ['https://code.jquery.com/jquery-3.7.0.min.js',
                  'js/latex.js']
 
 html_theme_options = {
-    'sidebar_hide_name': False,
-    'navigation_with_keys': True,
-    'top_of_page_button': None
+    'home_page_in_toc': True,
+    'show_navbar_depth': 2,
+    'max_navbar_depth': 4,
+    'collapse_navbar': False,
+    'navigation_with_keys': False
 }
 
 html_logo = ''
