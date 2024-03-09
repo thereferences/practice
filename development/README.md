@@ -17,13 +17,13 @@ Foremost, the scripts for building a docker image
 The requirements file lists the packages/libraries required for development.  Next, an image is built via the command
 
 ```shell
-docker build . --file Dockerfile --tag practice
+docker build . --file .devcontainer/Dockerfile --tag transcribe
 ```
 
 Subsequently, an instance of the image, i.e., a container,
 
 ```shell
-docker run --rm -i -t -p 127.0.0.1:10000:8888 -w /app --mount type=bind,src="$(pwd)",target=/app practice
+docker run --rm -i -t -p 127.0.0.1:10000:8888 -w /app --mount type=bind,src="$(pwd)",target=/app transcribe
 ```
 
 is run for development purposes.
