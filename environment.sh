@@ -6,14 +6,14 @@ requirements.txt file to create an environment.
 comment
 
 # The environment in focus
-prefix=/mnt/j/programs/anaconda3/envs/practice
+prefix=/mnt/j/programs/anaconda3/envs/transcribe
 
 : << 'delete'
-  Delete the existing <practice> environment
+  Delete the existing <transcribe> environment
 delete
 conda remove -y --prefix $prefix --all
 
 : << 'rebuild'
-  Rebuild environment <practice> via environment.yml
+  Rebuild environment <transcribe> via environment.yml
 rebuild
 conda env create -f environment.yml -p $prefix
