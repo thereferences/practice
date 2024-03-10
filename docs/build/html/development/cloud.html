@@ -55,7 +55,7 @@
     <script src="../_static/js/latex.js?v=2ac637ab"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Languages &amp; Programming" href="../languages.html" />
+    <link rel="next" title="Cloud Platform Solutions Architectures" href="cloud/architectures.html" />
     <link rel="prev" title="Development Practices" href="../development.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -175,16 +175,22 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Development Practices</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="../development.html">Development Practices</a><input checked class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Cloud</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../development.html">Development Practices</a><input checked class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../languages.html">Languages &amp; Programming</a><input checked class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../languages/python.html">Python</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../languages/scala.html">Scala</a></li>
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Cloud</a><input checked class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="cloud/architectures.html">Cloud Platform Solutions Architectures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cloud/impact.html">Impact Assessment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cloud/risks.html">Risks &amp; Mitigation Policies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cloud/threats.html">Threat Actors</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../ccc.html">CCC</a><input checked class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="languages.html">Languages &amp; Programming</a><input checked class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="languages/python.html">Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="languages/scala.html">Scala</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ccc.html">CCC</a><input checked class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ccc/ic.html">Images &amp; Containers</a></li>
 </ul>
 </li>
@@ -344,15 +350,24 @@ document.write(`
 <br>
 <div class="margin admonition note">
 <p class="admonition-title">Note</p>
-<p>Amazon Web Services might be the team’s first cloud platform.</p>
+<p>Requirements.</p>
 </div>
+<p>The data science team will depend on cloud platforms for secure, <a class="reference external" href="https://dictionary.cambridge.org/us/dictionary/english/efficient">efficient</a>, and financially viable operations vis-à-vis:</p>
 <ul class="simple">
-<li><p>Requirements</p></li>
-<li><p>Architecture</p></li>
-<li><p>Risk Policy</p></li>
-<li><p>Threat</p></li>
-<li><p>Services Impact Assessment</p></li>
+<li><p>Developing and/or testing machine learning models.</p></li>
+<li><p>Conducting proof of concept modelling projects.</p></li>
+<li><p>Storing, cataloguing, and profiling data sets.</p></li>
+<li><p>Investigating design, development and deployment solution patterns for machine learning systems/products.</p></li>
 </ul>
+<div class="toctree-wrapper compound">
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Cloud Platform</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="cloud/architectures.html">Cloud Platform Solutions Architectures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cloud/impact.html">Impact Assessment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cloud/risks.html">Risks &amp; Mitigation Policies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cloud/threats.html">Threat Actors</a></li>
+</ul>
+</div>
 <br>
 <br>
 <br>
@@ -384,11 +399,11 @@ document.write(`
       </div>
     </a>
     <a class="right-next"
-       href="../languages.html"
+       href="cloud/architectures.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Languages &amp; Programming</p>
+        <p class="prev-next-title">Cloud Platform Solutions Architectures</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
