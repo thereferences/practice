@@ -16,7 +16,6 @@ Upcoming: operations schema.
 :caption: Development Practices
 :glob:
 
-development/*
 ```
 
 
