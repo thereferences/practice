@@ -45,11 +45,19 @@ about addressing business or public problems.  It is not about technology or dat
 
 .. toctree::
    :maxdepth: 3
-   :caption: Content
+   :caption: Projects & Services
    :hidden:
 
    introduction
    systems
+
+
+.. toctree::
+   :maxdepth: 3
+   :caption: Development Practices
+   :hidden:
+
+   development
    languages
    CCC <ccc.md>
 
