@@ -58,7 +58,8 @@ about addressing business or public problems.  It is not about technology or dat
    :hidden:
 
    development
-   languages
+   development/cloud
+   development/languages
    CCC <ccc.md>
 
 
