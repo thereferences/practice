@@ -16,7 +16,12 @@ The data science team will depend on cloud platforms for secure, [efficient](htt
 * Storing, cataloguing, and profiling data sets.
 * Investigating design, development and deployment solution patterns for machine learning systems/products.
 
+```{toctree}
+:caption: Cloud Platform
+:glob:
 
+cloud/*
+```
 
 
 <br>
