@@ -35,7 +35,7 @@ is run for development purposes.
 If developing outwith a container, try
 
 ````commandline
-conda remove --prefix J:\programs\anaconda3\envs\practice --all
+conda remove --prefix J:\programs\anaconda3\envs\transcribe --all
 environment.bat
 ````
 
@@ -68,12 +68,19 @@ sphinx-build -E -b html docs/source docs/build/html
 
 ### References
 
-* [Sphinx Design](https://sphinx-design.readthedocs.io/en/rtd-theme/index.html)
-* https://sphinx-themes.org/sample-sites/furo/
-* https://pradyunsg.me/furo/
-* https://sphinx-design.readthedocs.io/en/furo-theme/
-* https://myst-parser.readthedocs.io/en/latest/index.html
-    * https://myst-parser.readthedocs.io/en/latest/syntax/organising_content.html#using-toctree-to-include-other-documents-as-children
+* [Furo](https://pradyunsg.me/furo/)
+  * [Sample](https://sphinx-themes.org/sample-sites/furo/)
+* [Sphinx Design: Furo](https://sphinx-design.readthedocs.io/en/furo-theme/)
+
+
+* [Sphinx Book Theme](https://sphinx-book-theme.readthedocs.io/en/stable/index.html)
+* [Sphinx Design: Sphinx Book Theme](https://sphinx-design.readthedocs.io/en/sbt-theme/)
+
+
+* [MyST](https://myst-parser.readthedocs.io/en/latest/index.html)
+  * [Organising Content](https://myst-parser.readthedocs.io/en/latest/syntax/organising_content.html#using-toctree-to-include-other-documents-as-children)
+* [Sphinx Directives](https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html)
+* [mermaid](https://mermaid.js.org/intro/)
 
 <br>
 <br>
