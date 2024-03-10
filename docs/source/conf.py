@@ -90,7 +90,8 @@ html_theme_options = {
     'show_navbar_depth': 2,
     'max_navbar_depth': 4,
     'collapse_navbar': False,
-    'navigation_with_keys': False
+    'navigation_with_keys': False,
+    'use_sidenotes': True
 }
 
 html_logo = ''
