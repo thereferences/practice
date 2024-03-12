@@ -17,8 +17,9 @@ The architectures alongside (a) security settings, and (b) via operating practic
 Beforehand
 ----------
 
-
-
+<iframe 
+    style="overflow:hidden; width:100%; height:500px; border:none;" 
+    src="../../../../../assets/beforehand.html"></iframe>
 
 <br>
 <br>
