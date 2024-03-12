@@ -60,7 +60,7 @@ about addressing business or public problems.  It is not about technology or dat
    development
    development/cloud
    development/languages
-   development/integration <integration.md>
+   development/integration
 
 
 .. raw:: html
