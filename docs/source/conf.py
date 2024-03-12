@@ -83,6 +83,7 @@ html_js_files = ['https://code.jquery.com/jquery-3.7.0.min.js',
                  'https://code.highcharts.com/stock/modules/accessibility.js',
                  'https://code.highcharts.com/highcharts.js',
                  'https://code.highcharts.com/modules/networkgraph.js',
+                 'https://viewer.diagrams.net/js/viewer-static.min.js',
                  'js/latex.js']
 
 html_theme_options = {
