@@ -52,6 +52,7 @@
     <script src="https://code.highcharts.com/stock/modules/accessibility.js"></script>
     <script src="https://code.highcharts.com/highcharts.js"></script>
     <script src="https://code.highcharts.com/modules/networkgraph.js"></script>
+    <script src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
     <script src="../../_static/js/latex.js?v=2ac637ab"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -168,8 +169,8 @@
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Projects &amp; Services</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../introduction.html">Introduction</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../systems.html">Systems</a><input checked class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../systems/ml.html">Machine Learning</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../services.html">Services</a><input checked class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../services/ml.html">Machine Learning</a></li>
 </ul>
 </li>
 </ul>
@@ -190,8 +191,8 @@
 <li class="toctree-l2"><a class="reference internal" href="../languages/scala.html">Scala</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../ccc.html">CCC</a><input checked class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../ccc/ic.html">Images &amp; Containers</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../integration.html">Continuous Integration, Continuous Delivery, Continuous Deployment</a><input checked class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../integration/ic.html">Images &amp; Containers</a></li>
 </ul>
 </li>
 </ul>
@@ -354,6 +355,34 @@ document.write(`
 </div>
 <br>
 <p>Upload table.</p>
+<table style="width: 85%; border: 0; border-spacing: 5px; margin-left: 35px">
+    <colgroup>
+        <col span="1" style="width: 13.5%;">
+        <col span="1" style="width: 18.5%;">
+        <col span="1" style="width: 29.0%;">
+        <col span="1" style="width: 39.0%;">
+    </colgroup>
+    <thead><tr style="text-align: left"><th>Object</th><th>Definition</th><th>Risk</th><th>Mitigation</th></tr></thead>
+    <tr>
+        <td>Data Breach</td>
+        <td>An unauthorised data, or information, access.</td>
+        <td>Threaten cloud systems via corruption of storage systems and their content.</td>
+        <td>Mandatory two-factor authentication via FIDO (Fast Identity Online) Keys.</td>
+    </tr>
+    <tr>
+        <td>Attack Surface</td>
+        <td>The known and unknown routes via which an entities cloud asset can be infiltrated.</td>
+        <td>The corruption of cloud assets and the underlying systems, unauthorised access and distribution of data, reputational damage, financial loss.&%23160; Endangerment of&%23160; lives if personal or sensitive data is present.</td>
+        <td><ul>
+            <li>Classify Data Sets&%2358; Open, Sensitive, Personal.&%23160;&%23160;</li>
+            <li>Do not store personal data within the team's cloud account.&%23160;</li>
+            <li>Encrypt sensitive data.</li>
+            <li>Store open data via the most secure free option.</li>
+            <li>Authorise and withdraw access to data and compute services via IAM (Identity &amp; Management) roles.</li>
+            <li>Delete redundant data, and compute, assets.</li>
+        </ul></td>
+    </tr>
+</table>
 <br>
 <br>
 <br>
