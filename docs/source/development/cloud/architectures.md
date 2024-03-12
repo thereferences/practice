@@ -14,6 +14,12 @@ Operating architectures.
 The architectures alongside (a) security settings, and (b) via operating practices.
 
 
+Beforehand
+----------
+
+
+
+
 <br>
 <br>
 <br>
