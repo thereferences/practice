@@ -1,6 +1,6 @@
 <br>
 
-# Systems
+# Services
 
 <br>
 
@@ -15,9 +15,8 @@ These pages reference guides vis-à-vis the types of projects that the team cond
 :caption: TREE
 :glob:
 
-systems/*
+services/*
 ```
-
 
 <br>
 <br>
