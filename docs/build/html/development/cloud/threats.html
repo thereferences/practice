@@ -162,39 +162,33 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../../index.html">
-                    Code of Practice
+                    CODE OF PRACTICE
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Projects &amp; Services</span></p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduction</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../introduction.html">Introduction</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../services.html">Services</a><input checked class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../services/ml.html">Machine Learning</a></li>
 </ul>
-</li>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Projects &amp; Services</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../services.html">About</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../services/algorithms.html">Algorithms Inquiries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../services/mle.html">Machine Learning Engineering Services</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../services/mlp.html">Machine Learning Projects</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Development Practices</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../development.html">Development Practices</a><input checked class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
-</ul>
-</li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="../cloud.html">Cloud</a><input checked class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../development.html">Development Practices</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../cloud.html">Cloud</a><input checked class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="architectures.html">Cloud Platform Solutions Architectures</a></li>
 <li class="toctree-l2"><a class="reference internal" href="impact.html">Impact Assessment</a></li>
 <li class="toctree-l2"><a class="reference internal" href="risks.html">Risks &amp; Mitigation Policies</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Threat Actors</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../languages.html">Languages &amp; Programming</a><input checked class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../languages/python.html">Python</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../languages/scala.html">Scala</a></li>
-</ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../integration.html">Continuous Integration, Continuous Delivery, Continuous Deployment</a><input checked class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../integration/ic.html">Images &amp; Containers</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../languages.html">Languages &amp; Programming</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../integration.html">Continuous Integration, Continuous Delivery, Continuous Deployment</a></li>
 </ul>
 
     </div>
@@ -349,7 +343,27 @@ document.write(`
 <section class="tex2jax_ignore mathjax_ignore" id="threat-actors">
 <h1>Threat Actors<a class="headerlink" href="#threat-actors" title="Link to this heading">#</a></h1>
 <br>
-<p>Upload notes.</p>
+<p>Each team member must be cognizant of threat actors, i.e., entities or individuals that conduct malicious cyber activities, e.g.,</p>
+<ul class="simple">
+<li><p>Exploit vulnerabilities, e.g., <a href="https://www.technologyreview.com/2021/09/23/1036140/2021-record-zero-day-hacks-reasons/" target="_blank">zero-day</a> vulnerabilities.</p></li>
+<li><p>Data theft via unauthorised access to computing assets.</p></li>
+<li><p>Intentional disabling or destruction of computing assets, or disruption of services.</p></li>
+</ul>
+<p>The actors have varying <a href="https://www.sophos.com/en-us/cybersecurity-explained/threat-actors#:~:text=are%20Threat%20Actors%E2%80%99-,Motivations,-%3F" target="_blank">motivations</a>. Threat actors will exploit unprotected or insufficiently secured attack surfaces.</p>
+<p>Potential threat actors are listed below. Presently, the most probable threat actor is an insider. However, as the team (a) grows, (b) starts delivering products &amp; services, and © engages with a wider range of internal &amp; external entities – the threat likelihood per actor increases. [Intellectual property theft, data theft, etc., by external entities will become much more probable.]</p>
+<ul class="simple">
+<li><p>Insiders, i.e., employees or contractors.</p></li>
+<li><p>Cyber criminals.</p></li>
+<li><p>Hackers.</p></li>
+<li><p>State actors</p></li>
+</ul>
+<p>The <a class="reference external" href="https://www.cybok.org/knowledgebase1_1/">Cyber Security Body of Knowledge</a> is a helpful cyber security reference text.  Practically, the team will be guided by the <a href="https://www.sophos.com/en-us/cybersecurity-explained/threat-actors#:~:text=Protection%20Methods%20and-,Strategies,-Maintaining%20strict%20cyber">SOPHOS</a> protection proposals, e.g.,</p>
+<dl>
+    <dt>Risk Assessment</dt><dd>The risks & mitigation policies page addresses this.</dd>
+    <dt>Security Policies & Procedures</dt><dd>The risks & mitigation policies page addresses this.</dd>
+    <dt>Enforce Access Control</dt><dd>Zero privilege approach. Initially, each team member will have a zero privileges account, i.e., Amazon Web Services products will be inaccessible. Privileges will be set, and withdrawn, via IAM (Identity & Access Management) roles, and trust policies thereof. Mandatory multi-factor authentication for cloud tools, e.g., Amazon Web Services, GitHub, etc.</dd>
+    <dt>Automatic Code Scanning, Code Vulnerability Alerts</dt><dd>GitHub DEPENDEABOTS, GitHub QUERYQL</dd>
+</dl>
 <br>
 <br>
 <br>
