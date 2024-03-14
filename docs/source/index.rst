@@ -56,7 +56,7 @@ about addressing business or public problems.  It is not about technology or dat
    :hidden:
 
    services
-   services/ml
+   services/*
 
 
 .. toctree::
