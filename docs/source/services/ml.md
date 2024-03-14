@@ -1,11 +1,11 @@
 <br>
 
-# Machine Learning
+# Machine Learning Projects
 
 <br>
 
 :::{note}
-The code of practice in relation to machine learning projects.
+Machine learning projects.
 :::
 
 <br>
