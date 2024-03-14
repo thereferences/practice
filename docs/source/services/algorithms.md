@@ -1,6 +1,6 @@
 
-Artificial Intelligence Algorithms Inquiries
-============================================
+Algorithms Inquiries
+====================
 
 <br>
 
