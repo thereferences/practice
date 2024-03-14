@@ -49,6 +49,11 @@ myst_enable_extensions = [
     'tasklist',
 ]
 
+'''
+https://myst-parser.readthedocs.io/en/latest/configuration.html
+'''
+myst_heading_anchors = 5
+
 
 '''
 Paths that contain templates, relative to this directory.
