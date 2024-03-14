@@ -8,6 +8,14 @@ CODE OF PRACTICE
 
 These pages outline the norms of the artificial intelligence unit's data science team.
 
+
+.. raw:: html
+
+   <br>
+   <br>
+   <br>
+   <br>
+
 .. button-ref:: genindex
    :color: black
    :shadow:
