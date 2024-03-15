@@ -19,7 +19,7 @@ upper camel case, camel case, or lower case.  Names do not include underscores.
 <table style="width: 85%; border: 0; border-spacing: 5px; margin-left: 35px">
     <colgroup>
         <col span="1" style="width: 26.5%;">
-        <col span="1" style="width: 73.5%;">
+        <col span="1" style="width: 63.5%;">
     </colgroup>
     <thead><tr style="text-align: left"><th>Object</th><th>Note</th></tr></thead>
         <tr><td><a href="https://docs.scala-lang.org/style/naming-conventions.html#classestraits" target="_blank"
