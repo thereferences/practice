@@ -4,14 +4,14 @@ Algorithms Inquiries
 
 <br>
 
-```{admonition} Updates Upcoming
-  In progress.
+```{admonition} Update
+:class: margin
+In progress.
 ```
 
 <br>
 
-Please address algorithms inquiries via the upcoming JIRA Service Management hub.  The data science team's services 
-launch blog will include an introduction to this inquiries fielding hub.
+Please address algorithms inquiries via the upcoming JIRA Service Management hub.  The team's services launch blog will include an introduction to the inquiries hub, and will outline how colleagues and clients can use it.
 
 
 <br>
