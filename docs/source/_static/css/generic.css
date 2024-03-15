@@ -8,6 +8,10 @@ li {
     padding-bottom:1px;
 }
 
+ul {
+    font-size: 14.5px;
+}
+
 ul.special {
     margin-top:0px;
     margin-bottom:1px;
