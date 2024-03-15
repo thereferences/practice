@@ -4,8 +4,8 @@ Algorithms Inquiries
 
 <br>
 
-```{admonition} Update
-:class: margin
+
+```{note}
 In progress.
 ```
 
