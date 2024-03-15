@@ -11,7 +11,7 @@ In Progress
 <br>
 
 ```{toctree}
-:caption: 'TREE'
+:caption: Content
 :glob:
 
 integration/*
