@@ -7,7 +7,7 @@ Scala
 
 :::{note}
 :class: margin
-This is a brief introduction to the code of practice for Scala, and Apache Spark Scala, programming
+In progress.  A brief introduction to the code of practice for Scala, and Apache Spark Scala, programming
 :::
 
 The Scala <a href="https://docs.scala-lang.org/style/" target="_blank">style guide</a>, and will be the team's style 
