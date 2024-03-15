@@ -3,12 +3,12 @@ Machine Learning Engineering Services
 
 <br>
 
-```{admonition} Update
+## Introduction
+
+```{note}
 :class: margin
 In progress.
 ```
-
-<br>
 
 Please address service requests via the upcoming JIRA Service Management hub.  The team's services
 launch blog will include an introduction to the hub.  Before proceeding with a machine learning engineering service 
@@ -22,12 +22,17 @@ Additionally, rigorously evaluate
 * Model requirements
 * Team capacity
 
-Each machine learning engineering project must have its own JIRA Project.
+
+<br>
+
+## Project Management
 
 ```{note}
 :class: margin
 Add a link to the team's Atlas Hub
 ```
+
+Each machine learning engineering project must have its own JIRA Project.
 
 <br>
 <br>
