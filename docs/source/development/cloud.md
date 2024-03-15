@@ -1,6 +1,6 @@
 <br>
 
-# Cloud
+# Cloud Platform
 
 <br>
 
