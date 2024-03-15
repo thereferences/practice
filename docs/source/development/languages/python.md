@@ -7,7 +7,7 @@ Python
 
 :::{note}
 :class: margin
-This is a brief introduction to the code of practice for Python programming
+In progress.  A brief introduction to the code of practice for Python programming
 :::
 
 Please use the <a href="https://peps.python.org/pep-0008/">PEP (Python Enhancement Proposal) 8 Style Guide for 
