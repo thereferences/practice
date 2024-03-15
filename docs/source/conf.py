@@ -25,6 +25,8 @@ release = '0.1'
 '''
 General configuration
 https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
+https://myst-parser.readthedocs.io/en/v0.15.1/sphinx/intro.html#install-a-new-sphinx-extension-and-use-its-functionality
+    "sphinxcontrib.mermaid"
 '''
 extensions = [
     'sphinx.ext.duration',
@@ -78,7 +80,7 @@ html_theme = 'sphinx_book_theme'
 
 html_static_path = ['_static']
 
-html_css_files = ['css/generic.css']
+html_css_files = ['css/generic.css', 'css/figures.css']
 
 html_js_files = ['https://code.jquery.com/jquery-3.7.0.min.js',
                  'https://code.highcharts.com/stock/highstock.js',
