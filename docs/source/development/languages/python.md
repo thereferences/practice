@@ -1,15 +1,14 @@
 <br>
 
 Python
-============
+======
 
 <br>
 
 :::{note}
+:class: margin
 This is a brief introduction to the code of practice for Python programming
 :::
-
-<br>
 
 The team uses the <a href="https://peps.python.org/pep-0008/">PEP (Python Enhancement Proposal) 8 Style Guide for 
 Python</a>.  Always refer to the naming conventions guide, for example
@@ -28,9 +27,6 @@ Python</a>.  Always refer to the naming conventions guide, for example
         <tr><td>Constants</td><td>The PEP pages note that <a href="https://peps.python.org/pep-0008/#constants" target="_blank">constants</a> <q><i>... are usually defined on a 
 module level and written in all capital letters with underscores separating words. Examples include MAX_OVERFLOW and TOTAL.</i></q></td></tr>
 </table>
-
-<br>
-
 
 <br>
 <br>
