@@ -34,7 +34,6 @@ These pages outline the norms of the artificial intelligence unit's data science
    :glob:
    :hidden:
 
-   services
    services/*
 
 
