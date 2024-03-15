@@ -1,11 +1,20 @@
 <br>
 
-# Scala
+Scala
+=====
 
-Scala has a <a href="https://docs.scala-lang.org/style/" target="_blank">style guide</a>, and for the foreseeable 
-future it is the team's style reference.  Take note of the naming conventions.  The names of classes, objects, methods, etc., are either pascal case, also known as
-upper camel case, camel case, or lower case.  Names do not include underscore, e.g., numberOfPipes **not** 
-number_of_pipes.  Examples:
+<br>
+
+:::{note}
+:class: margin
+This is a brief introduction to the code of practice for Scala, and Apache Spark Scala, programming
+:::
+
+The Scala <a href="https://docs.scala-lang.org/style/" target="_blank">style guide</a>, and will be the team's style 
+reference. Take note of the naming conventions.  The names of classes, objects, methods, etc., are either pascal case, also known as
+upper camel case, camel case, or lower case.  Names do not include underscores.
+
+<br>
 
 <table style="width: 85%; border: 0; border-spacing: 5px; margin-left: 35px">
     <colgroup>
@@ -23,7 +32,6 @@ com/java-naming-conventions#:~:text=code%20snippet%0A%7D-,Package,-It%20should%2
         <tr><td><a href="https://docs.scala-lang.org/style/naming-conventions.html#constants-values-and-variables" target="_blank"
 >Constants</a></td><td>Pascal Case</td></tr>
 </table>
-
 
 <br>
 <br>
