@@ -22,7 +22,7 @@ An Amazon Web Services platform addresses the team’s requirements vis-à-vis
 * Team Services: Solution patterns for machine learning developments, the design/development/deployment of machine 
 learning solutions.
 
-
+<br>
 
 ```{toctree}
 :caption: Cloud Platform
