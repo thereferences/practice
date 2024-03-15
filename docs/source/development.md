@@ -6,8 +6,10 @@
 
 :::{note}
 :class: margin
-Upcoming: operations schema.
+In progress.
 :::
+
+Please read the succeeding pages.
 
 <br>
 
