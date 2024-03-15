@@ -16,3 +16,7 @@ ul.special {
     padding-bottom:1px;
     margin-left: 15px;
 }
+
+.bd-main .bd-content .bd-article-container {
+    max-width: 150em;
+}
