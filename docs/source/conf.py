@@ -1,10 +1,10 @@
 """
-conf.py
+This is conf.py
 
 Configuration file for the Sphinx documentation builder.
 
 For the full list of built-in configuration values, see the documentation:
-https://www.sphinx-doc.org/en/master/usage/configuration.html
+https://www.sphinx-doc.org/en/master/usage/configuration.html.
 
 Project information
 https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
@@ -12,13 +12,12 @@ https://www.sphinx-doc.org/en/master/usage/configuration.html#project-informatio
 
 import sphinx_rtd_theme
 import sphinx_design
-import furo
 
 '''
 Basic
+copyright = '2023, greyhypotheses'
 '''
 project = 'Code of Practice'
-copyright = '2023, greyhypotheses'
 author = 'greyhypotheses'
 release = '0.1'
 
@@ -26,6 +25,8 @@ release = '0.1'
 '''
 General configuration
 https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
+https://myst-parser.readthedocs.io/en/v0.15.1/sphinx/intro.html#install-a-new-sphinx-extension-and-use-its-functionality
+    "sphinxcontrib.mermaid"
 '''
 extensions = [
     'sphinx.ext.duration',
@@ -50,6 +51,11 @@ myst_enable_extensions = [
     'tasklist',
 ]
 
+'''
+https://myst-parser.readthedocs.io/en/latest/configuration.html
+'''
+myst_heading_anchors = 5
+
 
 '''
 Paths that contain templates, relative to this directory.
@@ -70,11 +76,11 @@ Options for HTML output
 https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 '''
 
-html_theme = 'furo'
+html_theme = 'sphinx_book_theme'
 
 html_static_path = ['_static']
 
-html_css_files = ['css/generic.css']
+html_css_files = ['css/generic.css', 'css/figures.css']
 
 html_js_files = ['https://code.jquery.com/jquery-3.7.0.min.js',
                  'https://code.highcharts.com/stock/highstock.js',
@@ -84,12 +90,16 @@ html_js_files = ['https://code.jquery.com/jquery-3.7.0.min.js',
                  'https://code.highcharts.com/stock/modules/accessibility.js',
                  'https://code.highcharts.com/highcharts.js',
                  'https://code.highcharts.com/modules/networkgraph.js',
+                 'https://viewer.diagrams.net/js/viewer-static.min.js',
                  'js/latex.js']
 
 html_theme_options = {
-    'sidebar_hide_name': False,
-    'navigation_with_keys': True,
-    'top_of_page_button': None
+    'home_page_in_toc': True,
+    'show_navbar_depth': 2,
+    'max_navbar_depth': 4,
+    'collapse_navbar': True,
+    'navigation_with_keys': False,
+    'use_sidenotes': True
 }
 
 html_logo = ''
