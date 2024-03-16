@@ -31,10 +31,12 @@ via GitHub.</figcaption>
 
 ### Elastic Compute Cloud
 
-#### And a public subnet
+<br>
+
+#### With a public subnet
 
 <iframe
-style="overflow:hidden; width:100%; height:450px; border:none;"
+style="overflow:hidden; width:100%; height:430px; border:none;"
 src="../../../../../assets/ec2.html"></iframe>
 <figure>
 <figcaption>In general, containers will be run via the <a href="https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate.html" target="_blank">Fargate</a> option of Amazon's Elastic Container Service.  
@@ -140,8 +142,7 @@ template.</figcaption>
 #### With a private subnet
 
 <iframe
-style="overflow:hidden; width:100%; height:450px; border:none;"
-src="../../../../../assets/endpoint-connect.html"></iframe>
+style="overflow:hidden; width:100%; height:485px; border:none;" src="../../../../../assets/endpoint-connect.html"></iframe>
 <figure>
 <figcaption>Similar to the previous illustration, using a private subnet requires a slightly different design.  Click on the 
 Private Subnet symbol link to read more.</figcaption>
@@ -153,16 +154,9 @@ Private Subnet symbol link to read more.</figcaption>
 
 ### Simple Storage Service (S3)
 
-<iframe style="overflow:hidden; width:100%; height:450px; border:none;" src="../../../../../assets/endpoint-interface.html"></iframe>
+<iframe style="overflow:hidden; width:100%; height:430px; border:none;" src="../../../../../assets/endpoint-interface.html"></iframe>
 <figure>
-<figcaption>Interacting with Amazon S3 (Simple Storage Service) via <a href="https://docs.aws.amazon.
-com/cli/latest/userguide/cli-chap-welcome.html" target="_blank">AWS CLI (Command Line Interface)</a> and a private 
-subnet. Within each team member's machine AWS CLI will be configured to use <a href="https://docs.aws.amazon.
-com/cli/latest/userguide/sso-configure-profile-token.html#sso-configure-profile-token-auto-sso" title="Amazon Web 
-Services (AWS) Identity & Access Management (IAM) Identity Centre (IC)">AWS IAM IC</a> 
-for 
-authentication.
-</figcaption>
+<figcaption>Interacting with Amazon S3 (Simple Storage Service) via <a href="https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html" target="_blank">AWS CLI (Command Line Interface)</a> and a private subnet. Within each team member's machine AWS CLI will be configured to use <a href="https://docs.aws.amazon.com/cli/latest/userguide/sso-configure-profile-token.html#sso-configure-profile-token-auto-sso" title="Amazon Web Services (AWS) Identity & Access Management (IAM) Identity Centre (IC)">AWS IAM IC</a> for authentication.</figcaption>
 </figure>
 
 
