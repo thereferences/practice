@@ -1,6 +1,6 @@
 <br>
 
-# Cloud
+# Cloud Platform
 
 <br>
 
@@ -13,11 +13,23 @@ The data science team will depend on cloud platforms for secure, [efficient](htt
 
 * Developing and/or testing machine learning models.
 * Conducting proof of concept modelling projects.
-* Storing, cataloguing, and profiling data sets.
-* Investigating design, development and deployment solution patterns for machine learning systems/products.
+* Storing and cataloguing data sets.
+* Investigating the design, development and deployment of solution patterns for machine learning systems/products.
+
+<br>
+<br>
+
+<br>
+<br>
+
+<br>
+<br>
+
+<br>
+<br>
 
 ```{toctree}
-:caption: Cloud Platform
+:caption: Content
 :glob:
 
 cloud/*
@@ -26,10 +38,12 @@ cloud/*
 
 <br>
 <br>
+
 <br>
 <br>
 
 <br>
 <br>
+
 <br>
 <br>
