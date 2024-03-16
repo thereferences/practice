@@ -5,27 +5,42 @@
 <br>
 
 :::{note}
-All about languages & programming.
+:class: margin
+In progress.  All about languages & programming.
 :::
 
+Please
+
+<ul class="special">
+    <li>Always use the style guides that the languages pages reference.</li>
+    <li>The structure of a package must always be in line with the underlying language's project structure.</li>
+    <li>Each package ...</li>
+    <li>GitGub Actions for 
+        <ul><li>Automated code analysis and testing.</li>
+            <li>Container image building.</li>
+            <li>Container image registration.</li>
+        </ul>
+    </li>
+</ul>
+
+<br>
+<br>
+
+<br>
+<br>
+
+<br>
+<br>
+
+<br>
 <br>
 
 ```{toctree}
-:caption: 'TREE'
+:caption: Content
 :glob:
 
 languages/*
 ```
-
-<br>
-
-<b>About</b>
-
-<ul class="special">
-    <li>GitGub Actions for (a) automated code analysis and testing, and (b) deploy all code via code images</li>
-    <li>Structure packages in line with the package structure of the underlying language.</li>
-    <li>Always us the style guides that language pages reference</li>
-</ul>
 
 <br>
 <br>
