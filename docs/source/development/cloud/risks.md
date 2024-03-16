@@ -34,10 +34,11 @@ An unauthorised data, or information, access.
 The known and unknown routes via which an entities cloud asset can be infiltrated.
 
 <dl>
-    <dt>Risk</dt><dd>The corruption of cloud assets and the underlying systems, unauthorised access and distribution of data, reputation damage, financial loss.&%23160; Endangerment of&%23160; lives if personal or sensitive data is present.</dd>
+    <dt>Risk</dt><dd>The corruption of cloud assets and the underlying systems, unauthorised access and distribution of 
+data, reputation damage, financial loss. Endangerment of lives, if personal or sensitive data is present.</dd>
     <dt>Mitigation</dt>
     <dd>    
-        Data [Classify Data Sets&%2358; Open, Sensitive, Personal.]    
+        Data [Classify Data Sets: Open, Sensitive, Personal.]    
         <ul><li>Do not store sensitive or personal data within the team's cloud account.</li><li>Encrypt all data sets; Amazon S3 (Simple Storage Service) <a href="https&%2358;//docs.aws.amazon.com/AmazonS3/latest/userguide/specifying-s3-encryption.html" title="encrypts by default">encrypts by default</a>.</li><li>Authorise and withdraw access to data via IAM (Identity &amp; Management) roles.</li><li>Delete redundant data assets.</li></ul>    
         Compute Services
         <ul style="font-family&%2358;Calibri, Arial, Helvetica, sans-serif;background-color&%2358;rgb(255, 255, 255);"><li>Authorise and withdraw access to compute services via IAM (Identity &amp; Management) roles, and trust policies thereof.</li><li>Delete redundant compute assets.</li></ul>    
@@ -56,7 +57,7 @@ The known and unknown routes via which an entities cloud asset can be infiltrate
 Software that enables the unauthorised installer to take control of a system by disrupting it or causing strategic damage.
 
 <dl>
-    <dt>Risk</dt><dd>Industrial Espionage<br><ul><li>The theft of confidential, sensitive,&%23160; etc., data or information.
+    <dt>Risk</dt><dd>Industrial Espionage<br><ul><li>The theft of confidential, sensitive, etc., data or information.
 </li><li>The theft of intellectual property, processes, ideas, techniques, etc.</li></ul></dd>
     <dt>Mitigation</dt>
     <dd>
@@ -67,8 +68,9 @@ Software that enables the unauthorised installer to take control of a system by 
         com/AmazonS3/latest/userguide/backup-for-s3.html" title="Amazon Web Services Backup for Amazon S3 (Simple Storage Service)
         ">Amazon Web Services Backup for Amazon S3 (Simple Storage Service)</a>.</li><li>Limit access to cloud assets via the 
         inbound rules of security groups.</li><li>Authorise and withdraw access to assets via IAM (Identity &amp; Management) 
-        roles.</li><li>Restricted data delivery&%2358; Programmatic data delivery via data science team members only.&%23160;
-        &%23160;</li><li>Termination of instances immediately after use.</li><li>Prepare an incident contingency.</li></ul><li>Client</li><ul><li>Interaction with cloud services via virtual private networks.</li></ul></ul>
+        roles.</li><li>Restricted data delivery: Programmatic data delivery via data science team members only.</li>
+        <li>Termination of instances immediately after use.</li><li>Prepare an incident contingency.</li></ul>
+        <li>Client</li><ul><li>Interaction with cloud services via virtual private networks.</li></ul></ul>
     </dd>
 </dl>
 
@@ -85,8 +87,12 @@ Threats due to employees not adhering to security rules.
     <dt>Risk</dt><dd>Infiltration risks, and all the damages thereof.</dd>
     <dt>Mitigation</dt>
     <dd>
-        <ul><li>Always on virtual private network.</li><li>Infrastructure as Code Templates that feature</li><ul>
-        <li><a href="https&%2358;//docs.aws.amazon.com/vpc/latest/userguide/vpc-security-groups.html" title="VPC">VPC</a> (Virtual Private Cloud)</li><li>Subnet</li><li>Security Groups&%2358; For controlling inbound &amp; outbound rules</li></ul></ul>
+        <ul>
+        <li>Always-on virtual private network.</li>
+        <li>Using compute services via infrastructure-as-code templates that always feature</li>
+            <ul>
+            <li><a href="https&%2358;//docs.aws.amazon.com/vpc/latest/userguide/vpc-security-groups.html" title="VPC">VPC</a>(Virtual Private Cloud)</li><li>Subnet</li><li>Security Groups: For controlling inbound &amp; outbound rules</li></ul>
+        </ul>
     </dd>
 </dl>
 
@@ -120,7 +126,8 @@ exploratory &amp; trend analysis, etc.</dd>
     <dt>Mitigation</dt><dd>
     <ul>
     <li>Backup data sets: <a href="https&%2358;//docs.aws.amazon.com/AmazonS3/latest/userguide/backup-for-s3.html" target="_blank">Amazon Web Services Backup for Amazon S3 (Simple Storage Service)</a></li>
-    <li>Programmatic production of all data intelligence, via version controlled team programs; hence the wherewithal to reproduce all lost items.&%23160; This is a mandatory team practice.</li>
+    <li>Programmatic production of all data intelligence, via version controlled team programs; hence the wherewithal to 
+reproduce all lost items.  This is a mandatory team practice.</li>
     </ul>
 </dd>
 </dl>
@@ -145,7 +152,8 @@ Deficient access controls.
         <li>Programmatic access to Amazon Web Services products via limited privileges roles &amp; trust policies. [Automatic temporary credentials via AWS Command Line Interface Single Sign On]</li>
         <li><span style="background-color&%2358;rgb(255, 255, 255);display&%2358;inline !important;">Limited, zero, privileges by default.</span><br></li>
         <li>The continuous development and availability of launch templates, with security settings and limited assets privileges, for launching computing products.</li>
-        <li>The team's cloud leads must use multi-factor authentication to access AWS online.&%23160; [Multi-factor authentication by default.]</li>
+        <li>The team's cloud leads must use multi-factor authentication to access AWS online.  [Multi-factor 
+authentication by default.]</li>
         </ul>
         GitHub
         <ul><li>Mandatory multi-factor authentication.</li><li>SSH (Secure Shell) command line interactions.</li></ul>
