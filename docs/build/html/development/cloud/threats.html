@@ -31,7 +31,8 @@
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=384b581d" />
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/generic.css?v=27e3fd7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/generic.css?v=19d75736" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/figures.css?v=440e4051" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
@@ -172,15 +173,14 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Projects &amp; Services</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../../services.html">About</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../services/algorithms.html">Algorithms Inquiries</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../services/mle.html">Machine Learning Engineering Services</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../services/mlp.html">Machine Learning Projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../services/mlp.html">Business Machine Learning Projects</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Development Practices</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../development.html">Development Practices</a></li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="../cloud.html">Cloud</a><input checked class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../cloud.html">Cloud Platform</a><input checked class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="architectures.html">Cloud Platform Solutions Architectures</a></li>
 <li class="toctree-l2"><a class="reference internal" href="impact.html">Impact Assessment</a></li>
 <li class="toctree-l2"><a class="reference internal" href="risks.html">Risks &amp; Mitigation Policies</a></li>
@@ -188,7 +188,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../languages.html">Languages &amp; Programming</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../integration.html">Continuous Integration, Continuous Delivery, Continuous Deployment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../integration.html">Integration</a></li>
 </ul>
 
     </div>
@@ -314,7 +314,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -330,6 +332,15 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#protection">Protection</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -343,6 +354,8 @@ document.write(`
 <section class="tex2jax_ignore mathjax_ignore" id="threat-actors">
 <h1>Threat Actors<a class="headerlink" href="#threat-actors" title="Link to this heading">#</a></h1>
 <br>
+<section id="background">
+<h2>Background<a class="headerlink" href="#background" title="Link to this heading">#</a></h2>
 <p>Each team member must be cognizant of threat actors, i.e., entities or individuals that conduct malicious cyber activities, e.g.,</p>
 <ul class="simple">
 <li><p>Exploit vulnerabilities, e.g., <a href="https://www.technologyreview.com/2021/09/23/1036140/2021-record-zero-day-hacks-reasons/" target="_blank">zero-day</a> vulnerabilities.</p></li>
@@ -357,12 +370,21 @@ document.write(`
 <li><p>Hackers.</p></li>
 <li><p>State actors</p></li>
 </ul>
+<br>
+<br>
+<br>
+</section>
+<section id="protection">
+<h2>Protection<a class="headerlink" href="#protection" title="Link to this heading">#</a></h2>
 <p>The <a class="reference external" href="https://www.cybok.org/knowledgebase1_1/">Cyber Security Body of Knowledge</a> is a helpful cyber security reference text.  Practically, the team will be guided by the <a href="https://www.sophos.com/en-us/cybersecurity-explained/threat-actors#:~:text=Protection%20Methods%20and-,Strategies,-Maintaining%20strict%20cyber">SOPHOS</a> protection proposals, e.g.,</p>
 <dl>
-    <dt>Risk Assessment</dt><dd>The risks & mitigation policies page addresses this.</dd>
-    <dt>Security Policies & Procedures</dt><dd>The risks & mitigation policies page addresses this.</dd>
-    <dt>Enforce Access Control</dt><dd>Zero privilege approach. Initially, each team member will have a zero privileges account, i.e., Amazon Web Services products will be inaccessible. Privileges will be set, and withdrawn, via IAM (Identity & Access Management) roles, and trust policies thereof. Mandatory multi-factor authentication for cloud tools, e.g., Amazon Web Services, GitHub, etc.</dd>
-    <dt>Automatic Code Scanning, Code Vulnerability Alerts</dt><dd>GitHub DEPENDEABOTS, GitHub QUERYQL</dd>
+    <dt>Risk Assessment</dt><dd>The risks & mitigation policies page addresses this.<br></dd>
+    <dt>Security Policies & Procedures</dt><dd>The risks & mitigation policies page addresses this.<br></dd>
+    <dt>Enforce Access Control</dt><dd>Zero privilege approach. Initially, each team member will have a zero privileges account, i.e., Amazon Web Services products will be inaccessible. Privileges will be set, and withdrawn, via IAM (Identity & Access Management) roles, and trust policies thereof. Mandatory multi-factor authentication for cloud tools, e.g., Amazon Web Services, GitHub, etc.<br></dd>
+    <dt>Automatic Code Scanning, Code Vulnerability Alerts</dt>
+<dd>GitHub <a href="https://docs.github.com/en/code-security/dependabot" target="_blank">DEPENDEABOTS</a>, GitHub <a href="https://docs.
+github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning-with-codeql" target="_blank"
+>CodeQL</a><br></dd>
 </dl>
 <br>
 <br>
@@ -372,6 +394,7 @@ document.write(`
 <br>
 <br>
 <br>
+</section>
 </section>
 
 
@@ -410,7 +433,21 @@ document.write(`
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"></div>
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#protection">Protection</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
