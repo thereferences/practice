@@ -31,11 +31,14 @@ via GitHub.</figcaption>
 
 ### Elastic Compute Cloud
 
+#### And a public subnet
+
 <iframe
 style="overflow:hidden; width:100%; height:450px; border:none;"
 src="../../../../../assets/ec2.html"></iframe>
 <figure>
-<figcaption>In general, containers will be run via the Fargate option of Amazon's Elastic Container Service.  Sometimes, 
+<figcaption>In general, containers will be run via the <a href="https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate.html" target="_blank">Fargate</a> option of Amazon's Elastic Container Service.  
+Sometimes, 
 containers will be tested via an EC2 (Elastic Cloud Compute) using a set-up such as this; launched via a launch 
 template.</figcaption>
 </figure>
@@ -131,30 +134,40 @@ template.</figcaption>
 ```
 :::
 
-
-
-
 <br>
+<br>
+
+#### With a private subnet
 
 <iframe
 style="overflow:hidden; width:100%; height:450px; border:none;"
 src="../../../../../assets/endpoint-connect.html"></iframe>
 <figure>
-<figcaption>An illustration</figcaption>
+<figcaption>Similar to the previous illustration, using a private subnet requires a slightly different design.  Click on the 
+Private Subnet symbol link to read more.</figcaption>
 </figure>
 
+<br>
+<br>
 <br>
 
 ### Simple Storage Service (S3)
 
-<iframe
-style="overflow:hidden; width:100%; height:450px; border:none;"
-src="../../../../../assets/endpoint-interface.html"></iframe>
+<iframe style="overflow:hidden; width:100%; height:450px; border:none;" src="../../../../../assets/endpoint-interface.html"></iframe>
 <figure>
-<figcaption>An illustration</figcaption>
+<figcaption>Interacting with Amazon S3 (Simple Storage Service) via <a href="https://docs.aws.amazon.
+com/cli/latest/userguide/cli-chap-welcome.html" target="_blank">AWS CLI (Command Line Interface)</a> and a private 
+subnet. Within each team member's machine AWS CLI will be configured to use <a href="https://docs.aws.amazon.
+com/cli/latest/userguide/sso-configure-profile-token.html#sso-configure-profile-token-auto-sso" title="Amazon Web 
+Services (AWS) Identity & Access Management (IAM) Identity Centre (IC)">AWS IAM IC</a> 
+for 
+authentication.
+</figcaption>
 </figure>
 
 
+<br>
+<br>
 <br>
 <br>
 
@@ -168,25 +181,36 @@ src="../../../../../assets/endpoint-interface.html"></iframe>
 :width: 65%
 ```
 <figure>
-<figcaption>Step functions; alternative pipelines, with all the appropriate security settings.
+<figcaption>Deploying an end-to-end solution via <a href="https://docs.aws.amazon.com/step-functions/latest/dg/welcome.html" target="_blank">step functions</a>, an orchestration service.
 </figcaption>
 </figure>
 
 <br>
+<br>
+<br>
 
 ### A Schema for a Step Functions Solution
 
+<br>
+
 ```{image} ../../../../assets/pattern-emr.png
 :alt: Elastic MapReduce
-:width: 65%
+:width: 75%
+:height: 400px
 ```
+<figure>
+<figcaption>A schema for a step functions orchestration.
+</figcaption>
+</figure>
 
+<br>
+<br>
 <br>
 
 ### Elastic MapReduce (EMR)
 
 <iframe
-style="overflow:hidden; width:100%; height:450px; border:none;"
+style="overflow:hidden; width:100%; height:375px; border:none;"
 src="../../../../../assets/emr.html"></iframe>
 <figure>
 <figcaption>An illustration of an infrastructure-as-code launch of an EMR (Elastic MapReduce) cluster.  The code includes,
