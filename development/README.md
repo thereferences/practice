@@ -4,15 +4,12 @@ The repository's development notes.
 
 <br>
 
-# Remote & Local Environments
+## Remote Development
 
-## Remote
-
-Foremost, the scripts for building a docker image
+The container image depends on
 
 * requirements.txt
 * Dockerfile
-* .devcontainer/devcontainer.json
 
 The requirements file lists the packages/libraries required for development.  Next, an image is built via the command
 
@@ -20,37 +17,18 @@ The requirements file lists the packages/libraries required for development.  Ne
 docker build . --file .devcontainer/Dockerfile --tag transcribe
 ```
 
-Subsequently, an instance of the image, i.e., a container,
+Subsequently, a development container is initialised via the command
 
 ```shell
 docker run --rm -i -t -p 127.0.0.1:10000:8888 -w /app --mount type=bind,src="$(pwd)",target=/app transcribe
 ```
 
-is run for development purposes.
-
-<br>
-
-## Local
-
-If developing outwith a container, try
-
-````commandline
-conda remove --prefix J:\programs\anaconda3\envs\transcribe --all
-environment.bat
-````
-
-or
-
-```shell
-source environment.sh
-```
-
-Each script depends on the `environment.yml`, which uses the same *requirements.txt* as Dockerfile.
-
 <br>
 <br>
 
-# Sphinx
+## Sphinx
+
+## Usage Notes
 
 Initialise Sphinx
 
@@ -66,17 +44,15 @@ sphinx-build -E -b html docs/source docs/build/html
 
 <br>
 
-### References
+## References
 
 * [Furo](https://pradyunsg.me/furo/)
   * [Sample](https://sphinx-themes.org/sample-sites/furo/)
 * [Sphinx Design: Furo](https://sphinx-design.readthedocs.io/en/furo-theme/)
 
-
 * [Sphinx Book Theme](https://sphinx-book-theme.readthedocs.io/en/stable/index.html)
   * [Sample](https://sphinx-book-theme.readthedocs.io/en/stable/reference/kitchen-sink/index.html)
 * [Sphinx Design: Sphinx Book Theme](https://sphinx-design.readthedocs.io/en/sbt-theme/)
-
 
 * [Sphinx](https://www.sphinx-doc.org/en/master/index.html)
   * [Sphinx Directives](https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html)
