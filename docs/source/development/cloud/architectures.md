@@ -17,7 +17,7 @@ Hover over an illustration's symbols for more details; some have links to furthe
 ## Delivering Assets
 
 <iframe 
-    style="overflow:hidden; width:100%; height:330px; border:none;" 
+    style="overflow:hidden; width:100%; height:330px; border:none; margin-left:65px" 
     src="../../../../../assets/beforehand.html"></iframe>
 <figure>
 <figcaption>Assets, e.g., container images, will be delivered to the cloud platform via a version controlled route, i.e., 
