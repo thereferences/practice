@@ -4,12 +4,13 @@
 
 <br>
 
-:::{note}
-:class: margin
-This page will be continuously updated.
-:::
-
 Hover over an illustration's symbols for more details; some have links to further details.  Images only have captions.  With time, more details will be added.
+
+<br>
+
+```{contents}
+:local:
+```
 
 <br>
 
