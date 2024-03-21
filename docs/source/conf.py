@@ -32,6 +32,7 @@ extensions = [
     'sphinx.ext.duration',
     'sphinx.ext.githubpages',
     'sphinx_design',
+    'sphinx_rtd_theme',
     'myst_parser'
 ]
 
@@ -76,7 +77,7 @@ Options for HTML output
 https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 '''
 
-html_theme = 'sphinx_book_theme'
+html_theme = 'sphinx_rtd_theme'
 
 html_static_path = ['_static']
 
