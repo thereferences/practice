@@ -1,399 +1,220 @@
-
 <!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-
-<html lang="en" data-content_root="../../" >
-
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <title>Impact Assessment &#8212; Code of Practice 0.1 documentation</title>
-  
-  
-  
-  <script data-cfasync="false">
-    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
-  </script>
-  
-  <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Impact Assessment &mdash; Code of Practice 0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/generic.css?v=3104ec14" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/figures.css?v=28bf0955" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
-
-    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
-    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=384b581d" />
-    <link rel="stylesheet" type="text/css" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/generic.css?v=19d75736" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/figures.css?v=440e4051" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
-  <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
-  <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
-
-    <script src="../../_static/documentation_options.js?v=e1a75a79"></script>
-    <script src="../../_static/doctools.js?v=888ff710"></script>
-    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script src="../../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
-    <script src="../../_static/design-tabs.js?v=36754332"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'development/cloud/impact';</script>
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-    <script src="https://code.highcharts.com/stock/highstock.js"></script>
-    <script src="https://code.highcharts.com/stock/modules/data.js"></script>
-    <script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
-    <script src="https://code.highcharts.com/stock/modules/export-data.js"></script>
-    <script src="https://code.highcharts.com/stock/modules/accessibility.js"></script>
-    <script src="https://code.highcharts.com/highcharts.js"></script>
-    <script src="https://code.highcharts.com/modules/networkgraph.js"></script>
-    <script src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
-    <script src="../../_static/js/latex.js?v=2ac637ab"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=2709fde1"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/design-tabs.js?v=36754332"></script>
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+        <script src="https://code.highcharts.com/stock/highstock.js"></script>
+        <script src="https://code.highcharts.com/stock/modules/data.js"></script>
+        <script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+        <script src="https://code.highcharts.com/stock/modules/export-data.js"></script>
+        <script src="https://code.highcharts.com/stock/modules/accessibility.js"></script>
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/networkgraph.js"></script>
+        <script src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
+        <script src="../../_static/js/latex.js?v=2ac637ab"></script>
+    <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Risks &amp; Mitigation Policies" href="risks.html" />
-    <link rel="prev" title="Cloud Platform Solutions Architectures" href="architectures.html" />
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="en"/>
-  </head>
-  
-  
-  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+    <link rel="prev" title="Cloud Platform Solutions Architectures" href="architectures.html" /> 
+</head>
 
-  
-  
-  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
-  
-  <div id="pst-scroll-pixel-helper"></div>
-  
-  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>
-    Back to top
-  </button>
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
 
-  
-  <input type="checkbox"
-          class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
-  
-  <input type="checkbox"
-          class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
-  
-  <div class="search-button__wrapper">
-    <div class="search-button__overlay"></div>
-    <div class="search-button__search-container">
-<form class="bd-search d-flex align-items-center"
-      action="../../search.html"
-      method="get">
-  <i class="fa-solid fa-magnifying-glass"></i>
-  <input type="search"
-         class="form-control"
-         name="q"
-         id="search-input"
-         placeholder="Search..."
-         aria-label="Search..."
-         autocomplete="off"
-         autocorrect="off"
-         autocapitalize="off"
-         spellcheck="false"/>
-  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form></div>
-  </div>
-  
-    <header class="bd-header navbar navbar-expand-lg bd-navbar">
-    </header>
-  
-
-  <div class="bd-container">
-    <div class="bd-container__inner bd-page-width">
-      
-      
-      
-      <div class="bd-sidebar-primary bd-sidebar">
-        
-
-  
-  <div class="sidebar-header-items sidebar-primary__section">
-    
-    
-    
-    
-  </div>
-  
-    <div class="sidebar-primary-items__start sidebar-primary__section">
-        <div class="sidebar-primary-item">
-
-  
-
-<a class="navbar-brand logo" href="../../index.html">
-  
-  
-  
-  
-  
-  
-    <p class="title logo__title">Code of Practice 0.1 documentation</p>
-  
-</a></div>
-        <div class="sidebar-primary-item">
-
- <script>
- document.write(`
-   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <span class="search-button__default-text">Search</span>
-    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-   </button>
- `);
- </script></div>
-        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
-    <div class="bd-toc-item navbar-nav active">
-        
-        <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1">
-                <a class="reference internal" href="../../index.html">
-                    CODE OF PRACTICE
-                </a>
-            </li>
-        </ul>
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduction</span></p>
-<ul class="nav bd-sidenav">
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Code of Practice
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="../../introduction.html">Introduction</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Projects &amp; Services</span></p>
-<ul class="nav bd-sidenav">
+<p class="caption" role="heading"><span class="caption-text">Projects &amp; Services</span></p>
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="../../services/algorithms.html">Algorithms Inquiries</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../services/mle.html">Machine Learning Engineering Services</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../services/mlp.html">Business Machine Learning Projects</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Development Practices</span></p>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../../development.html">Development Practices</a></li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="../cloud.html">Cloud Platform</a><input checked class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="architectures.html">Cloud Platform Solutions Architectures</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Impact Assessment</a></li>
-<li class="toctree-l2"><a class="reference internal" href="risks.html">Risks &amp; Mitigation Policies</a></li>
-<li class="toctree-l2"><a class="reference internal" href="threats.html">Threat Actors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../services/mle.html">Machine Learning Engineering Services</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../services/mle.html#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../services/mle.html#project-management">Project Management</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../languages.html">Languages &amp; Programming</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../integration.html">Integration</a></li>
-</ul>
-
-    </div>
-</nav></div>
-    </div>
-  
-  
-  <div class="sidebar-primary-items__end sidebar-primary__section">
-  </div>
-  
-  <div id="rtd-footer-container"></div>
-
-
-      </div>
-      
-      <main id="main-content" class="bd-main">
-        
-        
-
-<div class="sbt-scroll-pixel-helper"></div>
-
-          <div class="bd-content">
-            <div class="bd-article-container">
-              
-              <div class="bd-header-article">
-<div class="header-article-items header-article__inner">
-  
-    <div class="header-article-items__start">
-      
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-  <span class="fa-solid fa-bars"></span>
-</label></div>
-      
-    </div>
-  
-  
-    <div class="header-article-items__end">
-      
-        <div class="header-article-item">
-
-<div class="article-header-buttons">
-
-
-
-
-
-<div class="dropdown dropdown-download-buttons">
-  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
-    <i class="fas fa-download"></i>
-  </button>
-  <ul class="dropdown-menu">
-      
-      
-      
-      <li><a href="../../_sources/development/cloud/impact.md" target="_blank"
-   class="btn btn-sm btn-download-source-button dropdown-item"
-   title="Download source file"
-   data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  <i class="fas fa-file"></i>
-  </span>
-<span class="btn__text-container">.md</span>
-</a>
-</li>
-      
-      
-      
-      
-      <li>
-<button onclick="window.print()"
-  class="btn btn-sm btn-download-pdf-button dropdown-item"
-  title="Print to PDF"
-  data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  <i class="fas fa-file-pdf"></i>
-  </span>
-<span class="btn__text-container">.pdf</span>
-</button>
-</li>
-      
-  </ul>
-</div>
-
-
-
-
-<button onclick="toggleFullScreen()"
-  class="btn btn-sm btn-fullscreen-button"
-  title="Fullscreen mode"
-  data-bs-placement="bottom" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  <i class="fas fa-expand"></i>
-  </span>
-
-</button>
-
-
-
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
-  </button>
-`);
-</script>
-
-
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-  </button>
-`);
-</script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</label>
-</div></div>
-      
-    </div>
-  
-</div>
-</div>
-              
-              
-
-<div id="jb-print-docs-body" class="onlyprint">
-    <h1>Impact Assessment</h1>
-    <!-- Table of contents -->
-    <div id="print-main-content">
-        <div id="jb-print-toc">
-            
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scenario">Scenario</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#project-in-focus">Project in focus</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#assets-stored-within-the-cloud-platform">Assets stored within the cloud platform</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#design-development-and-resources-zones">Design, development, and resources zones</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#plausible-disruptions">Plausible Disruptions</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#considerations-contingencies-vis-a-vis-disruptions">Considerations &amp; Contingencies vis-à-vis Disruptions</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-loss-data-breach">Data Loss / Data Breach</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-corruption">Data Corruption</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#unavailable-cloud-platform">Unavailable Cloud Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../services/mlp.html">Business Machine Learning Projects</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../services/mlp.html#introduction">Introduction</a></li>
 </ul>
 </li>
 </ul>
-            </nav>
+<p class="caption" role="heading"><span class="caption-text">Development Practices</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../development.html">Development Practices</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="../cloud.html">Cloud Platform</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="architectures.html">Cloud Platform Solutions Architectures</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="architectures.html#delivering-assets">Delivering Assets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="architectures.html#interacting">Interacting</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="architectures.html#elastic-compute-cloud">Elastic Compute Cloud</a></li>
+<li class="toctree-l4"><a class="reference internal" href="architectures.html#simple-storage-service-s3">Simple Storage Service (S3)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="architectures.html#auto">Auto</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="architectures.html#via-step-functions">Via Step Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="architectures.html#a-schema-for-a-step-functions-solution">A Schema for a Step Functions Solution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="architectures.html#elastic-mapreduce-emr">Elastic MapReduce (EMR)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Impact Assessment</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#scenario">Scenario</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#project-in-focus">Project in focus</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#assets-stored-within-the-cloud-platform">Assets stored within the cloud platform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#design-development-and-resources-zones">Design, development, and resources zones</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#plausible-disruptions">Plausible Disruptions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#considerations-contingencies-vis-a-vis-disruptions">Considerations &amp; Contingencies vis-à-vis Disruptions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#data-loss-data-breach">Data Loss / Data Breach</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#data-corruption">Data Corruption</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#unavailable-cloud-platform">Unavailable Cloud Platform</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="risks.html">Risks &amp; Mitigation Policies</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="risks.html#data-breach">Data Breach</a></li>
+<li class="toctree-l3"><a class="reference internal" href="risks.html#attack-surface">Attack Surface</a></li>
+<li class="toctree-l3"><a class="reference internal" href="risks.html#malware-infections">Malware Infections</a></li>
+<li class="toctree-l3"><a class="reference internal" href="risks.html#insider-threats">Insider Threats</a></li>
+<li class="toctree-l3"><a class="reference internal" href="risks.html#zero-day-vulnerability">Zero Day Vulnerability</a></li>
+<li class="toctree-l3"><a class="reference internal" href="risks.html#data-loss">Data Loss</a></li>
+<li class="toctree-l3"><a class="reference internal" href="risks.html#deficient-assets-access-management">Deficient Assets Access Management</a></li>
+<li class="toctree-l3"><a class="reference internal" href="risks.html#hijacking-cloud">Hijacking (Cloud)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="threats.html">Threat Actors</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="threats.html#background">Background</a></li>
+<li class="toctree-l3"><a class="reference internal" href="threats.html#protection">Protection</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../languages.html">Languages &amp; Programming</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../languages/python.html">Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../languages/scala.html">Scala</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../integration.html">Integration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../integration/ic.html">Images &amp; Containers</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../integration/ic.html#for-development">For Development</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
         </div>
-    </div>
-</div>
+      </div>
+    </nav>
 
-              
-                
-<div id="searchbox"></div>
-                <article class="bd-article">
-                  
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: white" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Code of Practice</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../cloud.html">Cloud Platform</a></li>
+      <li class="breadcrumb-item active">Impact Assessment</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/development/cloud/impact.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
   <br>
 <section class="tex2jax_ignore mathjax_ignore" id="impact-assessment">
-<h1>Impact Assessment<a class="headerlink" href="#impact-assessment" title="Link to this heading">#</a></h1>
+<h1>Impact Assessment<a class="headerlink" href="#impact-assessment" title="Link to this heading"></a></h1>
 <br>
 <p>The team does not have a standard workload.  Solutions that it designs, develops, tests, etc., will be delivered to
 clients/colleagues. This brief assessment considers a hypothetical, but partially representative, scenario.</p>
 <br>
-<section id="scenario">
-<h2>Scenario<a class="headerlink" href="#scenario" title="Link to this heading">#</a></h2>
+<nav class="contents local" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#scenario" id="id1">Scenario</a></p>
+<ul>
+<li><p><a class="reference internal" href="#project-in-focus" id="id2">Project in focus</a></p></li>
+<li><p><a class="reference internal" href="#assets-stored-within-the-cloud-platform" id="id3">Assets stored within the cloud platform</a></p></li>
+<li><p><a class="reference internal" href="#design-development-and-resources-zones" id="id4">Design, development, and resources zones</a></p></li>
+<li><p><a class="reference internal" href="#plausible-disruptions" id="id5">Plausible Disruptions</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#considerations-contingencies-vis-a-vis-disruptions" id="id6">Considerations &amp; Contingencies vis-à-vis Disruptions</a></p>
+<ul>
+<li><p><a class="reference internal" href="#data-loss-data-breach" id="id7">Data Loss / Data Breach</a></p></li>
+<li><p><a class="reference internal" href="#data-corruption" id="id8">Data Corruption</a></p></li>
+<li><p><a class="reference internal" href="#unavailable-cloud-platform" id="id9">Unavailable Cloud Platform</a></p></li>
+</ul>
+</li>
+</ul>
+</nav>
 <br>
+<section id="scenario">
+<h2><a class="toc-backref" href="#id1" role="doc-backlink">Scenario</a><a class="headerlink" href="#scenario" title="Link to this heading"></a></h2>
 <section id="project-in-focus">
-<h3>Project in focus<a class="headerlink" href="#project-in-focus" title="Link to this heading">#</a></h3>
+<h3><a class="toc-backref" href="#id2" role="doc-backlink">Project in focus</a><a class="headerlink" href="#project-in-focus" title="Link to this heading"></a></h3>
 <p>The design, development, and delivery of a machine learning product that will forecast particulate matter levels for a small geographic area. The client will use it to dynamically control traffic flow into the area.</p>
 <br>
 </section>
 <section id="assets-stored-within-the-cloud-platform">
-<h3>Assets stored within the cloud platform<a class="headerlink" href="#assets-stored-within-the-cloud-platform" title="Link to this heading">#</a></h3>
-<p>These are:</p>
-<ul class="simple">
-<li><p>Raw Data</p></li>
-<li><p>Processed Data</p></li>
-<li><p>Engineered Features</p></li>
-<li><p>Image Containers</p></li>
-<li><p>Developed Models &amp; Artefacts</p></li>
-</ul>
+<h3><a class="toc-backref" href="#id3" role="doc-backlink">Assets stored within the cloud platform</a><a class="headerlink" href="#assets-stored-within-the-cloud-platform" title="Link to this heading"></a></h3>
+<p>In this case, the assets are <strong>(a)</strong> raw data, <strong>(b)</strong> processed data, <strong>©</strong> engineered features, <strong>(d)</strong> image containers, and
+<strong>(e)</strong> developed models &amp; artefacts.</p>
 <br>
 </section>
 <section id="design-development-and-resources-zones">
-<h3>Design, development, and resources zones<a class="headerlink" href="#design-development-and-resources-zones" title="Link to this heading">#</a></h3>
+<h3><a class="toc-backref" href="#id4" role="doc-backlink">Design, development, and resources zones</a><a class="headerlink" href="#design-development-and-resources-zones" title="Link to this heading"></a></h3>
 <p>These are:</p>
 <ul class="simple">
 <li><p>Local mobile workstations<br>
-For developing programs for data acquisition, programmatic data delivery to Amazon S3, data processing, features engineering, modelling, infrastructure as code (IAC), etc.</p></li>
+For developing programs <strong>for</strong> data acquisition, programmatic data delivery to Amazon S3, data processing, features engineering, modelling, infrastructure as code (IAC), etc.</p></li>
 <li><p>GitHub &amp; GitHub Actions<br>
 For version control, code analysis, dependencies vulnerability analysis, building &amp; storing container images, and
 trackable delivery of code assets to Amazon Web Services.</p></li>
@@ -410,7 +231,7 @@ src="../../../../../assets/beforehand.html"></iframe>
 <br>
 </section>
 <section id="plausible-disruptions">
-<h3>Plausible Disruptions<a class="headerlink" href="#plausible-disruptions" title="Link to this heading">#</a></h3>
+<h3><a class="toc-backref" href="#id5" role="doc-backlink">Plausible Disruptions</a><a class="headerlink" href="#plausible-disruptions" title="Link to this heading"></a></h3>
 <p>The plausible disruptions are:</p>
 <ul class="simple">
 <li><p>Data loss</p></li>
@@ -423,12 +244,12 @@ src="../../../../../assets/beforehand.html"></iframe>
 </section>
 </section>
 <section id="considerations-contingencies-vis-a-vis-disruptions">
-<h2>Considerations &amp; Contingencies vis-à-vis Disruptions<a class="headerlink" href="#considerations-contingencies-vis-a-vis-disruptions" title="Link to this heading">#</a></h2>
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">Considerations &amp; Contingencies vis-à-vis Disruptions</a><a class="headerlink" href="#considerations-contingencies-vis-a-vis-disruptions" title="Link to this heading"></a></h2>
 <p>Overall, disruptions will impact project delivery times, and will cost money.  In future, and depending on the context, the
 team will have to consider a mix of financial, operational, legal, and/or regulatory impacts of disruptions.</p>
 <br>
 <section id="data-loss-data-breach">
-<h3>Data Loss / Data Breach<a class="headerlink" href="#data-loss-data-breach" title="Link to this heading">#</a></h3>
+<h3><a class="toc-backref" href="#id7" role="doc-backlink">Data Loss / Data Breach</a><a class="headerlink" href="#data-loss-data-breach" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p><strong>Confidentiality:</strong> The team will only store open data, and their derivatives, within the cloud platform.  Therefore,
 confidentiality issues vis-à-vis sensitive or personal data are inapplicable.</p></li>
@@ -438,7 +259,7 @@ com/AmazonS3/latest/userguide/backup-for-s3.html), and <strong>(b)</strong> re-r
 <br>
 </section>
 <section id="data-corruption">
-<h3>Data Corruption<a class="headerlink" href="#data-corruption" title="Link to this heading">#</a></h3>
+<h3><a class="toc-backref" href="#id8" role="doc-backlink">Data Corruption</a><a class="headerlink" href="#data-corruption" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p><strong>Recovery:</strong> The back-up routes are <strong>(a)</strong> [AWS Back-up for Amazon S3 (Simple Storage Service)](https://docs.aws.
 amazon.com/AmazonS3/latest/userguide/backup-for-s3.html), and <strong>(b)</strong> re-running the data acquisition, data processing,
@@ -447,7 +268,7 @@ features engineering, modelling, etc., images.</p></li>
 <br>
 </section>
 <section id="unavailable-cloud-platform">
-<h3>Unavailable Cloud Platform<a class="headerlink" href="#unavailable-cloud-platform" title="Link to this heading">#</a></h3>
+<h3><a class="toc-backref" href="#id9" role="doc-backlink">Unavailable Cloud Platform</a><a class="headerlink" href="#unavailable-cloud-platform" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p><strong>Contingency</strong>: Use a different computing hub to (a) retrieve the back-up container images from GitHub Container
 Registry, and (b) run the containers. [Each container image registration is via GitHub Container Registry (GCR) and Amazon Elastic Container Registry (ECR).]</p></li>
@@ -465,108 +286,34 @@ Registry, and (b) run the containers. [Each container image registration is via 
 </section>
 
 
-                </article>
-              
-
-              
-              
-              
-              
-                <footer class="prev-next-footer">
-                  
-<div class="prev-next-area">
-    <a class="left-prev"
-       href="architectures.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Cloud Platform Solutions Architectures</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="risks.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Risks &amp; Mitigation Policies</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
-</div>
-                </footer>
-              
-            </div>
-            
-            
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scenario">Scenario</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#project-in-focus">Project in focus</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#assets-stored-within-the-cloud-platform">Assets stored within the cloud platform</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#design-development-and-resources-zones">Design, development, and resources zones</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#plausible-disruptions">Plausible Disruptions</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#considerations-contingencies-vis-a-vis-disruptions">Considerations &amp; Contingencies vis-à-vis Disruptions</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-loss-data-breach">Data Loss / Data Breach</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-corruption">Data Corruption</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#unavailable-cloud-platform">Unavailable Cloud Platform</a></li>
-</ul>
-</li>
-</ul>
-  </nav></div>
-
-</div></div>
-              
-            
+           </div>
           </div>
-          <footer class="bd-footer-content">
-            
-<div class="bd-footer-content__inner container">
-  
-  <div class="footer-item">
-    
-<p class="component-author">
-By greyhypotheses
-</p>
-
-  </div>
-  
-  <div class="footer-item">
-    
-
-  </div>
-  
-  <div class="footer-item">
-    
-  </div>
-  
-  <div class="footer-item">
-    
-  </div>
-  
-</div>
-          </footer>
-        
-
-      </main>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="architectures.html" class="btn btn-neutral float-left" title="Cloud Platform Solutions Architectures" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="risks.html" class="btn btn-neutral float-right" title="Risks &amp; Mitigation Policies" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
-  </div>
-  
-  <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
 
-  <footer class="bd-footer">
-  </footer>
-  </body>
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright .</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
 </html>

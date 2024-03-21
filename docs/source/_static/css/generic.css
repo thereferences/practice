@@ -20,8 +20,8 @@ ul.special {
     margin-left: 15px;
 }
 
-.bd-main .bd-content .bd-article-container {
-    max-width: 150em;
+.bd-main .bd-content .bd-article-container .wy-nav-content {
+    max-width: 160em;
 }
 
 
@@ -40,6 +40,7 @@ h1 {
 h2 {
   display: block;
   font-size: 1.27em;
+  text-transform: uppercase;
   margin-top: 1em;
   margin-bottom: 1em;
   margin-left: 0;

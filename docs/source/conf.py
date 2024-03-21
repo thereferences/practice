@@ -32,6 +32,7 @@ extensions = [
     'sphinx.ext.duration',
     'sphinx.ext.githubpages',
     'sphinx_design',
+    'sphinx_rtd_theme',
     'myst_parser'
 ]
 
@@ -76,7 +77,7 @@ Options for HTML output
 https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 '''
 
-html_theme = 'sphinx_book_theme'
+html_theme = 'sphinx_rtd_theme'
 
 html_static_path = ['_static']
 
@@ -94,12 +95,17 @@ html_js_files = ['https://code.jquery.com/jquery-3.7.0.min.js',
                  'js/latex.js']
 
 html_theme_options = {
-    'home_page_in_toc': True,
-    'show_navbar_depth': 2,
-    'max_navbar_depth': 4,
-    'collapse_navbar': True,
-    'navigation_with_keys': False,
-    'use_sidenotes': True
+    'logo_only': False,
+    'display_version': True,
+    'prev_next_buttons_location': 'bottom',
+    'style_external_links': False,
+    'vcs_pageview_mode': '',
+    'style_nav_header_background': 'white',
+    'collapse_navigation': False,
+    'sticky_navigation': True,
+    'navigation_depth': 4,
+    'includehidden': True,
+    'titles_only': False
 }
 
 html_logo = ''
