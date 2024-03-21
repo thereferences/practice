@@ -27,7 +27,7 @@ Additionally, rigorously evaluate
 
 ## Project Management
 
-```{note}
+```{admonition} Reminder
 :class: margin
 Add a link to the team's Atlas Hub
 ```
