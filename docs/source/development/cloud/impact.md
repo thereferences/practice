@@ -26,13 +26,8 @@ The design, development, and delivery of a machine learning product that will fo
 
 ### Assets stored within the cloud platform
 
-These are:
-
-* Raw Data
-* Processed Data
-* Engineered Features
-* Image Containers
-* Developed Models & Artefacts
+In this case, the assets are **(a)** raw data, **(b)** processed data, **(c)** engineered features, **(d)** image containers, and
+**(e)** developed models & artefacts.
 
 <br>
 
@@ -41,7 +36,7 @@ These are:
 These are:
 
 * Local mobile workstations<br>
-  For developing programs for data acquisition, programmatic data delivery to Amazon S3, data processing, features engineering, modelling, infrastructure as code (IAC), etc.
+  For developing programs **for** data acquisition, programmatic data delivery to Amazon S3, data processing, features engineering, modelling, infrastructure as code (IAC), etc.
 
 * GitHub & GitHub Actions<br>
   For version control, code analysis, dependencies vulnerability analysis, building & storing container images, and 
