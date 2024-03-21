@@ -7,7 +7,7 @@
 
 ## Introduction
 
-```{admonition} Update
+```{note}
 :class: margin
 In progress.
 ```
