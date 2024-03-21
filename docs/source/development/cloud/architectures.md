@@ -16,9 +16,8 @@ Hover over an illustration's symbols for more details; some have links to furthe
 
 ## Delivering Assets
 
-<iframe 
-    style="overflow:hidden; width:100%; height:330px; border:none; margin-left:65px" 
-    src="../../../../../assets/beforehand.html"></iframe>
+<iframe style="overflow:hidden; width:100%; height:330px; border:none; margin-left:65px" 
+        src="../../../../../assets/beforehand.html"></iframe>
 <figure>
 <figcaption>Assets, e.g., container images, will be delivered to the cloud platform via a version controlled route, i.e., 
 via GitHub.</figcaption>
@@ -35,14 +34,10 @@ via GitHub.</figcaption>
 
 #### With a public subnet
 
-<iframe
-style="overflow:hidden; width:100%; height:430px; border:none;"
-src="../../../../../assets/ec2.html"></iframe>
+<iframe style="overflow:hidden; width:100%; height:430px; border:none; margin-left:65px"
+        src="../../../../../assets/ec2.html"></iframe>
 <figure>
-<figcaption>In general, containers will be run via the <a href="https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate.html" target="_blank">Fargate</a> option of Amazon's Elastic Container Service.  
-Sometimes, 
-containers will be tested via an EC2 (Elastic Cloud Compute) using a set-up such as this; launched via a launch 
-template.</figcaption>
+<figcaption>In general, containers will be run via the <a href="https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate.html" target="_blank">Fargate</a> option of Amazon's Elastic Container Service. Sometimes, containers will be tested via an EC2 (Elastic Cloud Compute) using a set-up such as this; launched via a launch template.</figcaption>
 </figure>
 
 :::{dropdown} A launch template example
@@ -141,8 +136,8 @@ template.</figcaption>
 
 #### With a private subnet
 
-<iframe
-style="overflow:hidden; width:100%; height:485px; border:none;" src="../../../../../assets/endpoint-connect.html"></iframe>
+<iframe style="overflow:hidden; width:100%; height:485px; border:none; margin-left:65px" 
+        src="../../../../../assets/endpoint-connect.html"></iframe>
 <figure>
 <figcaption>Similar to the previous illustration, using a private subnet requires a slightly different design.  Click on the 
 Private Subnet symbol link to read more.</figcaption>
@@ -204,12 +199,10 @@ Private Subnet symbol link to read more.</figcaption>
 ### Elastic MapReduce (EMR)
 
 <iframe
-style="overflow:hidden; width:100%; height:375px; border:none;"
+style="overflow:hidden; width:100%; height:375px; border:none; margin-left:65px"
 src="../../../../../assets/emr.html"></iframe>
 <figure>
-<figcaption>An illustration of an infrastructure-as-code launch of an EMR (Elastic MapReduce) cluster.  The code includes,
-virtual private cloud settings, security groups, auto-termination settings, and much more.  The team's launch templates 
-repository will be visible during the upcoming weeks.
+<figcaption>An illustration of an infrastructure-as-code launch of an EMR (Elastic MapReduce) cluster.  The code includes, virtual private cloud settings, security groups, auto-termination settings, and much more.  The team's launch templates repository will be visible during the upcoming weeks.
 </figcaption>
 </figure>
 
