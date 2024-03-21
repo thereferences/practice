@@ -4,16 +4,10 @@
 
 <br>
 
-:::{note}
-:class: margin
-This page will be continuously updated.
-:::
-
 ```{contents}
 :local:
 ```
 
-<br>
 <br>
 
 ## Data Breach
