@@ -1,7 +1,12 @@
 <br>
 
-Threat Actors
-=============
+# Threat Actors
+
+<br>
+
+```{contents}
+:local:
+```
 
 <br>
 
@@ -23,7 +28,6 @@ Potential threat actors are listed below. Presently, the most probable threat ac
 * State actors
 
 
-<br>
 <br>
 <br>
 
