@@ -83,9 +83,14 @@ Threats due to employees not adhering to security rules.
     <dd>
         <ul>
         <li>Always-on virtual private network.</li>
-        <li>Using compute services via infrastructure-as-code templates that always feature</li>
+        <li>Using compute services via infrastructure-as-code templates that always feature
             <ul>
-            <li><a href="https&%2358;//docs.aws.amazon.com/vpc/latest/userguide/vpc-security-groups.html" title="VPC">VPC</a>(Virtual Private Cloud)</li><li>Subnet</li><li>Security Groups: For controlling inbound &amp; outbound rules</li></ul>
+            <li><a href="https&%2358;//docs.aws.amazon.com/vpc/latest/userguide/vpc-security-groups.html" target="_blank">VPC</a> 
+(Virtual Private Cloud)</li>
+            <li><a href="https://docs.aws.amazon.com/vpc/latest/userguide/configure-subnets.html" target="_blank">Subnet</a></li>
+            <li><a href="https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-groups.html" target="_blank">Security Groups</a>: 
+For controlling inbound &amp; outbound rules</li></ul>
+        </li>
         </ul>
     </dd>
 </dl>
