@@ -6,7 +6,7 @@
 
 :::{note}
 :class: margin
-In progress.  All about languages & programming.
+In progress.
 :::
 
 Please
