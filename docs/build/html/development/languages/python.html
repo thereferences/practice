@@ -131,7 +131,10 @@
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="../languages.html">Languages &amp; Programming</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Python</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Python</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#importing">Importing</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="scala.html">Scala</a></li>
 </ul>
 </li>
@@ -193,6 +196,24 @@ Python</a>.  Always refer to the naming conventions guide, for example:</p>
 module level and written in all capital letters with underscores separating words. Examples include MAX_OVERFLOW and TOTAL.</i></q></td></tr>
 </table>
 <br>
+<section id="importing">
+<h2>Importing<a class="headerlink" href="#importing" title="Link to this heading"></a></h2>
+<p>In line with the HitchHiker’s Guide to Python, best practice &amp; readability override all else.  Hence, please use the import format  …</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>import<span class="w"> </span>math
+</pre></div>
+</div>
+<p>Subsequently, use a method as required, e.g.,</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>math.cos<span class="o">(</span>...<span class="o">)</span>
+</pre></div>
+</div>
+<p><strong>Not</strong></p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>from<span class="w"> </span>math<span class="w"> </span>import<span class="w"> </span>cos
+</pre></div>
+</div>
+<p><strong>Not</strong></p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>from<span class="w"> </span>math<span class="w"> </span>import<span class="w"> </span>*
+</pre></div>
+</div>
 <br>
 <br>
 <br>
@@ -200,6 +221,8 @@ module level and written in all capital letters with underscores separating word
 <br>
 <br>
 <br>
+<br>
+</section>
 </section>
 
 
