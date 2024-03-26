@@ -170,9 +170,108 @@ Private Subnet symbol link to read more.</figcaption>
 :width: 65%
 ```
 <figure>
-<figcaption>Deploying an end-to-end solution via <a href="https://docs.aws.amazon.com/step-functions/latest/dg/welcome.html" target="_blank">step functions</a>, an orchestration service.
+<figcaption>Deploying an end-to-end solution via <a href="https://docs.aws.amazon.com/step-functions/latest/dg/welcome.
+html" target="_blank">step functions</a>, an orchestration service. The underlying infrastructure code outlines (a) 
+executions via Amazon's Elastic Container Service [Fargate], (b) virtual private cloud settings per case, alongside 
+securty group and subnet settings, (c) notification settings, (d) time-boxing, (e) and much more.
 </figcaption>
 </figure>
+
+:::{dropdown} The underlying infrastructure code of the above; redacted.
+```json
+{
+  "Comment": "An example",
+  "StartAt": "daily task",
+  "TimeoutSeconds": 3600,
+  "States": {
+    "daily task": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::ecs:runTask.sync",
+      "Parameters": {
+        "LaunchType": "FARGATE",
+        "Cluster": "arn:aws:ecs:{region.name}:{identifier}:cluster/{cluster.name}",
+        "TaskDefinition": "arn:aws:ecs:{region.name}:{identifier}:task-definition/{task.definition}",
+        "NetworkConfiguration": {
+          "AwsvpcConfiguration": {
+            "Subnets": [
+              "{subnet.identifier}",
+              "{subnet.identifier}",
+              "{subnet.identifier}"
+            ],
+            "SecurityGroups": [
+              "{security.group.identifier}"
+            ],
+            "AssignPublicIp": "..."
+          }
+        }
+      },
+      "Next": "distributions task",
+      "Catch": [
+        {
+          "ErrorEquals": [
+            "States.ALL"
+          ],
+          "Next": "Notify Failure",
+          "Comment": "The daily task"
+        }
+      ],
+      "Comment": "The daily task succeeded.  Next, the distributions task."
+    },
+    "distributions task": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::ecs:runTask.sync",
+      "Parameters": {
+        "LaunchType": "FARGATE",
+        "Cluster": "arn:aws:ecs:{region.name}:{identifier}:cluster/{cluster.name}",
+        "TaskDefinition": "arn:aws:ecs:{region.name}:{identifier}:task-definition/{task.definition}",
+        "NetworkConfiguration": {
+          "AwsvpcConfiguration": {
+            "Subnets": [
+              "{subnet.identifier}",
+              "{subnet.identifier}",
+              "{subnet.identifier}"
+            ],
+            "SecurityGroups": [
+              "{security.group.identifier}"
+            ],
+            "AssignPublicIp": "..."
+          }
+        }
+      },
+      "Next": "Notify Success",
+      "Catch": [
+        {
+          "ErrorEquals": [
+            "States.ALL"
+          ],
+          "Comment": "The distributions task",
+          "Next": "Notify Failure"
+        }
+      ],
+      "Comment": "The distributions task succeeded."
+    },
+    "Notify Success": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::sns:publish",
+      "Parameters": {
+        "TopicArn": "arn:aws:sns:{region.name}:{identifier}:{topic}",
+        "Message.$": "$"
+      },
+      "End": true
+    },
+    "Notify Failure": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::sns:publish",
+      "Parameters": {
+        "TopicArn": "arn:aws:sns:{region.name}:{identifier}:{topic}",
+        "Message.$": "$"
+      },
+      "End": true
+    }
+  }
+}
+```
+:::
 
 <br>
 <br>
