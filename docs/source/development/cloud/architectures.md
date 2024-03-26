@@ -40,7 +40,7 @@ via GitHub.</figcaption>
 <figcaption>In general, containers will be run via the <a href="https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate.html" target="_blank">Fargate</a> option of Amazon's Elastic Container Service. Sometimes, containers will be tested via an EC2 (Elastic Cloud Compute) using a set-up such as this; launched via a launch template.</figcaption>
 </figure>
 
-:::{dropdown} A launch template example
+:::{dropdown} A launch template example: redacted.
 ```json
 {
     "EbsOptimized": false,
@@ -270,6 +270,15 @@ securty group and subnet settings, (c) notification settings, (d) time-boxing, (
     }
   }
 }
+```
+:::
+
+<br>
+
+:::{dropdown} Afterwards
+```{image} ../../../../assets/step-functions-afterwards.png
+:alt: Step Functions
+:width: 85%
 ```
 :::
 
