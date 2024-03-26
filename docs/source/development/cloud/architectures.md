@@ -19,8 +19,8 @@ Hover over an illustration's symbols for more details; some have links to furthe
 <iframe style="overflow:hidden; width:100%; height:330px; border:none; margin-left:65px" 
         src="../../../../../assets/beforehand.html"></iframe>
 <figure>
-<figcaption>Assets, e.g., container images, will be delivered to the cloud platform via a version controlled route, i.e., 
-via GitHub.</figcaption>
+<figcaption>For more details hover over the icons; a few icons have links to more details.  Assets, e.g., 
+container images, will be delivered to a cloud platform via a version controlled route, i.e., via GitHub.</figcaption>
 </figure>
 
 <br>
@@ -173,7 +173,7 @@ Private Subnet symbol link to read more.</figcaption>
 <figcaption>Deploying an end-to-end solution via <a href="https://docs.aws.amazon.com/step-functions/latest/dg/welcome.
 html" target="_blank">step functions</a>, an orchestration service. The underlying infrastructure code outlines (a) 
 executions via Amazon's Elastic Container Service [Fargate], (b) virtual private cloud settings per case, alongside 
-securty group and subnet settings, (c) notification settings, (d) time-boxing, (e) and much more.
+securty group and subnet settings, (c) notification settings, (d) time-boxing/auto-termination, (e) and much more.
 </figcaption>
 </figure>
 
@@ -286,33 +286,36 @@ securty group and subnet settings, (c) notification settings, (d) time-boxing, (
 <br>
 <br>
 
-### A Schema for a Step Functions Solution
-
-<br>
-
-```{image} ../../../../assets/pattern-emr.png
-:alt: Elastic MapReduce
-:width: 75%
-:height: 400px
-```
-<figure>
-<figcaption>A schema for a step functions orchestration.
-</figcaption>
-</figure>
-
-<br>
-<br>
-<br>
-
 ### Elastic MapReduce (EMR)
 
 <iframe
 style="overflow:hidden; width:100%; height:375px; border:none; margin-left:65px"
 src="../../../../../assets/emr.html"></iframe>
 <figure>
-<figcaption>An illustration of an infrastructure-as-code launch of an EMR (Elastic MapReduce) cluster.  The code includes, virtual private cloud settings, security groups, auto-termination settings, and much more.  The team's launch templates repository will be visible during the upcoming weeks.
+<figcaption>An illustration of an EMR (Elastic MapReduce) cluster set-up.  The set-up includes virtual private cloud 
+settings, security groups, auto-termination settings, and much more.  The team's launch templates repository, i.e., 
+infrastructure code templates repository, will be visible during the upcoming weeks.
 </figcaption>
 </figure>
+
+<br>
+
+:::{dropdown} A Schema for a Step Functions Elastic MapReduce Solution
+```{image} ../../../../assets/pattern-emr.png
+:alt: Elastic MapReduce
+:width: 90%
+
+```
+
+<br>
+<br>
+
+<figure>
+<figcaption>A schema for a step functions orchestration of an Elastic MapReduce job.
+</figcaption>
+</figure>
+:::
+
 
 
 <br>
