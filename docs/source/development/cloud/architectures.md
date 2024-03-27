@@ -20,7 +20,12 @@ Hover over an illustration's symbols for more details; some have links to furthe
         src="../../../../../assets/beforehand.html"></iframe>
 <figure>
 <figcaption>For more details hover over the icons; a few icons have links to more details.  Assets, e.g., 
-container images, will be delivered to a cloud platform via a version controlled route, i.e., via GitHub.</figcaption>
+container images, will be delivered to a cloud platform via a version controlled route, i.e., via GitHub. [<a 
+href="https://github.com/enqueter/pollutants/actions/runs/8443640990/job/23127661393" target="_blank">CodeQL</a> Example, <a 
+href="https://github.com/enqueter/pollutants/actions/runs/8443640949" target="_blank">Actions</a>/<a 
+href="https://github.com/enqueter/pollutants/actions/runs/8443640949/workflow" target="_blank">Actions Code</a> 
+Example] 
+</figcaption>
 </figure>
 
 <br>
