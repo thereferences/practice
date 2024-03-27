@@ -4,11 +4,11 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cloud Platform Solutions Architectures &mdash; Code of Practice 0.1 documentation</title>
+  <title>Amazon Web Services &amp; Solution Architectures &mdash; Code of Practice 0.1 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
       <link rel="stylesheet" type="text/css" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
-      <link rel="stylesheet" type="text/css" href="../../_static/css/generic.css?v=3104ec14" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/generic.css?v=d7ba1ed0" />
       <link rel="stylesheet" type="text/css" href="../../_static/css/figures.css?v=28bf0955" />
 
   
@@ -81,7 +81,7 @@
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="../cloud.html">Cloud Platform</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Cloud Platform Solutions Architectures</a><ul>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Amazon Web Services &amp; Solution Architectures</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#delivering-assets">Delivering Assets</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#interacting">Interacting</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#elastic-compute-cloud">Elastic Compute Cloud</a></li>
@@ -90,7 +90,6 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#auto">Auto</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#via-step-functions">Via Step Functions</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#a-schema-for-a-step-functions-solution">A Schema for a Step Functions Solution</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#elastic-mapreduce-emr">Elastic MapReduce (EMR)</a></li>
 </ul>
 </li>
@@ -131,7 +130,10 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../languages.html">Languages &amp; Programming</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../languages/python.html">Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../languages/python.html">Python</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../languages/python.html#importing">Importing</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../languages/scala.html">Scala</a></li>
 </ul>
 </li>
@@ -159,7 +161,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../cloud.html">Cloud Platform</a></li>
-      <li class="breadcrumb-item active">Cloud Platform Solutions Architectures</li>
+      <li class="breadcrumb-item active">Amazon Web Services &amp; Solution Architectures</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../_sources/development/cloud/architectures.md.txt" rel="nofollow"> View page source</a>
       </li>
@@ -170,10 +172,11 @@
            <div itemprop="articleBody">
              
   <br>
-<section class="tex2jax_ignore mathjax_ignore" id="cloud-platform-solutions-architectures">
-<h1>Cloud Platform Solutions Architectures<a class="headerlink" href="#cloud-platform-solutions-architectures" title="Link to this heading"></a></h1>
+<section class="tex2jax_ignore mathjax_ignore" id="amazon-web-services-solution-architectures">
+<h1>Amazon Web Services &amp; Solution Architectures<a class="headerlink" href="#amazon-web-services-solution-architectures" title="Link to this heading"></a></h1>
 <br>
-<p>Hover over an illustration’s symbols for more details; some have links to further details.  Images only have captions.  With time, more details will be added.</p>
+<p>Hover over an illustration’s symbols for more details; some have links to further details.  Images only have captions.  Over
+time, more Amazon Web Services (AWS) details will be added.</p>
 <br>
 <nav class="contents local" id="contents">
 <ul class="simple">
@@ -192,8 +195,7 @@
 <li><p><a class="reference internal" href="#auto" id="id7">Auto</a></p>
 <ul>
 <li><p><a class="reference internal" href="#via-step-functions" id="id8">Via Step Functions</a></p></li>
-<li><p><a class="reference internal" href="#a-schema-for-a-step-functions-solution" id="id9">A Schema for a Step Functions Solution</a></p></li>
-<li><p><a class="reference internal" href="#elastic-mapreduce-emr" id="id10">Elastic MapReduce (EMR)</a></p></li>
+<li><p><a class="reference internal" href="#elastic-mapreduce-emr" id="id9">Elastic MapReduce (EMR)</a></p></li>
 </ul>
 </li>
 </ul>
@@ -204,8 +206,13 @@
 <iframe style="overflow:hidden; width:100%; height:330px; border:none; margin-left:65px" 
         src="../../../../../assets/beforehand.html"></iframe>
 <figure>
-<figcaption>Assets, e.g., container images, will be delivered to the cloud platform via a version controlled route, i.e., 
-via GitHub.</figcaption>
+<figcaption>For more details hover over the icons; a few icons have links to more details.  Assets, e.g., 
+container images, will be delivered to Amazon Web Services (AWS) via a version controlled route, i.e., via GitHub. [<a 
+href="https://github.com/enqueter/pollutants/actions/runs/8443640990/job/23127661393" target="_blank">CodeQL</a> Example, <a 
+href="https://github.com/enqueter/pollutants/actions/runs/8443640949" target="_blank">Actions</a>/<a 
+href="https://github.com/enqueter/pollutants/actions/runs/8443640949/workflow" target="_blank">Actions Code</a> 
+Example] 
+</figcaption>
 </figure>
 <br>
 <br>
@@ -220,11 +227,17 @@ via GitHub.</figcaption>
 <iframe style="overflow:hidden; width:100%; height:430px; border:none; margin-left:65px"
         src="../../../../../assets/ec2.html"></iframe>
 <figure>
-<figcaption>In general, containers will be run via the <a href="https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate.html" target="_blank">Fargate</a> option of Amazon's Elastic Container Service. Sometimes, containers will be tested via an EC2 (Elastic Cloud Compute) using a set-up such as this; launched via a launch template.</figcaption>
+<figcaption>In general, containers will be run via the <a href="https://docs.aws.amazon.
+com/AmazonECS/latest/developerguide/AWS_Fargate.html" target="_blank">Fargate</a> option of Amazon's Elastic Container 
+Service. Sometimes, containers will be tested via an EC2 (Elastic Cloud Compute) using a set-up such as this; launched 
+via a launch template.  Within each team member's machine AWS CLI (Command Line Interface) will be configured to use the <a 
+href="https://docs.aws.amazon.com/cli/latest/userguide/sso-configure-profile-token.
+html#sso-configure-profile-token-auto-sso" target="_blank">AWS Identity & Access Management's identity centre for authentication.
+</a></figcaption>
 </figure>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-A launch template example<div class="sd-summary-down docutils">
+A launch template example: redacted.<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
@@ -327,7 +340,8 @@ A launch template example<div class="sd-summary-down docutils">
         src="../../../../../assets/endpoint-connect.html"></iframe>
 <figure>
 <figcaption>Similar to the previous illustration, using a private subnet requires a slightly different design.  Click on the 
-Private Subnet symbol link to read more.</figcaption>
+Private Subnet symbol link to read more.  Within each team member's machine AWS CLI (Command Line Interface) will be configured to use <a 
+href="https://docs.aws.amazon.com/cli/latest/userguide/sso-configure-profile-token.html#sso-configure-profile-token-auto-sso" title="Amazon Web Services (AWS) Identity & Access Management (IAM) Identity Centre (IC)">AWS IAM IC</a> for authentication.</figcaption>
 </figure>
 <br>
 <br>
@@ -352,35 +366,155 @@ Private Subnet symbol link to read more.</figcaption>
 <h3><a class="toc-backref" href="#id8" role="doc-backlink">Via Step Functions</a><a class="headerlink" href="#via-step-functions" title="Link to this heading"></a></h3>
 <a class="reference internal image-reference" href="../../_images/step-functions.png"><img alt="Step Functions" src="../../_images/step-functions.png" style="width: 65%;" /></a>
 <figure>
-<figcaption>Deploying an end-to-end solution via <a href="https://docs.aws.amazon.com/step-functions/latest/dg/welcome.html" target="_blank">step functions</a>, an orchestration service.
+<figcaption>Deploying an end-to-end solution via <a href="https://docs.aws.amazon.com/step-functions/latest/dg/welcome.
+html" target="_blank">step functions</a>, an orchestration service. The underlying infrastructure code outlines (a) 
+executions via Amazon's Elastic Container Service [Fargate], (b) virtual private cloud settings per case, alongside 
+securty group and subnet settings, (c) notification settings, (d) time-boxing/auto-termination, (e) and much more.
 </figcaption>
 </figure>
-<br>
-<br>
-<br>
-</section>
-<section id="a-schema-for-a-step-functions-solution">
-<h3><a class="toc-backref" href="#id9" role="doc-backlink">A Schema for a Step Functions Solution</a><a class="headerlink" href="#a-schema-for-a-step-functions-solution" title="Link to this heading"></a></h3>
-<br>
-<a class="reference internal image-reference" href="../../_images/pattern-emr.png"><img alt="Elastic MapReduce" src="../../_images/pattern-emr.png" style="width: 75%; height: 400px;" /></a>
-<figure>
-<figcaption>A schema for a step functions orchestration.
-</figcaption>
-</figure>
-<br>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+The underlying infrastructure code of the above; redacted.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;Comment&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;An example&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;StartAt&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;daily task&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;TimeoutSeconds&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">3600</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;States&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;daily task&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;Type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Task&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;Resource&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;arn:aws:states:::ecs:runTask.sync&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;Parameters&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;LaunchType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;FARGATE&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;Cluster&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;arn:aws:ecs:{region.name}:{identifier}:cluster/{cluster.name}&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;TaskDefinition&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;arn:aws:ecs:{region.name}:{identifier}:task-definition/{task.definition}&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;NetworkConfiguration&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">          </span><span class="nt">&quot;AwsvpcConfiguration&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;Subnets&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">              </span><span class="s2">&quot;{subnet.identifier}&quot;</span><span class="p">,</span>
+<span class="w">              </span><span class="s2">&quot;{subnet.identifier}&quot;</span><span class="p">,</span>
+<span class="w">              </span><span class="s2">&quot;{subnet.identifier}&quot;</span>
+<span class="w">            </span><span class="p">],</span>
+<span class="w">            </span><span class="nt">&quot;SecurityGroups&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">              </span><span class="s2">&quot;{security.group.identifier}&quot;</span>
+<span class="w">            </span><span class="p">],</span>
+<span class="w">            </span><span class="nt">&quot;AssignPublicIp&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;...&quot;</span>
+<span class="w">          </span><span class="p">}</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;Next&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;distributions task&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;Catch&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">          </span><span class="nt">&quot;ErrorEquals&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">            </span><span class="s2">&quot;States.ALL&quot;</span>
+<span class="w">          </span><span class="p">],</span>
+<span class="w">          </span><span class="nt">&quot;Next&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Notify Failure&quot;</span><span class="p">,</span>
+<span class="w">          </span><span class="nt">&quot;Comment&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The daily task&quot;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">      </span><span class="p">],</span>
+<span class="w">      </span><span class="nt">&quot;Comment&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The daily task succeeded.  Next, the distributions task.&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;distributions task&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;Type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Task&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;Resource&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;arn:aws:states:::ecs:runTask.sync&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;Parameters&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;LaunchType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;FARGATE&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;Cluster&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;arn:aws:ecs:{region.name}:{identifier}:cluster/{cluster.name}&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;TaskDefinition&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;arn:aws:ecs:{region.name}:{identifier}:task-definition/{task.definition}&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;NetworkConfiguration&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">          </span><span class="nt">&quot;AwsvpcConfiguration&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;Subnets&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">              </span><span class="s2">&quot;{subnet.identifier}&quot;</span><span class="p">,</span>
+<span class="w">              </span><span class="s2">&quot;{subnet.identifier}&quot;</span><span class="p">,</span>
+<span class="w">              </span><span class="s2">&quot;{subnet.identifier}&quot;</span>
+<span class="w">            </span><span class="p">],</span>
+<span class="w">            </span><span class="nt">&quot;SecurityGroups&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">              </span><span class="s2">&quot;{security.group.identifier}&quot;</span>
+<span class="w">            </span><span class="p">],</span>
+<span class="w">            </span><span class="nt">&quot;AssignPublicIp&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;...&quot;</span>
+<span class="w">          </span><span class="p">}</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;Next&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Notify Success&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;Catch&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">          </span><span class="nt">&quot;ErrorEquals&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">            </span><span class="s2">&quot;States.ALL&quot;</span>
+<span class="w">          </span><span class="p">],</span>
+<span class="w">          </span><span class="nt">&quot;Comment&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The distributions task&quot;</span><span class="p">,</span>
+<span class="w">          </span><span class="nt">&quot;Next&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Notify Failure&quot;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">      </span><span class="p">],</span>
+<span class="w">      </span><span class="nt">&quot;Comment&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The distributions task succeeded.&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;Notify Success&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;Type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Task&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;Resource&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;arn:aws:states:::sns:publish&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;Parameters&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;TopicArn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;arn:aws:sns:{region.name}:{identifier}:{topic}&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;Message.$&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;$&quot;</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;End&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;Notify Failure&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;Type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Task&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;Resource&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;arn:aws:states:::sns:publish&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;Parameters&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;TopicArn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;arn:aws:sns:{region.name}:{identifier}:{topic}&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;Message.$&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;$&quot;</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;End&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</details><br>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Afterwards<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<a class="reference internal image-reference" href="../../_images/step-functions-afterwards.png"><img alt="Step Functions" src="../../_images/step-functions-afterwards.png" style="width: 85%;" /></a>
+</div>
+</details><br>
 <br>
 <br>
 </section>
 <section id="elastic-mapreduce-emr">
-<h3><a class="toc-backref" href="#id10" role="doc-backlink">Elastic MapReduce (EMR)</a><a class="headerlink" href="#elastic-mapreduce-emr" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id9" role="doc-backlink">Elastic MapReduce (EMR)</a><a class="headerlink" href="#elastic-mapreduce-emr" title="Link to this heading"></a></h3>
 <iframe
 style="overflow:hidden; width:100%; height:375px; border:none; margin-left:65px"
 src="../../../../../assets/emr.html"></iframe>
 <figure>
-<figcaption>An illustration of an infrastructure-as-code launch of an EMR (Elastic MapReduce) cluster.  The code includes, virtual private cloud settings, security groups, auto-termination settings, and much more.  The team's launch templates repository will be visible during the upcoming weeks.
+<figcaption>An illustration of an EMR (Elastic MapReduce) cluster set-up.  The set-up includes virtual private cloud 
+settings, security groups, auto-termination settings, and much more.  The team's launch templates repository, i.e., 
+infrastructure code templates repository, will be visible during the upcoming weeks.
 </figcaption>
 </figure>
 <br>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+A Schema for a Step Functions Elastic MapReduce Solution<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<a class="reference internal image-reference" href="../../_images/pattern-emr.png"><img alt="Elastic MapReduce" src="../../_images/pattern-emr.png" style="width: 90%;" /></a>
+<br>
+<br>
+<figure>
+<figcaption>A schema for a step functions orchestration of an Elastic MapReduce job.
+</figcaption>
+</figure>
+</div>
+</details><br>
 <br>
 <br>
 <br>
