@@ -26,8 +26,8 @@ The design, development, and delivery of a machine learning product that will fo
 
 ### Assets stored within the cloud platform
 
-In this case, the assets are **(a)** raw data, **(b)** processed data, **(c)** engineered features, **(d)** image containers, and
-**(e)** developed models & artefacts.
+In this case, the assets are **(a)** raw data, **(b)** processed data, **\(c\)** engineered features, **(d)** image 
+containers, and **(e)** developed models & artefacts.
 
 <br>
 
@@ -43,8 +43,8 @@ These are:
   trackable delivery of code assets to Amazon Web Services.
 
 * Amazon Web Services<br>
-  For **(a)** secure storage of data, container images, models, and artefacts of models, **(b)** computing resources, and **(c)** 
-  designing, developing and testing machine learning systems solution architectures based on infrastructure-as-code programs.
+  For **(a)** secure storage of data, container images, models, and artefacts of models, **(b)** computing resources, and 
+  **\(c\)** designing, developing and testing machine learning systems solution architectures based on infrastructure-as-code programs.
 
 <iframe
 style="overflow:hidden; width:100%; height:330px; border:none;"
@@ -96,8 +96,8 @@ com/AmazonS3/latest/userguide/backup-for-s3.html), and **(b)** re-running the pr
 
 ### Unavailable Cloud Platform
 
-* **Contingency**: Use a different computing hub to (a) retrieve the back-up container images from GitHub Container 
-  Registry, and (b) run the containers. [Each container image registration is via GitHub Container Registry (GCR) and Amazon Elastic Container Registry (ECR).]
+* **Contingency**: Use a different computing hub to **(a)** retrieve the back-up container images from GitHub Container 
+  Registry, and **(b)** run the containers. [Each container image registration is via GitHub Container Registry (GCR) and Amazon Elastic Container Registry (ECR).]
 
 
 <br>

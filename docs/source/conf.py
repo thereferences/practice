@@ -15,10 +15,10 @@ import sphinx_design
 
 '''
 Basic
-copyright = '2023, greyhypotheses'
 '''
 project = 'Code of Practice'
 author = 'greyhypotheses'
+copyright = '2023, greyhypotheses'
 release = '0.1'
 
 

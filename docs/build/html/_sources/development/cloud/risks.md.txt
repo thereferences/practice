@@ -33,7 +33,8 @@ data, reputation damage, financial loss. Endangerment of lives, if personal or s
     <dt>Mitigation</dt>
     <dd>    
         Data [Classify Data Sets: Open, Sensitive, Personal.]    
-        <ul><li>Do not store sensitive or personal data within the team's cloud account.</li><li>Encrypt all data sets; Amazon S3 (Simple Storage Service) <a href="https&%2358;//docs.aws.amazon.com/AmazonS3/latest/userguide/specifying-s3-encryption.html" title="encrypts by default">encrypts by default</a>.</li><li>Authorise and withdraw access to data via IAM (Identity &amp; Management) roles.</li><li>Delete redundant data assets.</li></ul>    
+        <ul><li>Do not store sensitive or personal data within the team's cloud account.</li><li>Encrypt all data sets; 
+Amazon S3 (Simple Storage Service) <a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/specifying-s3-encryption.html">encrypts by default</a>.</li><li>Authorise and withdraw access to data via IAM (Identity &amp; Management) roles.</li><li>Delete redundant data assets.</li></ul>    
         Compute Services
         <ul style="font-family&%2358;Calibri, Arial, Helvetica, sans-serif;background-color&%2358;rgb(255, 255, 255);"><li>Authorise and withdraw access to compute services via IAM (Identity &amp; Management) roles, and trust policies thereof.</li><li>Delete redundant compute assets.</li></ul>    
         Architectures
@@ -51,20 +52,27 @@ data, reputation damage, financial loss. Endangerment of lives, if personal or s
 Software that enables the unauthorised installer to take control of a system by disrupting it or causing strategic damage.
 
 <dl>
-    <dt>Risk</dt><dd>Industrial Espionage<br><ul><li>The theft of confidential, sensitive, etc., data or information.
-</li><li>The theft of intellectual property, processes, ideas, techniques, etc.</li></ul></dd>
-    <dt>Mitigation</dt>
+    <dt>Risk</dt>
+    <dd>Industrial Espionage<br>
+    <ul><li>The theft of confidential, sensitive, etc., data or information.</li>
+        <li>The theft of intellectual property, processes, ideas, techniques, etc.</li></ul>
+    </dd>
+    <dt>Mitigation [<a href="https://www.ncsc.gov.uk/pdfs/guidance/mitigating-malware-and-ransomware-attacks.pdf" target="_blank"
+>Mitigating malware 
+and ransomware attacks</a>]</dt>
     <dd>
-        <a href="https&%2358;//www.ncsc.gov.uk/guidance/mitigating-malware-and-ransomware-attacks" title="Mitigating malware and ransomware attacks">Mitigating malware and ransomware attacks</a>
-        <ul><li>Cloud</li><ul><li>Enforce multi-factor authentication; the default of GitHub &amp; Amazon Web Services.
-        </li><li><a href="https&%2358;//docs.aws.amazon.com/AmazonS3/latest/userguide/UsingEncryption.html" title="Encrypt all 
-        data sets">Encrypt all data sets</a>.<br></li><li>Backup data sets; <a href="https&%2358;//docs.aws.amazon.
-        com/AmazonS3/latest/userguide/backup-for-s3.html" title="Amazon Web Services Backup for Amazon S3 (Simple Storage Service)
-        ">Amazon Web Services Backup for Amazon S3 (Simple Storage Service)</a>.</li><li>Limit access to cloud assets via the 
-        inbound rules of security groups.</li><li>Authorise and withdraw access to assets via IAM (Identity &amp; Management) 
-        roles.</li><li>Restricted data delivery: Programmatic data delivery via data science team members only.</li>
-        <li>Termination of instances immediately after use.</li><li>Prepare an incident contingency.</li></ul>
-        <li>Client</li><ul><li>Interaction with cloud services via virtual private networks.</li></ul></ul>
+        Cloud
+        <ul><li>Enforce multi-factor authentication; the default of GitHub &amp; Amazon Web Services.</li>
+            <li><a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingEncryption.html" target="_blank">Encrypt all data 
+sets.</a></li>
+            <li>Backup data sets; <a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/backup-for-s3.html" target="_blank"
+>Amazon Web Services Backup for Amazon S3 (Simple Storage Service)</a>.</li>
+            <li>Limit access to cloud assets via the <a href="https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-groups.html" target="_blank">inbound rules of security groups</a>.</li>
+            <li>Authorise and withdraw access to assets via IAM (Identity &amp; Management) roles.</li>
+            <li>Restricted data delivery: Programmatic data delivery via data science team members only.</li>
+            <li>Termination of instances immediately after use.</li><li>Prepare an incident contingency.</li></ul>
+        Client
+        <ul><li>Interaction with cloud services via virtual private networks.</li></ul>
     </dd>
 </dl>
 
@@ -85,7 +93,7 @@ Threats due to employees not adhering to security rules.
         <li>Always-on virtual private network.</li>
         <li>Using compute services via infrastructure-as-code templates that always feature
             <ul>
-            <li><a href="https&%2358;//docs.aws.amazon.com/vpc/latest/userguide/vpc-security-groups.html" target="_blank">VPC</a> 
+            <li><a href="https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-groups.html" target="_blank">VPC</a> 
 (Virtual Private Cloud)</li>
             <li><a href="https://docs.aws.amazon.com/vpc/latest/userguide/configure-subnets.html" target="_blank">Subnet</a></li>
             <li><a href="https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-groups.html" target="_blank">Security Groups</a>: 
@@ -124,7 +132,8 @@ The loss of data due to a natural disaster, malfunction, etc.
 exploratory &amp; trend analysis, etc.</dd>
     <dt>Mitigation</dt><dd>
     <ul>
-    <li>Backup data sets: <a href="https&%2358;//docs.aws.amazon.com/AmazonS3/latest/userguide/backup-for-s3.html" target="_blank">Amazon Web Services Backup for Amazon S3 (Simple Storage Service)</a></li>
+    <li>Backup data sets: <a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/backup-for-s3.html" 
+target="_blank">Amazon Web Services Backup for Amazon S3 (Simple Storage Service)</a></li>
     <li>Programmatic production of all data intelligence, via version controlled team programs; hence the wherewithal to 
 reproduce all lost items.  This is a mandatory team practice.</li>
     </ul>
@@ -136,9 +145,9 @@ reproduce all lost items.  This is a mandatory team practice.</li>
 <br>
 
 
-## Deficient Assets Access Management
+## Deficient Access Controls
 
-Deficient access controls.
+Deficient access controls to cloud, and complementary, assets.
 
 <dl>
     <dt>Risk</dt>
