@@ -20,7 +20,7 @@ Each team member must be cognizant of threat actors, i.e., entities or individua
 
 The actors have varying <a href="https://www.sophos.com/en-us/cybersecurity-explained/threat-actors#:~:text=are%20Threat%20Actors%E2%80%99-,Motivations,-%3F" target="_blank">motivations</a>. Threat actors will exploit unprotected or insufficiently secured attack surfaces.
 
-Potential threat actors are listed below. Presently, the most probable threat actor is an insider. However, as the team (a) grows, (b) starts delivering products & services, and (c) engages with a wider range of internal & external entities – the threat likelihood per actor increases. [Intellectual property theft, data theft, etc., by external entities will become much more probable.]
+Potential threat actors are listed below. Presently, the most probable threat actor is an insider. However, as the team **(a)** grows, **(b)** starts delivering products & services, and **\(c\)** engages with a wider range of internal & external entities – the threat likelihood per actor increases. [Intellectual property theft, data theft, etc., by external entities will become much more probable.]
 
 * Insiders, i.e., employees or contractors.
 * Cyber criminals.
