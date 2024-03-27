@@ -29,6 +29,34 @@ module level and written in all capital letters with underscores separating word
 </table>
 
 <br>
+
+## Importing
+
+In line with the HitchHiker's Guide to Python, best practice & readability override all else.  Hence, please use the import format  ...
+
+```shell
+import math
+```
+
+Subsequently, use a method as required, e.g.,
+
+```shell
+math.cos(...)
+```
+
+**Not**
+
+```shell
+from math import cos
+```
+
+**Not**
+
+```shell
+from math import *
+```
+
+<br>
 <br>
 <br>
 <br>
