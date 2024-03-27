@@ -1,10 +1,11 @@
 <br>
 
-# Cloud Platform Solutions Architectures
+# Amazon Web Services & Solution Architectures
 
 <br>
 
-Hover over an illustration's symbols for more details; some have links to further details.  Images only have captions.  With time, more details will be added.
+Hover over an illustration's symbols for more details; some have links to further details.  Images only have captions.  Over 
+time, more Amazon Web Services (AWS) details will be added.
 
 <br>
 
@@ -19,8 +20,13 @@ Hover over an illustration's symbols for more details; some have links to furthe
 <iframe style="overflow:hidden; width:100%; height:330px; border:none; margin-left:65px" 
         src="../../../../../assets/beforehand.html"></iframe>
 <figure>
-<figcaption>Assets, e.g., container images, will be delivered to the cloud platform via a version controlled route, i.e., 
-via GitHub.</figcaption>
+<figcaption>For more details hover over the icons; a few icons have links to more details.  Assets, e.g., 
+container images, will be delivered to Amazon Web Services (AWS) via a version controlled route, i.e., via GitHub. [<a 
+href="https://github.com/enqueter/pollutants/actions/runs/8443640990/job/23127661393" target="_blank">CodeQL</a> Example, <a 
+href="https://github.com/enqueter/pollutants/actions/runs/8443640949" target="_blank">Actions</a>/<a 
+href="https://github.com/enqueter/pollutants/actions/runs/8443640949/workflow" target="_blank">Actions Code</a> 
+Example] 
+</figcaption>
 </figure>
 
 <br>
@@ -37,10 +43,16 @@ via GitHub.</figcaption>
 <iframe style="overflow:hidden; width:100%; height:430px; border:none; margin-left:65px"
         src="../../../../../assets/ec2.html"></iframe>
 <figure>
-<figcaption>In general, containers will be run via the <a href="https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate.html" target="_blank">Fargate</a> option of Amazon's Elastic Container Service. Sometimes, containers will be tested via an EC2 (Elastic Cloud Compute) using a set-up such as this; launched via a launch template.</figcaption>
+<figcaption>In general, containers will be run via the <a href="https://docs.aws.amazon.
+com/AmazonECS/latest/developerguide/AWS_Fargate.html" target="_blank">Fargate</a> option of Amazon's Elastic Container 
+Service. Sometimes, containers will be tested via an EC2 (Elastic Cloud Compute) using a set-up such as this; launched 
+via a launch template.  Within each team member's machine AWS CLI (Command Line Interface) will be configured to use the <a 
+href="https://docs.aws.amazon.com/cli/latest/userguide/sso-configure-profile-token.
+html#sso-configure-profile-token-auto-sso" target="_blank">AWS Identity & Access Management's identity centre for authentication.
+</a></figcaption>
 </figure>
 
-:::{dropdown} A launch template example
+:::{dropdown} A launch template example: redacted.
 ```json
 {
     "EbsOptimized": false,
@@ -140,7 +152,8 @@ via GitHub.</figcaption>
         src="../../../../../assets/endpoint-connect.html"></iframe>
 <figure>
 <figcaption>Similar to the previous illustration, using a private subnet requires a slightly different design.  Click on the 
-Private Subnet symbol link to read more.</figcaption>
+Private Subnet symbol link to read more.  Within each team member's machine AWS CLI (Command Line Interface) will be configured to use <a 
+href="https://docs.aws.amazon.com/cli/latest/userguide/sso-configure-profile-token.html#sso-configure-profile-token-auto-sso" title="Amazon Web Services (AWS) Identity & Access Management (IAM) Identity Centre (IC)">AWS IAM IC</a> for authentication.</figcaption>
 </figure>
 
 <br>
@@ -170,27 +183,117 @@ Private Subnet symbol link to read more.</figcaption>
 :width: 65%
 ```
 <figure>
-<figcaption>Deploying an end-to-end solution via <a href="https://docs.aws.amazon.com/step-functions/latest/dg/welcome.html" target="_blank">step functions</a>, an orchestration service.
+<figcaption>Deploying an end-to-end solution via <a href="https://docs.aws.amazon.com/step-functions/latest/dg/welcome.
+html" target="_blank">step functions</a>, an orchestration service. The underlying infrastructure code outlines (a) 
+executions via Amazon's Elastic Container Service [Fargate], (b) virtual private cloud settings per case, alongside 
+securty group and subnet settings, (c) notification settings, (d) time-boxing/auto-termination, (e) and much more.
 </figcaption>
 </figure>
 
-<br>
-<br>
-<br>
-
-### A Schema for a Step Functions Solution
-
-<br>
-
-```{image} ../../../../assets/pattern-emr.png
-:alt: Elastic MapReduce
-:width: 75%
-:height: 400px
+:::{dropdown} The underlying infrastructure code of the above; redacted.
+```json
+{
+  "Comment": "An example",
+  "StartAt": "daily task",
+  "TimeoutSeconds": 3600,
+  "States": {
+    "daily task": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::ecs:runTask.sync",
+      "Parameters": {
+        "LaunchType": "FARGATE",
+        "Cluster": "arn:aws:ecs:{region.name}:{identifier}:cluster/{cluster.name}",
+        "TaskDefinition": "arn:aws:ecs:{region.name}:{identifier}:task-definition/{task.definition}",
+        "NetworkConfiguration": {
+          "AwsvpcConfiguration": {
+            "Subnets": [
+              "{subnet.identifier}",
+              "{subnet.identifier}",
+              "{subnet.identifier}"
+            ],
+            "SecurityGroups": [
+              "{security.group.identifier}"
+            ],
+            "AssignPublicIp": "..."
+          }
+        }
+      },
+      "Next": "distributions task",
+      "Catch": [
+        {
+          "ErrorEquals": [
+            "States.ALL"
+          ],
+          "Next": "Notify Failure",
+          "Comment": "The daily task"
+        }
+      ],
+      "Comment": "The daily task succeeded.  Next, the distributions task."
+    },
+    "distributions task": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::ecs:runTask.sync",
+      "Parameters": {
+        "LaunchType": "FARGATE",
+        "Cluster": "arn:aws:ecs:{region.name}:{identifier}:cluster/{cluster.name}",
+        "TaskDefinition": "arn:aws:ecs:{region.name}:{identifier}:task-definition/{task.definition}",
+        "NetworkConfiguration": {
+          "AwsvpcConfiguration": {
+            "Subnets": [
+              "{subnet.identifier}",
+              "{subnet.identifier}",
+              "{subnet.identifier}"
+            ],
+            "SecurityGroups": [
+              "{security.group.identifier}"
+            ],
+            "AssignPublicIp": "..."
+          }
+        }
+      },
+      "Next": "Notify Success",
+      "Catch": [
+        {
+          "ErrorEquals": [
+            "States.ALL"
+          ],
+          "Comment": "The distributions task",
+          "Next": "Notify Failure"
+        }
+      ],
+      "Comment": "The distributions task succeeded."
+    },
+    "Notify Success": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::sns:publish",
+      "Parameters": {
+        "TopicArn": "arn:aws:sns:{region.name}:{identifier}:{topic}",
+        "Message.$": "$"
+      },
+      "End": true
+    },
+    "Notify Failure": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::sns:publish",
+      "Parameters": {
+        "TopicArn": "arn:aws:sns:{region.name}:{identifier}:{topic}",
+        "Message.$": "$"
+      },
+      "End": true
+    }
+  }
+}
 ```
-<figure>
-<figcaption>A schema for a step functions orchestration.
-</figcaption>
-</figure>
+:::
+
+<br>
+
+:::{dropdown} Afterwards
+```{image} ../../../../assets/step-functions-afterwards.png
+:alt: Step Functions
+:width: 85%
+```
+:::
 
 <br>
 <br>
@@ -202,9 +305,30 @@ Private Subnet symbol link to read more.</figcaption>
 style="overflow:hidden; width:100%; height:375px; border:none; margin-left:65px"
 src="../../../../../assets/emr.html"></iframe>
 <figure>
-<figcaption>An illustration of an infrastructure-as-code launch of an EMR (Elastic MapReduce) cluster.  The code includes, virtual private cloud settings, security groups, auto-termination settings, and much more.  The team's launch templates repository will be visible during the upcoming weeks.
+<figcaption>An illustration of an EMR (Elastic MapReduce) cluster set-up.  The set-up includes virtual private cloud 
+settings, security groups, auto-termination settings, and much more.  The team's launch templates repository, i.e., 
+infrastructure code templates repository, will be visible during the upcoming weeks.
 </figcaption>
 </figure>
+
+<br>
+
+:::{dropdown} A Schema for a Step Functions Elastic MapReduce Solution
+```{image} ../../../../assets/pattern-emr.png
+:alt: Elastic MapReduce
+:width: 90%
+
+```
+
+<br>
+<br>
+
+<figure>
+<figcaption>A schema for a step functions orchestration of an Elastic MapReduce job.
+</figcaption>
+</figure>
+:::
+
 
 
 <br>
