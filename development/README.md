@@ -65,6 +65,8 @@ sphinx-build -E -b html docs/source docs/build/html
   * [mermaid](https://mermaid.js.org/intro/)
   * [tippy](https://sphinx-tippy.readthedocs.io/en/latest/)
 
+* [example](https://d29mim58jd41o6.cloudfront.net)
+
 <br>
 <br>
 
