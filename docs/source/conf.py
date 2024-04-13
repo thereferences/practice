@@ -61,7 +61,7 @@ myst_enable_extensions = [
 '''
 https://myst-parser.readthedocs.io/en/latest/configuration.html
 '''
-myst_heading_anchors = 5
+myst_heading_anchors = 4
 
 
 '''
