@@ -2,6 +2,11 @@
 
 # Cloud Platform
 
+:::{admonition} In Progress
+:class: margin
+<br>
+:::
+
 The data science team will depend on cloud platforms for secure, [efficient](https://dictionary.cambridge.org/us/dictionary/english/efficient), and financially viable operations vis-à-vis:
 
 * Developing and/or testing machine learning models.
@@ -18,7 +23,6 @@ The data science team will depend on cloud platforms for secure, [efficient](htt
 
 cloud/*
 ```
-
 
 <br>
 <br>
