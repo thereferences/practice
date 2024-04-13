@@ -4,28 +4,14 @@
 
 <br>
 
-:::{note}
+:::{admonition} Upcoming
 :class: margin
-In Progress
+* An online _development container images_ hub
+* A link to an online _software development templates_ hub
 :::
 
-Please read the succeeding pages.  Upcoming links:
-
-* A GitHub container images hub.
-* A GitHub project templates hub.
-
 <br>
 <br>
-
-<br>
-<br>
-
-<br>
-<br>
-
-<br>
-<br>
-
 
 ```{toctree}
 :caption: Content
