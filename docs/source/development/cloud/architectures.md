@@ -43,12 +43,7 @@ Example]
 <iframe style="overflow:hidden; width:100%; height:430px; border:none; margin-left:65px"
         src="../../../../../assets/ec2.html"></iframe>
 <figure>
-<figcaption>In general, containers will be run via the <a href="https://docs.aws.amazon.
-com/AmazonECS/latest/developerguide/AWS_Fargate.html" target="_blank">Fargate</a> option of Amazon's Elastic Container 
-Service. Sometimes, containers will be tested via an EC2 (Elastic Cloud Compute) using a set-up such as this; launched 
-via a launch template.  Within each team member's machine AWS CLI (Command Line Interface) will be configured to use the <a 
-href="https://docs.aws.amazon.com/cli/latest/userguide/sso-configure-profile-token.
-html#sso-configure-profile-token-auto-sso" target="_blank">AWS Identity & Access Management's identity centre for authentication.
+<figcaption>In general, containers will be run via the <a href="https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate.html" target="_blank">Fargate</a> option of Amazon's <abbr title="Elastic Container Service">ECS</abbr>. Sometimes, containers will be tested via an EC2 (Elastic Cloud Compute) using a set-up such as this; launched via a launch template.  Within each team member's machine AWS CLI (Command Line Interface) will be configured to use the <a href="https://docs.aws.amazon.com/cli/latest/userguide/sso-configure-profile-token.html#sso-configure-profile-token-auto-sso" target="_blank">AWS Identity & Access Management's identity centre for authentication.
 </a></figcaption>
 </figure>
 
