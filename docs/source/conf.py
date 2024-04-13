@@ -81,7 +81,8 @@ html_theme = 'sphinx_rtd_theme'
 
 html_static_path = ['_static']
 
-html_css_files = ['css/generic.css', 'css/figures.css']
+html_css_files = ['css/generic.css',
+                  'css/figures.css']
 
 html_js_files = ['https://code.jquery.com/jquery-3.7.0.min.js',
                  'https://code.highcharts.com/stock/highstock.js',
@@ -100,7 +101,7 @@ html_theme_options = {
     'prev_next_buttons_location': 'bottom',
     'style_external_links': False,
     'vcs_pageview_mode': '',
-    'style_nav_header_background': 'white',
+    'style_nav_header_background': '#343131',
     'collapse_navigation': False,
     'sticky_navigation': True,
     'navigation_depth': 4,
