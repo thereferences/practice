@@ -2,15 +2,12 @@
 
 # Business Machine Learning Projects
 
+```{admonition} In Progress
+:class: margin
 <br>
-
+```
 
 ## Practice
-
-```{note}
-:class: margin
-In progress.
-```
 
 In brief:
 
