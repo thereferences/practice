@@ -2,14 +2,12 @@
 
 # Machine Learning Engineering Services
 
+```{admonition} In Progress
+:class: margin
 <br>
+```
 
 ## Practice
-
-```{note}
-:class: margin
-In progress.
-```
 
 In brief:
 
