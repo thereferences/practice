@@ -5,7 +5,7 @@
 <br>
 
 ```{toctree}
-:caption: Services
+:caption: Content
 :glob:
 
 services/mlp
