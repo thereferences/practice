@@ -1,21 +1,20 @@
 <br>
 
-Python
-======
+# Python
 
-<br>
-
-:::{note}
+:::{admonition} In Progress
 :class: margin
-In progress.  A brief introduction to the code of practice for Python programming
+<br>
 :::
+
+## Fundamentals
 
 Please use the <a href="https://peps.python.org/pep-0008/">PEP (Python Enhancement Proposal) 8 Style Guide for 
 Python</a>.  Always refer to the naming conventions guide, for example:
 
 <br>
 
-<table style="width: 85%; border: 0; border-spacing: 5px; margin-left: 35px">
+<table style="width: 85%;">
     <colgroup>
         <col span="1" style="width: 26.5%;">
         <col span="1" style="width: 63.5%;">

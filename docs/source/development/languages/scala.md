@@ -3,20 +3,20 @@
 Scala
 =====
 
-<br>
-
-:::{note}
+:::{admonition} In Progress
 :class: margin
-In progress.  A brief introduction to the code of practice for Scala, and Apache Spark Scala, programming
+<br>
 :::
 
-The Scala <a href="https://docs.scala-lang.org/style/" target="_blank">style guide</a>, and will be the team's style 
-reference. Take note of the naming conventions.  The names of classes, objects, methods, etc., are either pascal case, also known as
+## Fundamentals
+
+The foci herein are Scala & Apache Spark Scala.  The Scala <a href="https://docs.scala-lang.org/style/" target="_blank">style guide</a>, and will be the 
+team's style reference. Take note of the naming conventions.  The names of classes, objects, methods, etc., are either pascal case, also known as
 upper camel case, camel case, or lower case.  Names do not include underscores.
 
 <br>
 
-<table style="width: 85%; border: 0; border-spacing: 5px; margin-left: 35px">
+<table style="width: 85%;">
     <colgroup>
         <col span="1" style="width: 26.5%;">
         <col span="1" style="width: 63.5%;">

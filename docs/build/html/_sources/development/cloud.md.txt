@@ -2,11 +2,9 @@
 
 # Cloud Platform
 
-<br>
-
-:::{note}
+:::{admonition} In Progress
 :class: margin
-Requirements.
+<br>
 :::
 
 The data science team will depend on cloud platforms for secure, [efficient](https://dictionary.cambridge.org/us/dictionary/english/efficient), and financially viable operations vis-à-vis:
@@ -19,22 +17,12 @@ The data science team will depend on cloud platforms for secure, [efficient](htt
 <br>
 <br>
 
-<br>
-<br>
-
-<br>
-<br>
-
-<br>
-<br>
-
 ```{toctree}
 :caption: Content
 :glob:
 
 cloud/*
 ```
-
 
 <br>
 <br>

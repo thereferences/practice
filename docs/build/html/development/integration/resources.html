@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Python &mdash; Code of Practice v0.1.5 documentation</title>
+  <title>Resources &mdash; Code of Practice v0.1.5 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
       <link rel="stylesheet" type="text/css" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
@@ -38,8 +38,8 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Scala" href="scala.html" />
-    <link rel="prev" title="Languages &amp; Programming" href="../languages.html" /> 
+    <link rel="next" title="Languages &amp; Programming" href="../languages.html" />
+    <link rel="prev" title="Images &amp; Containers" href="ic.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -120,22 +120,22 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../integration.html">Continuous Integration, Delivery, &amp; Deployment</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../integration/ic.html">Images &amp; Containers</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../integration/ic.html#for-development">For Development</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../integration.html">Continuous Integration, Delivery, &amp; Deployment</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ic.html">Images &amp; Containers</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ic.html#for-development">For Development</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../integration/resources.html">Resources</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Resources</a></li>
 </ul>
 </li>
-<li class="toctree-l2 current"><a class="reference internal" href="../languages.html">Languages &amp; Programming</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Python</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#fundamentals">Fundamentals</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#importing">Importing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../languages.html">Languages &amp; Programming</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../languages/python.html">Python</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../languages/python.html#fundamentals">Fundamentals</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../languages/python.html#importing">Importing</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="scala.html">Scala</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="scala.html#fundamentals">Fundamentals</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../languages/scala.html">Scala</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../languages/scala.html#fundamentals">Fundamentals</a></li>
 </ul>
 </li>
 </ul>
@@ -159,10 +159,10 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../../development.html">Development Practices</a></li>
-          <li class="breadcrumb-item"><a href="../languages.html">Languages &amp; Programming</a></li>
-      <li class="breadcrumb-item active">Python</li>
+          <li class="breadcrumb-item"><a href="../integration.html">Continuous Integration, Delivery, &amp; Deployment</a></li>
+      <li class="breadcrumb-item active">Resources</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../_sources/development/languages/python.md.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/development/integration/resources.md.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -171,49 +171,18 @@
            <div itemprop="articleBody">
              
   <br>
-<section class="tex2jax_ignore mathjax_ignore" id="python">
-<h1>Python<a class="headerlink" href="#python" title="Link to this heading"></a></h1>
+<section class="tex2jax_ignore mathjax_ignore" id="resources">
+<h1>Resources<a class="headerlink" href="#resources" title="Link to this heading"></a></h1>
+<br>
 <div class="margin admonition">
 <p class="admonition-title">In Progress</p>
 <br>
 </div>
-<section id="fundamentals">
-<h2>Fundamentals<a class="headerlink" href="#fundamentals" title="Link to this heading"></a></h2>
-<p>Please use the <a href="https://peps.python.org/pep-0008/">PEP (Python Enhancement Proposal) 8 Style Guide for
-Python</a>.  Always refer to the naming conventions guide, for example:</p>
-<br>
-<table style="width: 85%;">
-    <colgroup>
-        <col span="1" style="width: 26.5%;">
-        <col span="1" style="width: 63.5%;">
-    </colgroup>
-    <thead><tr style="text-align: left"><th>Object</th><th>Note</th></tr></thead>
-        <tr><td>Type Variable Name</td><td>Always pascal case, e.g., HyperParameter.</td></tr>
-        <tr><td>Class Name</td><td>Always pascal case.</td></tr>
-        <tr><td>Variable Name</td><td>A lower case or snake case string, e.g., <i>length</i>, `number_of_cities` Use two leading underscores for private variables.</td></tr>
-        <tr><td>Constants</td><td>The PEP pages note that <a href="https://peps.python.org/pep-0008/#constants" target="_blank">constants</a> <q><i>... are usually defined on a 
-module level and written in all capital letters with underscores separating words. Examples include MAX_OVERFLOW and TOTAL.</i></q></td></tr>
-</table>
-<br>
-</section>
-<section id="importing">
-<h2>Importing<a class="headerlink" href="#importing" title="Link to this heading"></a></h2>
-<p>In line with the HitchHiker’s Guide to Python, best practice &amp; readability override all else.  Hence, please use the import format  …</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>import<span class="w"> </span>math
-</pre></div>
-</div>
-<p>Subsequently, use a method as required, e.g.,</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>math.cos<span class="o">(</span>...<span class="o">)</span>
-</pre></div>
-</div>
-<p><strong>Not</strong></p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>from<span class="w"> </span>math<span class="w"> </span>import<span class="w"> </span>cos
-</pre></div>
-</div>
-<p><strong>Not</strong></p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>from<span class="w"> </span>math<span class="w"> </span>import<span class="w"> </span>*
-</pre></div>
-</div>
+<p>Hubs in development:</p>
+<ul class="simple">
+<li><p>An online <em>development container images</em> hub</p></li>
+<li><p>An online <em>software development templates</em> hub</p></li>
+</ul>
 <br>
 <br>
 <br>
@@ -222,15 +191,14 @@ module level and written in all capital letters with underscores separating word
 <br>
 <br>
 <br>
-</section>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../languages.html" class="btn btn-neutral float-left" title="Languages &amp; Programming" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="scala.html" class="btn btn-neutral float-right" title="Scala" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="ic.html" class="btn btn-neutral float-left" title="Images &amp; Containers" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../languages.html" class="btn btn-neutral float-right" title="Languages &amp; Programming" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

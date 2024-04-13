@@ -1,6 +1,9 @@
 """
 This is conf.py
 
+Notes
+-----
+
 Configuration file for the Sphinx documentation builder.
 
 For the full list of built-in configuration values, see the documentation:
@@ -8,18 +11,16 @@ https://www.sphinx-doc.org/en/master/usage/configuration.html.
 
 Project information
 https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
-"""
 
-import sphinx_rtd_theme
-import sphinx_design
+"""
 
 '''
 Basic
 '''
 project = 'Code of Practice'
-author = 'greyhypotheses'
-copyright = '2023, greyhypotheses'
-release = '0.1'
+project_copyright = '2023, The Artificial Intelligence Unit'
+author = '@greyhypotheses'
+release = 'v0.1.5'
 
 
 '''
@@ -31,9 +32,11 @@ https://myst-parser.readthedocs.io/en/v0.15.1/sphinx/intro.html#install-a-new-sp
 extensions = [
     'sphinx.ext.duration',
     'sphinx.ext.githubpages',
+    'sphinx.ext.mathjax',
     'sphinx_design',
-    'sphinx_rtd_theme',
-    'myst_parser'
+    'sphinxcontrib.mermaid',
+    'myst_parser',
+    'sphinx_rtd_theme'
 ]
 
 myst_enable_extensions = [
@@ -50,12 +53,22 @@ myst_enable_extensions = [
     'strikethrough',
     'substitution',
     'tasklist',
+    'attrs_block',
+    'attrs_inline'
 ]
+
 
 '''
 https://myst-parser.readthedocs.io/en/latest/configuration.html
 '''
-myst_heading_anchors = 5
+myst_heading_anchors = 4
+
+
+'''
+Mathematics
+'''
+mathjax_path = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'
+myst_dmath_double_inline = True
 
 
 '''
@@ -81,7 +94,12 @@ html_theme = 'sphinx_rtd_theme'
 
 html_static_path = ['_static']
 
-html_css_files = ['css/generic.css', 'css/figures.css']
+html_css_files = ['css/generic.css',
+                  'css/figures.css',
+                  'css/tooltip.css',
+                  'https://fonts.googleapis.com/css?family=Vollkorn',
+                  'https://fonts.googleapis.com/css?family=Tangerine',
+                  'https://unpkg.com/tabulator-tables/dist/css/tabulator.min.css']
 
 html_js_files = ['https://code.jquery.com/jquery-3.7.0.min.js',
                  'https://code.highcharts.com/stock/highstock.js',
@@ -91,8 +109,8 @@ html_js_files = ['https://code.jquery.com/jquery-3.7.0.min.js',
                  'https://code.highcharts.com/stock/modules/accessibility.js',
                  'https://code.highcharts.com/highcharts.js',
                  'https://code.highcharts.com/modules/networkgraph.js',
-                 'https://viewer.diagrams.net/js/viewer-static.min.js',
-                 'js/latex.js']
+                 'https://viewer.diagrams.net/js/viewer-static.min.js'
+                 ]
 
 html_theme_options = {
     'logo_only': False,
@@ -100,7 +118,7 @@ html_theme_options = {
     'prev_next_buttons_location': 'bottom',
     'style_external_links': False,
     'vcs_pageview_mode': '',
-    'style_nav_header_background': 'white',
+    'style_nav_header_background': '#343131',
     'collapse_navigation': False,
     'sticky_navigation': True,
     'navigation_depth': 4,
