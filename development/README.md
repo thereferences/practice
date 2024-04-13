@@ -65,7 +65,11 @@ sphinx-build -E -b html docs/source docs/build/html
   * [mermaid](https://mermaid.js.org/intro/)
   * [tippy](https://sphinx-tippy.readthedocs.io/en/latest/)
 
-* [example](https://d29mim58jd41o6.cloudfront.net)
+* Text
+  * [Data Science Projects](https://pubsonline.informs.org/action/doSearch?&target=digital-object-search&content=digitalObjects&Keywords=Principles%20for%20Successful%20Analytics%20Projects)
+  * [The Artificial Intelligence Playbook](https://www.machinelearningkeynote.com/the-ai-playbook)
+  * [The feasibility, and economic viability, of projects](https://ppp.worldbank.org/public-private-partnership/assessing-project-feasibility-and-economic-viability)
+  * [System Reliability, Availability, and Maintainability](https://sebokwiki.org/wiki/System_Reliability,_Availability,_and_Maintainability)
 
 <br>
 <br>
