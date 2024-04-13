@@ -15,6 +15,7 @@ Guidelines for
 
 ```{toctree}
 :caption: Content
+:maxdepth: 2
 :glob:
 
 development/*
