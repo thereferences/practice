@@ -1,6 +1,4 @@
-/* Lists
-   https://developer.mozilla.org/en-US/docs/Web/CSS/Class_selectors */
-
+/* Lists https://developer.mozilla.org/en-US/docs/Web/CSS/Class_selectors */
 li {
     margin-top:1px;
     margin-bottom:1px;
@@ -25,8 +23,13 @@ ul.special {
 }
 
 
-/* Font */
+/* Caption */
+.caption-text {
+    font-family: Vollkorn, serif;
+}
 
+
+/* Font */
 h1 {
   display: block;
   font-size: 1.5em;
@@ -78,6 +81,8 @@ h5 {
   font-weight: bold;
 }
 
+
+/* Image */
 img {
   margin-left: 65px
 }
