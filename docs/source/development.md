@@ -4,12 +4,12 @@
 
 <br>
 
-:::{note}
-:class: margin
-In progress.
-:::
+Guidelines for
 
-Please read the succeeding pages.
+* **Machine Learning Product**. Designs, develops, and/or deploys solutions that are (a) in-line with software
+  engineering, i.e., programming, best practices, (b) secure, \(c\) available, reliable, maintainable, and resilient.
+
+* **Operations**. Operates within a secure and productive settings, 
 
 <br>
 
@@ -18,6 +18,7 @@ Please read the succeeding pages.
 :caption: Development Practices
 :glob:
 
+development/*
 ```
 
 
