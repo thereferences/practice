@@ -2,8 +2,6 @@
 
 # Languages & Programming
 
-<br>
-
 :::{admonition} In Progress
 :class: margin
 <br>
