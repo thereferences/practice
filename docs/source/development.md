@@ -6,16 +6,15 @@
 
 Guidelines for
 
-* **Machine Learning Product**. Designs, develops, and/or deploys solutions that are (a) in-line with software
-  engineering, i.e., programming, best practices, (b) secure, \(c\) available, reliable, maintainable, and resilient.
+* The design, development, and/or deployment of machine learning components that are **(a)** in-line with software engineering, i.e., programming, best practices, **(b)** secure, **\(c\)** available, reliable, maintainable, and resilient, and **(d)** seamlessly integrate into the overarching product.  The development practices section outlines team, and best, practices vis-à-vis the engineering aspects of model development.
 
-* **Operations**. Operates within a secure and productive settings, 
+* Operating, developing, within secure continuous integration, deployment, and delivery settings, 
 
 <br>
 
 
 ```{toctree}
-:caption: Development Practices
+:caption: Content
 :glob:
 
 development/*
