@@ -14,7 +14,6 @@ https://www.sphinx-doc.org/en/master/usage/configuration.html#project-informatio
 
 """
 
-
 '''
 Basic
 '''
@@ -97,6 +96,7 @@ html_static_path = ['_static']
 
 html_css_files = ['css/generic.css',
                   'css/figures.css',
+                  'css/tooltip.css',
                   'https://fonts.googleapis.com/css?family=Vollkorn',
                   'https://fonts.googleapis.com/css?family=Tangerine',
                   'https://unpkg.com/tabulator-tables/dist/css/tabulator.min.css']
