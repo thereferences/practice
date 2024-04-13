@@ -2,23 +2,19 @@
 
 # Languages & Programming
 
-<br>
-
-:::{note}
+:::{admonition} In Progress
 :class: margin
-In progress.
+<br>
 :::
 
 Please
-
 <ul class="special">
     <li>Always use the style guides that the languages pages reference.</li>
     <li>The structure of a package must always be in line with the underlying language's project structure.</li>
-    <li>Each package ...</li>
-    <li>GitGub Actions for 
-        <ul><li>Automated code analysis and testing.</li>
-            <li>Container image building.</li>
-            <li>Container image registration.</li>
+    <li>Deploy all machine learning packages via container images.</li>
+    <li>The GitHub Actions <abbr title="Yet Another Markup Language">YAML</abbr> of a package repository must include  
+        <ul><li>Automated code analysis.</li>
+            <li>Container image building and registration features.</li>
         </ul>
     </li>
 </ul>
@@ -26,14 +22,6 @@ Please
 <br>
 <br>
 
-<br>
-<br>
-
-<br>
-<br>
-
-<br>
-<br>
 
 ```{toctree}
 :caption: Content
