@@ -8,7 +8,9 @@
 :caption: Services
 :glob:
 
-services/*
+services/mlp
+Algorithms Inquiries <services/algorithms>
+Machine Learning Engineering <services/mle>
 ```
 
 <br>
