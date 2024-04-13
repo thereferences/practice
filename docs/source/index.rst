@@ -31,9 +31,7 @@ These pages outline the norms of the artificial intelligence unit's data science
    :hidden:
 
    development
-   development/cloud
-   development/languages
-   Integration <development/integration>
+
 
 
 .. raw:: html
