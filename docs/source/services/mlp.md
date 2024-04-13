@@ -17,7 +17,7 @@ In brief:
 
 ```{mermaid}
 %%{ init: { 'flowchart': { 'curve': 'monotoneX'} } }%%
-flowchart TD    
+flowchart LR    
     id0([start]) --> id1{<span title="Does the potential project have a budget?">budget</span>} 
     id1 -- yes --> id2{<span title="Is the budget, project timebox, and the collaboration commitment plausible?">budget,<br>time</span>}
     id1 -- no --> id3([terminate])
@@ -34,18 +34,22 @@ flowchart TD
 
 ## Service
 
-In collaboration with the business team, please preliminarily assess _business machine learning project_ service requests via
+In collaboration with the client team, please preliminarily assess service requests, for  _machine learning dependent 
+projects_, via:
 
 <ul class="special">
-    <li>The upcoming project details hub of the Scottish Artificial Intelligence Register; for eliciting project details.</li>
+    <li>The upcoming <i>project details hub</i> of the Scottish Artificial Intelligence Register; for eliciting project 
+details.</li>
     <li>A technological feasibility & economic viability assessment, using the project details.</li>
 </ul>
 
-The team's _services launch_ blog, or a later blog, will include an introduction to the project hub; and an introduction to feasibility/viability assessments.
+The <a href="https://thereferences.github.io/systems" target="_blank">complementary online pages of the <i>project details 
+hub</i></a> is an important, and continuously developing, resource that aids critical assessments of service requests.  
 
-<br>
+The team's _services launch_ blog, or a later blog, will include an introduction to the <i>project details hub</i>; and an introduction to feasibility/viability assessments.
 
-A key aspect of a project's details is the identification the groups/people/partners that will be responsible for different parts of the project, and their costs thereof.  The data science team must carefully consider its existing commitments before making a prospective commitment.
+Note, a key aspect of a project's details is the identification the groups/people/partners that will be responsible for 
+different parts of the project, and their costs thereof.  The data science team must carefully consider its existing commitments before making a prospective commitment.
 
 <br>
 <br>
