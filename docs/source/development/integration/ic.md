@@ -4,12 +4,10 @@
 
 <br>
 
-:::{note}
+:::{admonition} In Progress
 :class: margin
-In Progress
-:::
-
 <br>
+:::
 
 ## For Development
 
