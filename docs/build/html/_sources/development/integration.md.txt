@@ -2,30 +2,13 @@
 
 # Continuous Integration, Delivery, & Deployment
 
-<br>
-
-:::{note}
+:::{admonition} In Progress
 :class: margin
-In Progress
+<br>
 :::
 
-Please read the succeeding pages.  Upcoming links:
-
-* A GitHub container images hub.
-* A GitHub project templates hub.
-
 <br>
 <br>
-
-<br>
-<br>
-
-<br>
-<br>
-
-<br>
-<br>
-
 
 ```{toctree}
 :caption: Content
