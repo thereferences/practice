@@ -14,13 +14,14 @@ https://www.sphinx-doc.org/en/master/usage/configuration.html#project-informatio
 
 """
 
+import revitron_sphinx_theme
+
 '''
 Basic
 '''
-project = 'Code of Practice'
+project = u'Code of Practice'
 project_copyright = '2023, The Artificial Intelligence Unit'
 author = '@greyhypotheses'
-release = 'v0.1.5'
 
 
 '''
@@ -32,11 +33,13 @@ https://myst-parser.readthedocs.io/en/v0.15.1/sphinx/intro.html#install-a-new-sp
 extensions = [
     'sphinx.ext.duration',
     'sphinx.ext.githubpages',
+    'sphinx.ext.intersphinx',
+    'sphinx.ext.autodoc',
     'sphinx.ext.mathjax',
     'sphinx_design',
     'sphinxcontrib.mermaid',
     'myst_parser',
-    'sphinx_rtd_theme'
+    'revitron_sphinx_theme'
 ]
 
 myst_enable_extensions = [
@@ -90,7 +93,9 @@ Options for HTML output
 https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 '''
 
-html_theme = 'sphinx_rtd_theme'
+html_theme = 'revitron_sphinx_theme'
+
+html_title = 'Code of Practice'
 
 html_static_path = ['_static']
 
@@ -98,8 +103,7 @@ html_css_files = ['css/generic.css',
                   'css/figures.css',
                   'css/tooltip.css',
                   'https://fonts.googleapis.com/css?family=Vollkorn',
-                  'https://fonts.googleapis.com/css?family=Tangerine',
-                  'https://unpkg.com/tabulator-tables/dist/css/tabulator.min.css']
+                  'https://fonts.googleapis.com/css?family=Tangerine']
 
 html_js_files = ['https://code.jquery.com/jquery-3.7.0.min.js',
                  'https://code.highcharts.com/stock/highstock.js',
@@ -113,28 +117,26 @@ html_js_files = ['https://code.jquery.com/jquery-3.7.0.min.js',
                  ]
 
 html_theme_options = {
-    'logo_only': False,
-    'display_version': True,
-    'prev_next_buttons_location': 'bottom',
+    'color_scheme': '',
+    'canonical_url': 'https://thereferences.github.io/practice/',
+    'analytics_id': '',
     'style_external_links': False,
-    'vcs_pageview_mode': '',
-    'style_nav_header_background': '#343131',
-    'collapse_navigation': False,
+    'collapse_navigation': True,
     'sticky_navigation': True,
     'navigation_depth': 4,
     'includehidden': True,
-    'titles_only': False
+    'titles_only': False,
+    'github_url': 'https://www.github.com/thereferences/practice',
+    'logo_mobile': '_static/logo.svg'
 }
 
-html_logo = ''
+html_logo = '_static/logo.svg'
 
 html_context = {
     'landing_page': {
         'menu': [
             {'title': 'Introduction',
-             'url': ''},
-            {'title': 'Data',
-             'url': ''},
+             'url': 'introduction.html'},
             {'title': 'Search',
              'url': 'search.html'}
         ]
