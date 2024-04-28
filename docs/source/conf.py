@@ -100,8 +100,7 @@ html_title = 'Code of Practice'
 html_static_path = ['_static']
 
 html_css_files = ['css/generic.css',
-                  'css/figures.css',
-                  'css/tooltip.css',
+                  'css/figures.css'
                   'https://fonts.googleapis.com/css?family=Vollkorn',
                   'https://fonts.googleapis.com/css?family=Tangerine']
 
