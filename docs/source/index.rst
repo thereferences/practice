@@ -5,11 +5,21 @@
 CODE OF PRACTICE
 ================
 
+.. raw:: html
+
+   <br>
+   <br>
+
 .. toctree::
    :maxdepth: 3
    :caption: Introduction
 
    introduction
+
+.. raw:: html
+
+   <br>
+   <br>
 
 .. toctree::
    :maxdepth: 3
@@ -18,14 +28,16 @@ CODE OF PRACTICE
 
    services
 
+.. raw:: html
+
+   <br>
+   <br>
 
 .. toctree::
    :maxdepth: 3
    :caption: Development Practices
 
    development
-
-
 
 .. raw:: html
 
