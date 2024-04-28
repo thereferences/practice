@@ -1,7 +1,6 @@
-.. Code of Practice documentation master file, created by
-sphinx-quickstart on Mon Dec 18 11:57:35 2023.
-This page should, at least, contain the root
-<table of contents tree> directive.
+.. Code of Practice documentation master file.
+   This page should, at least, contain the root
+   <table of contents tree> directive.
 
 CODE OF PRACTICE
 ================
