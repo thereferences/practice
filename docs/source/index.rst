@@ -1,25 +1,14 @@
-.. image:: _static/logo.svg
+.. Code of Practice documentation master file, created by
+sphinx-quickstart on Mon Dec 18 11:57:35 2023.
+This page should, at least, contain the root
+<table of contents tree> directive.
 
-Code Of Practice
+CODE OF PRACTICE
 ================
-
-.. container:: .large
-
-   These pages continuously outline the data science team’s operating practices vis-à-vis services & development practices.
-
-.. raw:: html
-
-   <br>
-
-.. container:: .buttons
-
-   `Introduction <introduction.html>`_
-   `GitHub <https://github.com/thereferences/practice>`_
 
 .. toctree::
    :maxdepth: 3
    :caption: Introduction
-   :hidden:
 
    introduction
 
@@ -27,18 +16,17 @@ Code Of Practice
    :maxdepth: 3
    :caption: Services
    :glob:
-   :hidden:
 
-   services/mlp
-   Algorithms Inquiries <services/algorithms>
-   Machine Learning Engineering <services/mle>
+   services
+
 
 .. toctree::
    :maxdepth: 3
    :caption: Development Practices
-   :hidden:
 
    development
+
+
 
 .. raw:: html
 
@@ -57,7 +45,27 @@ Code Of Practice
    <br>
    <br>
 
-   <br>
-   <br>
-   <br>
-   <br>
+.. button-ref:: genindex
+   :color: black
+   :shadow:
+
+
+
+
+.. raw:: html
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+..
+   Comment
+   :ref:`genindex`
+   :ref:`search`
