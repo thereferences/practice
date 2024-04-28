@@ -25,7 +25,12 @@ ul.special {
 
 /* Caption */
 .caption-text {
-    font-family: Vollkorn;
+    font-family: Inter, sans-serif;
+}
+
+
+body {
+    font-family: Inter, sans-serif;
 }
 
 
@@ -44,7 +49,6 @@ h1 {
 h2 {
   display: block;
   font-size: 1.27em;
-  font-family: 'Segoe UI', Vollkorn;
   text-transform: uppercase;
   opacity: 0.90;
   margin-top: 1em;
