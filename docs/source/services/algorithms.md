@@ -7,7 +7,7 @@
 <br>
 ```
 
-## Practice
+## Focus
 
 In brief:
 
