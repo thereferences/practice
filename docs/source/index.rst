@@ -21,7 +21,7 @@ Code Of Practice
 .. container:: .buttons
 
    `Introduction <introduction.html>`_
-   `GitHub <https://github.com/thereferences/systems>`_
+   `GitHub <https://github.com/thereferences/practice>`_
 
 .. toctree::
    :maxdepth: 3
