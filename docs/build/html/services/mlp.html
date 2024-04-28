@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For Machine Learning Dependent Projects &mdash; Code of Practice v0.1.5 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/generic.css?v=016648a2" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/figures.css?v=28bf0955" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/tooltip.css" />
+      <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Vollkorn" />
+      <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine" />
+      <link rel="stylesheet" type="text/css" href="https://unpkg.com/tabulator-tables/dist/css/tabulator.min.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=a24e33b6"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../_static/design-tabs.js?v=36754332"></script>
+        <script src="https://unpkg.com/mermaid@10.2.0/dist/mermaid.min.js"></script>
+        <script>mermaid.initialize({startOnLoad:true});</script>
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+        <script src="https://code.highcharts.com/stock/highstock.js"></script>
+        <script src="https://code.highcharts.com/stock/modules/data.js"></script>
+        <script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+        <script src="https://code.highcharts.com/stock/modules/export-data.js"></script>
+        <script src="https://code.highcharts.com/stock/modules/accessibility.js"></script>
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/networkgraph.js"></script>
+        <script src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Machine Learning Algorithms Inquiries" href="algorithms.html" />
+    <link rel="prev" title="Services" href="../services.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #343131" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Code of Practice
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Introduction</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Services</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../services.html">Services</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">For Machine Learning Dependent Projects</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#focus">Focus</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#service">Service</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="algorithms.html">Algorithms Inquiries</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="algorithms.html#focus">Focus</a></li>
+<li class="toctree-l3"><a class="reference internal" href="algorithms.html#service">Service</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="mle.html">Machine Learning Engineering</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="mle.html#focus">Focus</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mle.html#service">Service</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mle.html#project-management">Project Management</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Development Practices</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../development.html">Development Practices</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../development/cloud.html">Cloud Platform</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../development/cloud/architectures.html">Amazon Web Services &amp; Solution Architectures</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../development/cloud/architectures.html#delivering-assets">Delivering Assets</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../development/cloud/architectures.html#interacting">Interacting</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../development/cloud/architectures.html#auto">Auto</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../development/cloud/impact.html">Impact Assessment</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../development/cloud/impact.html#scenario">Scenario</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../development/cloud/impact.html#considerations-contingencies-vis-a-vis-disruptions">Considerations &amp; Contingencies vis-à-vis Disruptions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../development/cloud/risks.html">Risks &amp; Mitigation Policies</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../development/cloud/risks.html#data-breach">Data Breach</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../development/cloud/risks.html#attack-surface">Attack Surface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../development/cloud/risks.html#malware-infections">Malware Infections</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../development/cloud/risks.html#insider-threats">Insider Threats</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../development/cloud/risks.html#zero-day-vulnerability">Zero Day Vulnerability</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../development/cloud/risks.html#data-loss">Data Loss</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../development/cloud/risks.html#deficient-access-controls">Deficient Access Controls</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../development/cloud/risks.html#hijacking-cloud">Hijacking (Cloud)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../development/cloud/threats.html">Threat Actors</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../development/cloud/threats.html#background">Background</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../development/cloud/threats.html#protection">Protection</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../development/integration.html">Continuous Integration, Delivery, &amp; Deployment</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../development/integration/ic.html">Images &amp; Containers</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../development/integration/ic.html#for-development">For Development</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../development/integration/resources.html">Resources</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../development/languages.html">Languages &amp; Programming</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../development/languages/python.html">Python</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../development/languages/python.html#fundamentals">Fundamentals</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../development/languages/python.html#importing">Importing</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../development/languages/scala.html">Scala</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../development/languages/scala.html#fundamentals">Fundamentals</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #343131" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Code of Practice</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../services.html">Services</a></li>
+      <li class="breadcrumb-item active">For Machine Learning Dependent Projects</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/services/mlp.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <br>
+<section class="tex2jax_ignore mathjax_ignore" id="for-machine-learning-dependent-projects">
+<h1>For Machine Learning Dependent Projects<a class="headerlink" href="#for-machine-learning-dependent-projects" title="Link to this heading"></a></h1>
+<div class="margin admonition">
+<p class="admonition-title">In Progress</p>
+<br>
+</div>
+<section id="focus">
+<h2>Focus<a class="headerlink" href="#focus" title="Link to this heading"></a></h2>
+<p>In brief:</p>
+<blockquote>
+<div><p>Focuses on projects that <strong>(a)</strong> address a business problem, <strong>(b)</strong> have an unambiguous problem statement, <strong>(c)</strong> have a
+deployment goal, <strong>(d)</strong> a machine learning model prediction/forecast/diagnostic aim, <strong>(e)</strong> are technologically feasible and economically viable.</p>
+</div></blockquote>
+<div class="mermaid">
+            %%{ init: { 'flowchart': { 'curve': 'monotoneX'} } }%%
+flowchart LR    
+    id0([start]) --&gt; id1{&lt;span title=&quot;Does the potential project have a budget?&quot;&gt;budget&lt;/span&gt;} 
+    id1 -- yes --&gt; id2{&lt;span title=&quot;Is the budget, project timebox, and the collaboration commitment plausible?&quot;&gt;budget,&lt;br&gt;time&lt;/span&gt;}
+    id1 -- no --&gt; id3([terminate])
+    id2 -- no --&gt; id3
+    id2 -- yes --&gt; id5(&lt;span title=&quot;The project scope/design details&quot;&gt;project&lt;br&gt;details&lt;/span&gt;)
+    id5 --&gt; id6{&lt;span title=&quot;Is the potential project addressable via machine learning, technically feasible, and economically viable?&quot;&gt;feasible?&lt;/span&gt;}
+    id6 -- no --&gt; id3
+    id6 -- yes --&gt; id8(next &lt;br&gt; steps)
+    
+    classDef default fill:#333333,stroke:#333333,stroke-width:0px,color:#ffffff,font-size:11pt;
+        </div><br>
+</section>
+<section id="service">
+<h2>Service<a class="headerlink" href="#service" title="Link to this heading"></a></h2>
+<p>In collaboration with the client team, please preliminarily assess service requests, for  <em>machine learning dependent
+projects</em>, via:</p>
+<ul class="special">
+    <li>The upcoming <i>project details hub</i> of the Scottish Artificial Intelligence Register; for eliciting project 
+details.</li>
+    <li>A technological feasibility & economic viability assessment, using the project details.</li>
+</ul>
+<p>The <a href="https://thereferences.github.io/systems" target="_blank">complementary online pages of the <i>project details
+hub</i></a> is an important, and continuously developing, resource that aids critical assessments of service requests.</p>
+<p>The team’s <em>services launch</em> blog, or a later blog, will include an introduction to the <i>project details hub</i>; and an introduction to feasibility/viability assessments.</p>
+<p>Note, a key aspect of a project’s details is the identification the groups/people/partners that will be responsible for
+different parts of the project, and their costs thereof.  The data science team must carefully consider its existing commitments before making a prospective commitment.</p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../services.html" class="btn btn-neutral float-left" title="Services" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="algorithms.html" class="btn btn-neutral float-right" title="Machine Learning Algorithms Inquiries" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, The Artificial Intelligence Unit.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
