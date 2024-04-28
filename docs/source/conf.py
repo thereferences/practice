@@ -16,10 +16,12 @@ https://www.sphinx-doc.org/en/master/usage/configuration.html#project-informatio
 
 import revitron_sphinx_theme
 
+master_doc = 'index'
+
 '''
 Basic
 '''
-project = u'Code of Practice'
+project = 'Code of Practice'
 project_copyright = '2023, The Artificial Intelligence Unit'
 author = '@greyhypotheses'
 
@@ -95,7 +97,9 @@ https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-o
 
 html_theme = 'revitron_sphinx_theme'
 
-html_title = 'Code of Practice'
+html_title = ''
+html_logo = '_static/logo.svg'
+html_favicon = '_static/icon.svg'
 
 html_static_path = ['_static']
 
@@ -129,15 +133,11 @@ html_theme_options = {
     'logo_mobile': '_static/logo.svg'
 }
 
-html_logo = '_static/logo.svg'
-
 html_context = {
     'landing_page': {
         'menu': [
             {'title': 'Introduction',
-             'url': 'introduction.html'},
-            {'title': 'Search',
-             'url': 'search.html'}
+             'url': 'introduction.html'}
         ]
     }
 }
