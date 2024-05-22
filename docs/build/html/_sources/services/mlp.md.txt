@@ -1,13 +1,13 @@
 <br>
 
-# Business Machine Learning Projects
+# For Machine Learning Dependent Projects
 
 ```{admonition} In Progress
 :class: margin
 <br>
 ```
 
-## Practice
+## Focus
 
 In brief:
 

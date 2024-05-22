@@ -1,16 +1,25 @@
-.. Code of Practice documentation master file, created by
-   sphinx-quickstart on Mon Dec 18 11:57:35 2023.
+.. Code of Practice documentation master file.
    This page should, at least, contain the root
    <table of contents tree> directive.
 
 CODE OF PRACTICE
 ================
 
+.. raw:: html
+
+   <br>
+   <br>
+
 .. toctree::
    :maxdepth: 3
    :caption: Introduction
 
    introduction
+
+.. raw:: html
+
+   <br>
+   <br>
 
 .. toctree::
    :maxdepth: 3
@@ -19,14 +28,16 @@ CODE OF PRACTICE
 
    services
 
+.. raw:: html
+
+   <br>
+   <br>
 
 .. toctree::
    :maxdepth: 3
    :caption: Development Practices
 
    development
-
-
 
 .. raw:: html
 
