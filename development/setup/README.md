@@ -38,17 +38,15 @@ fails.  This section outlines the semi-manual approach.  For reference purposes:
 
 <br>
 
-#### [Enable](https://learn.microsoft.com/en-us/windows/wsl/install-manual#step-3---enable-virtual-machine-feature) the virtual machine feature
+#### [Enable](https://learn.microsoft.com/en-us/windows/wsl/install-manual#step-3---enable-virtual-machine-feature) the virtual machine feature via PowerShell; administrator mode.
 
-Via PowerShell; administrator mode.
+> dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 
-```shell
-dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
-```
+<br>
 
 #### Linux Kernel Update Package
 
-* [Download and install](https://learn.microsoft.com/en-us/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package) the package.
+>[Download and install](https://learn.microsoft.com/en-us/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package) the package.
 
 <br>
 
