@@ -28,6 +28,8 @@ fails.  This section outlines the semi-manual approach.  For reference purposes:
 * [Auto](https://learn.microsoft.com/en-us/windows/wsl/install)
 * [Manual](https://learn.microsoft.com/en-us/windows/wsl/install-manual#step-2---check-requirements-for-running-wsl-2)
 
+<br>
+
 ### STEPS:
 
 #### Activate Windows Subsystem for Linux
