@@ -12,8 +12,7 @@ All the organisation's computer usage rules apply; remember, Universal Serial Bu
 * [Initial Set-up](#initial-set-up)
 * [Linux & Windows Subsystem for Linux (WSL)](#linux--windows-subsystem-for-linux-wsl)
   * [Activate Window Subsystem for Linux](#activate-windows-subsystem-for-linux)
-  * [Enable the virtual machine feature via powershell; administrator mode]
-    (#enable-the-virtual-machine-feature-via-powershell-administrator-mode)
+  * [Enable the virtual machine feature via powershell; administrator mode]    (#enable-the-virtual-machine-feature-via-powershell-administrator-mode)
   * [Linux Kernel Update Package](#linux-kernel-update-package)
   * [Download & Install a Linux Distribution](#download--install-a-linux-distribution)
   * [Commands](#commands)
@@ -27,6 +26,9 @@ All the organisation's computer usage rules apply; remember, Universal Serial Bu
     * [Set-up](#set-up)
     * [Upkeep](#upkeep)
 * [Fundamental Software: Windows](#fundamental-software-windows)
+
+<br>
+<br>
 
 ## Initial Set-up
 
