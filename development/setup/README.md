@@ -86,7 +86,7 @@ printenv
 
 <br>
 
-### wget
+### WGET
 
 The <a href="https://www.gnu.org/software/wget/manual/wget.html" target="_blank">wget</a> utility:
 
