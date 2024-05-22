@@ -5,6 +5,7 @@
 > [!NOTE]  
 > In Progress
 
+All the organisation's computer usage rules apply; remember, Universal Serial Bus (USB) sticks are disallowed. 
 
 <br>
 
