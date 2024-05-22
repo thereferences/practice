@@ -30,7 +30,7 @@ fails.  This section outlines the semi-manual approach.  For reference purposes:
 
 <br>
 
-### STEPS:
+**STEPS:**
 
 #### Activate Windows Subsystem for Linux
 
