@@ -65,6 +65,12 @@ fails.  This section outlines the semi-manual approach.  For reference purposes:
   to set up credentials.
 
 <br>
+
+#### Commands
+
+* [Basic Commands](https://learn.microsoft.com/en-us/windows/wsl/basic-commands)
+
+<br>
 <br>
 <br>
 
