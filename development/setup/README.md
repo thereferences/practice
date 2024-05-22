@@ -175,7 +175,7 @@ fi
 
 The command `i` starts the edit mode, `ESC` exits the mode, and `:wq` saves; [`vi` commands](https://www.cs.colostate.edu/helpdocs/vi.html).  **Exit** the terminal.
 
-
+<br>
 
 #### Set-up
 
