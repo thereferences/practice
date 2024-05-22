@@ -17,6 +17,12 @@ Foremost:
 * Set-up security software.
 * Partition the hard drive?
 
+And:
+
+* [firefox](https://www.mozilla.org/en-GB/firefox/)
+* [opera](https://www.opera.com)
+* [KeePassXC](https://keepassxc.org/)
+
 <br>
 <br>
 <br>
@@ -202,12 +208,7 @@ conda update -n base -c anaconda conda
 
 ## Fundamental Software: Windows
 
-Browsers:
-* [firefox](https://www.mozilla.org/en-GB/firefox/)
-* [opera](https://www.opera.com)
-
 Fundamentals:
-* [KeePassXC](https://keepassxc.org/)
 * Java: [JDK & JRE](https://adoptium.net/en-GB/temurin)
 * [OpenOffice](https://www.openoffice.org/download/index.html)
 * [Docker Desktop]()
