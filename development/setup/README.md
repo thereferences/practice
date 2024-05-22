@@ -9,6 +9,25 @@ All the organisation's computer usage rules apply; remember, Universal Serial Bu
 
 <br>
 
+* [Initial Set-up](#initial-set-up)
+* [Linux & Windows Subsystem for Linux (WSL)](#linux--windows-subsystem-for-linux-wsl)
+  * [Activate Window Subsystem for Linux](#activate-windows-subsystem-for-linux)
+  * [Enable the virtual machine feature via powershell; administrator mode]
+    (#enable-the-virtual-machine-feature-via-powershell-administrator-mode)
+  * [Linux Kernel Update Package](#linux-kernel-update-package)
+  * [Download & Install a Linux Distribution](#download--install-a-linux-distribution)
+  * [Commands](#commands)
+* [Fundamental Software: Linux](#fundamental-software-linux)
+  * [WGET](#wget)
+  * [GIT](#git)
+  * [CONDA](#conda)
+    * [The Installer](#the-installer)
+    * [Install](#install)
+    * [Set the Path Variable](#set-the-path-variable)
+    * [Set-up](#set-up)
+    * [Upkeep](#upkeep)
+* [Fundamental Software: Windows](#fundamental-software-windows)
+
 ## Initial Set-up
 
 Foremost:
@@ -45,9 +64,9 @@ fails.  This section outlines the semi-manual approach.  For reference purposes:
 
 <br>
 
-#### [Enable](https://learn.microsoft.com/en-us/windows/wsl/install-manual#step-3---enable-virtual-machine-feature) the virtual machine feature via PowerShell; administrator mode.
+#### Enable the virtual machine feature via PowerShell; administrator mode.
 
-> dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+> dism.exe /online [/enable-feature](https://learn.microsoft.com/en-us/windows/wsl/install-manual#step-3---enable-virtual-machine-feature) /featurename:VirtualMachinePlatform /all /norestart
 
 <br>
 
@@ -57,9 +76,9 @@ fails.  This section outlines the semi-manual approach.  For reference purposes:
 
 <br>
 
-#### Download & Install [a Linux Distribution](https://learn.microsoft.com/en-us/windows/wsl/install-manual#downloading-distributions)
+#### Download & Install a Linux Distribution
 
-* Download
+* [Download](https://learn.microsoft.com/en-us/windows/wsl/install-manual#downloading-distributions)
 * To install, run `Add-AppxPackage .\app_name.appx`
 * Double-click on the installed app, which will exists within the applications' menu, to activate it.  You will be asked 
   to set up credentials.
