@@ -215,9 +215,8 @@ Fundamentals:
   * Default Branch Name: *master*
 * Java: [JDK & JRE](https://adoptium.net/en-GB/temurin)
 * [OpenOffice](https://www.openoffice.org/download/index.html)
-* [Docker Desktop]()
+* [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 * IntelliJ IDEA Ultimate
-
 
 <br>
 <br>
