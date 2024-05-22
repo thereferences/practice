@@ -34,6 +34,8 @@ fails.  This section outlines the semi-manual approach.  For reference purposes:
 
 > Control Panel $\rightarrow$ Uninstall a program $\rightarrow$ Turn Windows features on or off $\rightarrow$ Windows Subsystem for Linux.
 
+<br>
+
 #### [Enable](https://learn.microsoft.com/en-us/windows/wsl/install-manual#step-3---enable-virtual-machine-feature) the virtual machine feature
 
 Via PowerShell; administrator mode.
@@ -45,6 +47,8 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 #### Linux Kernel Update Package
 
 * [Download and install](https://learn.microsoft.com/en-us/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package) the package.
+
+<br>
 
 #### Download & Install [a Linux Distribution](https://learn.microsoft.com/en-us/windows/wsl/install-manual#downloading-distributions)
 
@@ -148,6 +152,8 @@ fi
 ```
 
 The command `i` starts the edit mode, `ESC` exits the mode, and `:wq` saves; [`vi` commands](https://www.cs.colostate.edu/helpdocs/vi.html).  **Exit** the terminal.
+
+<br>
 
 #### Set-up
 
