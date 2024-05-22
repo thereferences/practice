@@ -209,6 +209,10 @@ conda update -n base -c anaconda conda
 ## Fundamental Software: Windows
 
 Fundamentals:
+* [Notepad++](https://notepad-plus-plus.org)
+* [Git for Windows](https://git-scm.com)
+  * Editor: Select Notepad++
+  * Default Branch Name: *master*
 * Java: [JDK & JRE](https://adoptium.net/en-GB/temurin)
 * [OpenOffice](https://www.openoffice.org/download/index.html)
 * [Docker Desktop]()
