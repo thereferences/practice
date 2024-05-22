@@ -63,6 +63,27 @@ fails.  This section outlines the semi-manual approach.  For reference purposes:
 
 ## Fundamental Software: Linux
 
+Apriori
+
+```shell
+sudo apt update
+sudo apt upgrade
+```
+
+Additionally, often inspect the GNU Privacy Guard (<abbr title="GNU Privacy Guard">GPG</abbr>) keys via:
+
+```shell
+gpg --list-keys
+gpg --list-secret-keys
+```
+
+Print environment variables via
+
+```shell
+# https://www.cyberciti.biz/faq/linux-list-all-environment-variables-env-command/
+printenv
+```
+
 ### wget
 
 The <a href="https://www.gnu.org/software/wget/manual/wget.html" target="_blank">wget</a> utility:
