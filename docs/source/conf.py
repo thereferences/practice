@@ -118,5 +118,5 @@ html_theme_options = {
     'collapse_navbar': False,
     'toc_title': 'PRACTICE',
     'show_toc_level': 2,
-    'sidebarwidth': 270
+    'sidebarwidth': 250
 }
