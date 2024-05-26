@@ -9,12 +9,6 @@ time, more Amazon Web Services (AWS) details will be added.
 
 <br>
 
-```{contents}
-:local:
-```
-
-<br>
-
 ## Delivering Assets
 
 <iframe style="overflow:hidden; width:100%; height:330px; border:none; margin-left:65px" 
