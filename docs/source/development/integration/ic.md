@@ -2,8 +2,6 @@
 
 # Images & Containers
 
-<br>
-
 :::{admonition} In Progress
 <br>
 :::
