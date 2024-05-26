@@ -4,12 +4,6 @@
 
 <br>
 
-```{contents}
-:local:
-```
-
-<br>
-
 ## Data Breach
 
 An unauthorised data, or information, access.
