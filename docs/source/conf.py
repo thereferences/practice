@@ -93,10 +93,9 @@ html_theme = 'sphinx_book_theme'
 
 html_static_path = ['_static']
 
-html_css_files = ['css/generic.css',
-                  'css/figures.css',
-                  'css/tooltip.css',
-                  'https://unpkg.com/tabulator-tables/dist/css/tabulator.min.css']
+html_css_files = ['css/figures.css',
+                  'https://unpkg.com/tabulator-tables/dist/css/tabulator.min.css',
+                  'css/generic.css']
 
 html_js_files = ['https://code.jquery.com/jquery-3.7.0.min.js',
                  'https://code.highcharts.com/stock/highstock.js',
