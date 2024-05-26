@@ -3,7 +3,6 @@
 # Languages & Programming
 
 :::{admonition} In Progress
-:class: margin
 <br>
 :::
 
