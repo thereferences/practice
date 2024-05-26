@@ -3,7 +3,6 @@
 # Python
 
 :::{admonition} In Progress
-:class: margin
 <br>
 :::
 
