@@ -27,7 +27,6 @@ release = 'v0.1.5'
 General configuration
 https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 https://myst-parser.readthedocs.io/en/v0.15.1/sphinx/intro.html#install-a-new-sphinx-extension-and-use-its-functionality
-    "sphinxcontrib.mermaid"
 '''
 extensions = [
     'sphinx.ext.duration',
@@ -35,8 +34,7 @@ extensions = [
     'sphinx.ext.mathjax',
     'sphinx_design',
     'sphinxcontrib.mermaid',
-    'myst_parser',
-    'sphinx_rtd_theme'
+    'myst_parser'
 ]
 
 myst_enable_extensions = [
@@ -88,17 +86,16 @@ exclude_patterns = []
 '''
 Options for HTML output
 https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
+'style_nav_header_background': '#343131'
 '''
 
-html_theme = 'sphinx_rtd_theme'
+html_theme = 'sphinx_book_theme'
 
 html_static_path = ['_static']
 
 html_css_files = ['css/generic.css',
                   'css/figures.css',
                   'css/tooltip.css',
-                  'https://fonts.googleapis.com/css?family=Vollkorn',
-                  'https://fonts.googleapis.com/css?family=Tangerine',
                   'https://unpkg.com/tabulator-tables/dist/css/tabulator.min.css']
 
 html_js_files = ['https://code.jquery.com/jquery-3.7.0.min.js',
@@ -113,30 +110,12 @@ html_js_files = ['https://code.jquery.com/jquery-3.7.0.min.js',
                  ]
 
 html_theme_options = {
-    'logo_only': False,
-    'display_version': True,
-    'prev_next_buttons_location': 'bottom',
-    'style_external_links': False,
-    'vcs_pageview_mode': '',
-    'style_nav_header_background': '#343131',
-    'collapse_navigation': False,
-    'sticky_navigation': True,
-    'navigation_depth': 4,
-    'includehidden': True,
-    'titles_only': False
-}
-
-html_logo = ''
-
-html_context = {
-    'landing_page': {
-        'menu': [
-            {'title': 'Introduction',
-             'url': ''},
-            {'title': 'Data',
-             'url': ''},
-            {'title': 'Search',
-             'url': 'search.html'}
-        ]
-    }
+    'use_download_button': True,
+    'use_fullscreen_button': True,
+    'home_page_in_toc': True,
+    'show_navbar_depth': 1,
+    'max_navbar_depth': 4,
+    'collapse_navbar': False,
+    'toc_title': 'PRACTICE',
+    'sidebarwidth': 270
 }
