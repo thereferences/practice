@@ -3,7 +3,6 @@
 # Machine Learning Engineering Services
 
 ```{admonition} In Progress
-:class: margin
 <br>
 ```
 
