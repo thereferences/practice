@@ -3,7 +3,6 @@
 # Machine Learning Algorithms Inquiries
 
 ```{admonition} In Progress
-:class: margin
 <br>
 ```
 
