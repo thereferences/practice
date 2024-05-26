@@ -2,8 +2,6 @@
 
 # Resources
 
-<br>
-
 :::{admonition} In Progress
 <br>
 :::
