@@ -65,6 +65,8 @@ sphinx-build -E -b html docs/source docs/build/html
   * [mermaid](https://mermaid.js.org/intro/)
   * [tippy](https://sphinx-tippy.readthedocs.io/en/latest/)
 
+* [`em` & `px`](https://nekocalc.com/em-to-px-converter)
+
 * Text
   * [Data Science Projects](https://pubsonline.informs.org/action/doSearch?&target=digital-object-search&content=digitalObjects&Keywords=Principles%20for%20Successful%20Analytics%20Projects)
   * [The Artificial Intelligence Playbook](https://www.machinelearningkeynote.com/the-ai-playbook)
