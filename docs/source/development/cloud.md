@@ -3,7 +3,6 @@
 # Cloud Platform
 
 :::{admonition} In Progress
-:class: margin
 <br>
 :::
 
