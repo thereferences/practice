@@ -9,12 +9,6 @@ clients/colleagues. This brief assessment considers a hypothetical, but partiall
 
 <br>
 
-```{contents}
-:local:
-```
-
-<br>
-
 ## Scenario
 
 
