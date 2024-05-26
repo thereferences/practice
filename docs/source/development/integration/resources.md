@@ -5,7 +5,6 @@
 <br>
 
 :::{admonition} In Progress
-:class: margin
 <br>
 :::
 
