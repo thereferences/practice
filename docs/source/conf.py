@@ -117,5 +117,6 @@ html_theme_options = {
     'max_navbar_depth': 4,
     'collapse_navbar': False,
     'toc_title': 'PRACTICE',
+    'show_toc_level': 2,
     'sidebarwidth': 270
 }
