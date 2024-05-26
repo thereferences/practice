@@ -3,7 +3,6 @@
 # Continuous Integration, Delivery, & Deployment
 
 :::{admonition} In Progress
-:class: margin
 <br>
 :::
 
