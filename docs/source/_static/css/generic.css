@@ -26,6 +26,18 @@ ul.special {
     max-width: 950px;
 }
 
+.prev-next-area a .prev-next-info .prev-next-subtitle {
+    margin-bottom: 20px;
+}
+
+.prev-next-subtitle {
+    font-variant: small-caps;
+}
+
+.prev-next-title {
+    font-variant: small-caps;
+}
+
 
 /* Caption */
 .caption-text {
