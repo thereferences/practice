@@ -3,7 +3,6 @@
 # For Machine Learning Dependent Projects
 
 ```{admonition} In Progress
-:class: margin
 <br>
 ```
 
