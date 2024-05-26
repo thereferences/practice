@@ -6,8 +6,6 @@
 <br>
 :::
 
-<br>
-<br>
 
 ```{toctree}
 :caption: Content
