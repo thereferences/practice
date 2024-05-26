@@ -18,8 +18,12 @@ ul.special {
     margin-left: 15px;
 }
 
-.bd-main .bd-content .bd-article-container .wy-nav-content {
-    max-width: 160em;
+.bd-main .bd-content .wy-nav-content {
+    max-width: 1250px;
+}
+
+.bd-article-container {
+    max-width: 950px;
 }
 
 
