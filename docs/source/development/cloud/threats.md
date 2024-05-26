@@ -4,12 +4,6 @@
 
 <br>
 
-```{contents}
-:local:
-```
-
-<br>
-
 ## Background
 
 Each team member must be cognizant of threat actors, i.e., entities or individuals that conduct malicious cyber activities, e.g.,
