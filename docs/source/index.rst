@@ -35,9 +35,14 @@ CODE OF PRACTICE
 
 .. toctree::
    :maxdepth: 3
-   :caption: Development Practices
+   :caption: Technologies & Development Practices
 
-   development
+   development/background
+   development/integration
+   development/cloud
+   development/languages
+   development/machines
+
 
 .. raw:: html
 
