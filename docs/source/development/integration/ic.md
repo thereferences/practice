@@ -6,7 +6,9 @@
 <br>
 :::
 
-## For Development
+## Python
+
+### For Development
 
 A key practice is designing & developing within containers.  For Python projects, Foremost, create:
 
@@ -29,6 +31,21 @@ docker run --rm -i -t -p 127.0.0.1:10000:8888 -w /app
 ```
 
 An independent development environment can be attached to a running container.
+
+<br>
+
+### For Deployment
+
+* Never deploy root containers; study [this production Dockerfile](https://github.com/enqueter/distributions/blob/master/Dockerfile), which blocks access to `root` by creating a standard user.
+
+<br>
+<br>
+
+## Scala
+
+### For Development
+
+The template ...
 
 <br>
 <br>
