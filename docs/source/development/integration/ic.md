@@ -18,7 +18,7 @@ For Python projects, create:
 * Dockerfile
 * devcontainer.json
 
-Within the `.devcontainer/` directory, which must be within the project's parent directory.  Always ascertain that the `requirements.txt` file lists the packages/libraries required for development.  Next, build the image:
+Within the `.devcontainer/` directory, which must be within the project's parent directory; <a href="https://github.com/enqueter/distributions/tree/master/.devcontainer" target="_blank">example</a>.  Always ascertain that the `requirements.txt` file lists the packages/libraries required for development.  Next, build the image:
 
 ```shell
 docker build . --file .devcontainer/Dockerfile --tag {tag.name}
