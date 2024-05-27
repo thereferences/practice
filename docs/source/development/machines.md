@@ -10,26 +10,6 @@
 All the organisation's computer usage rules apply; remember, Universal Serial Bus (USB) sticks are disallowed.
 
 <br>
-
-* [Initial Set-up](#initial-set-up)
-* [Linux & Windows Subsystem for Linux (WSL)](#linux--windows-subsystem-for-linux-wsl)
-    * [Activate Window Subsystem for Linux](#activate-windows-subsystem-for-linux)
-    * [Enable the virtual machine feature via powershell; administrator mode](#enable-the-virtual-machine-feature-via-powershell-administrator-mode)
-    * [Linux Kernel Update Package](#linux-kernel-update-package)
-    * [Download & Install a Linux Distribution](#download--install-a-linux-distribution)
-    * [Commands](#commands)
-* [Fundamental Software: Linux](#fundamental-software-linux)
-    * [WGET](#wget)
-    * [GIT](#git)
-    * [CONDA](#conda)
-        * [The Installer](#the-installer)
-        * [Install](#install)
-        * [Set the Path Variable](#set-the-path-variable)
-        * [Set-up](#set-up)
-        * [Upkeep](#upkeep)
-* [Fundamental Software: Windows](#fundamental-software-windows)
-
-<br>
 <br>
 <br>
 
