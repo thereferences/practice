@@ -53,6 +53,10 @@ sphinx-build -E -b html docs/source docs/build/html
 * [Sphinx Book Theme](https://sphinx-book-theme.readthedocs.io/en/stable/index.html)
   * [Sample](https://sphinx-book-theme.readthedocs.io/en/stable/reference/kitchen-sink/index.html)
 * [Sphinx Design: Sphinx Book Theme](https://sphinx-design.readthedocs.io/en/sbt-theme/)
+* Configuration
+  * [Theme Options](https://sphinx-book-theme.readthedocs.io/en/stable/reference.html#reference-of-theme-options)
+  * [Theme Options: Basic](https://pydata-sphinx-theme.readthedocs.io/en/latest/user_guide/layout.html#references)
+  * [Sidebar: Secondary](https://sphinx-book-theme.readthedocs.io/en/stable/sections/sidebar-secondary.html)
 
 * [Sphinx](https://www.sphinx-doc.org/en/master/index.html)
   * [Sphinx Directives](https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html)
@@ -64,6 +68,8 @@ sphinx-build -E -b html docs/source docs/build/html
 * [Extensions](https://myst-parser.readthedocs.io/en/latest/intro.html#extending-sphinx)
   * [mermaid](https://mermaid.js.org/intro/)
   * [tippy](https://sphinx-tippy.readthedocs.io/en/latest/)
+
+* [`em` & `px`](https://nekocalc.com/em-to-px-converter)
 
 * Text
   * [Data Science Projects](https://pubsonline.informs.org/action/doSearch?&target=digital-object-search&content=digitalObjects&Keywords=Principles%20for%20Successful%20Analytics%20Projects)
