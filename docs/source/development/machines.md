@@ -223,16 +223,22 @@ conda update -n base -c anaconda conda
 
 ## Fundamental Software: Windows
 
-Fundamentals:
+### Core
+
 * [Notepad++](https://notepad-plus-plus.org)
 * [Git for Windows](https://git-scm.com)
     * Editor: Select Notepad++
     * Default Branch Name: *master*
 * Java: [JDK & JRE](https://adoptium.net/en-GB/temurin)
 * [OpenOffice](https://www.openoffice.org/download/index.html)
+
+<br>
+
+### Windows Installations that Propagate to WSL Kernels
+
 * [Docker Desktop](https://www.docker.com/products/docker-desktop/)
-* IntelliJ IDEA Ultimate
-* VSCODE
+* [IntelliJ IDEA Ultimate](https://www.jetbrains.com/idea/download/?section=windows)
+* [Visual Studio CODE](https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode)
 
 <br>
 <br>
