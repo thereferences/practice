@@ -1,0 +1,749 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Machines &#8212; Code of Practice v0.1.6 documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=87e54e7c" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/figures.css?v=28bf0955" />
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/tabulator-tables/dist/css/tabulator.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/generic.css?v=149d5b05" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="../_static/documentation_options.js?v=fa9c326a"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'development/machines';</script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://code.highcharts.com/stock/highstock.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/data.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/accessibility.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/networkgraph.js"></script>
+    <script src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Scala" href="languages/scala.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Code of Practice v0.1.6 documentation</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../index.html">
+                    CODE OF PRACTICE
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Introduction</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Services</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../services.html">Services</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../services/mlp.html">For Machine Learning Dependent Projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../services/algorithms.html">Algorithms Inquiries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../services/mle.html">Machine Learning Engineering</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Technologies &amp; Development Practices</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="background.html">Background</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="integration.html">Continuous Integration, Delivery, &amp; Deployment</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="integration/ic.html">Images &amp; Containers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="integration/resources.html">Resources</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="cloud.html">Cloud Platform</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="cloud/architectures.html">Amazon Web Services &amp; Solution Architectures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cloud/impact.html">Impact Assessment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cloud/risks.html">Risks &amp; Mitigation Policies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cloud/threats.html">Threat Actors</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="languages.html">Languages &amp; Programming</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="languages/python.html">Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="languages/scala.html">Scala</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Machines</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/development/machines.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Machines</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> PRACTICE </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#initial-set-up">Initial Set-up</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-tools">Basic Tools</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#linux-windows-subsystem-for-linux-wsl">Linux &amp; Windows Subsystem for Linux (WSL)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#activate-windows-subsystem-for-linux">Activate Windows Subsystem for Linux</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-the-virtual-machine-feature-via-powershell-administrator-mode">Enable the virtual machine feature via PowerShell; administrator mode.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#linux-kernel-update-package">Linux Kernel Update Package</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#download-install-a-linux-distribution">Download &amp; Install a Linux Distribution</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#commands">Commands</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fundamental-software-linux">Fundamental Software: Linux</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#wget">WGET</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#git">GIT</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conda">CONDA</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-installer">The Installer</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#install">Install</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#set-the-path-variable">Set the Path Variable</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#set-up">Set-up</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#upkeep">Upkeep</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fundamental-software-windows">Fundamental Software: Windows</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#core">Core</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#windows-installations-that-propagate-to-wsl-kernels">Windows Installations that Propagate to WSL Kernels</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <br>
+<section class="tex2jax_ignore mathjax_ignore" id="machines">
+<h1>Machines<a class="headerlink" href="#machines" title="Link to this heading">#</a></h1>
+<br>
+<div class="admonition-in-progress admonition">
+<p class="admonition-title">In Progress</p>
+<br>
+</div>
+<p>All the organisation’s computer usage rules apply; remember, Universal Serial Bus (USB) sticks are disallowed.</p>
+<br>
+<br>
+<br>
+<section id="initial-set-up">
+<h2>Initial Set-up<a class="headerlink" href="#initial-set-up" title="Link to this heading">#</a></h2>
+<p>Foremost:</p>
+<ul class="simple">
+<li><p>Do not select Microsoft Account.  Instead, select the <strong>School/Business</strong> option, thereafter select <strong>other domains</strong> option.</p></li>
+<li><p>Set-up security software.</p></li>
+<li><p>Hard Drive Partitioning: Consider partitioning the C drive into two drives; such that the second drive is for development purposes.</p></li>
+</ul>
+<br>
+<section id="basic-tools">
+<h3>Basic Tools<a class="headerlink" href="#basic-tools" title="Link to this heading">#</a></h3>
+<p>Install</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.mozilla.org/en-GB/firefox/">firefox</a></p></li>
+<li><p><a class="reference external" href="https://www.opera.com">opera</a></p></li>
+<li><p><a class="reference external" href="https://keepassxc.org/">KeePassXC</a></p></li>
+</ul>
+<p>Ensure that the privacy &amp; security settings of the browsers are strict; additionally, set the default search engine to <em>duckduckgo</em>.</p>
+<br>
+<br>
+<br>
+</section>
+</section>
+<section id="linux-windows-subsystem-for-linux-wsl">
+<h2>Linux &amp; Windows Subsystem for Linux (WSL)<a class="headerlink" href="#linux-windows-subsystem-for-linux-wsl" title="Link to this heading">#</a></h2>
+<p>Using a Linux requires (a) activating WSL, and (b) installing a Linux distribution.  The auto-script approach sometimes
+fails.  This section outlines the semi-manual approach.  For reference purposes:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://learn.microsoft.com/en-us/windows/wsl/install">Auto</a></p></li>
+<li><p><a class="reference external" href="https://learn.microsoft.com/en-us/windows/wsl/install-manual#step-2---check-requirements-for-running-wsl-2">Manual</a></p></li>
+</ul>
+<br>
+<section id="activate-windows-subsystem-for-linux">
+<h3>Activate Windows Subsystem for Linux<a class="headerlink" href="#activate-windows-subsystem-for-linux" title="Link to this heading">#</a></h3>
+<p>The activation steps are</p>
+<blockquote>
+<div><p>Control Panel <span class="math notranslate nohighlight">\(\rightarrow\)</span> Uninstall a program <span class="math notranslate nohighlight">\(\rightarrow\)</span> Turn Windows features on or off <span class="math notranslate nohighlight">\(\rightarrow\)</span> Windows Subsystem for Linux.</p>
+</div></blockquote>
+<p>Subsequently, re-start the machine.</p>
+<br>
+</section>
+<section id="enable-the-virtual-machine-feature-via-powershell-administrator-mode">
+<h3>Enable the virtual machine feature via PowerShell; administrator mode.<a class="headerlink" href="#enable-the-virtual-machine-feature-via-powershell-administrator-mode" title="Link to this heading">#</a></h3>
+<p>For details visit <a class="reference external" href="https://learn.microsoft.com/en-us/windows/wsl/install-manual#step-3---enable-virtual-machine-feature">enable virtual machine feature</a>.</p>
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="n">dism</span><span class="p">.</span><span class="n">exe</span> <span class="p">/</span><span class="n">online</span> <span class="p">/</span><span class="nb">enable-feature</span> <span class="p">/</span><span class="n">featurename</span><span class="p">:</span><span class="n">VirtualMachinePlatform</span> <span class="p">/</span><span class="n">all</span> <span class="p">/</span><span class="n">norestart</span>
+</pre></div>
+</div>
+<br>
+</section>
+<section id="linux-kernel-update-package">
+<h3>Linux Kernel Update Package<a class="headerlink" href="#linux-kernel-update-package" title="Link to this heading">#</a></h3>
+<blockquote>
+<div><p><a class="reference external" href="https://learn.microsoft.com/en-us/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package">Download and install</a> the package.</p>
+</div></blockquote>
+<br>
+</section>
+<section id="download-install-a-linux-distribution">
+<h3>Download &amp; Install a Linux Distribution<a class="headerlink" href="#download-install-a-linux-distribution" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://learn.microsoft.com/en-us/windows/wsl/install-manual#downloading-distributions">Download</a></p></li>
+<li><p>To install, run <code class="docutils literal notranslate"><span class="pre">Add-AppxPackage</span> <span class="pre">.\app_name.appx</span></code></p></li>
+<li><p>Double-click on the installed app, which will exists within the applications’ menu, to activate it.  You will be asked to set up credentials.</p></li>
+</ul>
+<br>
+</section>
+<section id="commands">
+<h3>Commands<a class="headerlink" href="#commands" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://learn.microsoft.com/en-us/windows/wsl/basic-commands">Basic Commands</a></p></li>
+</ul>
+<br>
+<br>
+<br>
+</section>
+</section>
+<section id="fundamental-software-linux">
+<h2>Fundamental Software: Linux<a class="headerlink" href="#fundamental-software-linux" title="Link to this heading">#</a></h2>
+<p>Apriori</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt<span class="w"> </span>update
+sudo<span class="w"> </span>apt<span class="w"> </span>upgrade
+</pre></div>
+</div>
+<p>Additionally, often inspect the GNU Privacy Guard (<abbr title="GNU Privacy Guard">GPG</abbr>) keys via:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>gpg<span class="w"> </span>--list-keys
+gpg<span class="w"> </span>--list-secret-keys
+</pre></div>
+</div>
+<p>Print environment variables via</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>printenv
+</pre></div>
+</div>
+<br>
+<section id="wget">
+<h3>WGET<a class="headerlink" href="#wget" title="Link to this heading">#</a></h3>
+<p>The <a href="https://www.gnu.org/software/wget/manual/wget.html" target="_blank">wget</a> utility:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>wget<span class="w"> </span>ca-certificates
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">ca-certificates</span></code> allows applications that are secure sockets layer (SSL) dependent to verify the authenticity of SSL connections; SSL is a deprecated tool.</p>
+<br>
+</section>
+<section id="git">
+<h3>GIT<a class="headerlink" href="#git" title="Link to this heading">#</a></h3>
+<p>Update <code class="docutils literal notranslate"><span class="pre">git</span></code> via the <code class="docutils literal notranslate"><span class="pre">git-core/ppa</span></code> <abbr title="Personal Package Archive">PPA</abbr> (Personal Package Archive).</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>add-apt-repository<span class="w"> </span>ppa:git-core/ppa
+sudo<span class="w"> </span>apt<span class="w"> </span>update
+sudo<span class="w"> </span>apt<span class="w"> </span>list<span class="w"> </span>--upgradable
+sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>git-all
+</pre></div>
+</div>
+<p>Subsequently, <a class="reference external" href="https://git-scm.com/book/en/v2/Appendix-C%3A-Git-Commands-Setup-and-Config">set up &amp; configure</a> <code class="docutils literal notranslate"><span class="pre">git</span></code> …</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.name<span class="w"> </span><span class="s2">&quot;&quot;</span>
+git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.email<span class="w"> </span><span class="s2">&quot;...@users.noreply.github.com&quot;</span>
+git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>core.editor<span class="w"> </span><span class="s2">&quot;vim --nofork&quot;</span>
+git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>init.defaultBranch<span class="w"> </span>master
+
+ssh-keygen<span class="w"> </span>-t<span class="w"> </span>ed25519<span class="w"> </span>-C<span class="w"> </span><span class="s2">&quot;...@users.noreply.github.com&quot;</span>
+
+cat<span class="w"> </span>~/.ssh/id_ed25519.pub
+</pre></div>
+</div>
+<p>For instances whereby multiple accounts have to be managed per git client, e.g., study <a class="reference external" href="https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-your-personal-account/managing-multiple-accounts">GitHub Multiple Accounts</a>.</p>
+<br>
+</section>
+<section id="conda">
+<h3>CONDA<a class="headerlink" href="#conda" title="Link to this heading">#</a></h3>
+<p>Via <code class="docutils literal notranslate"><span class="pre">miniconda</span></code>.  Foremost, check the python version</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>--version
+</pre></div>
+</div>
+<section id="the-installer">
+<h4>The Installer<a class="headerlink" href="#the-installer" title="Link to this heading">#</a></h4>
+<p>Subsequently, <code class="docutils literal notranslate"><span class="pre">get</span></code> the <a class="reference external" href="https://docs.conda.io/en/latest/miniconda.html#linux-installers">installer</a> relative to the system’s python version, e.g.,</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="c1"># if python 3.10.*</span>
+sudo<span class="w"> </span>wget<span class="w"> </span>-P<span class="w"> </span>Downloads<span class="w"> </span>https://repo.anaconda.com/miniconda/Miniconda3-py310_24.4.0-0-Linux-x86_64.sh
+<span class="nb">cd</span><span class="w"> </span>Downloads
+sudo<span class="w"> </span>chmod<span class="w"> </span>+x<span class="w"> </span>Miniconda3-py310_24.4.0-0-Linux-x86_64.sh
+</pre></div>
+</div>
+</section>
+<section id="install">
+<h4>Install<a class="headerlink" href="#install" title="Link to this heading">#</a></h4>
+<p>Install in the specified directory</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="c1"># Include &lt;-b&gt; for automatic acceptance of the terms &amp; conditions</span>
+sudo<span class="w"> </span>bash<span class="w"> </span>Miniconda3-py310_24.4.0-0-Linux-x86_64.sh<span class="w"> </span>-p<span class="w"> </span>/opt/miniconda3
+
+$<span class="w"> </span>Do<span class="w"> </span>you<span class="w"> </span>wish<span class="w"> </span>the<span class="w"> </span>installer<span class="w"> </span>to<span class="w"> </span>initialize<span class="w"> </span>Miniconda3<span class="w"> </span>by<span class="w"> </span>running<span class="w"> </span>conda<span class="w"> </span>init?
+&gt;&gt;&gt;<span class="w"> </span>no
+</pre></div>
+</div>
+</section>
+<section id="set-the-path-variable">
+<h4>Set the Path Variable<a class="headerlink" href="#set-the-path-variable" title="Link to this heading">#</a></h4>
+<p>Open <code class="docutils literal notranslate"><span class="pre">/etc/profile</span></code>, i.e.,</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>vi<span class="w"> </span>profile
+</pre></div>
+</div>
+<p>and append</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="k">if</span><span class="w"> </span>!<span class="w"> </span><span class="o">[[</span><span class="w"> </span><span class="nv">$PATH</span><span class="w"> </span><span class="o">=</span>~<span class="w"> </span><span class="s2">&quot;/opt/miniconda3/bin&quot;</span><span class="w"> </span><span class="o">]]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<span class="w">	</span><span class="nv">PATH</span><span class="o">=</span><span class="s2">&quot;/opt/miniconda3/bin:</span><span class="nv">$PATH</span><span class="s2">&quot;</span>
+<span class="k">fi</span>
+</pre></div>
+</div>
+<p>The command <code class="docutils literal notranslate"><span class="pre">i</span></code> starts the edit mode, <code class="docutils literal notranslate"><span class="pre">ESC</span></code> exits the mode, and <code class="docutils literal notranslate"><span class="pre">:wq</span></code> saves; <a class="reference external" href="https://www.cs.colostate.edu/helpdocs/vi.html"><code class="docutils literal notranslate"><span class="pre">vi</span></code> commands</a>.  <strong>Exit</strong> the terminal.</p>
+<br>
+</section>
+<section id="set-up">
+<h4>Set-up<a class="headerlink" href="#set-up" title="Link to this heading">#</a></h4>
+<p>Next, within a new terminal</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>init<span class="w"> </span>bash
+conda<span class="w"> </span>config<span class="w"> </span>--set<span class="w"> </span>auto_activate_base<span class="w"> </span><span class="nb">false</span>
+sudo<span class="w"> </span>chown<span class="w"> </span>-R<span class="w"> </span><span class="nv">$USER</span>:<span class="nv">$USER</span><span class="w"> </span>/opt/miniconda3
+</pre></div>
+</div>
+</section>
+<section id="upkeep">
+<h4>Upkeep<a class="headerlink" href="#upkeep" title="Link to this heading">#</a></h4>
+<p>Update <a class="reference external" href="https://docs.conda.io/projects/conda/en/4.14.x/index.html">conda</a> via</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>update<span class="w"> </span>-n<span class="w"> </span>base<span class="w"> </span>-c<span class="w"> </span>anaconda<span class="w"> </span>conda
+</pre></div>
+</div>
+<br>
+<br>
+<br>
+</section>
+</section>
+</section>
+<section id="fundamental-software-windows">
+<h2>Fundamental Software: Windows<a class="headerlink" href="#fundamental-software-windows" title="Link to this heading">#</a></h2>
+<section id="core">
+<h3>Core<a class="headerlink" href="#core" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://notepad-plus-plus.org">Notepad++</a> / <a class="reference external" href="https://github.com/notepad-plus-plus/notepad-plus-plus/releases">Notepad++</a></p></li>
+<li><p><a class="reference external" href="https://git-scm.com">Git for Windows</a></p>
+<ul>
+<li><p>Editor: Select Notepad++</p></li>
+<li><p>Default Branch Name: <em>master</em></p></li>
+</ul>
+</li>
+<li><p>Java: <a class="reference external" href="https://adoptium.net/en-GB/temurin">JDK &amp; JRE</a></p></li>
+<li><p><a class="reference external" href="https://www.openoffice.org/download/index.html">OpenOffice</a></p></li>
+</ul>
+<br>
+</section>
+<section id="windows-installations-that-propagate-to-wsl-kernels">
+<h3>Windows Installations that Propagate to WSL Kernels<a class="headerlink" href="#windows-installations-that-propagate-to-wsl-kernels" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.docker.com/products/docker-desktop/">Docker Desktop</a></p></li>
+<li><p><a class="reference external" href="https://www.jetbrains.com/idea/download/?section=windows">IntelliJ IDEA Ultimate</a></p></li>
+<li><p><a class="reference external" href="https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode">Visual Studio CODE</a></p></li>
+</ul>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="languages/scala.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Scala</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> PRACTICE
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#initial-set-up">Initial Set-up</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-tools">Basic Tools</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#linux-windows-subsystem-for-linux-wsl">Linux &amp; Windows Subsystem for Linux (WSL)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#activate-windows-subsystem-for-linux">Activate Windows Subsystem for Linux</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-the-virtual-machine-feature-via-powershell-administrator-mode">Enable the virtual machine feature via PowerShell; administrator mode.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#linux-kernel-update-package">Linux Kernel Update Package</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#download-install-a-linux-distribution">Download &amp; Install a Linux Distribution</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#commands">Commands</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fundamental-software-linux">Fundamental Software: Linux</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#wget">WGET</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#git">GIT</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conda">CONDA</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-installer">The Installer</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#install">Install</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#set-the-path-variable">Set the Path Variable</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#set-up">Set-up</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#upkeep">Upkeep</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fundamental-software-windows">Fundamental Software: Windows</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#core">Core</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#windows-installations-that-propagate-to-wsl-kernels">Windows Installations that Propagate to WSL Kernels</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By @greyhypotheses
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023, The Artificial Intelligence Unit.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
