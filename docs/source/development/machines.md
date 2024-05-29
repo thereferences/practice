@@ -50,13 +50,21 @@ fails.  This section outlines the semi-manual approach.  For reference purposes:
 
 ### Activate Windows Subsystem for Linux
 
+The activation steps are
+
 > Control Panel $\rightarrow$ Uninstall a program $\rightarrow$ Turn Windows features on or off $\rightarrow$ Windows Subsystem for Linux.
+
+Subsequently, re-start the machine.
 
 <br>
 
 ### Enable the virtual machine feature via PowerShell; administrator mode.
 
-> dism.exe /online [/enable-feature](https://learn.microsoft.com/en-us/windows/wsl/install-manual#step-3---enable-virtual-machine-feature) /featurename:VirtualMachinePlatform /all /norestart
+For details visit [enable virtual machine feature](https://learn.microsoft.com/en-us/windows/wsl/install-manual#step-3---enable-virtual-machine-feature).
+
+```powershell
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+```
 
 <br>
 
@@ -70,8 +78,7 @@ fails.  This section outlines the semi-manual approach.  For reference purposes:
 
 * [Download](https://learn.microsoft.com/en-us/windows/wsl/install-manual#downloading-distributions)
 * To install, run `Add-AppxPackage .\app_name.appx`
-* Double-click on the installed app, which will exists within the applications' menu, to activate it.  You will be asked
-  to set up credentials.
+* Double-click on the installed app, which will exists within the applications' menu, to activate it.  You will be asked to set up credentials.
 
 <br>
 
@@ -172,7 +179,7 @@ Install in the specified directory
 
 ```shell
 # Include <-b> for automatic acceptance of the terms & conditions
-sudo bash Miniconda3-py310_23.5.2-0-Linux-x86_64.sh -p /opt/miniconda3
+sudo bash Miniconda3-py310_24.4.0-0-Linux-x86_64.sh -p /opt/miniconda3
 
 $ Do you wish the installer to initialize Miniconda3 by running conda init?
 >>> no
