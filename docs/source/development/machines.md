@@ -232,7 +232,7 @@ conda update -n base -c anaconda conda
 
 ### Core
 
-* [Notepad++](https://notepad-plus-plus.org)
+* [Notepad++](https://notepad-plus-plus.org) / [Notepad++](https://github.com/notepad-plus-plus/notepad-plus-plus/releases)
 * [Git for Windows](https://git-scm.com)
     * Editor: Select Notepad++
     * Default Branch Name: *master*
