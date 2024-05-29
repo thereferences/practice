@@ -437,16 +437,19 @@ fails.  This section outlines the semi-manual approach.  For reference purposes:
 <br>
 <section id="activate-windows-subsystem-for-linux">
 <h3>Activate Windows Subsystem for Linux<a class="headerlink" href="#activate-windows-subsystem-for-linux" title="Link to this heading">#</a></h3>
+<p>The activation steps are</p>
 <blockquote>
 <div><p>Control Panel <span class="math notranslate nohighlight">\(\rightarrow\)</span> Uninstall a program <span class="math notranslate nohighlight">\(\rightarrow\)</span> Turn Windows features on or off <span class="math notranslate nohighlight">\(\rightarrow\)</span> Windows Subsystem for Linux.</p>
 </div></blockquote>
+<p>Subsequently, re-start the machine.</p>
 <br>
 </section>
 <section id="enable-the-virtual-machine-feature-via-powershell-administrator-mode">
 <h3>Enable the virtual machine feature via PowerShell; administrator mode.<a class="headerlink" href="#enable-the-virtual-machine-feature-via-powershell-administrator-mode" title="Link to this heading">#</a></h3>
-<blockquote>
-<div><p>dism.exe /online <a class="reference external" href="https://learn.microsoft.com/en-us/windows/wsl/install-manual#step-3---enable-virtual-machine-feature">/enable-feature</a> /featurename:VirtualMachinePlatform /all /norestart</p>
-</div></blockquote>
+<p>For details visit <a class="reference external" href="https://learn.microsoft.com/en-us/windows/wsl/install-manual#step-3---enable-virtual-machine-feature">enable virtual machine feature</a>.</p>
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="n">dism</span><span class="p">.</span><span class="n">exe</span> <span class="p">/</span><span class="n">online</span> <span class="p">/</span><span class="nb">enable-feature</span> <span class="p">/</span><span class="n">featurename</span><span class="p">:</span><span class="n">VirtualMachinePlatform</span> <span class="p">/</span><span class="n">all</span> <span class="p">/</span><span class="n">norestart</span>
+</pre></div>
+</div>
 <br>
 </section>
 <section id="linux-kernel-update-package">
@@ -461,8 +464,7 @@ fails.  This section outlines the semi-manual approach.  For reference purposes:
 <ul class="simple">
 <li><p><a class="reference external" href="https://learn.microsoft.com/en-us/windows/wsl/install-manual#downloading-distributions">Download</a></p></li>
 <li><p>To install, run <code class="docutils literal notranslate"><span class="pre">Add-AppxPackage</span> <span class="pre">.\app_name.appx</span></code></p></li>
-<li><p>Double-click on the installed app, which will exists within the applications’ menu, to activate it.  You will be asked
-to set up credentials.</p></li>
+<li><p>Double-click on the installed app, which will exists within the applications’ menu, to activate it.  You will be asked to set up credentials.</p></li>
 </ul>
 <br>
 </section>
@@ -545,7 +547,7 @@ sudo<span class="w"> </span>chmod<span class="w"> </span>+x<span class="w"> </sp
 <h4>Install<a class="headerlink" href="#install" title="Link to this heading">#</a></h4>
 <p>Install in the specified directory</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="c1"># Include &lt;-b&gt; for automatic acceptance of the terms &amp; conditions</span>
-sudo<span class="w"> </span>bash<span class="w"> </span>Miniconda3-py310_23.5.2-0-Linux-x86_64.sh<span class="w"> </span>-p<span class="w"> </span>/opt/miniconda3
+sudo<span class="w"> </span>bash<span class="w"> </span>Miniconda3-py310_24.4.0-0-Linux-x86_64.sh<span class="w"> </span>-p<span class="w"> </span>/opt/miniconda3
 
 $<span class="w"> </span>Do<span class="w"> </span>you<span class="w"> </span>wish<span class="w"> </span>the<span class="w"> </span>installer<span class="w"> </span>to<span class="w"> </span>initialize<span class="w"> </span>Miniconda3<span class="w"> </span>by<span class="w"> </span>running<span class="w"> </span>conda<span class="w"> </span>init?
 &gt;&gt;&gt;<span class="w"> </span>no
@@ -593,7 +595,7 @@ sudo<span class="w"> </span>chown<span class="w"> </span>-R<span class="w"> </sp
 <section id="core">
 <h3>Core<a class="headerlink" href="#core" title="Link to this heading">#</a></h3>
 <ul class="simple">
-<li><p><a class="reference external" href="https://notepad-plus-plus.org">Notepad++</a></p></li>
+<li><p><a class="reference external" href="https://notepad-plus-plus.org">Notepad++</a> / <a class="reference external" href="https://github.com/notepad-plus-plus/notepad-plus-plus/releases">Notepad++</a></p></li>
 <li><p><a class="reference external" href="https://git-scm.com">Git for Windows</a></p>
 <ul>
 <li><p>Editor: Select Notepad++</p></li>
