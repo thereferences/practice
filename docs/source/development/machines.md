@@ -247,6 +247,19 @@ conda update -n base -c anaconda conda
 * [IntelliJ IDEA Ultimate](https://www.jetbrains.com/idea/download/?section=windows)
 * [Visual Studio CODE](https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode)
 
+
+<br>
+<br>
+<br>
+
+
+## Addendum
+
+
+
+
+
+
 <br>
 <br>
 
