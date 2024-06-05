@@ -303,6 +303,10 @@ Select
 - Checkout Windows-style, commit Unix-style line endings
 
 
+Configuring the terminal emulator to use with Git Bash
+Select
+- Use MinTTY (the default terminal of MSYS2)
+
 <br>
 <br>
 
