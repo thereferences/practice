@@ -298,6 +298,11 @@ Select
 - Use the OpenSSL library
 
 
+Configuring the line ending conversions
+Select
+- Checkout Windows-style, commit Unix-style line endings
+
+
 <br>
 <br>
 
