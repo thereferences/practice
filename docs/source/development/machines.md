@@ -286,7 +286,8 @@ Select Destination Location
 
 Select Components
 Deselect
-- [ ] Additional icons [] On the Desktop
+- [ ] Additional icons 
+	- [ ] On the Desktop
 - [ ] Git LFS (Large File Support)
 - [ ] Add a Git Bash Profile to Windows Terminal 
 
