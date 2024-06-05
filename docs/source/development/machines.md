@@ -116,7 +116,13 @@ printenv
 
 ### WGET
 
-The <a href="https://www.gnu.org/software/wget/manual/wget.html" target="_blank">wget</a> utility:
+The <a href="https://www.gnu.org/software/wget/manual/wget.html" target="_blank">wget</a> utility - check if `wget` exists
+
+```shell
+wget --version
+```
+
+Installing `wget`, `ca-certificates`
 
 ```shell
 sudo apt install wget ca-certificates
