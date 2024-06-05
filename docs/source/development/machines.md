@@ -147,7 +147,12 @@ Subsequently, [set up & configure](https://git-scm.com/book/en/v2/Appendix-C%3A-
 
 ```shell
 git config --global user.name ""
+
+# Navigate to Settings -> Emails ... within the *Primary email address* section 
+# you will find a ...@users.noreply.github.com address that can be used for Git operations.
+# Additionally, consider enabling - Keep my email addresses private 
 git config --global user.email "...@users.noreply.github.com"
+
 git config --global core.editor "vim --nofork"
 git config --global init.defaultBranch master
 
