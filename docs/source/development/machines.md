@@ -313,6 +313,16 @@ Select
 - Fast-forward or merge
 
 
+Choose a credential helper
+Select
+- None
+
+
+Configuring extra options
+Select
+- Enable file system caching
+
+
 <br>
 <br>
 
