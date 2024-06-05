@@ -255,9 +255,33 @@ conda update -n base -c anaconda conda
 
 ## Addendum
 
+### Git
+
+Select Destination Location
 
 
+Select Components
+deselect
+* [] Additional icons [] On the Desktop
+* [] Git LFS (Large File Support)
+* [] Add a Git Bash Profile to Windows Terminal 
 
+
+Select Start Menu Folder
+deselect
+[] Don't create a Start Menu folder
+
+
+Choosing the default editor used by Git
+select
+- Use Notepad++ as Git's default editor
+
+
+Adjusting the name of the initial branch in new repositories
+select
+- Override the default branch name for new repositories
+  {master}
+  
 
 
 <br>
