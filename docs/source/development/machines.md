@@ -284,6 +284,8 @@ conda update -n base -c anaconda conda
 
 #### Select Destination Location
 
+<br>
+
 
 #### Select Components
 
@@ -293,11 +295,15 @@ Deselect
 - [ ] Git LFS (Large File Support)
 - [ ] Add a Git Bash Profile to Windows Terminal 
 
+<br>
+
 
 #### Select Start Menu Folder
 
 Deselect
 [] Don't create a Start Menu folder
+
+<br>
 
 
 #### Choosing the default editor used by Git
@@ -305,6 +311,7 @@ Deselect
 Select
 - Use Notepad++ as Git's default editor
 
+<br>
 
 #### Adjusting the name of the initial branch in new repositories
 
@@ -312,23 +319,28 @@ Select
 - Override the default branch name for new repositories
   {master}
 
+<br>
 
 #### Adjusting your PATH environment
 
 Select
 - Git from the command line and also from 3rd-party software
 
+<br>
 
 #### Choosing the SSH executable
 
 Select
 - Use bundled OpenSSH
 
+<br>
 
 #### Choosing HTTPS transport backend
 
 Select
 - Use the OpenSSL library
+
+<br>
 
 
 #### Configuring the line ending conversions
@@ -336,30 +348,35 @@ Select
 Select
 - Checkout Windows-style, commit Unix-style line endings
 
+<br>
 
 #### Configuring the terminal emulator to use with Git Bash
 
 Select
 - Use MinTTY (the default terminal of MSYS2)
 
+<br>
 
 #### Choose the default behaviour of `git pull`
 
 Select
 - Fast-forward or merge
 
+<br>
 
 #### Choose a credential helper
 
 Select
 - None
 
+<br>
 
 #### Configuring extra options
 
 Select
 - Enable file system caching
 
+<br>
 
 #### Configuring experimental options
  
