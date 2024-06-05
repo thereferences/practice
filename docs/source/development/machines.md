@@ -282,6 +282,9 @@ select
 - Override the default branch name for new repositories
   {master}
   
+Adjusting your PATH environment
+select
+- Git from the command line and also from 3rd-party software
 
 
 <br>
