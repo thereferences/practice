@@ -301,7 +301,7 @@ Deselect
 #### Select Start Menu Folder
 
 Deselect
-[] Don't create a Start Menu folder
+- [ ] Don't create a Start Menu folder
 
 <br>
 
