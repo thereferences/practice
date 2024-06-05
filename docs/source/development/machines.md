@@ -281,10 +281,12 @@ conda update -n base -c anaconda conda
 
 ### Git
 
-Select Destination Location
+
+#### Select Destination Location
 
 
-Select Components
+#### Select Components
+
 Deselect
 - [ ] Additional icons 
   - [ ] On the Desktop
@@ -292,64 +294,76 @@ Deselect
 - [ ] Add a Git Bash Profile to Windows Terminal 
 
 
-Select Start Menu Folder
+#### Select Start Menu Folder
+
 Deselect
 [] Don't create a Start Menu folder
 
 
-Choosing the default editor used by Git
+#### Choosing the default editor used by Git
+
 Select
 - Use Notepad++ as Git's default editor
 
 
-Adjusting the name of the initial branch in new repositories
+#### Adjusting the name of the initial branch in new repositories
+
 Select
 - Override the default branch name for new repositories
   {master}
 
 
-Adjusting your PATH environment
+#### Adjusting your PATH environment
+
 Select
 - Git from the command line and also from 3rd-party software
 
 
-Choosing the SSH executable
+#### Choosing the SSH executable
+
 Select
 - Use bundled OpenSSH
 
 
-Choosing HTTPS transport backend
+#### Choosing HTTPS transport backend
+
 Select
 - Use the OpenSSL library
 
 
-Configuring the line ending conversions
+#### Configuring the line ending conversions
+
 Select
 - Checkout Windows-style, commit Unix-style line endings
 
 
-Configuring the terminal emulator to use with Git Bash
+#### Configuring the terminal emulator to use with Git Bash
+
 Select
 - Use MinTTY (the default terminal of MSYS2)
 
 
-Choose the default behaviour of `git pull`
+#### Choose the default behaviour of `git pull`
+
 Select
 - Fast-forward or merge
 
 
-Choose a credential helper
+#### Choose a credential helper
+
 Select
 - None
 
 
-Configuring extra options
+#### Configuring extra options
+
 Select
 - Enable file system caching
 
 
-Configuring experimental options
-Deselect all
+#### Configuring experimental options
+ 
+- *Deselect all*
 
 <br>
 <br>
