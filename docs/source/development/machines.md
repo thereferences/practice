@@ -146,6 +146,7 @@ git config --global core.editor "vim --nofork"
 git config --global init.defaultBranch master
 
 ssh-keygen -t ed25519 -C "...@users.noreply.github.com"
+... Enter file in which to save the key ... [Default $\rightarrow$ ENTER.  Beware, a key re-write might be requested if a key file already exits.]
 
 cat ~/.ssh/id_ed25519.pub
 ```
