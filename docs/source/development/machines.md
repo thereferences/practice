@@ -261,30 +261,41 @@ Select Destination Location
 
 
 Select Components
-deselect
+Deselect
 * [] Additional icons [] On the Desktop
 * [] Git LFS (Large File Support)
 * [] Add a Git Bash Profile to Windows Terminal 
 
 
 Select Start Menu Folder
-deselect
+Deselect
 [] Don't create a Start Menu folder
 
 
 Choosing the default editor used by Git
-select
+Select
 - Use Notepad++ as Git's default editor
 
 
 Adjusting the name of the initial branch in new repositories
-select
+Select
 - Override the default branch name for new repositories
   {master}
-  
+
+
 Adjusting your PATH environment
-select
+Select
 - Git from the command line and also from 3rd-party software
+
+
+Choosing the SSH executable
+Select
+- Use bundled OpenSSH
+
+
+Choosing HTTPS transport backend
+Select
+- Use the OpenSSL library
 
 
 <br>
