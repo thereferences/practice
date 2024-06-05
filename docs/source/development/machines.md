@@ -307,6 +307,12 @@ Configuring the terminal emulator to use with Git Bash
 Select
 - Use MinTTY (the default terminal of MSYS2)
 
+
+Choose the default behaviour of `git pull`
+Select
+- Fast-forward or merge
+
+
 <br>
 <br>
 
