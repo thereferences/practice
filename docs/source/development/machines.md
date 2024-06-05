@@ -156,9 +156,20 @@ git config --global user.email "...@users.noreply.github.com"
 git config --global core.editor "vim --nofork"
 git config --global init.defaultBranch master
 
-ssh-keygen -t ed25519 -C "...@users.noreply.github.com"
-... Enter file in which to save the key ... [Default $\rightarrow$ ENTER.  Beware, a key re-write might be requested if a key file already exits.]
+```
 
+Next, SSH key
+
+```shell
+ssh-keygen -t ed25519 -C "...@users.noreply.github.com"
+... Enter file in which to save the key ... [Default $\rightarrow$ ENTER.]
+
+```
+
+Beware, a key [re-write might be requested](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#:~:text=When%20you%27re%20prompted) if a key file already exists.
+
+
+```shell
 cat ~/.ssh/id_ed25519.pub
 ```
 
