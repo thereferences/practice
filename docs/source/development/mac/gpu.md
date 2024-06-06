@@ -56,6 +56,14 @@ Custom installation options: Select all
 
 Leave the default installation location $\rightarrow$ C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v{version.number}
 
+
+<br>
+<br>
+
+### cuDNN
+
+
+
 <br>
 <br>
 
