@@ -53,7 +53,7 @@ Install [NVIDIA CUDA Toolkit](https://developer.nvidia.com/cuda-downloads)
 
 Installation Steps:
 * NVIDIA software licence agreement: AGREE AND CONTINUE
-* Custom installation options: Select all
+* Custom installation options: deselect visual studio integration
 * Leave the default installation location $\rightarrow$ C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v{version.number}
 
 
