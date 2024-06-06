@@ -364,6 +364,11 @@ document.write(`
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fundamental-software-linux">Fundamental Software: Linux</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#wget">WGET</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#java">Java</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-java">Installing: Java</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#environment-variables-java">Environment Variables: Java</a></li>
+</ul>
+</li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#git">GIT</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conda">CONDA</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-installer">The Installer</a></li>
@@ -377,7 +382,31 @@ document.write(`
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fundamental-software-windows">Fundamental Software: Windows</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#core">Core</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#windows-installations-that-propagate-to-wsl-kernels">Windows Installations that Propagate to WSL Kernels</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#windows-installations-that-propagate-to-wsl-kernels">Windows Installations that Propagate to WSL Kernels</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#docker-desktop">Docker Desktop</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#and">And</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#addendum">Addendum</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Git</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#select-destination-location">Select Destination Location</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#select-components">Select Components</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#select-start-menu-folder">Select Start Menu Folder</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#choosing-the-default-editor-used-by-git">Choosing the default editor used by Git</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#adjusting-the-name-of-the-initial-branch-in-new-repositories">Adjusting the name of the initial branch in new repositories</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#adjusting-your-path-environment">Adjusting your PATH environment</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#choosing-the-ssh-executable">Choosing the SSH executable</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#choosing-https-transport-backend">Choosing HTTPS transport backend</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#configuring-the-line-ending-conversions">Configuring the line ending conversions</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#configuring-the-terminal-emulator-to-use-with-git-bash">Configuring the terminal emulator to use with Git Bash</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#choose-the-default-behaviour-of-git-pull">Choose the default behaviour of <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#choose-a-credential-helper">Choose a credential helper</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#configuring-extra-options">Configuring extra options</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#configuring-experimental-options">Configuring experimental options</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -497,12 +526,61 @@ gpg<span class="w"> </span>--list-secret-keys
 <br>
 <section id="wget">
 <h3>WGET<a class="headerlink" href="#wget" title="Link to this heading">#</a></h3>
-<p>The <a href="https://www.gnu.org/software/wget/manual/wget.html" target="_blank">wget</a> utility:</p>
+<p>The <a href="https://www.gnu.org/software/wget/manual/wget.html" target="_blank">wget</a> utility - check if <code class="docutils literal notranslate"><span class="pre">wget</span></code> exists</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>wget<span class="w"> </span>--version
+</pre></div>
+</div>
+<p>Installing <code class="docutils literal notranslate"><span class="pre">wget</span></code>, <code class="docutils literal notranslate"><span class="pre">ca-certificates</span></code></p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>wget<span class="w"> </span>ca-certificates
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">ca-certificates</span></code> allows applications that are secure sockets layer (SSL) dependent to verify the authenticity of SSL connections; SSL is a deprecated tool.</p>
 <br>
+</section>
+<section id="java">
+<h3>Java<a class="headerlink" href="#java" title="Link to this heading">#</a></h3>
+<p>References</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-22-04">Installing JAVA</a></p></li>
+</ul>
+<section id="installing-java">
+<h4>Installing: Java<a class="headerlink" href="#installing-java" title="Link to this heading">#</a></h4>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="c1"># jdk &amp; jre</span>
+sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>openjdk-19-jdk-headless
+java<span class="w"> </span>--version
+javac<span class="w"> </span>--version
+</pre></div>
+</div>
+</section>
+<section id="environment-variables-java">
+<h4>Environment Variables: Java<a class="headerlink" href="#environment-variables-java" title="Link to this heading">#</a></h4>
+<p>The environment variable of interest is the <code class="docutils literal notranslate"><span class="pre">JAVA_HOME</span></code> variable, which depends on the installation directory string, i.e.,</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>update-alternatives<span class="w"> </span>--config<span class="w"> </span>java
+</pre></div>
+</div>
+<p>or</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>readlink<span class="w"> </span>-f<span class="w"> </span><span class="sb">`</span>which<span class="w"> </span>java<span class="sb">`</span>
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">JAVA_HOME</span></code> environment variable is defined as</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>readlink<span class="w"> </span>-f<span class="w"> </span><span class="sb">`</span>which<span class="w"> </span>java<span class="sb">`</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sed<span class="w"> </span><span class="s2">&quot;s:/bin/java::&quot;</span>
+</pre></div>
+</div>
+<p>i.e., the <code class="docutils literal notranslate"><span class="pre">/bin/java</span></code> suffix of the penultimate command’s output is excluded/removed. If the resulting string is <code class="docutils literal notranslate"><span class="pre">/usr/lib/jvm/java-19-openjdk-amd64</span></code>, then</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span><span class="w"> </span><span class="nv">JAVA_HOME</span><span class="o">=</span>/usr/lib/jvm/java-19-openjdk-amd64
+</pre></div>
+</div>
+<p>Or rather, edit <code class="docutils literal notranslate"><span class="pre">/etc/environment</span></code> by appending the definition of <code class="docutils literal notranslate"><span class="pre">JAVA_HOME</span></code> at the end of the file.  An edit mode option is</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>vi<span class="w"> </span>/etc/environment
+</pre></div>
+</div>
+<p>Subsequently, append</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nv">JAVA_HOME</span><span class="o">=</span>/usr/lib/jvm/java-19-openjdk-amd64
+</pre></div>
+</div>
+<p>The command <code class="docutils literal notranslate"><span class="pre">i</span></code> starts the edit mode, <code class="docutils literal notranslate"><span class="pre">ESC</span></code> exits the mode, and <code class="docutils literal notranslate"><span class="pre">:wq</span></code> saves; <a class="reference external" href="https://www.cs.colostate.edu/helpdocs/vi.html"><code class="docutils literal notranslate"><span class="pre">vi</span></code> commands</a>.</p>
+<br>
+</section>
 </section>
 <section id="git">
 <h3>GIT<a class="headerlink" href="#git" title="Link to this heading">#</a></h3>
@@ -515,15 +593,26 @@ sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> <
 </div>
 <p>Subsequently, <a class="reference external" href="https://git-scm.com/book/en/v2/Appendix-C%3A-Git-Commands-Setup-and-Config">set up &amp; configure</a> <code class="docutils literal notranslate"><span class="pre">git</span></code> …</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.name<span class="w"> </span><span class="s2">&quot;&quot;</span>
+
+<span class="c1"># Navigate to Settings -&gt; Emails ... within the *Primary email address* section </span>
+<span class="c1"># you will find a ...@users.noreply.github.com address that can be used for Git operations.</span>
+<span class="c1"># Additionally, consider enabling - Keep my email addresses private </span>
 git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.email<span class="w"> </span><span class="s2">&quot;...@users.noreply.github.com&quot;</span>
+
 git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>core.editor<span class="w"> </span><span class="s2">&quot;vim --nofork&quot;</span>
 git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>init.defaultBranch<span class="w"> </span>master
-
-ssh-keygen<span class="w"> </span>-t<span class="w"> </span>ed25519<span class="w"> </span>-C<span class="w"> </span><span class="s2">&quot;...@users.noreply.github.com&quot;</span>
-
-cat<span class="w"> </span>~/.ssh/id_ed25519.pub
 </pre></div>
 </div>
+<p>Next, SSH key</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>ssh-keygen<span class="w"> </span>-t<span class="w"> </span>ed25519<span class="w"> </span>-C<span class="w"> </span><span class="s2">&quot;...@users.noreply.github.com&quot;</span>
+$<span class="w"> </span>Enter<span class="w"> </span>file<span class="w"> </span><span class="k">in</span><span class="w"> </span>which<span class="w"> </span>to<span class="w"> </span>save<span class="w"> </span>the<span class="w"> </span>key<span class="w"> </span>...<span class="w"> </span><span class="o">[</span>Default<span class="w"> </span>$<span class="se">\r</span>ightarrow$<span class="w"> </span>ENTER.<span class="o">]</span>
+</pre></div>
+</div>
+<p>Beware, a key <a class="reference external" href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#:~:text=When%20you%27re%20prompted">re-write might be requested</a> if a key file already exists.  The command</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>cat<span class="w"> </span>~/.ssh/id_ed25519.pub
+</pre></div>
+</div>
+<p>prints the text for setting-up SSH key pair within a version control service.</p>
 <p>For instances whereby multiple accounts have to be managed per git client, e.g., study <a class="reference external" href="https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-your-personal-account/managing-multiple-accounts">GitHub Multiple Accounts</a>.</p>
 <br>
 </section>
@@ -609,10 +698,145 @@ sudo<span class="w"> </span>chown<span class="w"> </span>-R<span class="w"> </sp
 </section>
 <section id="windows-installations-that-propagate-to-wsl-kernels">
 <h3>Windows Installations that Propagate to WSL Kernels<a class="headerlink" href="#windows-installations-that-propagate-to-wsl-kernels" title="Link to this heading">#</a></h3>
+<section id="docker-desktop">
+<h4>Docker Desktop<a class="headerlink" href="#docker-desktop" title="Link to this heading">#</a></h4>
+<p><a class="reference external" href="https://www.docker.com/products/docker-desktop/">Docker Desktop</a></p>
+<p>Select</p>
+<ul class="contains-task-list simple">
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Use WSL-2 instead of Hyper-V</p></li>
+</ul>
+<p>Deselect</p>
+<ul class="contains-task-list simple">
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Add shortcut to desktop</p></li>
+</ul>
+</section>
+<section id="and">
+<h4>And<a class="headerlink" href="#and" title="Link to this heading">#</a></h4>
 <ul class="simple">
-<li><p><a class="reference external" href="https://www.docker.com/products/docker-desktop/">Docker Desktop</a></p></li>
 <li><p><a class="reference external" href="https://www.jetbrains.com/idea/download/?section=windows">IntelliJ IDEA Ultimate</a></p></li>
 <li><p><a class="reference external" href="https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode">Visual Studio CODE</a></p></li>
+</ul>
+<br>
+<br>
+<br>
+</section>
+</section>
+</section>
+<section id="addendum">
+<h2>Addendum<a class="headerlink" href="#addendum" title="Link to this heading">#</a></h2>
+<section id="id1">
+<h3>Git<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<section id="select-destination-location">
+<h4>Select Destination Location<a class="headerlink" href="#select-destination-location" title="Link to this heading">#</a></h4>
+<br>
+</section>
+<section id="select-components">
+<h4>Select Components<a class="headerlink" href="#select-components" title="Link to this heading">#</a></h4>
+<p>Deselect</p>
+<ul class="contains-task-list simple">
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Additional icons</p>
+<ul class="contains-task-list">
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> On the Desktop</p></li>
+</ul>
+</li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Git LFS (Large File Support)</p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Add a Git Bash Profile to Windows Terminal</p></li>
+</ul>
+<br>
+</section>
+<section id="select-start-menu-folder">
+<h4>Select Start Menu Folder<a class="headerlink" href="#select-start-menu-folder" title="Link to this heading">#</a></h4>
+<p>Deselect</p>
+<ul class="contains-task-list simple">
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Don’t create a Start Menu folder</p></li>
+</ul>
+<br>
+</section>
+<section id="choosing-the-default-editor-used-by-git">
+<h4>Choosing the default editor used by Git<a class="headerlink" href="#choosing-the-default-editor-used-by-git" title="Link to this heading">#</a></h4>
+<p>Select</p>
+<ul class="simple">
+<li><p>Use Notepad++ as Git’s default editor</p></li>
+</ul>
+<br>
+</section>
+<section id="adjusting-the-name-of-the-initial-branch-in-new-repositories">
+<h4>Adjusting the name of the initial branch in new repositories<a class="headerlink" href="#adjusting-the-name-of-the-initial-branch-in-new-repositories" title="Link to this heading">#</a></h4>
+<p>Select</p>
+<ul class="simple">
+<li><p>Override the default branch name for new repositories
+{master}</p></li>
+</ul>
+<br>
+</section>
+<section id="adjusting-your-path-environment">
+<h4>Adjusting your PATH environment<a class="headerlink" href="#adjusting-your-path-environment" title="Link to this heading">#</a></h4>
+<p>Select</p>
+<ul class="simple">
+<li><p>Git from the command line and also from 3rd-party software</p></li>
+</ul>
+<br>
+</section>
+<section id="choosing-the-ssh-executable">
+<h4>Choosing the SSH executable<a class="headerlink" href="#choosing-the-ssh-executable" title="Link to this heading">#</a></h4>
+<p>Select</p>
+<ul class="simple">
+<li><p>Use bundled OpenSSH</p></li>
+</ul>
+<br>
+</section>
+<section id="choosing-https-transport-backend">
+<h4>Choosing HTTPS transport backend<a class="headerlink" href="#choosing-https-transport-backend" title="Link to this heading">#</a></h4>
+<p>Select</p>
+<ul class="simple">
+<li><p>Use the OpenSSL library</p></li>
+</ul>
+<br>
+</section>
+<section id="configuring-the-line-ending-conversions">
+<h4>Configuring the line ending conversions<a class="headerlink" href="#configuring-the-line-ending-conversions" title="Link to this heading">#</a></h4>
+<p>Select</p>
+<ul class="simple">
+<li><p>Checkout Windows-style, commit Unix-style line endings</p></li>
+</ul>
+<br>
+</section>
+<section id="configuring-the-terminal-emulator-to-use-with-git-bash">
+<h4>Configuring the terminal emulator to use with Git Bash<a class="headerlink" href="#configuring-the-terminal-emulator-to-use-with-git-bash" title="Link to this heading">#</a></h4>
+<p>Select</p>
+<ul class="simple">
+<li><p>Use MinTTY (the default terminal of MSYS2)</p></li>
+</ul>
+<br>
+</section>
+<section id="choose-the-default-behaviour-of-git-pull">
+<h4>Choose the default behaviour of <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span></code><a class="headerlink" href="#choose-the-default-behaviour-of-git-pull" title="Link to this heading">#</a></h4>
+<p>Select</p>
+<ul class="simple">
+<li><p>Fast-forward or merge</p></li>
+</ul>
+<br>
+</section>
+<section id="choose-a-credential-helper">
+<h4>Choose a credential helper<a class="headerlink" href="#choose-a-credential-helper" title="Link to this heading">#</a></h4>
+<p>Select</p>
+<ul class="simple">
+<li><p>None</p></li>
+</ul>
+<br>
+</section>
+<section id="configuring-extra-options">
+<h4>Configuring extra options<a class="headerlink" href="#configuring-extra-options" title="Link to this heading">#</a></h4>
+<p>Select</p>
+<ul class="simple">
+<li><p>Enable file system caching</p></li>
+</ul>
+<br>
+</section>
+<section id="configuring-experimental-options">
+<h4>Configuring experimental options<a class="headerlink" href="#configuring-experimental-options" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p><em>Deselect all</em></p></li>
 </ul>
 <br>
 <br>
@@ -622,6 +846,7 @@ sudo<span class="w"> </span>chown<span class="w"> </span>-R<span class="w"> </sp
 <br>
 <br>
 <br>
+</section>
 </section>
 </section>
 </section>
@@ -676,6 +901,11 @@ sudo<span class="w"> </span>chown<span class="w"> </span>-R<span class="w"> </sp
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fundamental-software-linux">Fundamental Software: Linux</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#wget">WGET</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#java">Java</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-java">Installing: Java</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#environment-variables-java">Environment Variables: Java</a></li>
+</ul>
+</li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#git">GIT</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conda">CONDA</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-installer">The Installer</a></li>
@@ -689,7 +919,31 @@ sudo<span class="w"> </span>chown<span class="w"> </span>-R<span class="w"> </sp
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fundamental-software-windows">Fundamental Software: Windows</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#core">Core</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#windows-installations-that-propagate-to-wsl-kernels">Windows Installations that Propagate to WSL Kernels</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#windows-installations-that-propagate-to-wsl-kernels">Windows Installations that Propagate to WSL Kernels</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#docker-desktop">Docker Desktop</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#and">And</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#addendum">Addendum</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Git</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#select-destination-location">Select Destination Location</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#select-components">Select Components</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#select-start-menu-folder">Select Start Menu Folder</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#choosing-the-default-editor-used-by-git">Choosing the default editor used by Git</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#adjusting-the-name-of-the-initial-branch-in-new-repositories">Adjusting the name of the initial branch in new repositories</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#adjusting-your-path-environment">Adjusting your PATH environment</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#choosing-the-ssh-executable">Choosing the SSH executable</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#choosing-https-transport-backend">Choosing HTTPS transport backend</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#configuring-the-line-ending-conversions">Configuring the line ending conversions</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#configuring-the-terminal-emulator-to-use-with-git-bash">Configuring the terminal emulator to use with Git Bash</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#choose-the-default-behaviour-of-git-pull">Choose the default behaviour of <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#choose-a-credential-helper">Choose a credential helper</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#configuring-extra-options">Configuring extra options</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#configuring-experimental-options">Configuring experimental options</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
