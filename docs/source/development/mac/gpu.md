@@ -21,12 +21,19 @@ The landing page will display the name of the machine's Graphics Processing Unit
 NVIDIA RTX 2000 Ada Generation Laptop GPU 
 ```
 
-Hence, [download the appropriate NVIDIA Driver](https://www.nvidia.com/en-gb/drivers/)
+Hence, [download the appropriate NVIDIA Driver](https://www.nvidia.com/en-gb/drivers/).  In relation to the above example
 
-Product Category: NVIDIA RTX/Quadro
-Product Series: NVIDIA RTX Series (Notebooks)
-Product: NVIDIA RTX 2000 Ada Generation Laptop GPU
-Operating System [If uncertain, check Settings -> System -> About]
+* Product Category: NVIDIA RTX/Quadro
+* Product Series: NVIDIA RTX Series (Notebooks)
+* Product: NVIDIA RTX 2000 Ada Generation Laptop GPU
+* Operating System [If uncertain, check Settings -> System -> About]
+
+Install:
+
+* AGREE AND CONTINUE
+* Custom (Advanced)
+* Perform clean installation
+
 
 
 
