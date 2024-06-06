@@ -11,7 +11,7 @@ The references herein outline the fundamental NVIDIA installations **required wi
 
 Beware of the mappings between [CUDA Toolkit Version & CUDA Driver Version](https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html#id5:~:text=Windows%2C%20WSL-,CUDA%20Driver,-Running%20a%20CUDA).
 
-Right Click
+Right Click [desktop]
 SELECT Show more options
 SELECT NVIDIA Control Panel
 
