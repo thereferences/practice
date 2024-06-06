@@ -22,3 +22,17 @@ Product Category: NVIDIA RTX/Quadro
 Product Series: NVIDIA RTX Series (Notebooks)
 Product: NVIDIA RTX 2000 Ada Generation Laptop GPU
 Operating System [If uncertain, check Settings -> System -> About]
+
+
+
+<br>
+<br>
+
+<br>
+<br>
+
+<br>
+<br>
+
+<br>
+<br>
