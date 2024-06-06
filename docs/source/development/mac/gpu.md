@@ -1,10 +1,15 @@
 <br>
 
-Graphics Processing Unit, etc.
+## Graphics Processing Unit, etc.
 
 <br>
 
-The references herein outline the fundamental NVIDIA installations **required within Windows 11** that ensure the ability **to run CUDA dependent programs within Windows 11 or a WSL (Windows Subsystem for Linux) kernel**. Beware of the mappings between CUDA Toolkit Version & CUDA Driver Version: Matrix
+The references herein outline the fundamental NVIDIA installations **required within Windows 11** that ensure the ability **to run CUDA dependent programs within Windows 11 or a WSL (Windows Subsystem for Linux) kernel**. 
+
+
+### Driver
+
+Beware of the mappings between [CUDA Toolkit Version & CUDA Driver Version](https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html#id5:~:text=Windows%2C%20WSL-,CUDA%20Driver,-Running%20a%20CUDA).
 
 Right Click
 SELECT Show more options
