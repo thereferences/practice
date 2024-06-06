@@ -267,7 +267,21 @@ conda update -n base -c anaconda conda
 
 ### Windows Installations that Propagate to WSL Kernels
 
-* [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+
+#### Docker Desktop
+
+[Docker Desktop](https://www.docker.com/products/docker-desktop/)
+
+Select
+- [ ] Use WSL-2 instead of Hyper-V
+
+Deselect
+- [ ] Add shortcut to desktop
+
+
+
+#### And
+
 * [IntelliJ IDEA Ultimate](https://www.jetbrains.com/idea/download/?section=windows)
 * [Visual Studio CODE](https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode)
 
