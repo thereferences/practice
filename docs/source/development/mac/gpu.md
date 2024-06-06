@@ -46,15 +46,15 @@ NVIDIA will request a machine restart: restart.
 
 ### NVIDIA CUDA Toolkit
 
-Install NVIDIA CUDA Toolkit
-Release Notes
+Install [NVIDIA CUDA Toolkit](https://developer.nvidia.com/cuda-downloads)
+* [Release Notes](https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html)
 
+<br>
 
-NVIDIA software licence agreement: AGREE AND CONTINUE
-
-Custom installation options: Select all
-
-Leave the default installation location $\rightarrow$ C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v{version.number}
+Installation Steps:
+* NVIDIA software licence agreement: AGREE AND CONTINUE
+* Custom installation options: Select all
+* Leave the default installation location $\rightarrow$ C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v{version.number}
 
 
 <br>
@@ -62,7 +62,8 @@ Leave the default installation location $\rightarrow$ C:\Program Files\NVIDIA GP
 
 ### cuDNN
 
-
+Install [cuDNN](https://developer.nvidia.com/cudnn)
+* [Windows](https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html#install-windows)
 
 <br>
 <br>
