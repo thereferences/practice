@@ -7,7 +7,7 @@
 The references herein outline the fundamental NVIDIA installations **required within Windows 11** that ensure the ability **to run CUDA dependent programs within Windows 11 or a WSL (Windows Subsystem for Linux) kernel**. 
 
 
-### Driver
+### NVIDIA Driver
 
 Beware of the mappings between [CUDA Toolkit Version & CUDA Driver Version](https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html#id5:~:text=Windows%2C%20WSL-,CUDA%20Driver,-Running%20a%20CUDA).
 
@@ -40,6 +40,21 @@ Install:
 
 NVIDIA will request a machine restart: restart.
 
+<br>
+<br>
+
+
+### NVIDIA CUDA Toolkit
+
+Install NVIDIA CUDA Toolkit
+Release Notes
+
+
+NVIDIA software licence agreement: AGREE AND CONTINUE
+
+Custom installation options: Select all
+
+Leave the default installation location $\rightarrow$ C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v{version.number}
 
 <br>
 <br>
