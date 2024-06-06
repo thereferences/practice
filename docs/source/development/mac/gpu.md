@@ -33,6 +33,10 @@ Install:
 * AGREE AND CONTINUE
 * Custom (Advanced)
 * Perform clean installation
+  * HD Audio Driver
+  * RTX Desktop Manager
+  * Graphics Driver
+  * USBC Driver
 
 NVIDIA will request a machine restart: restart.
 
