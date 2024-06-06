@@ -116,13 +116,74 @@ printenv
 
 ### WGET
 
-The <a href="https://www.gnu.org/software/wget/manual/wget.html" target="_blank">wget</a> utility:
+The <a href="https://www.gnu.org/software/wget/manual/wget.html" target="_blank">wget</a> utility - check if `wget` exists
+
+```shell
+wget --version
+```
+
+Installing `wget`, `ca-certificates`
 
 ```shell
 sudo apt install wget ca-certificates
 ```
 
 `ca-certificates` allows applications that are secure sockets layer (SSL) dependent to verify the authenticity of SSL connections; SSL is a deprecated tool.
+
+<br>
+
+### Java
+
+References
+* [Installing JAVA](https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-22-04)
+
+#### Installing: Java
+
+```shell
+# jdk & jre
+sudo apt install openjdk-19-jdk-headless
+java --version
+javac --version
+```
+
+#### Environment Variables: Java
+
+The environment variable of interest is the `JAVA_HOME` variable, which depends on the installation directory string, i.e.,
+
+```shell
+sudo update-alternatives --config java
+```
+or
+
+```shell
+readlink -f `which java`
+```
+
+The `JAVA_HOME` environment variable is defined as
+
+```shell
+readlink -f `which java` | sed "s:/bin/java::"
+```
+
+i.e., the `/bin/java` suffix of the penultimate command's output is excluded/removed. If the resulting string is `/usr/lib/jvm/java-19-openjdk-amd64`, then
+
+```shell
+export JAVA_HOME=/usr/lib/jvm/java-19-openjdk-amd64
+```
+
+Or rather, edit `/etc/environment` by appending the definition of `JAVA_HOME` at the end of the file.  An edit mode option is
+
+```shell
+sudo vi /etc/environment
+```
+
+Subsequently, append
+
+```shell
+JAVA_HOME=/usr/lib/jvm/java-19-openjdk-amd64
+```
+
+The command `i` starts the edit mode, `ESC` exits the mode, and `:wq` saves; [`vi` commands](https://www.cs.colostate.edu/helpdocs/vi.html).
 
 <br>
 
@@ -141,14 +202,32 @@ Subsequently, [set up & configure](https://git-scm.com/book/en/v2/Appendix-C%3A-
 
 ```shell
 git config --global user.name ""
+
+# Navigate to Settings -> Emails ... within the *Primary email address* section 
+# you will find a ...@users.noreply.github.com address that can be used for Git operations.
+# Additionally, consider enabling - Keep my email addresses private 
 git config --global user.email "...@users.noreply.github.com"
+
 git config --global core.editor "vim --nofork"
 git config --global init.defaultBranch master
+```
 
+Next, SSH key
+
+```shell
 ssh-keygen -t ed25519 -C "...@users.noreply.github.com"
+$ Enter file in which to save the key ... [Default $\rightarrow$ ENTER.]
+```
 
+Beware, a key [re-write might be requested](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#:~:text=When%20you%27re%20prompted) if a key file already exists.  The command
+
+
+```shell
 cat ~/.ssh/id_ed25519.pub
 ```
+
+prints the text for setting-up SSH key pair within a version control service.
+
 
 For instances whereby multiple accounts have to be managed per git client, e.g., study [GitHub Multiple Accounts](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-your-personal-account/managing-multiple-accounts).
 
@@ -243,9 +322,134 @@ conda update -n base -c anaconda conda
 
 ### Windows Installations that Propagate to WSL Kernels
 
-* [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+
+#### Docker Desktop
+
+[Docker Desktop](https://www.docker.com/products/docker-desktop/)
+
+Select
+- [ ] Use WSL-2 instead of Hyper-V
+
+Deselect
+- [ ] Add shortcut to desktop
+
+
+
+#### And
+
 * [IntelliJ IDEA Ultimate](https://www.jetbrains.com/idea/download/?section=windows)
 * [Visual Studio CODE](https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode)
+
+
+<br>
+<br>
+<br>
+
+
+## Addendum
+
+### Git
+
+
+#### Select Destination Location
+
+<br>
+
+
+#### Select Components
+
+Deselect
+- [ ] Additional icons 
+  - [ ] On the Desktop
+- [ ] Git LFS (Large File Support)
+- [ ] Add a Git Bash Profile to Windows Terminal 
+
+<br>
+
+
+#### Select Start Menu Folder
+
+Deselect
+- [ ] Don't create a Start Menu folder
+
+<br>
+
+
+#### Choosing the default editor used by Git
+
+Select
+- Use Notepad++ as Git's default editor
+
+<br>
+
+#### Adjusting the name of the initial branch in new repositories
+
+Select
+- Override the default branch name for new repositories
+  {master}
+
+<br>
+
+#### Adjusting your PATH environment
+
+Select
+- Git from the command line and also from 3rd-party software
+
+<br>
+
+#### Choosing the SSH executable
+
+Select
+- Use bundled OpenSSH
+
+<br>
+
+#### Choosing HTTPS transport backend
+
+Select
+- Use the OpenSSL library
+
+<br>
+
+
+#### Configuring the line ending conversions
+
+Select
+- Checkout Windows-style, commit Unix-style line endings
+
+<br>
+
+#### Configuring the terminal emulator to use with Git Bash
+
+Select
+- Use MinTTY (the default terminal of MSYS2)
+
+<br>
+
+#### Choose the default behaviour of `git pull`
+
+Select
+- Fast-forward or merge
+
+<br>
+
+#### Choose a credential helper
+
+Select
+- None
+
+<br>
+
+#### Configuring extra options
+
+Select
+- Enable file system caching
+
+<br>
+
+#### Configuring experimental options
+ 
+- *Deselect all*
 
 <br>
 <br>
