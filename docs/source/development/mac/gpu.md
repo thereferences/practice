@@ -34,7 +34,7 @@ Install:
 * Custom (Advanced)
 * Perform clean installation
 
-
+NVIDIA will request a machine restart: restart.
 
 
 <br>
