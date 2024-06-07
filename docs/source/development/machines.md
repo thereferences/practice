@@ -12,7 +12,6 @@ All the organisation's computer usage rules apply; remember, Universal Serial Bu
 
 <br>
 <br>
-<br>
 
 ## Initial Set-up
 
@@ -48,11 +47,10 @@ machines/*
 <br>
 <br>
 
-
 ## Addendum
 
-### Git
-
+<br>
+<br>
 
 <div class="carousel-page-container">
   <div class="carousel-container">
@@ -226,6 +224,7 @@ new Flickity(elem, {
 });
 </script>
 
+<br>
 <br>
 
 #### Select Destination Location
