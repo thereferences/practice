@@ -211,6 +211,7 @@ machines/*
 </div>
 
 <script>
+var Flickity;
 let elem = document.querySelector(".carousel-container");
 new Flickity(elem, {
     cellAlign: "right",
