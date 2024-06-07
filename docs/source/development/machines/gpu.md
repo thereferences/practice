@@ -62,8 +62,14 @@ Installation Steps:
 
 ### cuDNN
 
+**Defunct/Skip**
+
 Install [cuDNN](https://developer.nvidia.com/cudnn)
 * [Windows](https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html#install-windows)
+
+
+
+
 
 <br>
 <br>
