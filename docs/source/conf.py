@@ -95,7 +95,9 @@ html_static_path = ['_static']
 
 html_css_files = ['css/figures.css',
                   'https://unpkg.com/tabulator-tables/dist/css/tabulator.min.css',
-                  'css/generic.css']
+                  'css/generic.css',
+                  'css/slides.css',
+                  'https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.min.css']
 
 html_js_files = ['https://code.jquery.com/jquery-3.7.0.min.js',
                  'https://code.highcharts.com/stock/highstock.js',
@@ -105,7 +107,8 @@ html_js_files = ['https://code.jquery.com/jquery-3.7.0.min.js',
                  'https://code.highcharts.com/stock/modules/accessibility.js',
                  'https://code.highcharts.com/highcharts.js',
                  'https://code.highcharts.com/modules/networkgraph.js',
-                 'https://viewer.diagrams.net/js/viewer-static.min.js'
+                 'https://viewer.diagrams.net/js/viewer-static.min.js',
+                 'https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.pkgd.min.js'
                  ]
 
 html_theme_options = {
