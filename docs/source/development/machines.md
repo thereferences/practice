@@ -202,8 +202,10 @@ machines/*
     <div class="carousel-cell">
       <div class="carousel-slide" style="background: #ffffff;">
         <div class="carousel-slide-copy ">
-          <h1 style="color: black;"></h1>
-          <p style="color: black;"></p>
+          <h1 style="color: black;">Configuring experimental options</h1>
+          <p style="color: black;">
+            - *Deselect all*
+          </p>
         </div>
       </div>
     </div>
