@@ -80,17 +80,11 @@ machines/*
     <div class="carousel-cell">
       <div class="carousel-slide" style="background: #ffffff;">
         <div class="carousel-slide-copy ">
-          <h1 style="color: black;"></h1>
-          <p style="color: black;"></p>
-        </div>
-      </div>
-    </div>
-    <div class="carousel-cell">
-      <div class="carousel-slide" style="background: #ffffff;">
-        <div class="carousel-slide-copy ">
           <h1 style="color: black;">Select Start Menu Folder</h1>
-          <p style="color: black;">Deselect
-            - [ ] Don't create a Start Menu folder</p>
+          Deselect
+          <ul style="list-style-type: '\2610';">
+            <li>Don't create a Start Menu folder</li>
+          </ul>
         </div>
       </div>
     </div>
