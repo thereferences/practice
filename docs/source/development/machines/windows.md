@@ -17,29 +17,29 @@
 ## Windows Installations that Propagate to WSL Kernels
 
 
-#### Docker Desktop
+### Docker Desktop
 
-[Docker Desktop](https://www.docker.com/products/docker-desktop/)
+Unload [Docker Desktop](https://www.docker.com/products/docker-desktop/), subsequently install.  During installation
 
-Select
-- [ ] Use WSL-2 instead of Hyper-V
+**Select**
+- [x] Use WSL-2 instead of Hyper-V
 
-Deselect
+**Deselect**
 - [ ] Add shortcut to desktop
 
 
 <br>
 
 
-#### IntelliJ IDEA
+### IntelliJ IDEA Ultimate
 
-* [IntelliJ IDEA Ultimate](https://www.jetbrains.com/idea/download/?section=windows)
+Unload [IntelliJ IDEA Ultimate](https://www.jetbrains.com/idea/download/?section=windows), subsequently install.  During the product's initial launch, a licence screen appears.  Activate your licence via one of the presented methods, e.g., via an **Activation Code**.
 
 
 <br>
 
 
-#### VS Code
+### VS Code
 
 Study the [Visual Studio CODE](https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode) installation [notes](https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode#install-vs-code-and-the-wsl-extension).  Whilst installing VS Code
 
