@@ -80,6 +80,8 @@ Install [cuDNN](https://developer.nvidia.com/cudnn)
 
 ### NVIDIA Container Toolkit
 
+#### Installing
+
 A key tool for building and running GPU accelerated containers is the NVIDIA Container Toolkit.  This section outlines the installation of the toolkit via APT (Advanced Package Tool); NVIDIA outlines [a few options](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html#installing-the-nvidia-container-toolkit).
 
 
@@ -109,6 +111,23 @@ Finally, installing the NVIDIA Container Toolkit packages:
 ```shell
 sudo apt install -y nvidia-container-toolkit
 ```
+
+<br>
+<br>
+
+#### Configuring
+
+Initially, configure the container runtime for docker; NVIDIA's pages detail extra component dependent [configurations](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html#configuration).  
+
+```shell
+sudo nvidia-ctk runtime configure --runtime=docker
+```
+
+Subsequently, restart docker via docker desktop.
+
+
+
+
 
 
 
