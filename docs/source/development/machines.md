@@ -36,7 +36,6 @@ Ensure that the privacy & security settings of the browsers are strict; addition
 
 <br>
 <br>
-<br>
 
 
 ```{toctree}
@@ -46,7 +45,8 @@ Ensure that the privacy & security settings of the browsers are strict; addition
 machines/*
 ```
 
-
+<br>
+<br>
 
 
 ## Addendum
@@ -54,22 +54,47 @@ machines/*
 ### Git
 
 
+<div class="carousel-page-container">
+  <div class="carousel-container">
+    <div class="carousel-cell">
+      <div class="carousel-slide" style="background: #ffffff;">
+        <div class="carousel-slide-copy ">
+          <h1 style="color: black;">Destination</h1>
+          <p style="color: black;">Installation directory</p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-cell">
+      <div class="carousel-slide" style="background: #cccccc;">
+        <div class="carousel-slide-copy">
+          <h1>Select Components</h1>
+          Deselect            
+            <ul style="list-style-type: '\2610';">
+              <li>Additional icons<br>On the Desktop</li>
+              <li>Git LFS (Large File Support)</li>
+              <li>Add a Git Bash Profile to Windows Terminal</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-::::{card-carousel} GIT
+<script>
+var elem = document.querySelector(".carousel-container");
+new Flickity(elem, {
+    cellAlign: "right",
+    contain: true,
+    initialIndex: 2,
+    pageDots: false,
+    wrapAround: true,
+    draggable: true,
+    prevNextButtons: true,
+    pauseAutoPlayOnHover: false
+});
+</script>
 
-:::{card} Select Destination Location
-The installation directory
-:::
-:::{card} Select Component
-Deselect
-- [ ] Additional icons
-  - [ ] On the Desktop
-- [ ] Git LFS (Large File Support)
-- [ ] Add a Git Bash Profile to Windows Terminal
-:::
-
-
-
+<br>
 
 #### Select Destination Location
 
