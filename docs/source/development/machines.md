@@ -169,8 +169,11 @@ machines/*
     <div class="carousel-cell">
       <div class="carousel-slide" style="background: #ffffff;">
         <div class="carousel-slide-copy ">
-          <h1 style="color: black;"></h1>
-          <p style="color: black;"></p>
+          <h1 style="color: black;">Choose the default behaviour of `git pull`</h1>
+          <p style="color: black;">
+          Select
+          - Fast-forward or merge
+          </p>
         </div>
       </div>
     </div>
