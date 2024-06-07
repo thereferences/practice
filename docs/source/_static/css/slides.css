@@ -27,7 +27,6 @@ body {
     width: 100%;
 }
 
-
 .carousel-slide {
     display: grid;
     justify-items: left;
@@ -38,7 +37,6 @@ body {
     width: 100%;
     height: 330px;
 }
-
 
 .carousel-slide-copy {
     display: grid;
