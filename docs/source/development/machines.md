@@ -57,7 +57,7 @@ machines/*
     <div class="carousel-cell">
       <div class="carousel-slide" style="background: #ffffff;">
         <div class="carousel-slide-copy ">
-          <h1 style="color: black;">Destination</h1>
+          <h2 style="color: black;">Destination</h2>
           <p style="color: black;">Installation directory</p>
         </div>
       </div>
@@ -65,7 +65,7 @@ machines/*
     <div class="carousel-cell">
       <div class="carousel-slide" style="background: #cccccc;">
         <div class="carousel-slide-copy">
-          <h1>Select Components</h1>
+          <h2>Select Components</h2>
           Deselect            
             <ul style="list-style-type: '\2610';">
               <li>Additional icons<br>On the Desktop</li>
@@ -78,7 +78,7 @@ machines/*
     <div class="carousel-cell">
       <div class="carousel-slide" style="background: #ffffff;">
         <div class="carousel-slide-copy ">
-          <h1 style="color: black;">Select Start Menu Folder</h1>
+          <h2 style="color: black;">Select Start Menu Folder</h2>
           Deselect
           <ul style="list-style-type: '\2610';">
             <li>Don't create a Start Menu folder</li>
@@ -89,7 +89,7 @@ machines/*
     <div class="carousel-cell">
       <div class="carousel-slide" style="background: #ffffff;">
         <div class="carousel-slide-copy ">
-          <h1 style="color: black;">Choosing the default editor used by Git</h1>
+          <h2 style="color: black;">Choosing the default editor used by Git</h2>
           <p style="color: black;">
           Select
           - Use Notepad++ as Git's default editor
@@ -100,7 +100,7 @@ machines/*
     <div class="carousel-cell">
       <div class="carousel-slide" style="background: #ffffff;">
         <div class="carousel-slide-copy ">
-          <h1 style="color: black;">Adjusting the name of the initial branch in new repositories</h1>
+          <h2 style="color: black;">Adjusting the name of the initial branch in new repositories</h2>
           <p style="color: black;">
           Select
           - Override the default branch name for new repositories
@@ -112,7 +112,7 @@ machines/*
     <div class="carousel-cell">
       <div class="carousel-slide" style="background: #ffffff;">
         <div class="carousel-slide-copy ">
-          <h1 style="color: black;">Adjusting your PATH environment</h1>
+          <h2 style="color: black;">Adjusting your PATH environment</h2>
           <p style="color: black;">
           Select
           - Git from the command line and also from 3rd-party software
@@ -123,7 +123,7 @@ machines/*
     <div class="carousel-cell">
       <div class="carousel-slide" style="background: #ffffff;">
         <div class="carousel-slide-copy ">
-          <h1 style="color: black;">Choosing the SSH executable</h1>
+          <h2 style="color: black;">Choosing the SSH executable</h2>
           <p style="color: black;">
           Select
           - Use bundled OpenSSH
@@ -134,7 +134,7 @@ machines/*
     <div class="carousel-cell">
       <div class="carousel-slide" style="background: #ffffff;">
         <div class="carousel-slide-copy ">
-          <h1 style="color: black;">Choosing HTTPS transport backend</h1>
+          <h2 style="color: black;">Choosing HTTPS transport backend</h2>
           <p style="color: black;">
           Select
           - Use the OpenSSL library
@@ -145,7 +145,7 @@ machines/*
     <div class="carousel-cell">
       <div class="carousel-slide" style="background: #ffffff;">
         <div class="carousel-slide-copy ">
-          <h1 style="color: black;">Configuring the line ending conversions</h1>
+          <h2 style="color: black;">Configuring the line ending conversions</h2>
           <p style="color: black;">
           Select
           - Checkout Windows-style, commit Unix-style line endings
@@ -156,7 +156,7 @@ machines/*
     <div class="carousel-cell">
       <div class="carousel-slide" style="background: #ffffff;">
         <div class="carousel-slide-copy ">
-          <h1 style="color: black;">Configuring the terminal emulator to use with Git Bash</h1>
+          <h2 style="color: black;">Configuring the terminal emulator to use with Git Bash</h2>
           <p style="color: black;">
           Select
           - Use MinTTY (the default terminal of MSYS2)
@@ -167,7 +167,7 @@ machines/*
     <div class="carousel-cell">
       <div class="carousel-slide" style="background: #ffffff;">
         <div class="carousel-slide-copy ">
-          <h1 style="color: black;">Choose the default behaviour of `git pull`</h1>
+          <h2 style="color: black;">Choose the default behaviour of `git pull`</h2>
           <p style="color: black;">
           Select
           - Fast-forward or merge
@@ -178,7 +178,7 @@ machines/*
     <div class="carousel-cell">
       <div class="carousel-slide" style="background: #ffffff;">
         <div class="carousel-slide-copy ">
-          <h1 style="color: black;">Choose a credential helper</h1>
+          <h2 style="color: black;">Choose a credential helper</h2>
           <p style="color: black;">
           Select
           - None
@@ -189,7 +189,7 @@ machines/*
     <div class="carousel-cell">
       <div class="carousel-slide" style="background: #ffffff;">
         <div class="carousel-slide-copy ">
-          <h1 style="color: black;">Configuring extra options</h1>
+          <h2 style="color: black;">Configuring extra options</h2>
           <p style="color: black;">
           Select
           - Enable file system caching
@@ -200,7 +200,7 @@ machines/*
     <div class="carousel-cell">
       <div class="carousel-slide" style="background: #ffffff;">
         <div class="carousel-slide-copy ">
-          <h1 style="color: black;">Configuring experimental options</h1>
+          <h2 style="color: black;">Configuring experimental options</h2>
           <ul style="list-style-type: '\2610';">
             <li>*Deselect all*</li>
           </ul>
@@ -211,7 +211,7 @@ machines/*
 </div>
 
 <script>
-var elem = document.querySelector(".carousel-container");
+let elem = document.querySelector(".carousel-container");
 new Flickity(elem, {
     cellAlign: "right",
     contain: true,
@@ -223,114 +223,6 @@ new Flickity(elem, {
     pauseAutoPlayOnHover: false
 });
 </script>
-
-<br>
-<br>
-
-#### Select Destination Location
-
-<br>
-
-#### Select Components
-
-Deselect
-- [ ] Additional icons 
-  - [ ] On the Desktop
-- [ ] Git LFS (Large File Support)
-- [ ] Add a Git Bash Profile to Windows Terminal 
-
-<br>
-
-#### Select Start Menu Folder
-
-Deselect
-- [ ] Don't create a Start Menu folder
-
-<br>
-
-#### Choosing the default editor used by Git
-
-Select
-- Use Notepad++ as Git's default editor
-
-<br>
-
-#### Adjusting the name of the initial branch in new repositories
-
-Select
-- Override the default branch name for new repositories
-  {master}
-
-<br>
-
-#### Adjusting your PATH environment
-
-Select
-- Git from the command line and also from 3rd-party software
-
-<br>
-
-#### Choosing the SSH executable
-
-Select
-- Use bundled OpenSSH
-
-<br>
-
-#### Choosing HTTPS transport backend
-
-Select
-- Use the OpenSSL library
-
-<br>
-
-#### Configuring the line ending conversions
-
-Select
-- Checkout Windows-style, commit Unix-style line endings
-
-<br>
-
-#### Configuring the terminal emulator to use with Git Bash
-
-Select
-- Use MinTTY (the default terminal of MSYS2)
-
-<br>
-
-#### Choose the default behaviour of `git pull`
-
-Select
-- Fast-forward or merge
-
-<br>
-
-#### Choose a credential helper
-
-Select
-- None
-
-<br>
-
-#### Configuring extra options
-
-Select
-- Enable file system caching
-
-<br>
-
-#### Configuring experimental options
- 
-- *Deselect all*
-
-<br>
-<br>
-
-<br>
-<br>
-
-<br>
-<br>
 
 <br>
 <br>
