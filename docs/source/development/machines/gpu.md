@@ -127,7 +127,7 @@ sudo nvidia-ctk runtime configure --runtime=docker
 
 Subsequently, restart docker via docker desktop.
 
-<img src="/assets/engine.png" alt="Docker Engine">
+<img src="../../../../assets/engine.png" alt="Docker Engine">
 
 
 
