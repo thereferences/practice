@@ -334,12 +334,26 @@ Deselect
 - [ ] Add shortcut to desktop
 
 
+<br>
 
-#### And
+
+#### IntelliJ IDEA
 
 * [IntelliJ IDEA Ultimate](https://www.jetbrains.com/idea/download/?section=windows)
-* [Visual Studio CODE](https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode)
 
+
+<br>
+
+
+#### VS Code
+
+Study the [Visual Studio CODE](https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode) installation [notes](https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode#install-vs-code-and-the-wsl-extension).  Whilst installing VS Code
+
+* Select Destination Location (This is about the installation directory)
+* Select Start Menu Folder (Leave default text)
+* Select Additional Tasks (Ensure `Add to PATH (requires shell restart)` is selected.  Deselect everything else.)
+
+Subsequently, and after launching VS Code, install the [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) extension pack via the extension button.
 
 <br>
 <br>
