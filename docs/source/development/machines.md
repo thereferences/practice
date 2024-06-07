@@ -114,24 +114,33 @@ machines/*
     <div class="carousel-cell">
       <div class="carousel-slide" style="background: #ffffff;">
         <div class="carousel-slide-copy ">
-          <h1 style="color: black;"></h1>
-          <p style="color: black;"></p>
+          <h1 style="color: black;">Adjusting your PATH environment</h1>
+          <p style="color: black;">
+          Select
+          - Git from the command line and also from 3rd-party software
+          </p>
         </div>
       </div>
     </div>
     <div class="carousel-cell">
       <div class="carousel-slide" style="background: #ffffff;">
         <div class="carousel-slide-copy ">
-          <h1 style="color: black;"></h1>
-          <p style="color: black;"></p>
+          <h1 style="color: black;">Choosing the SSH executable</h1>
+          <p style="color: black;">
+          Select
+          - Use bundled OpenSSH
+          </p>
         </div>
       </div>
     </div>
     <div class="carousel-cell">
       <div class="carousel-slide" style="background: #ffffff;">
         <div class="carousel-slide-copy ">
-          <h1 style="color: black;"></h1>
-          <p style="color: black;"></p>
+          <h1 style="color: black;">Choosing HTTPS transport backend</h1>
+          <p style="color: black;">
+          Select
+          - Use the OpenSSL library
+          </p>
         </div>
       </div>
     </div>
