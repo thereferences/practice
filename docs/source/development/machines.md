@@ -91,7 +91,7 @@ machines/*
         <div class="carousel-slide-copy ">
           <h2 style="color: black;">Choosing the default editor used by Git</h2>
           <p style="color: black;">
-          Select
+          Select<br>
           - Use Notepad++ as Git's default editor
           </p>
         </div>
@@ -102,9 +102,8 @@ machines/*
         <div class="carousel-slide-copy ">
           <h2 style="color: black;">Adjusting the name of the initial branch in new repositories</h2>
           <p style="color: black;">
-          Select
-          - Override the default branch name for new repositories
-            [master]
+          Select<br>
+          - Override the default branch name for new repositories [master]
           </p>
         </div>
       </div>
@@ -114,7 +113,7 @@ machines/*
         <div class="carousel-slide-copy ">
           <h2 style="color: black;">Adjusting your PATH environment</h2>
           <p style="color: black;">
-          Select
+          Select<br>
           - Git from the command line and also from 3rd-party software
           </p>
         </div>
@@ -125,7 +124,7 @@ machines/*
         <div class="carousel-slide-copy ">
           <h2 style="color: black;">Choosing the SSH executable</h2>
           <p style="color: black;">
-          Select
+          Select<br>
           - Use bundled OpenSSH
           </p>
         </div>
@@ -136,7 +135,7 @@ machines/*
         <div class="carousel-slide-copy ">
           <h2 style="color: black;">Choosing HTTPS transport backend</h2>
           <p style="color: black;">
-          Select
+          Select<br>
           - Use the OpenSSL library
           </p>
         </div>
@@ -158,7 +157,7 @@ machines/*
         <div class="carousel-slide-copy ">
           <h2 style="color: black;">Configuring the terminal emulator to use with Git Bash</h2>
           <p style="color: black;">
-          Select
+          Select<br>
           - Use MinTTY (the default terminal of MSYS2)
           </p>
         </div>
@@ -169,7 +168,7 @@ machines/*
         <div class="carousel-slide-copy ">
           <h2 style="color: black;">Choose the default behaviour of `git pull`</h2>
           <p style="color: black;">
-          Select
+          Select<br>
           - Fast-forward or merge
           </p>
         </div>
@@ -180,7 +179,7 @@ machines/*
         <div class="carousel-slide-copy ">
           <h2 style="color: black;">Choose a credential helper</h2>
           <p style="color: black;">
-          Select
+          Select<br>
           - None
           </p>
         </div>
@@ -211,7 +210,6 @@ machines/*
 </div>
 
 <script>
-var Flickity;
 let elem = document.querySelector(".carousel-container");
 new Flickity(elem, {
     cellAlign: "right",
