@@ -92,15 +92,22 @@ machines/*
       <div class="carousel-slide" style="background: #ffffff;">
         <div class="carousel-slide-copy ">
           <h1 style="color: black;">Choosing the default editor used by Git</h1>
-          <p style="color: black;"></p>
+          <p style="color: black;">
+          Select
+          - Use Notepad++ as Git's default editor
+          </p>
         </div>
       </div>
     </div>
     <div class="carousel-cell">
       <div class="carousel-slide" style="background: #ffffff;">
         <div class="carousel-slide-copy ">
-          <h1 style="color: black;"></h1>
-          <p style="color: black;"></p>
+          <h1 style="color: black;">Adjusting the name of the initial branch in new repositories</h1>
+          <p style="color: black;">
+          Select
+          - Override the default branch name for new repositories
+            [master]
+          </p>
         </div>
       </div>
     </div>
