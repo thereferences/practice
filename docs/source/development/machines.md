@@ -88,6 +88,87 @@ machines/*
     <div class="carousel-cell">
       <div class="carousel-slide" style="background: #ffffff;">
         <div class="carousel-slide-copy ">
+          <h1 style="color: black;">Select Start Menu Folder</h1>
+          <p style="color: black;">Deselect
+            - [ ] Don't create a Start Menu folder</p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-cell">
+      <div class="carousel-slide" style="background: #ffffff;">
+        <div class="carousel-slide-copy ">
+          <h1 style="color: black;">Choosing the default editor used by Git</h1>
+          <p style="color: black;"></p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-cell">
+      <div class="carousel-slide" style="background: #ffffff;">
+        <div class="carousel-slide-copy ">
+          <h1 style="color: black;"></h1>
+          <p style="color: black;"></p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-cell">
+      <div class="carousel-slide" style="background: #ffffff;">
+        <div class="carousel-slide-copy ">
+          <h1 style="color: black;"></h1>
+          <p style="color: black;"></p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-cell">
+      <div class="carousel-slide" style="background: #ffffff;">
+        <div class="carousel-slide-copy ">
+          <h1 style="color: black;"></h1>
+          <p style="color: black;"></p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-cell">
+      <div class="carousel-slide" style="background: #ffffff;">
+        <div class="carousel-slide-copy ">
+          <h1 style="color: black;"></h1>
+          <p style="color: black;"></p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-cell">
+      <div class="carousel-slide" style="background: #ffffff;">
+        <div class="carousel-slide-copy ">
+          <h1 style="color: black;"></h1>
+          <p style="color: black;"></p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-cell">
+      <div class="carousel-slide" style="background: #ffffff;">
+        <div class="carousel-slide-copy ">
+          <h1 style="color: black;"></h1>
+          <p style="color: black;"></p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-cell">
+      <div class="carousel-slide" style="background: #ffffff;">
+        <div class="carousel-slide-copy ">
+          <h1 style="color: black;"></h1>
+          <p style="color: black;"></p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-cell">
+      <div class="carousel-slide" style="background: #ffffff;">
+        <div class="carousel-slide-copy ">
+          <h1 style="color: black;"></h1>
+          <p style="color: black;"></p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-cell">
+      <div class="carousel-slide" style="background: #ffffff;">
+        <div class="carousel-slide-copy ">
           <h1 style="color: black;"></h1>
           <p style="color: black;"></p>
         </div>
@@ -124,7 +205,6 @@ new Flickity(elem, {
 
 <br>
 
-
 #### Select Components
 
 Deselect
@@ -135,14 +215,12 @@ Deselect
 
 <br>
 
-
 #### Select Start Menu Folder
 
 Deselect
 - [ ] Don't create a Start Menu folder
 
 <br>
-
 
 #### Choosing the default editor used by Git
 
@@ -179,7 +257,6 @@ Select
 - Use the OpenSSL library
 
 <br>
-
 
 #### Configuring the line ending conversions
 
