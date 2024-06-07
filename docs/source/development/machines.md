@@ -180,8 +180,11 @@ machines/*
     <div class="carousel-cell">
       <div class="carousel-slide" style="background: #ffffff;">
         <div class="carousel-slide-copy ">
-          <h1 style="color: black;"></h1>
-          <p style="color: black;"></p>
+          <h1 style="color: black;">Choose a credential helper</h1>
+          <p style="color: black;">
+          Select
+          - None
+          </p>
         </div>
       </div>
     </div>
