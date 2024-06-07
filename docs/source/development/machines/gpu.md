@@ -8,10 +8,12 @@
 
 <br>
 
-The references herein outline the fundamental NVIDIA installations **required within Windows 11** that ensure the ability **to run CUDA dependent programs within Windows 11 or a WSL (Windows Subsystem for Linux) kernel**. 
+The references herein outline the fundamental NVIDIA installations **required within Windows 11** that ensure the ability **to run CUDA dependent programs/containers within Windows 11 or a WSL (Windows Subsystem for Linux) kernel**. 
+
+**Before proceeding**, install Docker Desktop: ref. Fundamental Software: Windows.
 
 <br>
-
+ 
 ### NVIDIA Driver
 
 Beware of the mappings between [CUDA Toolkit Version & CUDA Driver Version](https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html#id5:~:text=Windows%2C%20WSL-,CUDA%20Driver,-Running%20a%20CUDA).
