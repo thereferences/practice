@@ -39,9 +39,36 @@ Ensure that the privacy & security settings of the browsers are strict; addition
 <br>
 
 
+```{toctree}
+:caption: Content
+:glob:
+
+machines/*
+```
+
+
+
+
 ## Addendum
 
 ### Git
+
+
+
+::::{card-carousel} GIT
+
+:::{card} Select Destination Location
+The installation directory
+:::
+:::{card} Select Component
+Deselect
+- [ ] Additional icons
+  - [ ] On the Desktop
+- [ ] Git LFS (Large File Support)
+- [ ] Add a Git Bash Profile to Windows Terminal
+:::
+
+
 
 
 #### Select Destination Location
