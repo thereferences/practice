@@ -112,10 +112,10 @@ machines/*
       <div class="carousel-slide" style="background: #ffffff;">
         <div class="carousel-slide-copy ">
           <h2 style="color: black;">Adjusting your PATH environment</h2>
-          <p style="color: black;">
-          Select<br>
-          - Git from the command line and also from 3rd-party software
-          </p>
+          Select          
+          <ul style="list-style-type: '\2609';">
+            <li>Git from the command line and also from 3rd-party software</li>
+          </ul>
         </div>
       </div>
     </div>
