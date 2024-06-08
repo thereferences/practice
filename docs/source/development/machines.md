@@ -134,10 +134,10 @@ machines/*
       <div class="carousel-slide" style="background: #ffffff;">
         <div class="carousel-slide-copy ">
           <h2 style="color: black;">Choosing HTTPS transport backend</h2>
-          <p style="color: black;">
-          Select<br>
-          - Use the OpenSSL library
-          </p>
+          Select
+          <ul style="list-style-type: '\2609';">
+            <li>Use the OpenSSL library</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -145,10 +145,10 @@ machines/*
       <div class="carousel-slide" style="background: #ffffff;">
         <div class="carousel-slide-copy ">
           <h2 style="color: black;">Configuring the line ending conversions</h2>
-          <p style="color: black;">
           Select
-          - Checkout Windows-style, commit Unix-style line endings
-          </p>
+          <ul style="list-style-type: '\2609';">
+            <li>Checkout Windows-style, commit Unix-style line endings</li>
+          </ul>
         </div>
       </div>
     </div>
