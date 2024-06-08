@@ -122,3 +122,14 @@ html_theme_options = {
     'show_toc_level': 2,
     'sidebarwidth': 250
 }
+
+html_context = {
+    'landing_page': {
+        'menu': [
+            {'title': 'Introduction',
+             'url': ''},
+            {'title': 'Technologies & Development Practices',
+             'url': ''}
+        ]
+    }
+}
