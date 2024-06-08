@@ -1,6 +1,7 @@
 Sphinx>=7.2.1
 sphinx-book-theme
 sphinx-rtd-theme
+pydata-sphinx-theme
 sphinx-design
 furo
 myst-parser
