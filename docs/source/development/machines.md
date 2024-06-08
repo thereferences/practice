@@ -178,10 +178,10 @@ machines/*
       <div class="carousel-slide" style="background: #ffffff;">
         <div class="carousel-slide-copy ">
           <h2 style="color: black;">Choose a credential helper</h2>
-          <p style="color: black;">
-          Select<br>
-          - None
-          </p>
+          Select          
+          <ul style="list-style-type: '\2609';">
+            <li>None</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -189,10 +189,10 @@ machines/*
       <div class="carousel-slide" style="background: #ffffff;">
         <div class="carousel-slide-copy ">
           <h2 style="color: black;">Configuring extra options</h2>
-          <p style="color: black;">
-          Select
-          - Enable file system caching
-          </p>
+          Select          
+          <ul style="list-style-type: '\268A';">
+            <li>Enable file system caching</li>
+          </ul>
         </div>
       </div>
     </div>
