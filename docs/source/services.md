@@ -6,6 +6,7 @@
 
 ```{toctree}
 :caption: Content
+:maxdepth: 1
 :glob:
 
 services/mlp
