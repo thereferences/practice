@@ -156,10 +156,10 @@ machines/*
       <div class="carousel-slide" style="background: #ffffff;">
         <div class="carousel-slide-copy ">
           <h2 style="color: black;">Configuring the terminal emulator to use with Git Bash</h2>
-          <p style="color: black;">
-          Select<br>
-          - Use MinTTY (the default terminal of MSYS2)
-          </p>
+          Select
+          <ul style="list-style-type: '\2609';">
+            <li>Use MinTTY (the default terminal of MSYS2)</li>
+          </ul>
         </div>
       </div>
     </div>
