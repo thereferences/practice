@@ -123,10 +123,10 @@ machines/*
       <div class="carousel-slide" style="background: #ffffff;">
         <div class="carousel-slide-copy ">
           <h2 style="color: black;">Choosing the SSH executable</h2>
-          <p style="color: black;">
-          Select<br>
-          - Use bundled OpenSSH
-          </p>
+          Select
+          <ul style="list-style-type: '\2609';">
+            <li>Use bundled OpenSSH</li>
+          </ul>
         </div>
       </div>
     </div>
