@@ -21,7 +21,7 @@ These pages will be updated continuously, therefore each team member must study 
    :hidden:
    :glob:
 
-   services
+   services/services
 
 .. toctree::
    :maxdepth: 3
