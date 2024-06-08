@@ -13,6 +13,7 @@ CODE OF PRACTICE
 .. toctree::
    :maxdepth: 3
    :caption: Introduction
+   :hidden:
 
    introduction
 
@@ -24,6 +25,7 @@ CODE OF PRACTICE
 .. toctree::
    :maxdepth: 3
    :caption: Services
+   :hidden:
    :glob:
 
    services
@@ -36,6 +38,7 @@ CODE OF PRACTICE
 .. toctree::
    :maxdepth: 3
    :caption: Technologies & Development Practices
+   :hidden:
 
    development/background
    development/integration
