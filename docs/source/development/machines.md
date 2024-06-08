@@ -55,15 +55,15 @@ machines/*
 <div class="carousel-page-container">
   <div class="carousel-container">
     <div class="carousel-cell">
-      <div class="carousel-slide" style="background: #ffffff;">
-        <div class="carousel-slide-copy ">
+      <div class="carousel-slide">
+        <div class="carousel-slide-copy">
           <h2 style="color: black;">Select Destination Location</h2>
           <p style="color: black;">This installation directory.</p>
         </div>
       </div>
     </div>
     <div class="carousel-cell">
-      <div class="carousel-slide" style="background: #cccccc;">
+      <div class="carousel-slide">
         <div class="carousel-slide-copy">
           <h2>Select Components</h2>
           Deselect            
@@ -76,8 +76,8 @@ machines/*
       </div>
     </div>
     <div class="carousel-cell">
-      <div class="carousel-slide" style="background: #ffffff;">
-        <div class="carousel-slide-copy ">
+      <div class="carousel-slide">
+        <div class="carousel-slide-copy">
           <h2 style="color: black;">Select Start Menu Folder</h2>
           Deselect
           <ul style="list-style-type: '\2610';">
@@ -87,8 +87,8 @@ machines/*
       </div>
     </div>
     <div class="carousel-cell">
-      <div class="carousel-slide" style="background: #ffffff;">
-        <div class="carousel-slide-copy ">
+      <div class="carousel-slide">
+        <div class="carousel-slide-copy">
           <h2 style="color: black;">Choosing the default editor used by Git</h2>
           Select
           <ul style="list-style-type: '\268A';">
@@ -98,19 +98,19 @@ machines/*
       </div>
     </div>
     <div class="carousel-cell">
-      <div class="carousel-slide" style="background: #ffffff;">
-        <div class="carousel-slide-copy ">
+      <div class="carousel-slide">
+        <div class="carousel-slide-copy">
           <h2 style="color: black;">Adjusting the name of the initial branch in new repositories</h2>
           Select
-          <ul style="list-style-type: '\268A';">
+          <ul style="list-style-type: '\2609';">
             <li>Override the default branch name for new repositories [master]</li>
           </ul>
         </div>
       </div>
     </div>
     <div class="carousel-cell">
-      <div class="carousel-slide" style="background: #ffffff;">
-        <div class="carousel-slide-copy ">
+      <div class="carousel-slide">
+        <div class="carousel-slide-copy">
           <h2 style="color: black;">Adjusting your PATH environment</h2>
           Select          
           <ul style="list-style-type: '\2609';">
@@ -120,8 +120,8 @@ machines/*
       </div>
     </div>
     <div class="carousel-cell">
-      <div class="carousel-slide" style="background: #ffffff;">
-        <div class="carousel-slide-copy ">
+      <div class="carousel-slide">
+        <div class="carousel-slide-copy">
           <h2 style="color: black;">Choosing the SSH executable</h2>
           Select
           <ul style="list-style-type: '\2609';">
@@ -131,8 +131,8 @@ machines/*
       </div>
     </div>
     <div class="carousel-cell">
-      <div class="carousel-slide" style="background: #ffffff;">
-        <div class="carousel-slide-copy ">
+      <div class="carousel-slide">
+        <div class="carousel-slide-copy">
           <h2 style="color: black;">Choosing HTTPS transport backend</h2>
           Select
           <ul style="list-style-type: '\2609';">
@@ -142,8 +142,8 @@ machines/*
       </div>
     </div>
     <div class="carousel-cell">
-      <div class="carousel-slide" style="background: #ffffff;">
-        <div class="carousel-slide-copy ">
+      <div class="carousel-slide">
+        <div class="carousel-slide-copy">
           <h2 style="color: black;">Configuring the line ending conversions</h2>
           Select
           <ul style="list-style-type: '\2609';">
@@ -154,7 +154,7 @@ machines/*
     </div>
     <div class="carousel-cell">
       <div class="carousel-slide" style="background: #ffffff;">
-        <div class="carousel-slide-copy ">
+        <div class="carousel-slide-copy">
           <h2 style="color: black;">Configuring the terminal emulator to use with Git Bash</h2>
           Select
           <ul style="list-style-type: '\2609';">
@@ -165,7 +165,7 @@ machines/*
     </div>
     <div class="carousel-cell">
       <div class="carousel-slide" style="background: #ffffff;">
-        <div class="carousel-slide-copy ">
+        <div class="carousel-slide-copy">
           <h2 style="color: black;">Choose the default behaviour of `git pull`</h2>
           Select
           <ul style="list-style-type: '\2609';">
@@ -175,8 +175,8 @@ machines/*
       </div>
     </div>
     <div class="carousel-cell">
-      <div class="carousel-slide" style="background: #ffffff;">
-        <div class="carousel-slide-copy ">
+      <div class="carousel-slide">
+        <div class="carousel-slide-copy">
           <h2 style="color: black;">Choose a credential helper</h2>
           Select          
           <ul style="list-style-type: '\2609';">
@@ -186,22 +186,22 @@ machines/*
       </div>
     </div>
     <div class="carousel-cell">
-      <div class="carousel-slide" style="background: #ffffff;">
-        <div class="carousel-slide-copy ">
+      <div class="carousel-slide">
+        <div class="carousel-slide-copy">
           <h2 style="color: black;">Configuring extra options</h2>
           Select          
-          <ul style="list-style-type: '\268A';">
+          <ul style="list-style-type: '\2610';">
             <li>Enable file system caching</li>
           </ul>
         </div>
       </div>
     </div>
     <div class="carousel-cell">
-      <div class="carousel-slide" style="background: #ffffff;">
-        <div class="carousel-slide-copy ">
+      <div class="carousel-slide">
+        <div class="carousel-slide-copy">
           <h2 style="color: black;">Configuring experimental options</h2>
           <ul style="list-style-type: '\2610';">
-            <li>*Deselect all*</li>
+            <li><b>Deselect all</b></li>
           </ul>
         </div>
       </div>
