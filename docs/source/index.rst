@@ -17,13 +17,6 @@ These pages will be updated continuously, therefore each team member must study 
 
 .. toctree::
    :maxdepth: 3
-   :caption: Introduction
-   :hidden:
-
-   introduction
-
-.. toctree::
-   :maxdepth: 3
    :caption: Services
    :hidden:
    :glob:
