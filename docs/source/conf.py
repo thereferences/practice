@@ -34,6 +34,8 @@ extensions = [
     'sphinx.ext.mathjax',
     'sphinx_design',
     'sphinxcontrib.mermaid',
+    "sphinx.ext.intersphinx",
+    "sphinx.ext.viewcode",
     'myst_parser'
 ]
 
@@ -51,8 +53,7 @@ myst_enable_extensions = [
     'strikethrough',
     'substitution',
     'tasklist',
-    'attrs_block',
-    'attrs_inline'
+    'attrs_block'
 ]
 
 
