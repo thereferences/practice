@@ -57,8 +57,8 @@ machines/*
     <div class="carousel-cell">
       <div class="carousel-slide" style="background: #ffffff;">
         <div class="carousel-slide-copy ">
-          <h2 style="color: black;">Destination</h2>
-          <p style="color: black;">Installation directory</p>
+          <h2 style="color: black;">Select Destination Location</h2>
+          <p style="color: black;">This installation directory.</p>
         </div>
       </div>
     </div>
@@ -90,10 +90,10 @@ machines/*
       <div class="carousel-slide" style="background: #ffffff;">
         <div class="carousel-slide-copy ">
           <h2 style="color: black;">Choosing the default editor used by Git</h2>
-          <p style="color: black;">
-          Select<br>
-          - Use Notepad++ as Git's default editor
-          </p>
+          Select
+          <ul style="list-style-type: '\268A';">
+            <li>Use Notepad++ as Git's default editor</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -101,10 +101,10 @@ machines/*
       <div class="carousel-slide" style="background: #ffffff;">
         <div class="carousel-slide-copy ">
           <h2 style="color: black;">Adjusting the name of the initial branch in new repositories</h2>
-          <p style="color: black;">
-          Select<br>
-          - Override the default branch name for new repositories [master]
-          </p>
+          Select
+          <ul style="list-style-type: '\268A';">
+            <li>Override the default branch name for new repositories [master]</li>
+          </ul>
         </div>
       </div>
     </div>
