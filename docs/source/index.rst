@@ -5,22 +5,12 @@
 CODE OF PRACTICE
 ================
 
-.. raw:: html
-
-   <br>
-   <br>
-
 .. toctree::
    :maxdepth: 3
    :caption: Introduction
    :hidden:
 
    introduction
-
-.. raw:: html
-
-   <br>
-   <br>
 
 .. toctree::
    :maxdepth: 3
@@ -29,11 +19,6 @@ CODE OF PRACTICE
    :glob:
 
    services
-
-.. raw:: html
-
-   <br>
-   <br>
 
 .. toctree::
    :maxdepth: 3
@@ -46,31 +31,6 @@ CODE OF PRACTICE
    development/languages
    development/machines
 
-
-.. raw:: html
-
-   <br>
-   <br>
-   <br>
-   <br>
-
-   <br>
-   <br>
-   <br>
-   <br>
-
-   <br>
-   <br>
-   <br>
-   <br>
-
-.. button-ref:: genindex
-   :color: black
-   :shadow:
-
-
-
-
 .. raw:: html
 
   <br>
@@ -82,7 +42,6 @@ CODE OF PRACTICE
   <br>
   <br>
   <br>
-
 
 ..
    Comment
