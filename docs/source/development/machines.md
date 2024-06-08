@@ -153,7 +153,7 @@ machines/*
       </div>
     </div>
     <div class="carousel-cell">
-      <div class="carousel-slide" style="background: #ffffff;">
+      <div class="carousel-slide">
         <div class="carousel-slide-copy">
           <h2 style="color: black;">Configuring the terminal emulator to use with Git Bash</h2>
           Select
@@ -164,7 +164,7 @@ machines/*
       </div>
     </div>
     <div class="carousel-cell">
-      <div class="carousel-slide" style="background: #ffffff;">
+      <div class="carousel-slide">
         <div class="carousel-slide-copy">
           <h2 style="color: black;">Choose the default behaviour of `git pull`</h2>
           Select
