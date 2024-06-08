@@ -4,12 +4,24 @@
 
 ## Core
 
+Foremost, install
+
 * [Notepad++](https://notepad-plus-plus.org) / [Notepad++](https://github.com/notepad-plus-plus/notepad-plus-plus/releases)
-* [Git for Windows](https://git-scm.com)
-    * Editor: Select Notepad++
-    * Default Branch Name: *master*
 * Java: [JDK & JRE](https://adoptium.net/en-GB/temurin)
-* [OpenOffice](https://www.openoffice.org/download/index.html)
+
+<br>
+
+### Open Office
+
+Unload the core executable & language pack of [OpenOffice](https://www.openoffice.org/download/index.html).
+
+<br>
+
+### Git
+
+Unload the executable at [git-scm](https://git-scm.com)
+
+
 
 <br>
 <br>
