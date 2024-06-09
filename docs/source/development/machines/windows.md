@@ -2,7 +2,11 @@
 
 # Fundamental Software: Windows
 
+<br>
+
 ## Core
+
+### Basic Tools
 
 Foremost, install
 
@@ -200,10 +204,10 @@ new Flickity(elem, {
 
 Unload [Docker Desktop](https://www.docker.com/products/docker-desktop/), subsequently install.  During installation
 
-**Select**
+Select
 - [x] Use WSL-2 instead of Hyper-V
 
-**Deselect**
+Deselect
 - [ ] Add shortcut to desktop
 
 
