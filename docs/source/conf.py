@@ -20,7 +20,7 @@ Basic
 project = 'Code of Practice'
 project_copyright = '2023, The Artificial Intelligence Unit'
 author = '@greyhypotheses'
-release = 'v0.1.6'
+release = 'v0.1.8'
 
 
 '''
