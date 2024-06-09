@@ -28,7 +28,7 @@ docker run --rm -i -t -p 127.0.0.1:10000:8888 -w /app --mount type=bind,src="$(p
 
 ## Sphinx
 
-## Usage Notes
+### Usage Notes
 
 Initialise Sphinx
 
@@ -42,6 +42,7 @@ Build
 sphinx-build -E -b html docs/source docs/build/html
 ```
 
+<br>
 <br>
 
 ## References
