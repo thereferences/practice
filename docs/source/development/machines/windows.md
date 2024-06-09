@@ -19,9 +19,7 @@ Unload the core executable & language pack of [OpenOffice](https://www.openoffic
 
 ### Git
 
-Unload the executable at [git-scm](https://git-scm.com)
-
-<br>
+Unload the executable at [git-scm](https://git-scm.com), and install.  During installation use the text slides below as a guide.
 
 <div class="carousel-page-container">
   <div class="carousel-container">
