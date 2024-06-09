@@ -17,6 +17,8 @@ The activation steps are
 
 > Control Panel $\rightarrow$ Uninstall a program $\rightarrow$ Turn Windows features on or off $\rightarrow$ Windows Subsystem for Linux.
 
+<br>
+
 Subsequently, re-start the machine.
 
 <br>
