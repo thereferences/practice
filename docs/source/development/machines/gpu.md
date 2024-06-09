@@ -2,6 +2,8 @@
 
 # Graphics Processing Unit, etc.
 
+**Before proceeding**, install Docker Desktop: ref. Fundamental Software: Windows.
+
 <br>
 
 ## Key Windows Settings
@@ -10,23 +12,23 @@
 
 The references herein outline the fundamental NVIDIA installations **required within Windows 11** that ensure the ability **to run CUDA dependent programs/containers within Windows 11 or a WSL (Windows Subsystem for Linux) kernel**. 
 
-**Before proceeding**, install Docker Desktop: ref. Fundamental Software: Windows.
-
 <br>
  
 ### NVIDIA Driver
 
-Beware of the mappings between [CUDA Toolkit Version & CUDA Driver Version](https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html#id5:~:text=Windows%2C%20WSL-,CUDA%20Driver,-Running%20a%20CUDA).
+Beware of the mappings between [CUDA Toolkit Version & CUDA Driver Version](https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html#id5:~:text=Windows%2C%20WSL-,CUDA%20Driver,-Running%20a%20CUDA).  Before installing unloading an NVIDIA driver, determine the machine's CUDA GPU (Graphics Processing Unit) type.  Within the Windows desktop
 
-Right Click [desktop]
-SELECT Show more options
-SELECT NVIDIA Control Panel
+* Right Click
+* **SELECT** _Show more options_
+* **SELECT** _NVIDIA Control Panel_
 
-The landing page will display the name of the machine's Graphics Processing Unit, e.g.,
+The NVIDIA Control Panel's landing page will display the name of the machine's Graphics Processing Unit, e.g.,
 
 ```markdown
 NVIDIA RTX 2000 Ada Generation Laptop GPU 
 ```
+
+<br>
 
 Hence, [download the appropriate NVIDIA Driver](https://www.nvidia.com/en-gb/drivers/).  In relation to the above example
 
@@ -35,7 +37,9 @@ Hence, [download the appropriate NVIDIA Driver](https://www.nvidia.com/en-gb/dri
 * Product: NVIDIA RTX 2000 Ada Generation Laptop GPU
 * Operating System [If uncertain, check Settings -> System -> About]
 
-Install:
+<br>
+
+Install.  During installation
 
 * AGREE AND CONTINUE
 * Custom (Advanced)
@@ -84,10 +88,7 @@ Install [cuDNN](https://developer.nvidia.com/cudnn)
 
 #### Installing
 
-A key tool for building and running GPU accelerated containers is the NVIDIA Container Toolkit.  This section outlines the installation of the toolkit via APT (Advanced Package Tool); NVIDIA outlines [a few options](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html#installing-the-nvidia-container-toolkit).
-
-
-Setting-up, configuring, the production repository:
+A key tool for building and running GPU accelerated containers is the NVIDIA Container Toolkit.  This section outlines the installation of the toolkit via APT (Advanced Package Tool); NVIDIA outlines [a few options](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html#installing-the-nvidia-container-toolkit).  Set-up, configure, the production repository via commands:
 
 ```shell
 curl -fsSL https://nvidia.github.io/libnvidia-container/gpgkey | 
@@ -102,13 +103,17 @@ curl -s -L https://nvidia.github.io/libnvidia-container/stable/deb/nvidia-contai
     sudo tee /etc/apt/sources.list.d/nvidia-container-toolkit.list
 ```
 
-Subsequently, updating the packages list of the repository:
+<br>
+
+Next, update the repository's packages list:
 
 ```shell
 sudo apt update
 ```
 
-Finally, installing the NVIDIA Container Toolkit packages:
+<br>
+
+Finally, install the NVIDIA Container Toolkit packages:
 
 ```shell
 sudo apt install -y nvidia-container-toolkit
@@ -125,13 +130,13 @@ Initially, configure the container runtime for docker; NVIDIA's pages detail ext
 sudo nvidia-ctk runtime configure --runtime=docker
 ```
 
+<br>
+
 Subsequently, restart docker via docker desktop.
 
 <img src="../../../../assets/engine.png" alt="Docker Engine">
 
-
-
-
+<br>
 <br>
 
 #### Testing
@@ -148,6 +153,8 @@ and Ubuntu version, i.e., {major}.{minor}, via
 cat /etc/os-release
 ```
 
+<br>
+
 Subsequently, use
 
 > docker run --rm --gpus all nvidia/cuda:{cuda_version}-base-ubuntu{ubuntu_version} nvidia-smi
@@ -157,7 +164,6 @@ to create and run a CUDA test command, e.g.,
 ```bash
 docker run --rm --gpus all nvidia/cuda:12.5.0-base-ubuntu22.04 nvidia-smi
 ```
-
 
 <br>
 <br>
