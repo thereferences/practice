@@ -2,15 +2,14 @@
 
 # Machines
 
-<br>
-
 :::{admonition} In Progress
 <br>
 :::
 
+<br>
+
 All the organisation's computer usage rules apply; remember, Universal Serial Bus (USB) sticks are disallowed.
 
-<br>
 <br>
 
 ## Initial Set-up
@@ -23,15 +22,13 @@ Foremost:
 
 <br>
 
-### Basic Tools
-
-Install
+Additionally, install
 
 * [firefox](https://www.mozilla.org/en-GB/firefox/)
 * [opera](https://www.opera.com)
 * [KeePassXC](https://keepassxc.org/)
 
-Ensure that the privacy & security settings of the browsers are strict; additionally, set the default search engine to _duckduckgo_.
+within Windows.  Ensure that the privacy & security settings of the browsers are strict; additionally, set the default search engine to _duckduckgo_.
 
 <br>
 <br>
@@ -39,6 +36,7 @@ Ensure that the privacy & security settings of the browsers are strict; addition
 
 ```{toctree}
 :caption: Content
+:maxdepth: 1
 :glob:
 
 machines/wsl
