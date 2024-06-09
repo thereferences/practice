@@ -2,9 +2,7 @@
 
 # Python
 
-:::{admonition} In Progress
 <br>
-:::
 
 ## Fundamentals
 
@@ -36,17 +34,23 @@ In line with the HitchHiker's Guide to Python, best practice & readability overr
 import math
 ```
 
+<br>
+
 Subsequently, use a method as required, e.g.,
 
 ```shell
 math.cos(...)
 ```
 
+<br>
+
 **Not**
 
 ```shell
 from math import cos
 ```
+
+<br>
 
 **Not**
 
