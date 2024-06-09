@@ -41,7 +41,10 @@ Ensure that the privacy & security settings of the browsers are strict; addition
 :caption: Content
 :glob:
 
-machines/*
+machines/wsl
+machines/linux
+machines/windows
+machines/gpu
 ```
 
 <br>
