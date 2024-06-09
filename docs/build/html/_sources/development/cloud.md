@@ -18,6 +18,7 @@ The data science team will depend on cloud platforms for secure, [efficient](htt
 
 ```{toctree}
 :caption: Content
+:maxdepth: 1
 :glob:
 
 cloud/*

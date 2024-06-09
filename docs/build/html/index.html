@@ -14,31 +14,34 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
 
   
-  <link href="_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=384b581d" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=87e54e7c" />
     <link rel="stylesheet" type="text/css" href="_static/css/figures.css?v=28bf0955" />
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/tabulator-tables/dist/css/tabulator.min.css" />
-    <link rel="stylesheet" type="text/css" href="_static/css/generic.css?v=149d5b05" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.min.css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/slides.css?v=6ae19c5b" />
+    <link rel="stylesheet" type="text/css" href="_static/css/generic.css?v=e96dd23a" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/themes/prism.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
-  <script src="_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=3ee479438cf8b5e0d341"></script>
 
     <script src="_static/documentation_options.js?v=fa9c326a"></script>
     <script src="_static/doctools.js?v=9a2dae69"></script>
@@ -57,9 +60,11 @@
     <script src="https://code.highcharts.com/highcharts.js"></script>
     <script src="https://code.highcharts.com/modules/networkgraph.js"></script>
     <script src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Introduction" href="introduction.html" />
+    <link rel="next" title="For Machine Learning Dependent Projects" href="services/mlp.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -69,27 +74,23 @@
 
   
   
-  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
   
   <div id="pst-scroll-pixel-helper"></div>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>
-    Back to top
-  </button>
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -111,8 +112,13 @@
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
     </header>
   
 
@@ -170,40 +176,39 @@
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Services</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Services</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="services.html">Services</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="services/mlp.html">For Machine Learning Dependent Projects</a></li>
-<li class="toctree-l2"><a class="reference internal" href="services/algorithms.html">Algorithms Inquiries</a></li>
-<li class="toctree-l2"><a class="reference internal" href="services/mle.html">Machine Learning Engineering</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="services/mlp.html">For Machine Learning Dependent Projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="services/algorithms.html">Algorithms Inquiries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="services/mle.html">Machine Learning Engineering</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Technologies &amp; Development Practices</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="development/background.html">Background</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="development/integration.html">Continuous Integration, Delivery, &amp; Deployment</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="development/integration.html">Continuous Integration, Delivery, &amp; Deployment</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="development/integration/ic.html">Images &amp; Containers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="development/integration/resources.html">Resources</a></li>
 </ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="development/cloud.html">Cloud Platform</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="development/cloud.html">Cloud Platform</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="development/cloud/architectures.html">Amazon Web Services &amp; Solution Architectures</a></li>
 <li class="toctree-l2"><a class="reference internal" href="development/cloud/impact.html">Impact Assessment</a></li>
 <li class="toctree-l2"><a class="reference internal" href="development/cloud/risks.html">Risks &amp; Mitigation Policies</a></li>
 <li class="toctree-l2"><a class="reference internal" href="development/cloud/threats.html">Threat Actors</a></li>
 </ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="development/languages.html">Languages &amp; Programming</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="development/languages.html">Languages &amp; Programming</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="development/languages/python.html">Python</a></li>
 <li class="toctree-l2"><a class="reference internal" href="development/languages/scala.html">Scala</a></li>
 </ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="development/machines.html">Machines</a></li>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="development/machines.html">Machines</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="development/machines/wsl.html">Linux &amp; Windows Subsystem for Linux (WSL)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="development/machines/linux.html">Fundamental Software: Linux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="development/machines/windows.html">Fundamental Software: Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="development/machines/gpu.html">Graphics Processing Unit, etc.</a></li>
+</ul>
+</details></li>
 </ul>
 
     </div>
@@ -219,7 +224,7 @@
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
 
@@ -228,7 +233,7 @@
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
@@ -356,136 +361,18 @@ document.write(`
                   
   <section id="code-of-practice">
 <h1>CODE OF PRACTICE<a class="headerlink" href="#code-of-practice" title="Link to this heading">#</a></h1>
-<br>
-<br><div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduction</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<p>These pages continuously outline the data science team’s operating practices vis-à-vis:</p>
+<ul class="simple">
+<li><p>Services</p></li>
+<li><p>Development Practices</p></li>
 </ul>
+<p>The pages ensure that we have the same understanding of the team’s practices vis-à-vis <strong>(a)</strong> serving
+clients, and <strong>(b)</strong> designing, developing, and deploying solutions.</p>
+<p>These pages will be updated continuously, therefore each team member must study the pages regularly.</p>
+<div class="toctree-wrapper compound">
 </div>
-<br>
-<br><div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Services</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="services.html">Services</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="services/mlp.html">For Machine Learning Dependent Projects</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="services/mlp.html#focus">Focus</a></li>
-<li class="toctree-l3"><a class="reference internal" href="services/mlp.html#service">Service</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="services/algorithms.html">Algorithms Inquiries</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="services/algorithms.html#focus">Focus</a></li>
-<li class="toctree-l3"><a class="reference internal" href="services/algorithms.html#service">Service</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="services/mle.html">Machine Learning Engineering</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="services/mle.html#focus">Focus</a></li>
-<li class="toctree-l3"><a class="reference internal" href="services/mle.html#service">Service</a></li>
-<li class="toctree-l3"><a class="reference internal" href="services/mle.html#project-management">Project Management</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+<div class="toctree-wrapper compound">
 </div>
-<br>
-<br><div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Technologies &amp; Development Practices</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="development/background.html">Background</a></li>
-<li class="toctree-l1"><a class="reference internal" href="development/integration.html">Continuous Integration, Delivery, &amp; Deployment</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="development/integration/ic.html">Images &amp; Containers</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="development/integration/ic.html#python">Python</a></li>
-<li class="toctree-l3"><a class="reference internal" href="development/integration/ic.html#scala">Scala</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="development/integration/resources.html">Resources</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="development/cloud.html">Cloud Platform</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="development/cloud/architectures.html">Amazon Web Services &amp; Solution Architectures</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="development/cloud/architectures.html#delivering-assets">Delivering Assets</a></li>
-<li class="toctree-l3"><a class="reference internal" href="development/cloud/architectures.html#interacting">Interacting</a></li>
-<li class="toctree-l3"><a class="reference internal" href="development/cloud/architectures.html#auto">Auto</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="development/cloud/impact.html">Impact Assessment</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="development/cloud/impact.html#scenario">Scenario</a></li>
-<li class="toctree-l3"><a class="reference internal" href="development/cloud/impact.html#considerations-contingencies-vis-a-vis-disruptions">Considerations &amp; Contingencies vis-à-vis Disruptions</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="development/cloud/risks.html">Risks &amp; Mitigation Policies</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="development/cloud/risks.html#data-breach">Data Breach</a></li>
-<li class="toctree-l3"><a class="reference internal" href="development/cloud/risks.html#attack-surface">Attack Surface</a></li>
-<li class="toctree-l3"><a class="reference internal" href="development/cloud/risks.html#malware-infections">Malware Infections</a></li>
-<li class="toctree-l3"><a class="reference internal" href="development/cloud/risks.html#insider-threats">Insider Threats</a></li>
-<li class="toctree-l3"><a class="reference internal" href="development/cloud/risks.html#zero-day-vulnerability">Zero Day Vulnerability</a></li>
-<li class="toctree-l3"><a class="reference internal" href="development/cloud/risks.html#data-loss">Data Loss</a></li>
-<li class="toctree-l3"><a class="reference internal" href="development/cloud/risks.html#deficient-access-controls">Deficient Access Controls</a></li>
-<li class="toctree-l3"><a class="reference internal" href="development/cloud/risks.html#hijacking-cloud">Hijacking (Cloud)</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="development/cloud/threats.html">Threat Actors</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="development/cloud/threats.html#background">Background</a></li>
-<li class="toctree-l3"><a class="reference internal" href="development/cloud/threats.html#protection">Protection</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="development/languages.html">Languages &amp; Programming</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="development/languages/python.html">Python</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="development/languages/python.html#fundamentals">Fundamentals</a></li>
-<li class="toctree-l3"><a class="reference internal" href="development/languages/python.html#importing">Importing</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="development/languages/scala.html">Scala</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="development/languages/scala.html#fundamentals">Fundamentals</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="development/machines.html">Machines</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="development/machines.html#initial-set-up">Initial Set-up</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="development/machines.html#basic-tools">Basic Tools</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="development/machines.html#linux-windows-subsystem-for-linux-wsl">Linux &amp; Windows Subsystem for Linux (WSL)</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="development/machines.html#activate-windows-subsystem-for-linux">Activate Windows Subsystem for Linux</a></li>
-<li class="toctree-l3"><a class="reference internal" href="development/machines.html#enable-the-virtual-machine-feature-via-powershell-administrator-mode">Enable the virtual machine feature via PowerShell; administrator mode.</a></li>
-<li class="toctree-l3"><a class="reference internal" href="development/machines.html#linux-kernel-update-package">Linux Kernel Update Package</a></li>
-<li class="toctree-l3"><a class="reference internal" href="development/machines.html#download-install-a-linux-distribution">Download &amp; Install a Linux Distribution</a></li>
-<li class="toctree-l3"><a class="reference internal" href="development/machines.html#commands">Commands</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="development/machines.html#fundamental-software-linux">Fundamental Software: Linux</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="development/machines.html#wget">WGET</a></li>
-<li class="toctree-l3"><a class="reference internal" href="development/machines.html#git">GIT</a></li>
-<li class="toctree-l3"><a class="reference internal" href="development/machines.html#conda">CONDA</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="development/machines.html#fundamental-software-windows">Fundamental Software: Windows</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="development/machines.html#core">Core</a></li>
-<li class="toctree-l3"><a class="reference internal" href="development/machines.html#windows-installations-that-propagate-to-wsl-kernels">Windows Installations that Propagate to WSL Kernels</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</div>
-<br>
-<br>
-<br>
-<br>
-
-<br>
-<br>
-<br>
-<br>
-
-<br>
-<br>
-<br>
-<br><p><a class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-black sd-shadow-sm reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p>
 <br>
 <br>
 <br>
@@ -504,15 +391,15 @@ document.write(`
               
               
               
-                <footer class="prev-next-footer">
+                <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
     <a class="right-next"
-       href="introduction.html"
+       href="services/mlp.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Introduction</p>
+        <p class="prev-next-title">For Machine Learning Dependent Projects</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -522,8 +409,6 @@ document.write(`
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"></div>
               
             
           </div>
@@ -568,8 +453,8 @@ By @greyhypotheses
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+  <script src="_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341"></script>
 
   <footer class="bd-footer">
   </footer>

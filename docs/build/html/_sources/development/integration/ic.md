@@ -2,11 +2,11 @@
 
 # Images & Containers
 
-:::{admonition} In Progress
 <br>
-:::
 
 Designing & developing within containers.
+
+<br>
 
 ## Python
 
@@ -65,12 +65,6 @@ Similarly, Visual Studio Code as its container attachment instructions; study [A
 
 <br>
 <br>
-
-## Scala
-
-### For Development
-
-The template ...
 
 <br>
 <br>

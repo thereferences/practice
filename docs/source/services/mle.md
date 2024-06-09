@@ -2,9 +2,7 @@
 
 # Machine Learning Engineering Services
 
-```{admonition} In Progress
 <br>
-```
 
 ## Focus
 
@@ -18,6 +16,7 @@ In brief:
   maintainable, and resilient, and (d) seamlessly integrate into the overarching product.  The development practices section outlines team, and best, practices vis-à-vis the engineering aspects of 
   model development.
 
+<br>
 <br>
 
 ## Service

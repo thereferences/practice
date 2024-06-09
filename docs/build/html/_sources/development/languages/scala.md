@@ -1,11 +1,8 @@
 <br>
 
-Scala
-=====
+# Scala
 
-:::{admonition} In Progress
 <br>
-:::
 
 ## Fundamentals
 

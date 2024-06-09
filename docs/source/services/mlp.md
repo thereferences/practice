@@ -2,9 +2,7 @@
 
 # For Machine Learning Dependent Projects
 
-```{admonition} In Progress
 <br>
-```
 
 ## Focus
 
@@ -29,6 +27,7 @@ flowchart LR
     classDef default fill:#333333,stroke:#333333,stroke-width:0px,color:#ffffff,font-size:11pt;
 ```
 
+<br>
 <br>
 
 ## Service

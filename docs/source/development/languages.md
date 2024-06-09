@@ -6,6 +6,8 @@
 <br>
 :::
 
+<br>
+
 Please
 <ul class="special">
     <li>Always use the style guides that the languages pages reference.</li>
@@ -24,6 +26,7 @@ Please
 
 ```{toctree}
 :caption: Content
+:maxdepth: 1
 :glob:
 
 languages/*

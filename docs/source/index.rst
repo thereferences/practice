@@ -5,37 +5,30 @@
 CODE OF PRACTICE
 ================
 
-.. raw:: html
+These pages continuously outline the data science team's operating practices vis-à-vis:
 
-   <br>
-   <br>
+* Services
+* Development Practices
 
-.. toctree::
-   :maxdepth: 3
-   :caption: Introduction
+The pages ensure that we have the same understanding of the team's practices vis-à-vis **(a)** serving
+clients, and **(b)** designing, developing, and deploying solutions.
 
-   introduction
-
-.. raw:: html
-
-   <br>
-   <br>
+These pages will be updated continuously, therefore each team member must study the pages regularly.
 
 .. toctree::
    :maxdepth: 3
    :caption: Services
+   :hidden:
    :glob:
 
-   services
-
-.. raw:: html
-
-   <br>
-   <br>
+   services/mlp
+   Algorithms Inquiries <services/algorithms>
+   Machine Learning Engineering <services/mle>
 
 .. toctree::
    :maxdepth: 3
    :caption: Technologies & Development Practices
+   :hidden:
 
    development/background
    development/integration
@@ -43,31 +36,6 @@ CODE OF PRACTICE
    development/languages
    development/machines
 
-
-.. raw:: html
-
-   <br>
-   <br>
-   <br>
-   <br>
-
-   <br>
-   <br>
-   <br>
-   <br>
-
-   <br>
-   <br>
-   <br>
-   <br>
-
-.. button-ref:: genindex
-   :color: black
-   :shadow:
-
-
-
-
 .. raw:: html
 
   <br>
@@ -79,7 +47,6 @@ CODE OF PRACTICE
   <br>
   <br>
   <br>
-
 
 ..
    Comment

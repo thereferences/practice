@@ -1,4 +1,4 @@
-<br>
+ <br>
 
 # Continuous Integration, Delivery, & Deployment
 
@@ -9,6 +9,7 @@
 
 ```{toctree}
 :caption: Content
+:maxdepth: 1
 :glob:
 
 integration/*
