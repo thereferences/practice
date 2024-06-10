@@ -18,7 +18,7 @@ https://www.sphinx-doc.org/en/master/usage/configuration.html#project-informatio
 Basic
 '''
 project = 'Code of Practice'
-project_copyright = '2023, The Artificial Intelligence Unit'
+project_copyright = '2024, The Artificial Intelligence Unit'
 author = '@greyhypotheses'
 release = 'v0.1.8'
 
