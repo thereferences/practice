@@ -1,14 +1,8 @@
-<br>
 
 # Languages & Programming
 
-:::{admonition} In Progress
-<br>
-:::
-
-<br>
-
 Please
+
 <ul class="special">
     <li>Always use the style guides that the languages pages reference.</li>
     <li>The structure of a package must always be in line with the underlying language's project structure.</li>
@@ -19,18 +13,6 @@ Please
         </ul>
     </li>
 </ul>
-
-<br>
-<br>
-
-
-```{toctree}
-:caption: Content
-:maxdepth: 1
-:glob:
-
-languages/*
-```
 
 <br>
 <br>
