@@ -1,3 +1,12 @@
+---
+layout: default
+title: Languages
+parent: Technologies & Development
+nav_order: 3
+has_children: true
+custom_css:
+  - tooltips
+---
 
 # Languages & Programming
 
@@ -13,6 +22,8 @@ Please
         </ul>
     </li>
 </ul>
+
+{: .fs-6 .fw-300 }
 
 <br>
 <br>
