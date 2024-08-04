@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Technologies & Development Practice
+title: Technologies & Development
 nav_order: 3
 has_children: true
 permalink: /src/development
 custom_css:
-- tooltips
+  - tooltips
 ---
 
 # Technologies & Development Practice
