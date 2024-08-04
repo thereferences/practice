@@ -1,8 +1,27 @@
-<br>
+---
+layout: default
+title: Machine Learning Dependent Projects
+parent: Services
+nav_order: 1
+external_css:
+  - https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs
+custom_js:
+  - latex
+---
 
 # For Machine Learning Dependent Projects
+{: .no_toc }
 
 <br>
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+   {:toc}
+
+---
+
 
 ## Focus
 
