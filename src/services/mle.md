@@ -1,8 +1,25 @@
-<br>
+---
+layout: default
+title: Machine Learning Engineering
+parent: Services
+nav_order: 3
+custom_js:
+  - latex
+---
 
 # Machine Learning Engineering Services
+{: .no_toc }
 
 <br>
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+   {:toc}
+
+---
+
 
 ## Focus
 
