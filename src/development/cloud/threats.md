@@ -35,7 +35,7 @@ The [Cyber Security Body of Knowledge](https://www.cybok.org/knowledgebase1_1/) 
     <dt>Security Policies & Procedures</dt><dd>The risks & mitigation policies page addresses this.<br></dd>
     <dt>Enforce Access Control</dt><dd>Zero privilege approach. Initially, each team member will have a zero privileges account, i.e., Amazon Web Services products will be inaccessible. Privileges will be set, and withdrawn, via IAM (Identity & Access Management) roles, and trust policies thereof. Mandatory multi-factor authentication for cloud tools, e.g., Amazon Web Services, GitHub, etc.<br></dd>
     <dt>Automatic Code Scanning, Code Vulnerability Alerts</dt>
-<dd>GitHub <a href="https://docs.github.com/en/code-security/dependabot" target="_blank">DEPENDEABOTS</a>, GitHub <a href="https://docs.
+<dd>GitHub <a href="https://docs.github.com/en/code-security/dependabot" target="_blank">DEPENDABOT</a>, GitHub <a href="https://docs.
 github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning-with-codeql" target="_blank"
 >CodeQL</a><br></dd>
 </dl>
