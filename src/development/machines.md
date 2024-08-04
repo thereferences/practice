@@ -1,3 +1,13 @@
+---
+layout: default
+title: Machines
+parent: Technologies & Development
+nav_order: 4
+has_children: true
+custom_css:
+  - tooltips
+---
+
 
 # Machines
 
@@ -22,6 +32,10 @@ Additionally, install
 * [KeePassXC](https://keepassxc.org/)
 
 within Windows.  Ensure that the privacy & security settings of the browsers are strict; additionally, set the default search engine to _duckduckgo_.
+
+
+{: .fs-6 .fw-300 }
+
 
 <br>
 <br>
