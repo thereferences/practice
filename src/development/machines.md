@@ -1,12 +1,5 @@
-<br>
 
 # Machines
-
-:::{admonition} In Progress
-<br>
-:::
-
-<br>
 
 All the organisation's computer usage rules apply; remember, Universal Serial Bus (USB) sticks are disallowed.
 
@@ -29,21 +22,6 @@ Additionally, install
 * [KeePassXC](https://keepassxc.org/)
 
 within Windows.  Ensure that the privacy & security settings of the browsers are strict; additionally, set the default search engine to _duckduckgo_.
-
-<br>
-<br>
-
-
-```{toctree}
-:caption: Content
-:maxdepth: 1
-:glob:
-
-machines/wsl
-machines/linux
-machines/windows
-machines/gpu
-```
 
 <br>
 <br>
