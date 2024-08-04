@@ -168,6 +168,34 @@ docker run --rm --gpus all nvidia/cuda:12.5.0-base-ubuntu22.04 nvidia-smi
 <br>
 <br>
 
+#### Downgrading
+
+* Uninstall 12.5 / All NVIDIA Components<br>
+  Restart machine as many times as necessary
+
+* Downgrade to 12.2<br>
+  [Download](https://developer.nvidia.com/cuda-12-2-0-download-archive?target_os=Windows&target_arch=x86_64&target_version=11)
+
+* Install<br>
+  Opt for custom installation: deselect visual studio integration
+
+* Check environment variable paths
+
+* Re-start
+
+* Re-configure linux container toolkit settings<br>
+  https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html#configuring-docker
+
+* Re-start docker
+
+
+Version Matrix
+https://docs.nvidia.com/cuda/archive/12.2.2/cuda-toolkit-release-notes/index.html
+
+
+<br>
+<br>
+
 <br>
 <br>
 
