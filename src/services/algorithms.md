@@ -1,8 +1,25 @@
-<br>
+---
+layout: default
+title: Algorithms Inquiries
+parent: Services
+nav_order: 2
+custom_js:
+  - latex
+---
 
 # Machine Learning Algorithms Inquiries
+{: .no_toc }
 
 <br>
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+   {:toc}
+
+---
+
 
 ## Focus
 
