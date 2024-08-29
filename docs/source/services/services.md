@@ -3,9 +3,9 @@
 ```{toctree}
 :glob:
 
-services/mlp
-Algorithms Inquiries <services/algorithms>
-Machine Learning Engineering <services/mle>
+mlp
+Algorithms Inquiries <algorithms>
+Machine Learning Engineering <mle>
 ```
 
 <br>
