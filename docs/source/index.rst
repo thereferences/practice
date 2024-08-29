@@ -32,7 +32,9 @@ Code of Practice
    :hidden:
    :glob:
 
-   services/services
+   services/mlp
+   Algorithms Inquiries <services/algorithms>
+   Machine Learning Engineering <services/mle>
 
 .. toctree::
    :maxdepth: 3
