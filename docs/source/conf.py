@@ -145,7 +145,6 @@ html_theme_options = {
 html_static_path: list[str] = ['_static']
 
 html_css_files: list[str] = [
-    'css/figures.css',
     'https://unpkg.com/tabulator-tables/dist/css/tabulator.min.css',
     'https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.min.css',
     'css/slides.css',
