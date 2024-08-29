@@ -32,7 +32,7 @@ Code of Practice
    :hidden:
    :glob:
 
-   services/
+   services/services
 
 .. toctree::
    :maxdepth: 3
@@ -40,10 +40,6 @@ Code of Practice
    :hidden:
 
    development/background
-   development/integration
-   development/cloud
-   development/languages
-   development/machines
 
 .. raw:: html
 
