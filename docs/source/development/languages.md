@@ -9,7 +9,7 @@
 <br>
 
 Please
-<ul class="special">
+<ul class="disc">
     <li>Always use the style guides that the languages pages reference.</li>
     <li>The structure of a package must always be in line with the underlying language's project structure.</li>
     <li>Deploy all machine learning packages via container images.</li>
