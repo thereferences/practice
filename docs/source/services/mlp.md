@@ -35,7 +35,7 @@ flowchart LR
 In collaboration with the client team, please preliminarily assess service requests, for  _machine learning dependent 
 projects_, via:
 
-<ul class="special">
+<ul class="disc">
     <li>The upcoming <i>project details hub</i> of the Scottish Artificial Intelligence Register; for eliciting project 
 details.</li>
     <li>A technological feasibility & economic viability assessment, using the project details.</li>
