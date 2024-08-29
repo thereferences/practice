@@ -18,7 +18,7 @@ https://www.sphinx-doc.org/en/master/usage/configuration.html#project-informatio
 import os
 import sys
 import datetime
-from typing import List
+from typing import List, Any
 
 # noinspection PyUnresolvedReferences
 import revitron_sphinx_theme
@@ -153,29 +153,46 @@ html_css_files: list[str] = [
     'css/generic.css',
     'https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/themes/prism.min.css']
 
-html_js_files = ['https://code.jquery.com/jquery-3.7.0.min.js',
-                 'https://code.highcharts.com/stock/highstock.js',
-                 'https://code.highcharts.com/stock/modules/data.js',
-                 'https://code.highcharts.com/stock/modules/exporting.js',
-                 'https://code.highcharts.com/stock/modules/export-data.js',
-                 'https://code.highcharts.com/stock/modules/accessibility.js',
-                 'https://code.highcharts.com/highcharts.js',
-                 'https://code.highcharts.com/modules/networkgraph.js',
-                 'https://viewer.diagrams.net/js/viewer-static.min.js',
-                 'https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.pkgd.min.js',
-                 'https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js',
-                 'js/slides.js'
-                 ]
+html_js_files: list[str] = [
+    'https://code.jquery.com/jquery-3.7.0.min.js',
+    'https://code.highcharts.com/stock/highstock.js',
+    'https://code.highcharts.com/stock/modules/data.js',
+    'https://code.highcharts.com/stock/modules/exporting.js',
+    'https://code.highcharts.com/stock/modules/export-data.js',
+    'https://code.highcharts.com/stock/modules/accessibility.js',
+    'https://code.highcharts.com/highcharts.js',
+    'https://code.highcharts.com/modules/networkgraph.js',
+    'https://viewer.diagrams.net/js/viewer-static.min.js',
+    'https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.pkgd.min.js',
+    'https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js',
+    'js/slides.js']
 
+html_title = 'CODE OF PRACTICE'
 
+html_favicon = '_static/favicon.ico'
 
 html_context = {
     'landing_page': {
         'menu': [
-            {'title': 'Introduction',
-             'url': ''},
+            {'title': 'Parent',
+             'url': 'https://github.com/theartificialintelligenceunit'},
             {'title': 'Technologies & Development Practices',
              'url': ''}
         ]
-    }
+    },
+    'display_github': True,
+    'github_repo': 'thereferences/practice',
+    'conf_py_path': 'develop/docs/source/'
 }
+
+html_sidebars = {}
+
+
+'''
+Options for intersphinx extension
+https://www.sphinx-doc.org/en/master/usage/extensions/intersphinx.html#configuration
+'''
+intersphinx_mapping = {
+    'python': ('https://docs.python.org/3', None),
+}
+
