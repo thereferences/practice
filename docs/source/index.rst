@@ -1,19 +1,30 @@
-.. Code of Practice documentation master file.
-   This page should, at least, contain the root
-   <table of contents tree> directive.
+.. image:: _static/logo.svg
 
-CODE OF PRACTICE
+
+Code of Practice
 ================
 
-These pages continuously outline the data science team's operating practices vis-à-vis:
+.. container:: .large
 
-* Services
-* Development Practices
+   These pages continuously outline the data science team's operating practices vis-à-vis.
 
-The pages ensure that we have the same understanding of the team's practices vis-à-vis **(a)** serving
-clients, and **(b)** designing, developing, and deploying solutions.
+.. raw:: html
 
-These pages will be updated continuously, therefore each team member must study the pages regularly.
+   <br>
+
+.. container:: .buttons
+
+    `Introduction <introduction/introduction.html>`_
+    `Development Practices <development/background.html>`_
+    `GitHub <https://github.com/thereferences/practice>`_
+
+.. image:: https://img.shields.io/github/v/tag/thereferences/systems?label=Release&style=flat-square&labelColor=292b2e&color=292b2e
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+
+   introduction/introduction
 
 .. toctree::
    :maxdepth: 3
