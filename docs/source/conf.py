@@ -14,13 +14,35 @@ https://www.sphinx-doc.org/en/master/usage/configuration.html#project-informatio
 
 """
 
+# Libraries
+import os
+import sys
+import datetime
+from typing import List
+
+# noinspection PyUnresolvedReferences
+import revitron_sphinx_theme
+
+
+'''
+Path
+'''
+sys.path.insert(0, os.path.abspath('../..'))
+sys.path.append(os.path.join(os.path.dirname(__file__), '../../revitron'))
+
+
+'''
+Master
+'''
+master_doc = 'index'
+
+
 '''
 Basic
 '''
 project = 'Code of Practice'
-project_copyright = '2024, The Artificial Intelligence Unit'
+project_copyright = '{}, The Artificial Intelligence Unit'.format(datetime.datetime.now().year)
 author = '@greyhypotheses'
-release = 'v0.1.8'
 
 
 '''
@@ -29,14 +51,22 @@ https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configurat
 https://myst-parser.readthedocs.io/en/v0.15.1/sphinx/intro.html#install-a-new-sphinx-extension-and-use-its-functionality
 '''
 extensions = [
-    'sphinx.ext.duration',
-    'sphinx.ext.githubpages',
+    'sphinx.ext.autodoc',
+    'sphinx.ext.intersphinx',
+    'sphinx.ext.coverage',
     'sphinx.ext.mathjax',
+    'sphinx.ext.viewcode',
+    'sphinx.ext.githubpages',
+    'revitron_sphinx_theme',
+    'autodocsumm',
+    'sphinxcontrib.httpdomain',
+    'sphinx.ext.napoleon',
+    'sphinxext.opengraph',
+    'sphinxcontrib.jquery',
+    'myst_parser',
+    'sphinx.ext.duration',
     'sphinx_design',
-    'sphinxcontrib.mermaid',
-    "sphinx.ext.intersphinx",
-    "sphinx.ext.viewcode",
-    'myst_parser'
+    'sphinxcontrib.mermaid'
 ]
 
 myst_enable_extensions = [
@@ -56,11 +86,19 @@ myst_enable_extensions = [
     'attrs_block'
 ]
 
+add_module_names = False
 
-'''
-https://myst-parser.readthedocs.io/en/latest/configuration.html
-'''
-myst_heading_anchors = 4
+napoleon_google_docstring = True
+napoleon_include_init_with_doc = True
+napoleon_include_private_with_doc = False
+napoleon_include_special_with_doc = True
+napoleon_use_admonition_for_examples = False
+napoleon_use_admonition_for_notes = True
+napoleon_use_admonition_for_references = True
+napoleon_use_ivar = False
+napoleon_use_param = True
+napoleon_use_rtype = True
+napoleon_preprocess_types = False
 
 
 '''
@@ -90,16 +128,29 @@ https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-o
 'style_nav_header_background': '#343131'
 '''
 
-html_theme = 'sphinx_book_theme'
+html_theme = 'revitron_sphinx_theme'
 
-html_static_path = ['_static']
+html_theme_options = {
+    'canonical_url': 'https://thereferences.github.io/systems/',
+    'style_external_links': False,
+    'collapse_navigation': True,
+    'sticky_navigation': True,
+    'navigation_depth': 4,
+    'includehidden': True,
+    'titles_only': False,
+    'github_url': 'https://www.github.com/thereferences/systems',
+    'logo_mobile': '_static/32x32.svg'
+}
 
-html_css_files = ['css/figures.css',
-                  'https://unpkg.com/tabulator-tables/dist/css/tabulator.min.css',
-                  'https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.min.css',
-                  'css/slides.css',
-                  'css/generic.css',
-                  'https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/themes/prism.min.css']
+html_static_path: list[str] = ['_static']
+
+html_css_files: list[str] = [
+    'css/figures.css',
+    'https://unpkg.com/tabulator-tables/dist/css/tabulator.min.css',
+    'https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.min.css',
+    'css/slides.css',
+    'css/generic.css',
+    'https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/themes/prism.min.css']
 
 html_js_files = ['https://code.jquery.com/jquery-3.7.0.min.js',
                  'https://code.highcharts.com/stock/highstock.js',
@@ -114,17 +165,7 @@ html_js_files = ['https://code.jquery.com/jquery-3.7.0.min.js',
                  'https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js'
                  ]
 
-html_theme_options = {
-    'use_download_button': True,
-    'use_fullscreen_button': True,
-    'home_page_in_toc': True,
-    'show_navbar_depth': 1,
-    'max_navbar_depth': 4,
-    'collapse_navbar': False,
-    'toc_title': 'PRACTICE',
-    'show_toc_level': 2,
-    'sidebarwidth': 250
-}
+
 
 html_context = {
     'landing_page': {
