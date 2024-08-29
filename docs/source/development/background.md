@@ -12,17 +12,6 @@ Guidelines for
 * Online Notes: We will use Sphinx, and specifically the Sphinx Book Theme.  A template repository is being finalised.
 
 <br>
-
-```{toctree}
-:glob:
-
-cloud
-machines
-integration
-languages
-```
-
-<br>
 <br>
 <br>
 <br>
