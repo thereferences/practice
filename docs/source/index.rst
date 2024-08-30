@@ -14,7 +14,7 @@ Code of Practice
 
 .. container:: .buttons
 
-    `Introduction <introduction/introduction.html>`_
+    `About <introduction/about.html>`_
     `Services <services/services.html>`_
     `Development Practices <development/background.html>`_
 
@@ -30,12 +30,14 @@ Code of Practice
 
 .. toctree::
    :maxdepth: 2
+   :caption: Introduction
    :hidden:
 
-   introduction/introduction
+   introduction/about
 
 .. toctree::
    :maxdepth: 2
+   :caption: Services
    :hidden:
    :glob:
 
