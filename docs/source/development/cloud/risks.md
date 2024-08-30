@@ -87,7 +87,7 @@ Threats due to employees not adhering to security rules.
     <dt>Risk</dt>
     <dd>Infiltration risks, and all the damages thereof.</dd>
     <dt>Mitigation</dt>
-    <dd>
+    <dd>At least:
       <ul class="disc">
       <li class="disc">Always-on virtual private network.</li>
       <li class="disc">Using compute services via infrastructure-as-code templates that always feature
@@ -111,7 +111,7 @@ An unknown software security flaw; the developers are unaware of its existence.
 
 <dl>
     <dt>Risk</dt>
-    <dd><ul class="disc">
+    <dd>Include:<ul class="disc">
         <li class="disc">Zero-day exploits.</li>
         <li class="disc">Zero-day attacks.</li></ul></dd>
     <dt>Mitigation</dt>
@@ -120,7 +120,7 @@ An unknown software security flaw; the developers are unaware of its existence.
         <li class="disc">Limited pool of applications.</li>
         <li class="disc">Firewall</li>
         <li class="disc">Network interactions via virtual private network only.</li></ul>
-        <br><br>Cloud
+        Cloud
         <ul class="disc">
         <li class="disc">Always use the latest compute services &amp; software.</li></ul></dd>
 </dl>
@@ -136,9 +136,10 @@ The loss of data due to a natural disaster, malfunction, etc.
 <dl>
     <dt>Risk</dt><dd>The loss of all data intelligence, e.g., engineered features, developed models, model artefacts, exploratory &amp; trend analysis, etc.</dd>
     <dt>Mitigation</dt><dd>
+    At least:
     <ul class="disc">
     <li class="disc">Backup data sets: <a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/backup-for-s3.html" target="_blank">Amazon Web Services Backup for Amazon S3 (Simple Storage Service)</a></li>
-    <li class="disc">Programmatic production of all data intelligence, via version controlled team programs; hence the wherewithal to reproduce all lost items.  This is a mandatory team practice.</li>
+    <li class="disc">Programmatic production of all data intelligence/products, via version controlled software programs; hence the wherewithal to reproduce all lost items.  This is a mandatory team practice.</li>
     </ul>
 </dd>
 </dl>
@@ -154,6 +155,7 @@ Deficient access controls to cloud, and complementary, assets.
 <dl>
   <dt>Risk</dt>
   <dd>
+    Include:
     <ul class="disc">
     <li class="disc">An unnecessarily wider attack surface via which threat actors can conduct malicious activities.</li>
     <li class="disc">Financial loss, e.g, by using unaffordable products that were not intended for use by the organisation/team.</li></ul></dd>
