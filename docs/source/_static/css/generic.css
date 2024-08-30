@@ -49,6 +49,7 @@ li.disc {
 ul.disc {
     margin-left: 35px;
     margin-bottom: 15px;
+
 }
 
 li.circle {
@@ -98,6 +99,12 @@ ol.numeric {
 /* Caption */
 .caption-text {
     font-family: Inter, sans-serif;
+}
+
+
+/* Paragraph */
+p {
+    margin-bottom: 0.8rem;
 }
 
 
