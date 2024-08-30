@@ -61,6 +61,9 @@ sphinx-build -E -b html docs/source docs/build/html
 
 * [Sphinx](https://www.sphinx-doc.org/en/master/index.html)
   * [Sphinx Directives](https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html)
+  * [Local Table of Contents: `backlinks`](https://myst-parser.readthedocs.io/en/latest/docutils.html#single-page-builds)
+  * [Content](https://myst-parser.readthedocs.io/en/latest/syntax/organising_content.html)
+  * [code blocks](https://sublime-and-sphinx-guide.readthedocs.io/en/latest/code_blocks.html)
 * [reStructuredText](https://docutils.sourceforge.io/rst.html)
   * [Sphinx reStructuredText Primer](https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html)
   * [reStructuredText Card](https://bashtage.github.io/sphinx-material/rst-cheatsheet/rst-cheatsheet.html)
