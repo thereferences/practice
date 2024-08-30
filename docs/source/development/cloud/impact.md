@@ -3,10 +3,17 @@
 The team does not have a standard workload.  Solutions that it designs, develops, tests, etc., will be delivered to 
 clients/colleagues. This brief assessment considers a hypothetical, but partially representative, scenario.
 
-```{contents} Table of Contents
+<br>
+
+:::{dropdown} Table of Contents
+```{contents}
 :depth: 1
 :local:
+:backlinks: top
 ```
+:::
+
+<br>
 
 ## SCENARIO
 
