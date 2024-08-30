@@ -95,6 +95,10 @@ ol.numeric {
     margin-left: 60px;
 }
 
+#content.content.local li {
+    list-style: disc;
+}
+
 
 /* Caption */
 .caption-text {
@@ -141,10 +145,27 @@ th {
  * Figure caption
  */
 figcaption {
-    color: #000000;
-    font-size: 0.8em;
+    color: #333333;
+    font-size: 1.0em;
     padding: 2px;
     margin-left:65px;
     margin-right: 15px;
     text-align: left;
 }
+
+figcaption a {
+    /*color: #F80;*/
+    position: relative;
+    color: var(--link);
+    font-weight: calc(580*var(--font-weight-factor));
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: currentcolor;
+    text-decoration-thickness: auto;
+}
+
+
+
+
+
+
