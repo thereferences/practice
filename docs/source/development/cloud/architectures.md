@@ -10,7 +10,7 @@ time, more Amazon Web Services (AWS) details will be added.
 :local:
 ```
 
-## Delivering Assets
+## DELIVERING ASSETS
 
 <iframe style="overflow:hidden; width:100%; height:330px; border:none; margin-left:65px" 
         src="../../../../../assets/beforehand.html"></iframe>
@@ -27,7 +27,7 @@ Example]
 <br>
 <br>
 
-## Interacting
+## INTERACTING
 
 ### Elastic Compute Cloud
 
@@ -166,7 +166,7 @@ href="https://docs.aws.amazon.com/cli/latest/userguide/sso-configure-profile-tok
 <br>
 
 
-## Auto
+## AUTO
 
 ### Via Step Functions
 
