@@ -15,8 +15,12 @@ Code of Practice
 .. container:: .buttons
 
     `Introduction <introduction/introduction.html>`_
+    `Services <services/services.html>`_
     `Development Practices <development/background.html>`_
-    `GitHub <https://github.com/thereferences/practice>`_
+
+.. raw:: html
+
+   <br>
 
 .. image:: https://img.shields.io/github/v/tag/thereferences/systems?label=Release&style=flat-square&labelColor=292b2e&color=292b2e
 
