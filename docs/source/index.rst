@@ -27,17 +27,14 @@ Code of Practice
    introduction/introduction
 
 .. toctree::
-   :maxdepth: 3
-   :caption: Services
+   :maxdepth: 2
    :hidden:
    :glob:
 
-   services/mlp
-   Algorithms Inquiries <services/algorithms>
-   Machine Learning Engineering <services/mle>
+   services/services
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
    :caption: Technologies & Development Practices
    :glob:
    :hidden:
