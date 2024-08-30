@@ -85,6 +85,8 @@ myst_enable_extensions = [
     'attrs_block'
 ]
 
+myst_heading_anchors = 4
+
 add_module_names = False
 
 napoleon_google_docstring = True
@@ -134,7 +136,7 @@ html_theme_options = {
     'style_external_links': False,
     'collapse_navigation': True,
     'sticky_navigation': True,
-    'navigation_depth': 4,
+    'navigation_depth': 3,
     'includehidden': True,
     'titles_only': False,
     'github_url': 'https://www.github.com/thereferences/systems',
