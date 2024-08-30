@@ -14,9 +14,9 @@ Code of Practice
 
 .. container:: .buttons
 
-    `About <introduction/about.html>`_
+    `About <about/about.html>`_
     `Services <services/services.html>`_
-    `Development Practices <development/background.html>`_
+    `Development Practices <development/development.html>`_
 
 .. raw:: html
 
@@ -48,7 +48,7 @@ Code of Practice
    :glob:
    :hidden:
 
-   development/background
+   development/development
 
 .. raw:: html
 
