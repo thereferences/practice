@@ -106,8 +106,12 @@ img {
 }
 
 img.small {
-    margin-left:65px;
+    margin-left: 65px;
     width:80%;
+}
+
+img.normal {
+    margin-left: 15px;
 }
 
 
