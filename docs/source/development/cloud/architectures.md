@@ -5,7 +5,7 @@ time, more Amazon Web Services (AWS) details will be added.
 
 <br>
 
-```{contents} Table of Contents
+```{contents} Table of Content
 :depth: 1
 :local:
 ```
