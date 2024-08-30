@@ -1,6 +1,6 @@
 # Risks & Mitigation Policies
 
-:::{dropdown} Table of Content
+:::{dropdown} Table of Contents
 ```{contents}
 :depth: 1
 :local:
