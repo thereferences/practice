@@ -2,8 +2,6 @@
 
 The team's current focus.
 
-<br>
-
 ```{toctree}
 :maxdepth: 1
 :titlesonly:
