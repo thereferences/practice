@@ -1,8 +1,9 @@
-<br>
-
 # Risks & Mitigation Policies
 
-<br>
+```{contents} Table of Content
+:depth: 1
+:local:
+```
 
 ## Data Breach
 
