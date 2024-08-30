@@ -164,8 +164,7 @@ Deficient access controls to cloud, and complementary, assets.
     <li class="disc">Programmatic access to Amazon Web Services products via limited privileges roles &amp; trust policies. [Automatic temporary credentials via AWS Command Line Interface Single Sign On]</li>
     <li class="disc">Limited, zero, privileges by default.<br></li>
     <li class="disc">The continuous development and availability of launch templates, with security settings and limited assets privileges, for launching computing products.</li>
-    <li class="disc">The team's cloud leads must use multi-factor authentication to access AWS online.  [Multi-factor authentication by default.]</li>
-    </ul>
+    <li class="disc">The team's cloud leads must use multi-factor authentication to access AWS online.  [Multi-factor authentication by default.]</li></ul>
     GitHub
     <ul class="disc"><li>Mandatory multi-factor authentication.</li><li>SSH (Secure Shell) command line interactions.</li></ul>
   </dd>
