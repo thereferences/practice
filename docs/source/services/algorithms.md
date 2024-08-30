@@ -9,7 +9,6 @@ In brief:
 Never use the phrase ``research shows that''; if a study or paper has an excellent explanation share the source details.
 
 <br>
-<br>
 
 ## Service
 
