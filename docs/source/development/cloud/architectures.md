@@ -5,10 +5,15 @@ time, more Amazon Web Services (AWS) details will be added.
 
 <br>
 
-```{contents} Table of Content
+:::{dropdown} Table of Contents
+```{contents}
 :depth: 1
 :local:
+:backlinks: top
 ```
+:::
+
+<br>
 
 ## DELIVERING ASSETS
 
