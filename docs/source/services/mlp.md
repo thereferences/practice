@@ -1,16 +1,13 @@
-<br>
-
-# For Machine Learning Dependent Projects
-
-<br>
+# Machine Learning Dependent Projects
 
 ## Focus
 
 In brief:
 
-> Focuses on projects that **(a)** address a business problem, **(b)** have an unambiguous problem statement, **\(c\)** have a 
+> Focusing on projects that **(a)** address a business problem, **(b)** have an unambiguous problem statement, **\(c\)** have a 
 > deployment goal, **(d)** a machine learning model prediction/forecast/diagnostic aim, **(e)** are technologically feasible and economically viable.
 
+<br>
 
 ```{mermaid}
 %%{ init: { 'flowchart': { 'curve': 'monotoneX'} } }%%
@@ -36,17 +33,15 @@ In collaboration with the client team, please preliminarily assess service reque
 projects_, via:
 
 <ul class="disc">
-    <li>The upcoming <i>project details hub</i> of the Scottish Artificial Intelligence Register; for eliciting project 
+    <li class="disc">The upcoming <i>project details hub</i> of the Scottish Artificial Intelligence Register; for eliciting project 
 details.</li>
-    <li>A technological feasibility & economic viability assessment, using the project details.</li>
+    <li class="disc">A technological feasibility & economic viability assessment, using the project details.</li>
 </ul>
 
 The <a href="https://thereferences.github.io/systems" target="_blank">complementary online pages of the <i>project details 
-hub</i></a> is an important, and continuously developing, resource that aids critical assessments of service requests.  
+hub</i></a> is an important, and continuously developing, resource that aids critical assessments of potential machine learning dependent projects.  Once it is ready, a future blog will introduce the <i>project details hub</i>; and discuss the import of feasibility/viability assessments.
 
-The team's _services launch_ blog, or a later blog, will include an introduction to the <i>project details hub</i>; and an introduction to feasibility/viability assessments.
-
-Note, a key aspect of a project's details is the identification the groups/people/partners that will be responsible for 
+Note, a key aspect of a project's _details_ is the identification of the groups/people/partners that will be responsible for 
 different parts of the project, and their costs thereof.  The data science team must carefully consider its existing commitments before making a prospective commitment.
 
 <br>
