@@ -1,13 +1,14 @@
-<br>
-
 # Amazon Web Services & Solution Architectures
-
-<br>
 
 Hover over an illustration's symbols for more details; some have links to further details.  Images only have captions.  Over 
 time, more Amazon Web Services (AWS) details will be added.
 
 <br>
+
+```{contents} Table of Contents
+:depth: 1
+:local:
+```
 
 ## Delivering Assets
 
@@ -40,6 +41,8 @@ Example]
 <figcaption>In general, containers will be run via the <a href="https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate.html" target="_blank">Fargate</a> option of Amazon's <abbr title="Elastic Container Service">ECS</abbr>. Sometimes, containers will be tested via an EC2 (Elastic Cloud Compute) using a set-up such as this; launched via a launch template.  Within each team member's machine AWS CLI (Command Line Interface) will be configured to use the <a href="https://docs.aws.amazon.com/cli/latest/userguide/sso-configure-profile-token.html#sso-configure-profile-token-auto-sso" target="_blank">AWS Identity & Access Management's identity centre for authentication.
 </a></figcaption>
 </figure>
+
+<br>
 
 :::{dropdown} A launch template example: redacted.
 ```json
@@ -151,7 +154,7 @@ href="https://docs.aws.amazon.com/cli/latest/userguide/sso-configure-profile-tok
 
 ### Simple Storage Service (S3)
 
-<iframe style="overflow:hidden; width:100%; height:430px; border:none;" src="../../../../../assets/endpoint-interface.html"></iframe>
+<iframe style="overflow:hidden; width:100%; height:430px; margin-left:65px; border:none;" src="../../../../../assets/endpoint-interface.html"></iframe>
 <figure>
 <figcaption>Interacting with Amazon S3 (Simple Storage Service) via <a href="https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html" target="_blank">AWS CLI (Command Line Interface)</a> and a private subnet. Within each team member's machine AWS CLI will be configured to use <a href="https://docs.aws.amazon.com/cli/latest/userguide/sso-configure-profile-token.html#sso-configure-profile-token-auto-sso" title="Amazon Web Services (AWS) Identity & Access Management (IAM) Identity Centre (IC)">AWS IAM IC</a> for authentication.</figcaption>
 </figure>
@@ -178,6 +181,8 @@ executions via Amazon's Elastic Container Service [Fargate], (b) virtual private
 securty group and subnet settings, (c) notification settings, (d) time-boxing/auto-termination, (e) and much more.
 </figcaption>
 </figure>
+
+<br>
 
 :::{dropdown} The underlying infrastructure code of the above; redacted.
 ```json
@@ -300,6 +305,7 @@ infrastructure code templates repository, will be visible during the upcoming we
 </figcaption>
 </figure>
 
+<br>
 <br>
 
 :::{dropdown} A Schema for a Step Functions Elastic MapReduce Solution
