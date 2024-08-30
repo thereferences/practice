@@ -84,20 +84,19 @@ and ransomware attacks</a>]</dt>
 Threats due to employees not adhering to security rules.
 
 <dl>
-    <dt>Risk</dt><dd>Infiltration risks, and all the damages thereof.</dd>
+    <dt>Risk</dt>
+    <dd>Infiltration risks, and all the damages thereof.</dd>
     <dt>Mitigation</dt>
     <dd>
-        <ul>
-        <li>Always-on virtual private network.</li>
-        <li>Using compute services via infrastructure-as-code templates that always feature
-            <ul>
-            <li><a href="https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-groups.html" target="_blank">VPC</a> 
-(Virtual Private Cloud)</li>
-            <li><a href="https://docs.aws.amazon.com/vpc/latest/userguide/configure-subnets.html" target="_blank">Subnet</a></li>
-            <li><a href="https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-groups.html" target="_blank">Security Groups</a>: 
-For controlling inbound &amp; outbound rules</li></ul>
-        </li>
-        </ul>
+      <ul class="disc">
+      <li class="disc">Always-on virtual private network.</li>
+      <li class="disc">Using compute services via infrastructure-as-code templates that always feature
+          <ul class="disc">
+          <li class="disc"><a href="https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-groups.html" target="_blank">VPC</a>(Virtual Private Cloud)</li>
+          <li class="disc"><a href="https://docs.aws.amazon.com/vpc/latest/userguide/configure-subnets.html" target="_blank">Subnet</a></li>
+          <li class="disc"><a href="https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-groups.html" target="_blank">Security Groups</a>: For controlling inbound &amp; outbound rules</li></ul>
+      </li>
+      </ul>
     </dd>
 </dl>
 
