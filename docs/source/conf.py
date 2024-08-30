@@ -110,6 +110,12 @@ myst_dmath_double_inline = True
 
 
 '''
+Code
+'''
+pygments_style = 'sphinx'
+
+
+'''
 Paths that contain templates, relative to this directory.
 '''
 templates_path = ['_templates']
@@ -147,11 +153,11 @@ html_static_path: list[str] = ['_static']
 
 html_css_files: list[str] = [
     'https://unpkg.com/tabulator-tables/dist/css/tabulator.min.css',
-    'https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.min.css',
     'css/custom.css',
     'css/tooltips.css',
     'css/slides.css',
     'css/generic.css',
+    'https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.min.css',
     'https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/themes/prism.min.css']
 
 html_js_files: list[str] = [
