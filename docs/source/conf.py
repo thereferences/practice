@@ -174,9 +174,9 @@ html_favicon = '_static/favicon.ico'
 html_context = {
     'landing_page': {
         'menu': [
-            {'title': 'PARENT',
+            {'title': '<b>Parent</b>',
              'url': 'https://github.com/theartificialintelligenceunit'},
-            {'title': 'INTRODUCTION',
+            {'title': '<b>Introduction</b>',
              'url': 'introduction/introduction.html'}
         ]
     },
