@@ -1,10 +1,9 @@
-<br>
 
 # Fundamental Software: Linux
 
 Apriori
 
-```shell
+```{code-block} shell
 sudo apt update
 sudo apt upgrade
 ```
