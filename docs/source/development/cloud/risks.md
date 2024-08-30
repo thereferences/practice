@@ -134,18 +134,14 @@ An unknown software security flaw; the developers are unaware of its existence.
 The loss of data due to a natural disaster, malfunction, etc.
 
 <dl>
-    <dt>Risk</dt><dd>The loss of all data intelligence, e.g., engineered features, developed models, model artefacts, 
-exploratory &amp; trend analysis, etc.</dd>
+    <dt>Risk</dt><dd>The loss of all data intelligence, e.g., engineered features, developed models, model artefacts, exploratory &amp; trend analysis, etc.</dd>
     <dt>Mitigation</dt><dd>
-    <ul>
-    <li>Backup data sets: <a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/backup-for-s3.html" 
-target="_blank">Amazon Web Services Backup for Amazon S3 (Simple Storage Service)</a></li>
-    <li>Programmatic production of all data intelligence, via version controlled team programs; hence the wherewithal to 
-reproduce all lost items.  This is a mandatory team practice.</li>
+    <ul class="disc">
+    <li class="disc">Backup data sets: <a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/backup-for-s3.html" target="_blank">Amazon Web Services Backup for Amazon S3 (Simple Storage Service)</a></li>
+    <li class="disc">Programmatic production of all data intelligence, via version controlled team programs; hence the wherewithal to reproduce all lost items.  This is a mandatory team practice.</li>
     </ul>
 </dd>
 </dl>
-
 
 <br>
 <br>
