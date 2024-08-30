@@ -44,7 +44,7 @@ Code of Practice
    services/services
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :glob:
    :hidden:
 
