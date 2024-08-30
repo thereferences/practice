@@ -18,7 +18,6 @@ https://www.sphinx-doc.org/en/master/usage/configuration.html#project-informatio
 import os
 import sys
 import datetime
-from typing import List, Any
 
 # noinspection PyUnresolvedReferences
 import revitron_sphinx_theme
@@ -176,8 +175,8 @@ html_context = {
         'menu': [
             {'title': '<b>Parent</b>',
              'url': 'https://github.com/theartificialintelligenceunit'},
-            {'title': '<b>Introduction</b>',
-             'url': 'introduction/introduction.html'}
+            {'title': '<b>About</b>',
+             'url': 'introduction/about.html'}
         ]
     },
     'display_github': True,
