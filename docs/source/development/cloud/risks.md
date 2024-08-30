@@ -152,28 +152,27 @@ The loss of data due to a natural disaster, malfunction, etc.
 Deficient access controls to cloud, and complementary, assets.
 
 <dl>
-    <dt>Risk</dt>
-    <dd><ul><li>An unnecessarily wider attack surface via which threat actors can conduct malicious activities.</li>
-        <li>Financial loss, e.g, by using unaffordable products that were not intended for use by the organisation/team.</li></ul></dd>
-    <dt>Mitigation</dt>
-    <dd>
-        Amazon Web Services (AWS)
-        <ul>
-        <li>Programmatic access to Amazon Web Services products via limited privileges roles &amp; trust policies. [Automatic temporary credentials via AWS Command Line Interface Single Sign On]</li>
-        <li>Limited, zero, privileges by default.<br></li>
-        <li>The continuous development and availability of launch templates, with security settings and limited assets privileges, for launching computing products.</li>
-        <li>The team's cloud leads must use multi-factor authentication to access AWS online.  [Multi-factor 
-authentication by default.]</li>
-        </ul>
-        GitHub
-        <ul><li>Mandatory multi-factor authentication.</li><li>SSH (Secure Shell) command line interactions.</li></ul>
-    </dd>
+  <dt>Risk</dt>
+  <dd>
+    <ul class="disc">
+    <li class="disc">An unnecessarily wider attack surface via which threat actors can conduct malicious activities.</li>
+    <li class="disc">Financial loss, e.g, by using unaffordable products that were not intended for use by the organisation/team.</li></ul></dd>
+  <dt>Mitigation</dt>
+  <dd>
+    Amazon Web Services (AWS)
+    <ul class="disc">
+    <li class="disc">Programmatic access to Amazon Web Services products via limited privileges roles &amp; trust policies. [Automatic temporary credentials via AWS Command Line Interface Single Sign On]</li>
+    <li class="disc">Limited, zero, privileges by default.<br></li>
+    <li class="disc">The continuous development and availability of launch templates, with security settings and limited assets privileges, for launching computing products.</li>
+    <li class="disc">The team's cloud leads must use multi-factor authentication to access AWS online.  [Multi-factor authentication by default.]</li>
+    </ul>
+    GitHub
+    <ul class="disc"><li>Mandatory multi-factor authentication.</li><li>SSH (Secure Shell) command line interactions.</li></ul>
+  </dd>
 </dl>
 
-
 <br>
 <br>
-
 
 ## Hijacking (Cloud)
 
