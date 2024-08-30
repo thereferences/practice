@@ -2,6 +2,7 @@
 
 The data science team will depend on cloud platforms for secure, [efficient](https://dictionary.cambridge.org/us/dictionary/english/efficient), and financially viable operations vis-à-vis:
 
+
 * Developing and/or testing machine learning models.
 * Conducting proof of concept modelling projects.
 * Storing data sets.
@@ -12,7 +13,7 @@ The data science team will depend on cloud platforms for secure, [efficient](htt
 
 ```{toctree}
 :caption: Content
-:maxdepth: 1
+:maxdepth: 2
 :glob:
 
 cloud/*
