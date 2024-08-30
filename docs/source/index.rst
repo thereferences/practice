@@ -30,26 +30,26 @@ Code of Practice
 
 .. toctree::
    :maxdepth: 2
+   :glob:
    :hidden:
 
    about/about
 
 .. toctree::
    :maxdepth: 2
-   :titlesonly:
-   :hidden:
    :glob:
+   :hidden:
+   :titlesonly:
 
    services/services
 
 .. toctree::
    :maxdepth: 2
-   :caption: Technologies & Development Practices
    :glob:
    :hidden:
 
    development/background
-   
+
 .. raw:: html
 
   <br>
