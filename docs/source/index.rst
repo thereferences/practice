@@ -38,10 +38,14 @@ Code of Practice
 .. toctree::
    :maxdepth: 2
    :caption: Services
+   :titlesonly:
    :hidden:
    :glob:
 
    services/services
+   services/mlp
+   Algorithms Inquiries <services/algorithms>
+   Machine Learning Engineering <services/mle>
 
 .. toctree::
    :maxdepth: 2
