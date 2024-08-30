@@ -53,22 +53,24 @@ Software that enables the unauthorised installer to take control of a system by 
 <dl>
     <dt>Risk</dt>
     <dd>Industrial Espionage<br>
-    <ul><li>The theft of confidential, sensitive, etc., data or information.</li>
-        <li>The theft of intellectual property, processes, ideas, techniques, etc.</li></ul>
+    <ul class="disc">
+        <li class="disc">The theft of confidential, sensitive, etc., data or information.</li>
+        <li class="disc">The theft of intellectual property, processes, ideas, techniques, etc.</li></ul>
     </dd>
     <dt>Mitigation [<a href="https://www.ncsc.gov.uk/pdfs/guidance/mitigating-malware-and-ransomware-attacks.pdf" target="_blank">Mitigating malware 
 and ransomware attacks</a>]</dt>
     <dd>
       Cloud
-      <ul><li>Enforce multi-factor authentication; the default of GitHub &amp; Amazon Web Services.</li>
-          <li><a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingEncryption.html" target="_blank">Encrypt all data sets.</a></li>
-          <li>Backup data sets; <a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/backup-for-s3.html" target="_blank">Amazon Web Services Backup for Amazon S3 (Simple Storage Service)</a>.</li>
-          <li>Limit access to cloud assets via the <a href="https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-groups.html" target="_blank">inbound rules of security groups</a>.</li>
-          <li>Authorise and withdraw access to assets via IAM (Identity &amp; Management) roles.</li>
-          <li>Restricted data delivery: Programmatic data delivery via data science team members only.</li>
-          <li>Termination of instances immediately after use.</li><li>Prepare an incident contingency.</li></ul>
+      <ul class="disc">
+          <li class="disc">Enforce multi-factor authentication; the default of GitHub &amp; Amazon Web Services.</li>
+          <li class="disc"><a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingEncryption.html" target="_blank">Encrypt all data sets.</a></li>
+          <li class="disc">Backup data sets; <a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/backup-for-s3.html" target="_blank">Amazon Web Services Backup for Amazon S3 (Simple Storage Service)</a>.</li>
+          <li class="disc">Limit access to cloud assets via the <a href="https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-groups.html" target="_blank">inbound rules of security groups</a>.</li>
+          <li class="disc">Authorise and withdraw access to assets via IAM (Identity &amp; Management) roles.</li>
+          <li class="disc">Restricted data delivery: Programmatic data delivery via data science team members only.</li>
+          <li class="disc">Termination of instances immediately after use.</li><li>Prepare an incident contingency.</li></ul>
       Client
-      <ul><li>Interaction with cloud services via virtual private networks.</li></ul>
+      <ul class="disc"><li class="disc">Interaction with cloud services via virtual private networks.</li></ul>
     </dd>
 </dl>
 
