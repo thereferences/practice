@@ -6,7 +6,7 @@ Code of Practice
 
 .. container:: .large
 
-   These pages continuously outline the data science team's operating practices vis-à-vis.
+   These pages continuously outline the data science team's operating practices.
 
 .. raw:: html
 
@@ -22,7 +22,11 @@ Code of Practice
 
    <br>
 
-.. image:: https://img.shields.io/github/v/tag/thereferences/systems?label=Release&style=flat-square&labelColor=292b2e&color=292b2e
+   <img class="normal" src="https://img.shields.io/github/v/tag/thereferences/systems?label=Release&style=flat-square&labelColor=292b2e&color=292b2e" alt="SHIELD" />
+
+.. raw:: html
+
+   <br>
 
 .. toctree::
    :maxdepth: 2
