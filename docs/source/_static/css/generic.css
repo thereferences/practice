@@ -164,7 +164,12 @@ figcaption a {
 }
 
 
-
-
+/**
+ * dl
+ */
+.rst-content dl dt {
+    font-weight: calc(900*var(--font-weight-factor));
+    font-variant-caps: small-caps;
+}
 
 
