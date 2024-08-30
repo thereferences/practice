@@ -12,12 +12,12 @@ All the organisation's computer usage rules apply; remember, Universal Serial Bu
 
 <br>
 
-## Initial Set-up
+**Initial Set-up**
 
 Foremost:
 
 * Do not select Microsoft Account.  Instead, select the **School/Business** option, thereafter select **other domains** option.
-* Set-up security software.
+* Install and set-up the security software.
 * Hard Drive Partitioning: Consider partitioning the C drive into two drives; such that the second drive is for development purposes.
 
 <br>
@@ -44,6 +44,18 @@ machines/linux
 machines/windows
 machines/gpu
 ```
+
+<br>
+<br>
+
+<br>
+<br>
+
+<br>
+<br>
+
+<br>
+<br>
 
 <br>
 <br>
