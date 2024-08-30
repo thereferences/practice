@@ -110,11 +110,20 @@ Threats due to employees not adhering to security rules.
 An unknown software security flaw; the developers are unaware of its existence.
 
 <dl>
-    <dt>Risk</dt><dd><ul><li>Zero-day exploits.</li><li>Zero-day attacks.</li></ul></dd>
+    <dt>Risk</dt>
+    <dd><ul class="disc">
+        <li class="disc">Zero-day exploits.</li>
+        <li class="disc">Zero-day attacks.</li></ul></dd>
     <dt>Mitigation</dt>
-    <dd>Local<ul><li>Continuous, automatic, software updates</li><li>Limited pool of applications.</li><li>Firewall</li><li>Network interactions via virtual private network only.</li></ul><p>Cloud</p><p><ul><li>Always use the latest compute services &amp; software.</li></ul></dd>
+    <dd>Local<ul class="disc">
+        <li class="disc">Continuous, automatic, software updates</li>
+        <li class="disc">Limited pool of applications.</li>
+        <li class="disc">Firewall</li>
+        <li class="disc">Network interactions via virtual private network only.</li></ul>
+        <br><br>Cloud
+        <ul class="disc">
+        <li class="disc">Always use the latest compute services &amp; software.</li></ul></dd>
 </dl>
-
 
 <br>
 <br>
