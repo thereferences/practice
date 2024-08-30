@@ -17,15 +17,10 @@ In brief:
 
 In future, algorithms inquiries will be addressed via a services/inquiries management hub.  A future blog will include an introduction to the hub, and will outline how colleagues and clients can use it.  <b>Before proceeding</b> with a machine learning engineering service ascertain that it is a component of an in-progress project:
 
-> That **(a)** addresses a business problem, **(b)** has an unambiguous problem statement, **(c)** has a deployment goal, **(d)** has a 
+> That **(a)** addresses a business problem, **(b)** has an unambiguous problem statement, **\(c\)** has a deployment goal, **(d)** has a 
 > machine learning model prediction/forecast/diagnostic aim, **(e)** is technologically feasible and economically viable.
 
-Additionally, rigorously evaluate
-
-<ul class="disc">
-  <li class="disc">Model requirements</li>
-  <li class="disc">Team capacity</li>
-</ul>
+Additionally, rigorously evaluate <b>(a)</b> model requirements, and <b>(b)</b> team capacity.
 
 <br>
 
