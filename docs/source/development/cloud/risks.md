@@ -30,7 +30,7 @@ data, reputation damage, financial loss. Endangerment of lives, if personal or s
         <ul><li>Do not store sensitive or personal data within the team's cloud account.</li><li>Encrypt all data sets; 
 Amazon S3 (Simple Storage Service) <a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/specifying-s3-encryption.html">encrypts by default</a>.</li><li>Authorise and withdraw access to data via IAM (Identity &amp; Management) roles.</li><li>Delete redundant data assets.</li></ul>    
         Compute Services
-        <ul style="font-family&%2358;Calibri, Arial, Helvetica, sans-serif;background-color&%2358;rgb(255, 255, 255);"><li>Authorise and withdraw access to compute services via IAM (Identity &amp; Management) roles, and trust policies thereof.</li><li>Delete redundant compute assets.</li></ul>    
+        <ul><li>Authorise and withdraw access to compute services via IAM (Identity &amp; Management) roles, and trust policies thereof.</li><li>Delete redundant compute assets.</li></ul>    
         Architectures
         <ul><li>Defensive, limited privileges, compute solutions architectures; refer to the architectures pages.</li></ul>    
     </dd>
