@@ -154,7 +154,6 @@ figcaption {
 }
 
 figcaption a {
-    /*color: #F80;*/
     position: relative;
     color: var(--link);
     font-weight: calc(580*var(--font-weight-factor));
