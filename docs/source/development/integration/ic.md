@@ -1,11 +1,7 @@
 
 # Images & Containers
 
-<br>
-
 Designing & developing within containers.
-
-<br>
 
 ## Python
 
@@ -13,9 +9,11 @@ Designing & developing within containers.
 
 For Python projects, create:
 
-* requirements.txt
-* Dockerfile
-* devcontainer.json
+<ul class="disc">
+  <li class="disc">requirements.txt</li>
+  <li class="disc">Dockerfile</li>
+  <li class="disc">devcontainer.json: optional, for GitHub CodeSpaces</li>
+</ul>
 
 Within the `.devcontainer/` directory, which must be within the project's parent directory; <a href="https://github.com/enqueter/distributions/tree/master/.devcontainer" target="_blank">example</a>.  Always ascertain that the `requirements.txt` file lists the packages/libraries required for development.  Next, build the image:
 
