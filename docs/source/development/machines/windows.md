@@ -1,6 +1,16 @@
 
 # Fundamental Software: Windows
 
+:::{dropdown} Table of Contents
+```{contents}
+:depth: 2
+:local:
+:backlinks: top
+```
+:::
+
+<br>
+
 ## Core
 
 ### Basic Tools
