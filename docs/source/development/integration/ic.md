@@ -21,8 +21,6 @@ Within the `.devcontainer/` directory, which must be within the project's parent
 docker build . --file .devcontainer/Dockerfile --tag {tag.name}
 ```
 
-<br>
-
 Subsequently, run an instance of the image for development purposes, e.g.,
 
 ```shell
@@ -36,8 +34,6 @@ or
 docker run --rm -i -t -p 127.0.0.1:10000:8888 -w /app
   --mount type=bind,src="$(pwd)",target=/app -v ~/.aws:/root/.aws {tag.name}
 ```
-
-<br>
 
 wherein
 
@@ -55,24 +51,23 @@ and `-p 10000:8888` maps the host port `10000` to container port `8888`.  Note, 
 docker ps --all
 ```
 
-<br>
-
 Next, attach the running an IDE (independent development environment) application to a running container.  If IntelliJ IDEA:
 
-> Connect to the Docker [daemon](https://www.jetbrains.com/help/idea/docker.html#connect_to_docker)
-> * **Settings** $\rightarrow$ **Build, Execution, Deployment** $\rightarrow$ **Docker** $\rightarrow$ **WSL:** {operating.system}
-> * **View** $\rightarrow$ **Tool Window** $\rightarrow$ **Services** <br>Within the **Containers** section connect to the running instance of interest, or ascertain connection to the running instance of interest.
-
-<br>
+<div style="margin-left: 35px">
+Connect to the Docker [daemon](https://www.jetbrains.com/help/idea/docker.html#connect_to_docker)
+  <ul class="disc">
+    <li class="disc"><b>Settings</b> $\rightarrow$ <b>Build, Execution, Deployment</b> $\rightarrow$ <b>Docker</b> $\rightarrow$ <b>WSL:</b> {operating.system}</li>
+    <li class="disc"><b>View</b> $\rightarrow$ <b>Tool Window</b> $\rightarrow$ <b>Services</b> <br>Within the <b>Containers</b> section connect to the running instance of interest, or ascertain connection to the running instance of interest.</li>
+  </ul>
+</div>
 
 Similarly, Visual Studio Code as its container attachment instructions; study [Attach Container](https://code.visualstudio.com/docs/devcontainers/attach-container).
-
 
 <br>
 
 ### For Deployment
 
-* **Never deploy root containers**; study [this production Dockerfile](https://github.com/enqueter/distributions/blob/master/Dockerfile), which blocks access to `root` by creating a standard user; cf. [the development Dockerfile](https://github.com/enqueter/distributions/blob/master/.devcontainer/Dockerfile).
+**Never deploy root containers**; study [this production Dockerfile](https://github.com/enqueter/distributions/blob/master/Dockerfile), which blocks access to `root` by creating a standard user; cf. [the development Dockerfile](https://github.com/enqueter/distributions/blob/master/.devcontainer/Dockerfile).
 
 <br>
 <br>
