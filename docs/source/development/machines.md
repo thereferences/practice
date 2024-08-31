@@ -16,9 +16,12 @@ All the organisation's computer usage rules apply; remember, Universal Serial Bu
 
 Foremost:
 
-* Do not select Microsoft Account.  Instead, select the **School/Business** option, thereafter select **other domains** option.
-* Install and set up the security software.
-* Hard Drive Partitioning: Consider partitioning the C drive into two drives; such that the second drive is for development purposes.
+<ul class="disc">
+  <li class="disc">Do not select Microsoft Account.  Instead, select the <b>School/Business</b> option, thereafter select <b>other domains</b> option.</li>
+  <li class="disc">Install and set up the security software.</li>
+  <li class="disc">Hard Drive Partitioning: Consider partitioning the C drive into two drives; such that the second drive is for development purposes.</li>
+</ul>
+
 
 <br>
 
