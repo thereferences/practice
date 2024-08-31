@@ -2,8 +2,9 @@
 
 # Machines
 
-:::{admonition} In Progress
-<br>
+:::{note}
+Each team member, and colleagues, has an HP ZBook Fury 16 G10 Mobile Workstation; selected from the organisation's HP brochure, and purchased via digital purchasing.  In brief: NVIDIA RTX 2000 Ada 8GB Graphics, Intel Core i7-13700HX Processor, 32GB (2 x 16GB) DDR5 4800 <span class="tooltip">SO-DIMM<span class="tooltiptext">Small Outline Dual In-line Memory Module</span></span>
+Memory, 2TB PCIe-4x4 2280 <abbr title="Non-Volatile Memory Express">NVMe</abbr> <abbr title="self-encrypting drive">SED</abbr> OPAL2 TLC SSD
 :::
 
 <br>
@@ -17,7 +18,7 @@ All the organisation's computer usage rules apply; remember, Universal Serial Bu
 Foremost:
 
 * Do not select Microsoft Account.  Instead, select the **School/Business** option, thereafter select **other domains** option.
-* Install and set-up the security software.
+* Install and set up the security software.
 * Hard Drive Partitioning: Consider partitioning the C drive into two drives; such that the second drive is for development purposes.
 
 <br>
