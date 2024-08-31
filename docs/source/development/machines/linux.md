@@ -19,7 +19,7 @@ gpg --list-secret-keys
 
 :::{dropdown} Table of Contents
 ```{contents}
-:depth: 1
+:depth: 2
 :local:
 :backlinks: top
 ```
