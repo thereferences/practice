@@ -1,7 +1,7 @@
 
 # Linux & Windows Subsystem for Linux (WSL)
 
-Using a Linux requires (a) activating WSL, and (b) installing a Linux distribution.  The auto-script approach sometimes
+Using a Linux Kernel requires **(a)** activating WSL, and **(b)** installing a Linux distribution.  The auto-script approach sometimes
 fails.  This section outlines the semi-manual approach.  For reference purposes:
 
 <ul class="disc">
