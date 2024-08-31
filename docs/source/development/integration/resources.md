@@ -1,12 +1,11 @@
-<br>
 
 # Resources
 
-<br>
+Hubs:
 
-Hubs in development:
-* An online _development container images_ hub
-* A hub of GitHub _software development templates_
+<ul class="disc">
+<li class="disc"><a href="https://github.com/thetemplates" target="_blank">For a quick start to remote development via containers, try the templates herein.</a></li>
+</ul>
 
 <br>
 <br>
