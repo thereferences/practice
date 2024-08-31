@@ -3,8 +3,8 @@
 # Machines
 
 :::{note}
-Each team member, and colleagues, has an HP ZBook Fury 16 G10 Mobile Workstation; selected from the organisation's HP brochure, and purchased via digital purchasing.  In brief: NVIDIA RTX 2000 Ada 8GB Graphics, Intel Core i7-13700HX Processor, 32GB (2 x 16GB) DDR5 4800 <span class="tooltip">SO-DIMM<span class="tooltiptext">Small Outline Dual In-line Memory Module</span></span>
-Memory, 2TB PCIe-4x4 2280 <abbr title="Non-Volatile Memory Express">NVMe</abbr> <abbr title="self-encrypting drive">SED</abbr> OPAL2 TLC SSD
+Each colleague has an HP ZBook Fury 16 G10 Mobile Workstation; selected from the organisation's HP brochure, and purchased via digital purchasing.  Specification Excerpt: NVIDIA RTX 2000 Ada 8GB Graphics, Intel Core i7-13700HX Processor, 32GB (2 x 16GB) DDR5 4800 <span class="tooltip">SO-DIMM<span class="tooltiptext">Small Outline Dual In-line Memory Module</span></span>
+Memory, 2TB <abbr title="Peripheral Component Interconnect Express">PCIe</abbr>-4x4 2280 <abbr title="Non-Volatile Memory Express">NVMe</abbr> <abbr title="self-encrypting drive">SED</abbr> OPAL2 TLC SSD
 :::
 
 <br>
