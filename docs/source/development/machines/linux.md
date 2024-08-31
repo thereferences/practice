@@ -3,7 +3,7 @@
 
 Apriori
 
-```{code-block} shell
+```shell
 sudo apt update
 sudo apt upgrade
 ```
@@ -19,13 +19,15 @@ gpg --list-secret-keys
 
 <br>
 
-Print environment variables via
-
-```shell
-printenv
+:::{dropdown} Table of Contents
+```{contents}
+:depth: 1
+:local:
+:backlinks: top
 ```
+:::
 
-<br>
+
 
 ## WGET
 
@@ -164,9 +166,9 @@ prints the text for setting-up SSH key pair within a version control service.  F
 
 <br>
 
-## CONDA
+## CONDA [Optional]
 
-Via `miniconda`.  Foremost, check the python version
+This is for readers that sometimes need to develop outwith a container, i.e., within a virtual environment of the host machine instead.  Installation is via `miniconda`.  Foremost, check the python version
 
 ```shell
 python --version
@@ -211,7 +213,7 @@ sudo vi profile
 
 and append
 
-```bash
+```shell
 if ! [[ $PATH =~ "/opt/miniconda3/bin" ]]; then
 	PATH="/opt/miniconda3/bin:$PATH"
 fi
@@ -242,5 +244,13 @@ conda update -n base -c anaconda conda
 ```
 
 <br>
+<br>
+
+<br>
+<br>
+
+<br>
+<br>
+
 <br>
 <br>
