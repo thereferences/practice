@@ -49,7 +49,51 @@ li.disc {
 ul.disc {
     margin-left: 35px;
     margin-bottom: 15px;
+}
 
+li.deselect {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    line-height: 1.6em;
+    list-style-type: '\2610';
+}
+
+ul.deselect {
+    margin-left: 35px;
+    margin-bottom: 15px;
+}
+
+li.select {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    line-height: 1.6em;
+    list-style-type: '\268A';
+}
+
+ul.select {
+    margin-left: 35px;
+    margin-bottom: 15px;
+}
+
+li.point {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    line-height: 1.6em;
+    list-style-type: '\2609';
+}
+
+ul.point {
+    margin-left: 35px;
+    margin-bottom: 15px;
 }
 
 li.circle {
@@ -195,7 +239,9 @@ dd a {
     border-bottom: 0;
 }
 
-
+p.sd-card-text {
+    margin-bottom: 5px;
+}
 
 
 
