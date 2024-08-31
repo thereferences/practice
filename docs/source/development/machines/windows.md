@@ -25,175 +25,103 @@ Unload the core executable & language pack of [OpenOffice](https://www.openoffic
 
 Unload the executable at [git-scm](https://git-scm.com), and install.  During installation use the text slides below as a guide.
 
-<div class="carousel-page-container">
-  <div class="carousel-container">
-    <div class="carousel-cell">
-      <div class="carousel-slide">
-        <div class="carousel-slide-copy">
-          <h2 style="color: black;">Select Destination Location</h2>
-          <p style="color: black;">This installation directory.</p>
-        </div>
-      </div>
-    </div>
-    <div class="carousel-cell">
-      <div class="carousel-slide">
-        <div class="carousel-slide-copy">
-          <h2>Select Components</h2>
-          Deselect            
-            <ul style="list-style-type: '\2610';">
-              <li>Additional icons<br>On the Desktop</li>
-              <li>Git LFS (Large File Support)</li>
-              <li>Add a Git Bash Profile to Windows Terminal</li>
-            </ul>
-        </div>
-      </div>
-    </div>
-    <div class="carousel-cell">
-      <div class="carousel-slide">
-        <div class="carousel-slide-copy">
-          <h2 style="color: black;">Select Start Menu Folder</h2>
-          Deselect
-          <ul style="list-style-type: '\2610';">
-            <li>Don't create a Start Menu folder</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="carousel-cell">
-      <div class="carousel-slide">
-        <div class="carousel-slide-copy">
-          <h2 style="color: black;">Choosing the default editor used by Git</h2>
-          Select
-          <ul style="list-style-type: '\268A';">
-            <li>Use Notepad++ as Git's default editor</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="carousel-cell">
-      <div class="carousel-slide">
-        <div class="carousel-slide-copy">
-          <h2 style="color: black;">Adjusting the name of the initial branch in new repositories</h2>
-          Select
-          <ul style="list-style-type: '\2609';">
-            <li>Override the default branch name for new repositories [master]</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="carousel-cell">
-      <div class="carousel-slide">
-        <div class="carousel-slide-copy">
-          <h2 style="color: black;">Adjusting your PATH environment</h2>
-          Select          
-          <ul style="list-style-type: '\2609';">
-            <li>Git from the command line and also from 3rd-party software</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="carousel-cell">
-      <div class="carousel-slide">
-        <div class="carousel-slide-copy">
-          <h2 style="color: black;">Choosing the SSH executable</h2>
-          Select
-          <ul style="list-style-type: '\2609';">
-            <li>Use bundled OpenSSH</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="carousel-cell">
-      <div class="carousel-slide">
-        <div class="carousel-slide-copy">
-          <h2 style="color: black;">Choosing HTTPS transport backend</h2>
-          Select
-          <ul style="list-style-type: '\2609';">
-            <li>Use the OpenSSL library</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="carousel-cell">
-      <div class="carousel-slide">
-        <div class="carousel-slide-copy">
-          <h2 style="color: black;">Configuring the line ending conversions</h2>
-          Select
-          <ul style="list-style-type: '\2609';">
-            <li>Checkout Windows-style, commit Unix-style line endings</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="carousel-cell">
-      <div class="carousel-slide">
-        <div class="carousel-slide-copy">
-          <h2 style="color: black;">Configuring the terminal emulator to use with Git Bash</h2>
-          Select
-          <ul style="list-style-type: '\2609';">
-            <li>Use MinTTY (the default terminal of MSYS2)</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="carousel-cell">
-      <div class="carousel-slide">
-        <div class="carousel-slide-copy">
-          <h2 style="color: black;">Choose the default behaviour of `git pull`</h2>
-          Select
-          <ul style="list-style-type: '\2609';">
-            <li>Fast-forward or merge</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="carousel-cell">
-      <div class="carousel-slide">
-        <div class="carousel-slide-copy">
-          <h2 style="color: black;">Choose a credential helper</h2>
-          Select          
-          <ul style="list-style-type: '\2609';">
-            <li>None</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="carousel-cell">
-      <div class="carousel-slide">
-        <div class="carousel-slide-copy">
-          <h2 style="color: black;">Configuring extra options</h2>
-          Select          
-          <ul style="list-style-type: '\2610';">
-            <li>Enable file system caching</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="carousel-cell">
-      <div class="carousel-slide">
-        <div class="carousel-slide-copy">
-          <h2 style="color: black;">Configuring experimental options</h2>
-          <ul style="list-style-type: '\2610';">
-            <li><b>Deselect all</b></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<script>
-let elem = document.querySelector(".carousel-container");
-new Flickity(elem, {
-    cellAlign: "right",
-    contain: true,
-    initialIndex: 2,
-    pageDots: false,
-    wrapAround: true,
-    draggable: true,
-    prevNextButtons: true,
-    pauseAutoPlayOnHover: false
-});
-</script>
+<br>
+
+::::{card-carousel} 2
+
+:::{card} Select Destination Location<br><br>
+This installation directory.
+:::
+:::{card} Select Components<br><br>
+Deselect            
+  <ul class="deselect">
+    <li class="deselect">Additional icons On the Desktop</li>
+    <li class="deselect">Git LFS (Large File Support)</li>
+    <li class="deselect">Add a Git Bash Profile to Windows Terminal</li>
+  </ul>
+:::
+:::{card} Select Start Menu Folder<br><br>
+Deselect
+  <ul class="deselect">
+    <li class="deselect">Don't create a Start Menu folder</li>
+  </ul>
+:::
+:::{card} Choosing the default editor used by Git<br><br>
+Select
+  <ul class="select">
+    <li class="select">Use Notepad++ as Git's default editor</li>
+  </ul>
+:::
+:::{card} Adjusting the name of the initial branch in new repositories<br><br>
+Select
+  <ul class="point">
+    <li class="point">Override the default branch name for new repositories [master]</li>
+  </ul>
+:::
+:::{card} Adjusting your PATH environment<br><br>
+Select          
+  <ul class="point">
+    <li class="point">Git from the command line and also from 3rd-party software</li>
+  </ul>
+:::
+:::{card} Choosing the SSH executable<br><br>
+Select          
+  <ul class="point">
+    <li class="point">Use bundled OpenSSH</li>
+  </ul>
+:::
+:::{card} Choosing HTTPS Transport Backend<br><br>
+Select          
+  <ul class="point">
+    <li class="point">Use the OpenSSL library</li>
+  </ul>
+:::
+::::
+
+<br>
+
+Continuing $\ldots$
+
+
+::::{card-carousel} 2
+
+:::{card} Configuring the line ending conversions<br><br>
+Select
+  <ul class="point">
+    <li class="point">Checkout Windows-style, commit Unix-style line endings</li>
+  </ul>
+:::
+:::{card} Configuring the terminal emulator to use with Git Bash<br><br>
+Select
+  <ul class="point">
+    <li class="point">Use MinTTY (the default terminal of MSYS2)</li>
+  </ul>
+:::
+:::{card} Choose the default behaviour of `git pull`<br><br>
+Select
+  <ul class="point">
+    <li class="point">Fast-forward or merge</li>
+  </ul>
+:::
+:::{card} Choose a credential helper<br><br>
+Select          
+  <ul class="point">
+    <li class="point">None</li>
+  </ul>
+:::
+:::{card} Configuring extra options<br><br>
+Select          
+  <ul style="list-style-type: '\2611'; margin-left: 35px;">
+    <li style="list-style-type: '\2611'; padding-left: 5px;">Enable file system caching</li>
+  </ul>
+:::
+:::{card} Configuring experimental options<br><br>
+  <ul class="deselect">
+    <li class="deselect"><b>Deselect all</b></li>
+  </ul>
+  <br><br>
+:::
+::::
 
 <br>
 <br>
