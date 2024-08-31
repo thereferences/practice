@@ -32,6 +32,8 @@ Unload the executable at [git-scm](https://git-scm.com), and install.  During in
 
 <br>
 
+:::::{dropdown} Slides
+
 ::::{card-carousel} 2
 
 :::{card} Select Destination Location<br><br>
@@ -82,11 +84,13 @@ Select
   </ul>
 :::
 ::::
+:::::
 
 <br>
 
 Continuing $\ldots$
 
+:::::{dropdown} Slides
 
 ::::{card-carousel} 2
 
@@ -127,6 +131,8 @@ Select
   <br><br>
 :::
 ::::
+:::::
+
 
 <br>
 <br>
