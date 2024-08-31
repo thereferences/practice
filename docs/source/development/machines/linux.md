@@ -110,8 +110,6 @@ sudo apt list --upgradable
 sudo apt install git-all
 ```
 
-<br>
-
 Subsequently, [set up & configure](https://git-scm.com/book/en/v2/Appendix-C%3A-Git-Commands-Setup-and-Config) `git` ...
 
 ```shell
@@ -135,15 +133,13 @@ ssh-keygen -t ed25519 -C "...@users.noreply.github.com"
 $ Enter file in which to save the key ... [Default $\rightarrow$ ENTER.]
 ```
 
-<br>
-
 Beware, a key [re-write might be requested](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#:~:text=When%20you%27re%20prompted) if a key file already exists.  The command
 
-```
+```shell
 cat ~/.ssh/id_ed25519.pub
 ```
 
-prints the text for setting-up SSH key pair within a version control service.  For instances whereby multiple accounts have to be managed per git client, e.g., study [GitHub Multiple Accounts](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-your-personal-account/managing-multiple-accounts).
+prints the text for setting-up SSH key pair within a version control service.  For instances whereby multiple accounts have to be managed per git client study [GitHub Multiple Accounts](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-your-personal-account/managing-multiple-accounts).
 
 <br>
 
