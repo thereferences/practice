@@ -1,8 +1,5 @@
-<br>
 
 # Python
-
-<br>
 
 ## Fundamentals
 
@@ -26,19 +23,13 @@ module level and written in all capital letters with underscores separating word
 
 <br>
 
-## Importing
+## Importing Modules
 
-In line with the HitchHiker's Guide to Python, best practice & readability override all else.  Hence, please use the import format  ...
+Abide by the HitchHiker's Guide to Python's best practice & readability advice vis-à-vis [importing modules](https://docs.python-guide.org/writing/structure/#modules).  Hence, please use the import format `import math`, and use a method of the module via pattern
 
-```shell
+```python
 import math
-```
 
-<br>
-
-Subsequently, use a method as required, e.g.,
-
-```shell
 math.cos(...)
 ```
 
