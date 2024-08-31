@@ -126,17 +126,14 @@ Select
 <br>
 <br>
 
-## Windows Installations that Propagate to WSL Kernels
+## Installations that Propagate to WSL Kernels
 
 ### Docker Desktop
 
 Unload [Docker Desktop](https://www.docker.com/products/docker-desktop/), subsequently install.  During installation
 
-Select
-- [x] Use WSL-2 instead of Hyper-V
-
-Deselect
-- [ ] Add shortcut to desktop
+- [x] Use WSL-2 instead of Hyper-V  [**Select**]
+- [ ] Add shortcut to desktop [**Deselect**]
 
 
 <br>
@@ -146,17 +143,17 @@ Deselect
 
 Unload [IntelliJ IDEA Ultimate](https://www.jetbrains.com/idea/download/?section=windows), subsequently install.  During the product's initial launch, a licence screen appears.  Activate your licence via one of the presented methods, e.g., via an **Activation Code**.
 
-
 <br>
-
 
 ### VS Code
 
 Study the [Visual Studio CODE](https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode) installation [notes](https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode#install-vs-code-and-the-wsl-extension).  Whilst installing VS Code
 
-* Select Destination Location (This is about the installation directory)
-* Select Start Menu Folder (Leave default text)
-* Select Additional Tasks (Ensure `Add to PATH (requires shell restart)` is selected.  Deselect everything else.)
+<ul class="disc">
+  <li class="disc">Select Destination Location (This is about the installation directory)</li>
+  <li class="disc">Select Start Menu Folder (Leave default text)</li>
+  <li class="disc">Select Additional Tasks (Ensure `Add to PATH (requires <i>shell</i> restart)` is selected.  Deselect everything else.)</li>
+</ul>
 
 Subsequently, and after launching VS Code, install the [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) extension pack via the extension button.
 
