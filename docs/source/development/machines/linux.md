@@ -47,9 +47,9 @@ sudo apt install wget ca-certificates
 
 ## Java
 
-### Installing: Java
+### Installing Java
 
-[Further details](https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-22-04)
+For more details study [this tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-22-04) by [DigitalOcean](https://www.digitalocean.com/about).  Example:
 
 ```shell
 # jdk & jre
@@ -58,9 +58,7 @@ java --version
 javac --version
 ```
 
-<br>
-
-### Environment Variables: Java
+### Java Environment Variables
 
 The environment variable of interest is the `JAVA_HOME` variable, which depends on the installation directory string, i.e.,
 
@@ -73,15 +71,11 @@ or
 readlink -f `which java`
 ```
 
-<br>
-
 The `JAVA_HOME` environment variable is defined as
 
 ```shell
 readlink -f `which java` | sed "s:/bin/java::"
 ```
-
-<br>
 
 i.e., the `/bin/java` suffix of the penultimate command's output is excluded/removed. If the resulting string is `/usr/lib/jvm/java-19-openjdk-amd64`, then
 
@@ -89,24 +83,17 @@ i.e., the `/bin/java` suffix of the penultimate command's output is excluded/rem
 export JAVA_HOME=/usr/lib/jvm/java-19-openjdk-amd64
 ```
 
-
-<br>
-
 Or rather, edit `/etc/environment` by appending the definition of `JAVA_HOME` at the end of the file.  An edit mode option is
 
 ```shell
 sudo vi /etc/environment
 ```
 
-<br>
-
 Subsequently, append
 
 ```shell
 JAVA_HOME=/usr/lib/jvm/java-19-openjdk-amd64
 ```
-
-<br>
 
 The command `i` starts the edit mode, `ESC` exits the mode, and `:wq` saves; [`vi` commands](https://www.cs.colostate.edu/helpdocs/vi.html).
 
