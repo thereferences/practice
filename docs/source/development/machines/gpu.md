@@ -51,13 +51,19 @@ Hence, [download the appropriate NVIDIA Driver](https://www.nvidia.com/en-gb/dri
 
 Install.  During installation
 
-* AGREE AND CONTINUE
-* Custom (Advanced)
-* Perform clean installation
-  * HD Audio Driver
-  * RTX Desktop Manager
-  * Graphics Driver
-  * USBC Driver
+<ul>
+  <li>AGREE AND CONTINUE</li>
+  <li>Custom (Advanced)</li>
+  <li>Perform clean installation</li>
+  <li>
+    <ul>
+      <li>HD Audio Driver</li>
+      <li>RTX Desktop Manager</li>
+      <li>Graphics Driver</li>
+      <li>USBC Driver</li>
+    </ul>
+  </li>
+</ul> 
 
 NVIDIA will request a machine restart: restart.
 
