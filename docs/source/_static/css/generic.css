@@ -214,7 +214,7 @@ figcaption a {
 
 
 /**
- * dl
+ * dl, dt, dd
  */
 .rst-content dl dt {
     font-weight: calc(900*var(--font-weight-factor));
@@ -230,6 +230,7 @@ dd a {
     text-decoration-color: #6c757d;
     text-decoration-thickness: auto;
 }
+
 
 /*
  * Dropdown
