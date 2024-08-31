@@ -25,9 +25,12 @@ The references herein outline the fundamental NVIDIA installations **required wi
 
 Beware of the mappings between [CUDA Toolkit Version & CUDA Driver Version](https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html#id5:~:text=Windows%2C%20WSL-,CUDA%20Driver,-Running%20a%20CUDA).  Before installing unloading an NVIDIA driver, determine the machine's CUDA GPU (Graphics Processing Unit) type.  Within the Windows desktop
 
-* Right Click
-* **SELECT** _Show more options_
-* **SELECT** _NVIDIA Control Panel_
+<ul class="disc">
+  <li class="disc">Right Click</li>
+  <li class="disc"><b>SELECT</b> <i>Show more options</i></li>
+  <li class="disc"><b>SELECT</b> <i>NVIDIA Control Panel</i></li>
+</ul>
+
 
 The NVIDIA Control Panel's landing page will display the name of the machine's Graphics Processing Unit, e.g.,
 
