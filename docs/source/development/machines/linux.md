@@ -151,8 +151,6 @@ This is for readers that sometimes need to develop outwith a container, i.e., wi
 python --version
 ```
 
-<br>
-
 ### The Installer
 
 Subsequently, `get` the [installer](https://docs.conda.io/en/latest/miniconda.html#linux-installers) relative to the system's python version, e.g.,
@@ -163,8 +161,6 @@ sudo wget -P Downloads https://repo.anaconda.com/miniconda/Miniconda3-py310_24.4
 cd Downloads
 sudo chmod +x Miniconda3-py310_24.4.0-0-Linux-x86_64.sh
 ```
-
-<br>
 
 ### Install
 
@@ -177,8 +173,6 @@ sudo bash Miniconda3-py310_24.4.0-0-Linux-x86_64.sh -p /opt/miniconda3
 $ Do you wish the installer to initialize Miniconda3 by running conda init?
 >>> no
 ```
-
-<br>
 
 ### Set the Path Variable
 
@@ -198,8 +192,6 @@ fi
 
 The command `i` starts the edit mode, `ESC` exits the mode, and `:wq` saves; [`vi` commands](https://www.cs.colostate.edu/helpdocs/vi.html).  **Exit** the terminal.
 
-<br>
-
 ### Set-up
 
 Next, within a new terminal
@@ -209,8 +201,6 @@ conda init bash
 conda config --set auto_activate_base false
 sudo chown -R $USER:$USER /opt/miniconda3
 ```
-
-<br>
 
 ### Upkeep
 
