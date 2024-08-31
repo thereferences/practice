@@ -51,16 +51,16 @@ Hence, [download the appropriate NVIDIA Driver](https://www.nvidia.com/en-gb/dri
 
 Install.  During installation
 
-<ul>
-  <li>AGREE AND CONTINUE</li>
-  <li>Custom (Advanced)</li>
-  <li>Perform clean installation</li>
-  <li>
-    <ul>
-      <li>HD Audio Driver</li>
-      <li>RTX Desktop Manager</li>
-      <li>Graphics Driver</li>
-      <li>USBC Driver</li>
+<ul class="disc">
+  <li class="disc">AGREE AND CONTINUE</li>
+  <li class="disc">Custom (Advanced)</li>
+  <li class="disc">Perform clean installation</li>
+  <li class="disc">
+    <ul class="circle">
+      <li class="circle"><abbr title="High Definition">HD</abbr> Audio Driver</li>
+      <li class="circle"><abbr title="Ray Tracing eXtreme">RTX</abbr> Desktop Manager</li>
+      <li class="circle">Graphics Driver</li>
+      <li class="circle"><abbr title="Universal Serial Bus Type <b>C</b>">USB-C</abbr> Driver</li>
     </ul>
   </li>
 </ul> 
