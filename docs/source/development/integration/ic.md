@@ -22,7 +22,7 @@ For Python projects, create:
 <ul class="disc">
   <li class="disc">requirements.txt</li>
   <li class="disc">Dockerfile</li>
-  <li class="disc">devcontainer.json: optional, for GitHub CodeSpaces</li>
+  <li class="disc">devcontainer.json: optional, for <a href="https://github.com/features/codespaces" target="_blank">GitHub CodeSpaces</a></li>
 </ul>
 
 Within the `.devcontainer/` directory, which must be within the project's parent directory; <a href="https://github.com/enqueter/distributions/tree/master/.devcontainer" target="_blank">example</a>.  Always ascertain that the `requirements.txt` file lists the packages/libraries required for development.  Next, build the image:
