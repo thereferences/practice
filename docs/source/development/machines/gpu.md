@@ -3,6 +3,8 @@
 
 **Before proceeding**, install Docker Desktop: ref. Fundamental Software: Windows.
 
+<br>
+
 :::{dropdown} Table of Contents
 ```{contents}
 :depth: 2
@@ -37,8 +39,6 @@ The NVIDIA Control Panel's landing page will display the name of the machine's G
 ```markdown
 NVIDIA RTX 2000 Ada Generation Laptop GPU 
 ```
-
-<br>
 
 Hence, [download the appropriate NVIDIA Driver](https://www.nvidia.com/en-gb/drivers/).  In relation to the above example
 
