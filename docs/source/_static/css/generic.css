@@ -16,6 +16,10 @@
     margin-bottom: 2.0rem;
 }
 
+.rst-content h2 {
+    margin-bottom: 0.5rem;
+}
+
 .wy-breadcrumbs li {
     vertical-align: middle;
     margin-bottom: 8px;
@@ -133,14 +137,14 @@ ol.numeric {
     margin-left: 35px;
 }
 
+li.task-list-item p {
+    margin-bottom: 2px;
+}
+
 .mermaid {
     max-width: 695px;
     max-height: 215px;
     margin-left: 60px;
-}
-
-#content.content.local li {
-    list-style: disc;
 }
 
 
