@@ -3,6 +3,16 @@
 
 Designing & developing within containers.
 
+:::{dropdown} Table of Contents
+```{contents}
+:depth: 2
+:local:
+:backlinks: top
+```
+:::
+
+<br>
+
 ## Python
 
 ### For Development
