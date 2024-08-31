@@ -37,8 +37,11 @@
     margin-top: 25px;
 }
 
-.toctree-l3 li {
-    font-size: 15px;
+
+/* list */
+ul.disc, ul.deselect, ul.select, ul.point, ol.numeric {
+    margin-left: 35px;
+    margin-bottom: 15px;
 }
 
 li.disc {
@@ -48,11 +51,6 @@ li.disc {
     padding-bottom: 2px;
     list-style: disc;
     line-height: 1.6em
-}
-
-ul.disc {
-    margin-left: 35px;
-    margin-bottom: 15px;
 }
 
 li.deselect {
@@ -65,11 +63,6 @@ li.deselect {
     list-style-type: '\2610';
 }
 
-ul.deselect {
-    margin-left: 35px;
-    margin-bottom: 15px;
-}
-
 li.select {
     margin-top: 2px;
     margin-bottom: 2px;
@@ -78,11 +71,6 @@ li.select {
     padding-left: 5px;
     line-height: 1.6em;
     list-style-type: '\268A';
-}
-
-ul.select {
-    margin-left: 35px;
-    margin-bottom: 15px;
 }
 
 li.point {
@@ -95,11 +83,17 @@ li.point {
     list-style-type: '\2609';
 }
 
-ul.point {
-    margin-left: 35px;
-    margin-bottom: 15px;
+li.numeric {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    list-style-type: decimal;
+    line-height: 1.6em
 }
 
+
+/* additional list items */
 li.circle {
     margin-top: 2px;
     margin-bottom: 2px;
@@ -124,23 +118,18 @@ ul {
     margin-left: 10px;
 }
 
-li.numeric {
-    margin-top: 2px;
-    margin-bottom: 2px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    list-style-type: decimal;
-    line-height: 1.6em
-}
-
-ol.numeric {
-    margin-left: 35px;
-}
-
 li.task-list-item p {
     margin-bottom: 2px;
 }
 
+.toctree-l3 li {
+    font-size: 15px;
+}
+
+
+/*
+ * Mermaid diagrams
+ */
 .mermaid {
     max-width: 695px;
     max-height: 215px;
@@ -201,17 +190,6 @@ figcaption {
     text-align: left;
 }
 
-figcaption a {
-    position: relative;
-    color: var(--link);
-    font-weight: calc(580*var(--font-weight-factor));
-    text-decoration-line: underline;
-    text-decoration-style: solid;
-    text-decoration-color: #6c757d;
-    text-decoration-thickness: auto;
-}
-
-
 
 /**
  * dl, dt, dd
@@ -221,7 +199,9 @@ figcaption a {
     font-variant-caps: small-caps;
 }
 
-dd a {
+
+/* hyperlinks */
+dd a, .rst-content a, figcaption a {
     position: relative;
     color: var(--link);
     font-weight: calc(580*var(--font-weight-factor));
@@ -247,8 +227,3 @@ dd a {
 p.sd-card-text {
     margin-bottom: 5px;
 }
-
-
-
-
-
