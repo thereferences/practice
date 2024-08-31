@@ -25,7 +25,7 @@ module level and written in all capital letters with underscores separating word
 
 ## Importing Modules
 
-Abide by the HitchHiker's Guide to Python's best practice & readability advice vis-à-vis [importing modules](https://docs.python-guide.org/writing/structure/#modules).  Hence, please use the import format `import math`, and use a method of the module via pattern
+Abide by the [module importing advice](https://docs.python-guide.org/writing/structure/#modules) of the HitchHiker's Guide to Python, it is an excellent guide to Python software development best practices; beware of the readability advice.  Hence, please use the import format `import math`, and use a method of the module via the pattern
 
 ```python
 import math
