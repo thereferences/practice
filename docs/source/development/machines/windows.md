@@ -1,8 +1,5 @@
-<br>
 
 # Fundamental Software: Windows
-
-<br>
 
 ## Core
 
@@ -10,16 +7,14 @@
 
 Foremost, install
 
-* [Notepad++](https://notepad-plus-plus.org) / [Notepad++](https://github.com/notepad-plus-plus/notepad-plus-plus/releases)
-* Java: [JDK & JRE](https://adoptium.net/en-GB/temurin)
-
-<br>
+<ul class="disc">
+  <li class="disc"><a href="https://notepad-plus-plus.org" target="_blank">Notepad++</a> / <a href="https://github.com/notepad-plus-plus/notepad-plus-plus/releases" target="_blank">Notepad++</a></li>
+  <li class="disc"><a href="https://adoptium.net/en-GB/temurin" target="_blank">Java: [JDK & JRE]</a></li>
+</ul>
 
 ### Open Office
 
 Unload the core executable & language pack of [OpenOffice](https://www.openoffice.org/download/index.html).
-
-<br>
 
 ### Git
 
