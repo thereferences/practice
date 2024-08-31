@@ -42,12 +42,12 @@ NVIDIA RTX 2000 Ada Generation Laptop GPU
 
 Hence, [download the appropriate NVIDIA Driver](https://www.nvidia.com/en-gb/drivers/).  In relation to the above example
 
-* Product Category: NVIDIA RTX/Quadro
-* Product Series: NVIDIA RTX Series (Notebooks)
-* Product: NVIDIA RTX 2000 Ada Generation Laptop GPU
-* Operating System [If uncertain, check Settings -> System -> About]
-
-<br>
+<ul class="disc">
+  <li class="disc">Product Category: NVIDIA RTX/Quadro</li>
+  <li class="disc">Product Series: NVIDIA RTX Series (Notebooks)</li>
+  <li class="disc">Product: NVIDIA RTX 2000 Ada Generation Laptop GPU</li>
+  <li class="disc">Operating System [If uncertain, check Settings &rarr System &rarr About]</li>
+</ul>
 
 Install.  During installation
 
