@@ -157,7 +157,7 @@ html_css_files: list[str] = [
     'css/tooltips.css',
     'css/slides.css',
     'css/generic.css',
-    'https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.min.css',
+    'https://unpkg.com/flickity@2/dist/flickity.min.css',
     'https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/themes/prism.min.css']
 
 html_js_files: list[str] = [
@@ -170,7 +170,7 @@ html_js_files: list[str] = [
     'https://code.highcharts.com/highcharts.js',
     'https://code.highcharts.com/modules/networkgraph.js',
     'https://viewer.diagrams.net/js/viewer-static.min.js',
-    'https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.pkgd.min.js',
+    'https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js',
     'https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js',
     'js/slides.js']
 
