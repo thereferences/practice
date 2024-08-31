@@ -144,8 +144,9 @@ li.task-list-item p {
 
 
 /* Paragraph */
-p {
+.rst-content p, p {
     margin-bottom: 0.8rem;
+    margin-top: 1.6rem;
 }
 
 
