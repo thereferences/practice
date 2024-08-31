@@ -68,17 +68,12 @@ Install.  During installation
 NVIDIA will request a machine restart: restart.
 
 <br>
-<br>
-
 
 ### NVIDIA CUDA Toolkit
 
-Install [NVIDIA CUDA Toolkit](https://developer.nvidia.com/cuda-downloads)
-* [Release Notes](https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html)
+Install [NVIDIA CUDA Toolkit](https://developer.nvidia.com/cuda-downloads); [release notes](https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html).  Installation Steps:
 
-<br>
 
-Installation Steps:
 * NVIDIA software licence agreement: AGREE AND CONTINUE
 * Custom installation options: deselect visual studio integration
 * Leave the default installation location $\rightarrow$ C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v{version.number}
