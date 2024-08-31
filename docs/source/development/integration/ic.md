@@ -54,6 +54,7 @@ wherein
   <li>-p: <a href="https://docs.docker.com/engine/reference/commandline/run/#:~:text=%2D%2Dpublish%20%2C-,%2Dp,-Publish%20a%20container%E2%80%99s" target="_blank">publish a container's port to a host port</a></li>
 </ul>
 
+<br>
 
 and `-p 10000:8888` maps the host port `10000` to container port `8888`.  Note, the container's working environment, i.e., -w, must be inline with this project's top directory.  The second option is important for interactions with Amazon Web Services.  Get the name of the running instance of {tag.name} via:
 
@@ -64,10 +65,10 @@ docker ps --all
 Next, attach the running an IDE (independent development environment) application to a running container.  If IntelliJ IDEA:
 
 <div style="margin-left: 35px">
-Connect to the Docker [daemon](https://www.jetbrains.com/help/idea/docker.html#connect_to_docker)
+Connect to the Docker <a href="https://www.jetbrains.com/help/idea/docker.html#connect_to_docker" target="_blank">daemon</a>
   <ul class="disc">
-    <li class="disc"><b>Settings</b> $\rightarrow$ <b>Build, Execution, Deployment</b> $\rightarrow$ <b>Docker</b> $\rightarrow$ <b>WSL:</b> {operating.system}</li>
-    <li class="disc"><b>View</b> $\rightarrow$ <b>Tool Window</b> $\rightarrow$ <b>Services</b> <br>Within the <b>Containers</b> section connect to the running instance of interest, or ascertain connection to the running instance of interest.</li>
+    <li class="disc"><b>Settings</b> &nbsp; <b>Build, Execution, Deployment</b> &nbsp; <b>Docker</b> &nbsp; <b>WSL:</b> {operating.system}</li>
+    <li class="disc"><b>View</b> &nbsp; <b>Tool Window</b> &nbsp; <b>Services</b> <br>Within the <b>Containers</b> section connect to the running instance of interest, or ascertain connection to the running instance of interest.</li>
   </ul>
 </div>
 
