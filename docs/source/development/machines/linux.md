@@ -8,9 +8,7 @@ sudo apt update
 sudo apt upgrade
 ```
 
-<br>
-
-Additionally, often inspect the GNU Privacy Guard (<abbr title="GNU Privacy Guard">GPG</abbr>) keys via:
+Additionally, inspect the GNU Privacy Guard (<abbr title="GNU Privacy Guard">GPG</abbr>) keys via:
 
 ```shell
 gpg --list-keys
@@ -27,7 +25,7 @@ gpg --list-secret-keys
 ```
 :::
 
-
+<br>
 
 ## WGET
 
@@ -37,15 +35,11 @@ The <a href="https://www.gnu.org/software/wget/manual/wget.html" target="_blank"
 wget --version
 ```
 
-<br>
-
 Installing `wget`, `ca-certificates`
 
 ```shell
 sudo apt install wget ca-certificates
 ```
-
-<br>
 
 `ca-certificates` allows applications that are secure sockets layer (SSL) dependent to verify the authenticity of SSL connections; SSL is a deprecated tool.
 
