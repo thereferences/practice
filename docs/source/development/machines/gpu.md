@@ -179,20 +179,15 @@ docker run --rm --gpus all nvidia/cuda:12.5.0-base-ubuntu22.04 nvidia-smi
 The <a href="https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/#cuda-toolkit-major-component-versions" target="_blank">components matrix</a> of an NVIDIA CUDA Toolkit Release outlines the components of the toolkit release, and the version of each component.   [<a href="https://docs.nvidia.com/cuda/archive/" target="">Archive</a>]
 :::
 
-* Uninstall 12.5 / All NVIDIA Components<br>Restart machine as many times as necessary
-
-* Downgrade to 12.2<br><a href="https://developer.nvidia.com/cuda-12-2-0-download-archive?target_os=Windows&target_arch=x86_64&target_version=11">Download</a>
-
-* Install<br>Opt for custom installation: deselect visual studio integration
-
-* Check environment variable paths
-
-* Re-start
-
-* Re-configure linux container toolkit settings: <a href="https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html#configuring-docker">Configuring Docker</a>
-
-* Re-start docker
-
+<ul>
+  <li>Uninstall 12.5 / All NVIDIA Components<br>Restart the machine as many times as necessary.</li>
+  <li>Downgrade to 12.2<br><a href="https://developer.nvidia.com/cuda-12-2-0-download-archive?target_os=Windows&target_arch=x86_64&target_version=11">Download</a></li>
+  <li>Install<br>Opt for custom installation: deselect visual studio integration.</li>
+  <li>Check environment variable paths</li>
+  <li>Re-start</li>
+  <li>Re-configure linux container toolkit settings: <a href="https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html#configuring-docker">Configuring Docker</a></li>
+  <li>Re-start docker</li>
+</ul>
 
 <br>
 <br>
