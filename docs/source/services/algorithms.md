@@ -4,7 +4,7 @@
 
 In brief:
 
-> Efficiently address questions, but the priority is in-depth and unambiguous explanations.
+> Efficiently address inquiries; in-depth and unambiguous explanations is the priority.
 
 Never use the phrase ``research shows that''; if a study or paper has an excellent explanation share the source details.
 
