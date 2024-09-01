@@ -39,7 +39,7 @@ master_doc = 'index'
 '''
 Basic
 '''
-project = '&nbsp; <span style="vertical-align: middle; padding-top: 0; padding-bottom: 20px">Code of Practice</span>'
+project = '&nbsp; <span style="vertical-align: super; padding-top: 0; padding-bottom: 20px">Code of Practice</span>'
 project_copyright = '{}, The Artificial Intelligence Unit'.format(datetime.datetime.now().year)
 author = '@greyhypotheses'
 
