@@ -151,17 +151,13 @@ li.task-list-item p {
 
 
 /* Image */
-img {
-  margin-left: 65px
-}
-
 img.small {
     margin-left: 65px;
     width:80%;
 }
 
-img.normal {
-    margin-left: 15px;
+img.further {
+    margin-left: 65px;
 }
 
 
