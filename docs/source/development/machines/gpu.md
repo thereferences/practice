@@ -84,10 +84,7 @@ Install [NVIDIA CUDA Toolkit](https://developer.nvidia.com/cuda-downloads); [rel
 
 ### cuDNN
 
-**Defunct/Skip**
-
-Install [cuDNN](https://developer.nvidia.com/cudnn)
-* [Windows](https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html#install-windows)
+**Skip**: Install [cuDNN](https://developer.nvidia.com/cudnn) within development containers.
 
 
 <br>
@@ -131,7 +128,6 @@ sudo apt install -y nvidia-container-toolkit
 ```
 
 <br>
-<br>
 
 #### Configuring
 
@@ -148,7 +144,6 @@ Subsequently, restart docker via docker desktop.
 <img src="../../../../assets/engine.png" alt="Docker Engine">
 
 <br>
-<br>
 
 #### Testing
 
@@ -164,11 +159,11 @@ and Ubuntu version, i.e., {major}.{minor}, via
 cat /etc/os-release
 ```
 
-<br>
-
 Subsequently, use
 
-> docker run --rm --gpus all nvidia/cuda:{cuda_version}-base-ubuntu{ubuntu_version} nvidia-smi
+```bash
+docker run --rm --gpus all nvidia/cuda:{cuda_version}-base-ubuntu{ubuntu_version} nvidia-smi
+```
 
 to create and run a CUDA test command, e.g.,
 
@@ -177,31 +172,26 @@ docker run --rm --gpus all nvidia/cuda:12.5.0-base-ubuntu22.04 nvidia-smi
 ```
 
 <br>
-<br>
 
 #### Downgrading
 
-* Uninstall 12.5 / All NVIDIA Components<br>
-  Restart machine as many times as necessary
+:::{tip}
+The <a href="https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/#cuda-toolkit-major-component-versions" target="_blank">components matrix</a> of an NVIDIA CUDA Toolkit Release outlines the components of the toolkit release, and the version of each component.   [<a href="https://docs.nvidia.com/cuda/archive/" target="">Archive</a>]
+:::
 
-* Downgrade to 12.2<br>
-  [Download](https://developer.nvidia.com/cuda-12-2-0-download-archive?target_os=Windows&target_arch=x86_64&target_version=11)
+* Uninstall 12.5 / All NVIDIA Components<br>Restart machine as many times as necessary
 
-* Install<br>
-  Opt for custom installation: deselect visual studio integration
+* Downgrade to 12.2<br><a href="https://developer.nvidia.com/cuda-12-2-0-download-archive?target_os=Windows&target_arch=x86_64&target_version=11">Download</a>
+
+* Install<br>Opt for custom installation: deselect visual studio integration
 
 * Check environment variable paths
 
 * Re-start
 
-* Re-configure linux container toolkit settings<br>
-  https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html#configuring-docker
+* Re-configure linux container toolkit settings: <a href="https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html#configuring-docker">Configuring Docker</a>
 
 * Re-start docker
-
-
-Version Matrix
-https://docs.nvidia.com/cuda/archive/12.2.2/cuda-toolkit-release-notes/index.html
 
 
 <br>
