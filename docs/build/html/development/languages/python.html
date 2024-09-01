@@ -1,0 +1,240 @@
+
+	
+
+<!DOCTYPE html>
+<html class="writer-html5 light" lang="en" >
+<head>
+	<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="Python" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="development/languages/python.html" />
+<meta property="og:site_name" content="&nbsp; <span style=&quot;vertical-align: middle; padding-top: 0; padding-bottom: 20px&quot;>Code of Practice</span>" />
+<meta property="og:description" content="Fundamentals: Please use the PEP (Python Enhancement Proposal) 8 Style Guide for Python. Always refer to the naming conventions guide, for example: Importing Modules: Abide by the module importing ..." />
+<meta name="description" content="Fundamentals: Please use the PEP (Python Enhancement Proposal) 8 Style Guide for Python. Always refer to the naming conventions guide, for example: Importing Modules: Abide by the module importing ..." />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Python &mdash; CODE OF PRACTICE</title>
+		  <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+		  <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=cf2327ab" />
+		  <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+		  <link rel="stylesheet" type="text/css" href="https://unpkg.com/tabulator-tables/dist/css/tabulator.min.css" />
+		  <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=5ae659b7" />
+		  <link rel="stylesheet" type="text/css" href="../../_static/css/tooltips.css?v=8085b9f4" />
+		  <link rel="stylesheet" type="text/css" href="../../_static/css/slides.css?v=6ae19c5b" />
+		  <link rel="stylesheet" type="text/css" href="../../_static/css/generic.css?v=30c2a153" />
+		  <link rel="stylesheet" type="text/css" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+		  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/themes/prism.min.css" />
+
+	
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+		<link rel="canonical" href="https://thereferences.github.io/systems/development/languages/python.html"/>
+			
+				<script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+					<script src="../../_static/jquery.js?v=5d32c60e"></script>
+					<script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+					<script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+					<script src="../../_static/doctools.js?v=9a2dae69"></script>
+					<script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+					<script src="../../_static/design-tabs.js?v=f930bc37"></script>
+					<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+					<script src="https://code.highcharts.com/stock/highstock.js"></script>
+					<script src="https://code.highcharts.com/stock/modules/data.js"></script>
+					<script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+					<script src="https://code.highcharts.com/stock/modules/export-data.js"></script>
+					<script src="https://code.highcharts.com/stock/modules/accessibility.js"></script>
+					<script src="https://code.highcharts.com/highcharts.js"></script>
+					<script src="https://code.highcharts.com/modules/networkgraph.js"></script>
+					<script src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
+					<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+					<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js"></script>
+					<script src="../../_static/js/slides.js?v=1f70e8f7"></script>
+			
+			
+			<script src="../../_static/js/theme.js"></script>
+		<link rel="index" title="Index" href="../../genindex.html" />
+		<link rel="search" title="Search" href="../../search.html" />
+		<link rel="next" title="Scala" href="scala.html" />
+		<link rel="prev" title="Languages &amp; Programming" href="../languages.html" /> 
+</head>
+<body class="wy-body-for-nav">
+
+
+	 
+	<div class="wy-grid-for-nav">
+		
+		<nav data-toggle="wy-nav-shift" class="wy-nav-side">
+		  <div class="wy-side-scroll">
+			<div class="wy-side-nav-search" >
+
+			  
+			  
+			  <a href="../../index.html" class="icon icon-home">
+				&nbsp; <span style="vertical-align: middle; padding-top: 0; padding-bottom: 20px">Code of Practice</span>
+			  </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+			</div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+				  <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../about/about.html">About</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../services/services.html">Services</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../development.html">Technologies &amp; Development Practices</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../cloud.html">Cloud Platform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../machines.html">Machines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integration.html">Continuous Integration, Delivery, &amp; Deployment</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../languages.html">Languages &amp; Programming</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Python</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scala.html">Scala</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+			</div>
+		  </div>
+		</nav>
+
+		<section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+				  <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+				  <a href="../../index.html">&nbsp; <span style="vertical-align: middle; padding-top: 0; padding-bottom: 20px">Code of Practice</span></a>
+			  </nav>
+
+
+			<div class="wy-nav-content">
+				
+				<div class="rst-content">
+				
+					
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+	<ul class="wy-breadcrumbs">
+		
+			
+			<li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+			
+				<li class="breadcrumb-item"><a href="../development.html">Technologies &amp; Development Practices</a> ⁄&nbsp;</li>
+			
+				<li class="breadcrumb-item"><a href="../languages.html">Languages &amp; Programming</a> ⁄&nbsp;</li>
+			
+			 <li class="breadcrumb-item active">Python</li>
+			
+		
+		  <li class="wy-breadcrumbs-aside">
+				  <a href="https://github.com/thereferences/practice/blob/develop/docs/source/development/languages/python.md" class="fa fa-github"></a>
+		  </li>
+	</ul>
+	<hr/>
+
+</div>
+					<div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+					 <div itemprop="articleBody">
+						
+  <section class="tex2jax_ignore mathjax_ignore" id="python">
+<h1>Python<a class="headerlink" href="#python" title="Link to this heading">¶</a></h1>
+<section id="fundamentals">
+<h2>Fundamentals<a class="headerlink" href="#fundamentals" title="Link to this heading">¶</a></h2>
+<p>Please use the <a href="https://peps.python.org/pep-0008/">PEP (Python Enhancement Proposal) 8 Style Guide for
+Python</a>.  Always refer to the naming conventions guide, for example:</p>
+<br>
+<table style="width: 85%;">
+    <colgroup>
+        <col span="1" style="width: 26.5%;">
+        <col span="1" style="width: 63.5%;">
+    </colgroup>
+    <thead><tr style="text-align: left"><th>Object</th><th>Note</th></tr></thead>
+        <tr><td>Type Variable Name</td><td>Always pascal case, e.g., HyperParameter.</td></tr>
+        <tr><td>Class Name</td><td>Always pascal case.</td></tr>
+        <tr><td>Variable Name</td><td>A lower case or snake case string, e.g., <i>length</i>, `number_of_cities` Use two leading underscores for private variables.</td></tr>
+        <tr><td>Constants</td><td>The PEP pages note that <a href="https://peps.python.org/pep-0008/#constants" target="_blank">constants</a> <q><i>... are usually defined on a 
+module level and written in all capital letters with underscores separating words. Examples include MAX_OVERFLOW and TOTAL.</i></q></td></tr>
+</table>
+<br>
+</section>
+<section id="importing-modules">
+<h2>Importing Modules<a class="headerlink" href="#importing-modules" title="Link to this heading">¶</a></h2>
+<p>Abide by the <a class="reference external" href="https://docs.python-guide.org/writing/structure/#modules">module importing advice</a> of the HitchHiker’s Guide to Python, it is an excellent guide to Python software development best practices; beware of the readability advice.  Hence, please use the import format <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">math</span></code>, and use a method of the module via the pattern</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
+
+<span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
+</pre></div>
+</div>
+<br>
+<p><strong>Not</strong></p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>from<span class="w"> </span>math<span class="w"> </span>import<span class="w"> </span>cos
+</pre></div>
+</div>
+<br>
+<p><strong>Not</strong></p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>from<span class="w"> </span>math<span class="w"> </span>import<span class="w"> </span>*
+</pre></div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</section>
+</section>
+
+
+					 </div>
+					 
+					</div>
+					<footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="scala.html" class="btn btn-neutral float-right" title="Scala" accesskey="n" rel="next">Next &nbsp;<b>⟶</b></a>
+      
+      
+        <a href="../languages.html" class="btn btn-neutral float-left" title="Languages &amp; Programming" accesskey="p" rel="prev"><b>⟵</b>&nbsp; Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, The Artificial Intelligence Unit.</p>
+  </div>
+	  <br>
+      
+      
+      
+      Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+      
+      <a href="https://github.com/revitron/revitron-sphinx-theme">theme</a>
+      
+      provided by <a href="https://github.com/revitron">Revitron</a>. 
+
+</footer>
+				</div>
+			</div>
+
+		</section>
+
+	</div>
+	
+
+	<script type="text/javascript">
+			jQuery(function () {
+					SphinxRtdTheme.Navigation.enable(true);
+			});
+	</script> 
+
+ 
+</body>	
+</html>

@@ -1,0 +1,268 @@
+
+	
+
+<!DOCTYPE html>
+<html class="writer-html5 light" lang="en" >
+<head>
+	<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="Linux & Windows Subsystem for Linux (WSL)" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="development/machines/wsl.html" />
+<meta property="og:site_name" content="&nbsp; <span style=&quot;vertical-align: middle; padding-top: 0; padding-bottom: 20px&quot;>Code of Practice</span>" />
+<meta property="og:description" content="Using a Linux Kernel requires(a) activating WSL, and(b) installing a Linux distribution. The auto-script approach sometimes fails. This section outlines the semi-manual approach. For reference purp..." />
+<meta name="description" content="Using a Linux Kernel requires(a) activating WSL, and(b) installing a Linux distribution. The auto-script approach sometimes fails. This section outlines the semi-manual approach. For reference purp..." />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Linux &amp; Windows Subsystem for Linux (WSL) &mdash; CODE OF PRACTICE</title>
+		  <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+		  <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=cf2327ab" />
+		  <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+		  <link rel="stylesheet" type="text/css" href="https://unpkg.com/tabulator-tables/dist/css/tabulator.min.css" />
+		  <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=5ae659b7" />
+		  <link rel="stylesheet" type="text/css" href="../../_static/css/tooltips.css?v=8085b9f4" />
+		  <link rel="stylesheet" type="text/css" href="../../_static/css/slides.css?v=6ae19c5b" />
+		  <link rel="stylesheet" type="text/css" href="../../_static/css/generic.css?v=30c2a153" />
+		  <link rel="stylesheet" type="text/css" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+		  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/themes/prism.min.css" />
+
+	
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+		<link rel="canonical" href="https://thereferences.github.io/systems/development/machines/wsl.html"/>
+			
+				<script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+					<script src="../../_static/jquery.js?v=5d32c60e"></script>
+					<script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+					<script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+					<script src="../../_static/doctools.js?v=9a2dae69"></script>
+					<script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+					<script src="../../_static/design-tabs.js?v=f930bc37"></script>
+					<script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+					<script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+					<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+					<script src="https://code.highcharts.com/stock/highstock.js"></script>
+					<script src="https://code.highcharts.com/stock/modules/data.js"></script>
+					<script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+					<script src="https://code.highcharts.com/stock/modules/export-data.js"></script>
+					<script src="https://code.highcharts.com/stock/modules/accessibility.js"></script>
+					<script src="https://code.highcharts.com/highcharts.js"></script>
+					<script src="https://code.highcharts.com/modules/networkgraph.js"></script>
+					<script src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
+					<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+					<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js"></script>
+					<script src="../../_static/js/slides.js?v=1f70e8f7"></script>
+			
+			
+			<script src="../../_static/js/theme.js"></script>
+		<link rel="index" title="Index" href="../../genindex.html" />
+		<link rel="search" title="Search" href="../../search.html" />
+		<link rel="next" title="Fundamental Software: Linux" href="linux.html" />
+		<link rel="prev" title="Machines" href="../machines.html" /> 
+</head>
+<body class="wy-body-for-nav">
+
+
+	 
+	<div class="wy-grid-for-nav">
+		
+		<nav data-toggle="wy-nav-shift" class="wy-nav-side">
+		  <div class="wy-side-scroll">
+			<div class="wy-side-nav-search" >
+
+			  
+			  
+			  <a href="../../index.html" class="icon icon-home">
+				&nbsp; <span style="vertical-align: middle; padding-top: 0; padding-bottom: 20px">Code of Practice</span>
+			  </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+			</div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+				  <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../about/about.html">About</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../services/services.html">Services</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../development.html">Technologies &amp; Development Practices</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../cloud.html">Cloud Platform</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../machines.html">Machines</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Linux &amp; Windows Subsystem for Linux (WSL)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="linux.html">Fundamental Software: Linux</a></li>
+<li class="toctree-l3"><a class="reference internal" href="windows.html">Fundamental Software: Windows</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gpu.html">Graphics Processing Unit, etc.</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../integration.html">Continuous Integration, Delivery, &amp; Deployment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../languages.html">Languages &amp; Programming</a></li>
+</ul>
+</li>
+</ul>
+
+			</div>
+		  </div>
+		</nav>
+
+		<section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+				  <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+				  <a href="../../index.html">&nbsp; <span style="vertical-align: middle; padding-top: 0; padding-bottom: 20px">Code of Practice</span></a>
+			  </nav>
+
+
+			<div class="wy-nav-content">
+				
+				<div class="rst-content">
+				
+					
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+	<ul class="wy-breadcrumbs">
+		
+			
+			<li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+			
+				<li class="breadcrumb-item"><a href="../development.html">Technologies &amp; Development Practices</a> ⁄&nbsp;</li>
+			
+				<li class="breadcrumb-item"><a href="../machines.html">Machines</a> ⁄&nbsp;</li>
+			
+			 <li class="breadcrumb-item active">Linux &amp; Windows Subsystem for Linux (WSL)</li>
+			
+		
+		  <li class="wy-breadcrumbs-aside">
+				  <a href="https://github.com/thereferences/practice/blob/develop/docs/source/development/machines/wsl.md" class="fa fa-github"></a>
+		  </li>
+	</ul>
+	<hr/>
+
+</div>
+					<div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+					 <div itemprop="articleBody">
+						
+  <section class="tex2jax_ignore mathjax_ignore" id="linux-windows-subsystem-for-linux-wsl">
+<h1>Linux &amp; Windows Subsystem for Linux (WSL)<a class="headerlink" href="#linux-windows-subsystem-for-linux-wsl" title="Link to this heading">¶</a></h1>
+<p>Using a Linux Kernel requires <strong>(a)</strong> activating WSL, and <strong>(b)</strong> installing a Linux distribution.  The auto-script approach sometimes
+fails.  This section outlines the semi-manual approach.  For reference purposes:</p>
+<ul class="disc">
+<li class="disc"><a href="https://learn.microsoft.com/en-us/windows/wsl/install" target="_blank">Auto</a></li>
+<li class="disc"><a href="https://learn.microsoft.com/en-us/windows/wsl/install-manual#step-2---check-requirements-for-running-wsl-2" target="_blank">Manual</a></li>
+</ul>
+<br>
+<br>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Table of Contents</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<nav class="contents local" id="contents">
+<ul class="simple">
+<li><p class="sd-card-text"><a class="reference internal" href="#activate-windows-subsystem-for-linux" id="id1">Activate Windows Subsystem for Linux</a></p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="#enable-the-virtual-machine-feature-via-powershell-administrator-mode" id="id2">Enable the virtual machine feature via PowerShell; administrator mode.</a></p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="#linux-kernel-update-package" id="id3">Linux Kernel Update Package</a></p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="#download-install-a-linux-distribution" id="id4">Download &amp; Install a Linux Distribution</a></p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="#commands" id="id5">Commands</a></p></li>
+</ul>
+</nav>
+</div>
+</details><br>
+<section id="activate-windows-subsystem-for-linux">
+<h2><a class="toc-backref" href="#contents" role="doc-backlink">Activate Windows Subsystem for Linux</a><a class="headerlink" href="#activate-windows-subsystem-for-linux" title="Link to this heading">¶</a></h2>
+<p>The activation steps are</p>
+<blockquote>
+<div><p>Control Panel <span class="math notranslate nohighlight">\(\rightarrow\)</span> Uninstall a program <span class="math notranslate nohighlight">\(\rightarrow\)</span> Turn Windows features on or off <span class="math notranslate nohighlight">\(\rightarrow\)</span> Windows Subsystem for Linux.</p>
+</div></blockquote>
+<p>Subsequently, re-start the machine.</p>
+<br>
+</section>
+<section id="enable-the-virtual-machine-feature-via-powershell-administrator-mode">
+<h2><a class="toc-backref" href="#contents" role="doc-backlink">Enable the virtual machine feature via PowerShell; administrator mode.</a><a class="headerlink" href="#enable-the-virtual-machine-feature-via-powershell-administrator-mode" title="Link to this heading">¶</a></h2>
+<p>For details visit <a class="reference external" href="https://learn.microsoft.com/en-us/windows/wsl/install-manual#step-3---enable-virtual-machine-feature">enable virtual machine feature</a>.</p>
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span>  <span class="n">dism</span><span class="p">.</span><span class="n">exe</span> <span class="p">/</span><span class="n">online</span> <span class="p">/</span><span class="nb">enable-feature</span> 
+    <span class="p">/</span><span class="n">featurename</span><span class="p">:</span><span class="n">VirtualMachinePlatform</span> <span class="p">/</span><span class="n">all</span> <span class="p">/</span><span class="n">norestart</span>
+</pre></div>
+</div>
+<br>
+</section>
+<section id="linux-kernel-update-package">
+<h2><a class="toc-backref" href="#contents" role="doc-backlink">Linux Kernel Update Package</a><a class="headerlink" href="#linux-kernel-update-package" title="Link to this heading">¶</a></h2>
+<blockquote>
+<div><p><a class="reference external" href="https://learn.microsoft.com/en-us/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package">Download and install</a> the package.</p>
+</div></blockquote>
+<br>
+</section>
+<section id="download-install-a-linux-distribution">
+<h2><a class="toc-backref" href="#contents" role="doc-backlink">Download &amp; Install a Linux Distribution</a><a class="headerlink" href="#download-install-a-linux-distribution" title="Link to this heading">¶</a></h2>
+<ul class="disc">
+<li class="disc"><a href="https://learn.microsoft.com/en-us/windows/wsl/install-manual#downloading-distributions" target="_blank">Download</a></li>
+<li class="disc">To install, run `Add-AppxPackage .\app_name.appx`</li>
+<li class="disc">Double-click on the installed app, which will exists within the applications' menu, to activate it.  You will be asked to set up credentials.</li>
+</ul>
+<br>
+</section>
+<section id="commands">
+<h2><a class="toc-backref" href="#contents" role="doc-backlink">Commands</a><a class="headerlink" href="#commands" title="Link to this heading">¶</a></h2>
+<blockquote>
+<div><p><a href="https://learn.microsoft.com/en-us/windows/wsl/basic-commands" target="_blank">Basic Commands</a></p>
+</div></blockquote>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</section>
+</section>
+
+
+					 </div>
+					 
+					</div>
+					<footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="linux.html" class="btn btn-neutral float-right" title="Fundamental Software: Linux" accesskey="n" rel="next">Next &nbsp;<b>⟶</b></a>
+      
+      
+        <a href="../machines.html" class="btn btn-neutral float-left" title="Machines" accesskey="p" rel="prev"><b>⟵</b>&nbsp; Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, The Artificial Intelligence Unit.</p>
+  </div>
+	  <br>
+      
+      
+      
+      Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+      
+      <a href="https://github.com/revitron/revitron-sphinx-theme">theme</a>
+      
+      provided by <a href="https://github.com/revitron">Revitron</a>. 
+
+</footer>
+				</div>
+			</div>
+
+		</section>
+
+	</div>
+	
+
+	<script type="text/javascript">
+			jQuery(function () {
+					SphinxRtdTheme.Navigation.enable(true);
+			});
+	</script> 
+
+ 
+</body>	
+</html>
