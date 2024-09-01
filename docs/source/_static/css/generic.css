@@ -229,3 +229,12 @@ p.sd-card-text {
     margin-bottom: 5px;
     margin-top: 5px;
 }
+
+
+/*
+ * pre
+ */
+
+pre {
+    font-size: 0.8rem !important;
+}
