@@ -21,7 +21,7 @@ time, more Amazon Web Services (AWS) details will be added.
         src="../../../../../assets/beforehand.html"></iframe>
 <figure>
 <figcaption>For more details hover over the icons; a few icons have links to more details.  Assets, e.g., 
-container images, will be automatically & securely delivered to Amazon Web Services (AWS) via GitHub.  The illustration highlights security tools along transfer paths.    [Examples: Independent code analysis via <a 
+container images, will be automatically & securely delivered to Amazon Web Services (AWS) via GitHub.  The illustration highlights security tools along transfer paths.    [Independent code analysis via <a 
 href="https://github.com/enqueter/pollutants/actions/runs/8443640990/job/23127661393" target="_blank">CodeQL</a>, and continuous integration and delivery via GitHub Actions &rarr;  <a href="https://github.com/enqueter/pollutants/actions/runs/8443640949" target="_blank">Actions</a>/<a href="https://github.com/enqueter/pollutants/actions/runs/8443640949/workflow" target="_blank">Actions Code</a>] 
 </figcaption>
 </figure>
