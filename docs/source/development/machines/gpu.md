@@ -7,7 +7,7 @@
 
 :::{dropdown} Table of Contents
 ```{contents}
-:depth: 2
+:depth: 3
 :local:
 :backlinks: top
 ```
