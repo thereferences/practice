@@ -312,27 +312,6 @@ infrastructure code templates repository, will be visible during the upcoming we
 
 <br>
 <br>
-
-:::{dropdown} A Schema for a Step Functions Elastic MapReduce Solution
-```{image} ../../../../assets/pattern-emr.png
-:alt: Elastic MapReduce
-:width: 90%
-
-```
-
-<br>
-<br>
-
-<figure>
-<figcaption>A schema for a step functions orchestration of an Elastic MapReduce job.
-</figcaption>
-</figure>
-:::
-
-
-
-<br>
-<br>
 <br>
 <br>
 
