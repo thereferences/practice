@@ -111,15 +111,11 @@ curl -s -L https://nvidia.github.io/libnvidia-container/stable/deb/nvidia-contai
     sudo tee /etc/apt/sources.list.d/nvidia-container-toolkit.list
 ```
 
-<br>
-
 Next, update the repository's packages list:
 
 ```shell
 sudo apt update
 ```
-
-<br>
 
 Finally, install the NVIDIA Container Toolkit packages:
 
@@ -137,12 +133,11 @@ Initially, configure the container runtime for docker; NVIDIA's pages detail ext
 sudo nvidia-ctk runtime configure --runtime=docker
 ```
 
-<br>
-
 Subsequently, restart docker via docker desktop.
 
 <img src="../../../../assets/engine.png" alt="Docker Engine">
 
+<br>
 <br>
 
 #### Testing
@@ -179,14 +174,18 @@ docker run --rm --gpus all nvidia/cuda:12.5.0-base-ubuntu22.04 nvidia-smi
 The <a href="https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/#cuda-toolkit-major-component-versions" target="_blank">components matrix</a> of an NVIDIA CUDA Toolkit Release outlines the components of the toolkit release, and the version of each component.   [<a href="https://docs.nvidia.com/cuda/archive/" target="">Archive</a>]
 :::
 
-<ul>
-  <li>Uninstall 12.5 / All NVIDIA Components<br>Restart the machine as many times as necessary.</li>
-  <li>Downgrade to 12.2<br><a href="https://developer.nvidia.com/cuda-12-2-0-download-archive?target_os=Windows&target_arch=x86_64&target_version=11">Download</a></li>
-  <li>Install<br>Opt for custom installation: deselect visual studio integration.</li>
-  <li>Check environment variable paths</li>
-  <li>Re-start</li>
-  <li>Re-configure linux container toolkit settings: <a href="https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html#configuring-docker">Configuring Docker</a></li>
-  <li>Re-start docker</li>
+<br>
+
+Sometimes it might be necessary to downgrade NVIDIA CUDA Toolkit after upgrading.  This example illustrates downloading from 12.5 to 12.2.
+
+<ul class="disc">
+  <li class="disc">Uninstall 12.5 / All NVIDIA Components: Restart the machine as many times as necessary.</li>
+  <li class="disc">Downgrade to 12.2; <a href="https://developer.nvidia.com/cuda-12-2-0-download-archive?target_os=Windows&target_arch=x86_64&target_version=11">download</a>.</li>
+  <li class="disc">Install<ul class="circle"><li class="circle">Opt for custom installation: deselect visual studio integration.</li></ul></li>
+  <li class="disc">Check environment variable paths</li>
+  <li class="disc">Re-start</li>
+  <li class="disc">Re-configure linux container toolkit settings: <a href="https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html#configuring-docker">Configuring Docker</a></li>
+  <li class="disc">Re-start docker</li>
 </ul>
 
 <br>
