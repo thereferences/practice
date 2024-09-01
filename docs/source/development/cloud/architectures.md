@@ -172,10 +172,8 @@ href="https://docs.aws.amazon.com/cli/latest/userguide/sso-configure-profile-tok
 
 ### Via Step Functions
 
-```{image} ../../../../assets/step-functions.png
-:alt: Step Functions
-:width: 65%
-```
+<img class="further" width="65%" src="../../../../assets/step-functions.png" alt="Step Functions">
+
 <figure>
 <figcaption>Deploying an end-to-end solution via <a href="https://docs.aws.amazon.com/step-functions/latest/dg/welcome.
 html" target="_blank">step functions</a>, an orchestration service. The underlying infrastructure code outlines (a) 
