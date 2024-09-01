@@ -31,13 +31,7 @@ Beware of the mappings between [CUDA Toolkit Version & CUDA Driver Version](http
   <li class="disc"><b>SELECT</b> <i>NVIDIA Control Panel</i></li>
 </ul>
 
-The NVIDIA Control Panel's landing page will display the name of the machine's Graphics Processing Unit, e.g.,
-
-
-> NVIDIA RTX 2000 Ada Generation Laptop GPU 
-
-
-Hence, [download the appropriate NVIDIA Driver](https://www.nvidia.com/en-gb/drivers/).  In relation to the above example
+The NVIDIA Control Panel's landing page will display the name of the machine's Graphics Processing Unit, e.g., *NVIDIA RTX 2000 Ada Generation Laptop GPU*.  Subsequently, [download the appropriate NVIDIA Driver](https://www.nvidia.com/en-gb/drivers/); in relation to the above example
 
 <ul class="disc">
   <li class="disc">Product Category: NVIDIA RTX/Quadro</li>
