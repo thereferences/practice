@@ -17,8 +17,6 @@
 
 ## Key Windows Settings
 
-<br>
-
 The references herein outline the fundamental NVIDIA installations **required within Windows 11** that ensure the ability **to run CUDA dependent programs/containers within Windows 11 or a WSL (Windows Subsystem for Linux) kernel**. 
 
 <br>
@@ -33,12 +31,11 @@ Beware of the mappings between [CUDA Toolkit Version & CUDA Driver Version](http
   <li class="disc"><b>SELECT</b> <i>NVIDIA Control Panel</i></li>
 </ul>
 
-
 The NVIDIA Control Panel's landing page will display the name of the machine's Graphics Processing Unit, e.g.,
 
-```markdown
-NVIDIA RTX 2000 Ada Generation Laptop GPU 
-```
+
+> NVIDIA RTX 2000 Ada Generation Laptop GPU 
+
 
 Hence, [download the appropriate NVIDIA Driver](https://www.nvidia.com/en-gb/drivers/).  In relation to the above example
 
@@ -49,23 +46,26 @@ Hence, [download the appropriate NVIDIA Driver](https://www.nvidia.com/en-gb/dri
   <li class="disc">Operating System [If uncertain, check Settings &rarr System &rarr About]</li>
 </ul>
 
-Install.  During installation
+Install.
+
+:::{dropdown} During Installation
 
 <ul class="disc">
   <li class="disc">AGREE AND CONTINUE</li>
   <li class="disc">Custom (Advanced)</li>
-  <li class="disc">Perform clean installation</li>
-  <li class="disc">
+  <li class="disc">Perform clean installation
     <ul class="circle">
       <li class="circle"><abbr title="High Definition">HD</abbr> Audio Driver</li>
       <li class="circle"><abbr title="Ray Tracing eXtreme">RTX</abbr> Desktop Manager</li>
       <li class="circle">Graphics Driver</li>
-      <li class="circle"><abbr title="Universal Serial Bus Type <b>C</b>">USB-C</abbr> Driver</li>
+      <li class="circle"><abbr title="Universal Serial Bus Type C">USB-C</abbr> Driver</li>
     </ul>
   </li>
-</ul> 
+</ul>
 
-NVIDIA will request a machine restart: restart.
+:::
+
+After installation NVIDIA will request a machine restart: restart.
 
 <br>
 
