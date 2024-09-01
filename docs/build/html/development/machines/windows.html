@@ -1,0 +1,431 @@
+
+	
+
+<!DOCTYPE html>
+<html class="writer-html5 light" lang="en" >
+<head>
+	<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="Fundamental Software: Windows" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="development/machines/windows.html" />
+<meta property="og:site_name" content="&nbsp; <span style=&quot;vertical-align: super; padding-top: 0; padding-bottom: 20px&quot;>Code of Practice</span>" />
+<meta property="og:description" content="Table of Contents Core- Basic Tools, Open Office, Git., Installations that Propagate to WSL Kernels- Docker Desktop, IntelliJ IDEA Ultimate, VS Code.. Core: Basic Tools: Foremost, install Open Offi..." />
+<meta name="description" content="Table of Contents Core- Basic Tools, Open Office, Git., Installations that Propagate to WSL Kernels- Docker Desktop, IntelliJ IDEA Ultimate, VS Code.. Core: Basic Tools: Foremost, install Open Offi..." />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Fundamental Software: Windows &mdash; CODE OF PRACTICE</title>
+		  <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+		  <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=cf2327ab" />
+		  <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+		  <link rel="stylesheet" type="text/css" href="https://unpkg.com/tabulator-tables/dist/css/tabulator.min.css" />
+		  <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=5ae659b7" />
+		  <link rel="stylesheet" type="text/css" href="../../_static/css/tooltips.css?v=8085b9f4" />
+		  <link rel="stylesheet" type="text/css" href="../../_static/css/slides.css?v=6ae19c5b" />
+		  <link rel="stylesheet" type="text/css" href="../../_static/css/generic.css?v=b02be070" />
+		  <link rel="stylesheet" type="text/css" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+		  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/themes/prism.min.css" />
+
+	
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+		<link rel="canonical" href="https://thereferences.github.io/systems/development/machines/windows.html"/>
+			
+				<script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+					<script src="../../_static/jquery.js?v=5d32c60e"></script>
+					<script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+					<script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+					<script src="../../_static/doctools.js?v=9a2dae69"></script>
+					<script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+					<script src="../../_static/design-tabs.js?v=f930bc37"></script>
+					<script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+					<script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+					<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+					<script src="https://code.highcharts.com/stock/highstock.js"></script>
+					<script src="https://code.highcharts.com/stock/modules/data.js"></script>
+					<script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+					<script src="https://code.highcharts.com/stock/modules/export-data.js"></script>
+					<script src="https://code.highcharts.com/stock/modules/accessibility.js"></script>
+					<script src="https://code.highcharts.com/highcharts.js"></script>
+					<script src="https://code.highcharts.com/modules/networkgraph.js"></script>
+					<script src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
+					<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+					<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js"></script>
+					<script src="../../_static/js/slides.js?v=1f70e8f7"></script>
+			
+			
+			<script src="../../_static/js/theme.js"></script>
+		<link rel="index" title="Index" href="../../genindex.html" />
+		<link rel="search" title="Search" href="../../search.html" />
+		<link rel="next" title="Graphics Processing Unit, etc." href="gpu.html" />
+		<link rel="prev" title="Fundamental Software: Linux" href="linux.html" /> 
+</head>
+<body class="wy-body-for-nav">
+
+
+	 
+	<div class="wy-grid-for-nav">
+		
+		<nav data-toggle="wy-nav-shift" class="wy-nav-side">
+		  <div class="wy-side-scroll">
+			<div class="wy-side-nav-search" >
+
+			  
+			  
+			  <a href="../../index.html" class="icon icon-home">
+				&nbsp; <span style="vertical-align: super; padding-top: 0; padding-bottom: 20px">Code of Practice</span>
+			  </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+			</div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+				  <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../about/about.html">About</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../services/services.html">Services</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../development.html">Technologies &amp; Development Practices</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../cloud.html">Cloud Platform</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../machines.html">Machines</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="wsl.html">Linux &amp; Windows Subsystem for Linux (WSL)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="linux.html">Fundamental Software: Linux</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Fundamental Software: Windows</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gpu.html">Graphics Processing Unit, etc.</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../integration.html">Continuous Integration, Delivery, &amp; Deployment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../languages.html">Languages &amp; Programming</a></li>
+</ul>
+</li>
+</ul>
+
+			</div>
+		  </div>
+		</nav>
+
+		<section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+				  <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+				  <a href="../../index.html">&nbsp; <span style="vertical-align: super; padding-top: 0; padding-bottom: 20px">Code of Practice</span></a>
+			  </nav>
+
+
+			<div class="wy-nav-content">
+				
+				<div class="rst-content">
+				
+					
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+	<ul class="wy-breadcrumbs">
+		
+			
+			<li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+			
+				<li class="breadcrumb-item"><a href="../development.html">Technologies &amp; Development Practices</a> ⁄&nbsp;</li>
+			
+				<li class="breadcrumb-item"><a href="../machines.html">Machines</a> ⁄&nbsp;</li>
+			
+			 <li class="breadcrumb-item active">Fundamental Software: Windows</li>
+			
+		
+		  <li class="wy-breadcrumbs-aside">
+				  <a href="https://github.com/thereferences/practice/blob/develop/docs/source/development/machines/windows.md" class="fa fa-github"></a>
+		  </li>
+	</ul>
+	<hr/>
+
+</div>
+					<div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+					 <div itemprop="articleBody">
+						
+  <section class="tex2jax_ignore mathjax_ignore" id="fundamental-software-windows">
+<h1>Fundamental Software: Windows<a class="headerlink" href="#fundamental-software-windows" title="Link to this heading">¶</a></h1>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Table of Contents</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<nav class="contents local" id="contents">
+<ul class="simple">
+<li><p class="sd-card-text"><a class="reference internal" href="#core" id="id1">Core</a></p>
+<ul>
+<li><p class="sd-card-text"><a class="reference internal" href="#basic-tools" id="id2">Basic Tools</a></p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="#open-office" id="id3">Open Office</a></p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="#git" id="id4">Git</a></p></li>
+</ul>
+</li>
+<li><p class="sd-card-text"><a class="reference internal" href="#installations-that-propagate-to-wsl-kernels" id="id5">Installations that Propagate to WSL Kernels</a></p>
+<ul>
+<li><p class="sd-card-text"><a class="reference internal" href="#docker-desktop" id="id6">Docker Desktop</a></p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="#intellij-idea-ultimate" id="id7">IntelliJ IDEA Ultimate</a></p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="#vs-code" id="id8">VS Code</a></p></li>
+</ul>
+</li>
+</ul>
+</nav>
+</div>
+</details><br>
+<section id="core">
+<h2><a class="toc-backref" href="#contents" role="doc-backlink">Core</a><a class="headerlink" href="#core" title="Link to this heading">¶</a></h2>
+<section id="basic-tools">
+<h3><a class="toc-backref" href="#contents" role="doc-backlink">Basic Tools</a><a class="headerlink" href="#basic-tools" title="Link to this heading">¶</a></h3>
+<p>Foremost, install</p>
+<ul class="disc">
+  <li class="disc"><a href="https://notepad-plus-plus.org" target="_blank">Notepad++</a> / <a href="https://github.com/notepad-plus-plus/notepad-plus-plus/releases" target="_blank">Notepad++</a></li>
+  <li class="disc"><a href="https://adoptium.net/en-GB/temurin" target="_blank">Java: [JDK & JRE]</a></li>
+</ul>
+</section>
+<section id="open-office">
+<h3><a class="toc-backref" href="#contents" role="doc-backlink">Open Office</a><a class="headerlink" href="#open-office" title="Link to this heading">¶</a></h3>
+<p>Unload the core executable &amp; language pack of <a class="reference external" href="https://www.openoffice.org/download/index.html">OpenOffice</a>.</p>
+</section>
+<section id="git">
+<h3><a class="toc-backref" href="#contents" role="doc-backlink">Git</a><a class="headerlink" href="#git" title="Link to this heading">¶</a></h3>
+<p>Unload the executable at <a class="reference external" href="https://git-scm.com">git-scm</a>, and install.  During installation use the text slides below as a guide.</p>
+<br>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Slides</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div class="sd-sphinx-override sd-cards-carousel sd-card-cols-2 docutils">
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Select Destination Location<br><br></div>
+<p class="sd-card-text">This installation directory.</p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Select Components<br><br></div>
+<p class="sd-card-text">Deselect</p>
+  <ul class="deselect">
+    <li class="deselect">Additional icons On the Desktop</li>
+    <li class="deselect">Git LFS (Large File Support)</li>
+    <li class="deselect">Add a Git Bash Profile to Windows Terminal</li>
+  </ul>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Select Start Menu Folder<br><br></div>
+<p class="sd-card-text">Deselect</p>
+  <ul class="deselect">
+    <li class="deselect">Don't create a Start Menu folder</li>
+  </ul>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Choosing the default editor used by Git<br><br></div>
+<p class="sd-card-text">Select</p>
+  <ul class="select">
+    <li class="select">Use Notepad++ as Git's default editor</li>
+  </ul>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Adjusting the name of the initial branch in new repositories<br><br></div>
+<p class="sd-card-text">Select</p>
+  <ul class="point">
+    <li class="point">Override the default branch name for new repositories [master]</li>
+  </ul>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Adjusting your PATH environment<br><br></div>
+<p class="sd-card-text">Select</p>
+  <ul class="point">
+    <li class="point">Git from the command line and also from 3rd-party software</li>
+  </ul>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Choosing the SSH executable<br><br></div>
+<p class="sd-card-text">Select</p>
+  <ul class="point">
+    <li class="point">Use bundled OpenSSH</li>
+  </ul>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Choosing HTTPS Transport Backend<br><br></div>
+<p class="sd-card-text">Select</p>
+  <ul class="point">
+    <li class="point">Use the OpenSSL library</li>
+  </ul>
+</div>
+</div>
+</div>
+</div>
+</details><br>
+<p>Continuing <span class="math notranslate nohighlight">\(\ldots\)</span></p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Slides</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div class="sd-sphinx-override sd-cards-carousel sd-card-cols-2 docutils">
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Configuring the line ending conversions<br><br></div>
+<p class="sd-card-text">Select</p>
+  <ul class="point">
+    <li class="point">Checkout Windows-style, commit Unix-style line endings</li>
+  </ul>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Configuring the terminal emulator to use with Git Bash<br><br></div>
+<p class="sd-card-text">Select</p>
+  <ul class="point">
+    <li class="point">Use MinTTY (the default terminal of MSYS2)</li>
+  </ul>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Choose the default behaviour of <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span></code><br><br></div>
+<p class="sd-card-text">Select</p>
+  <ul class="point">
+    <li class="point">Fast-forward or merge</li>
+  </ul>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Choose a credential helper<br><br></div>
+<p class="sd-card-text">Select</p>
+  <ul class="point">
+    <li class="point">None</li>
+  </ul>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Configuring extra options<br><br></div>
+<p class="sd-card-text">Select</p>
+  <ul style="list-style-type: '\2611'; margin-left: 35px;">
+    <li style="list-style-type: '\2611'; padding-left: 5px;">Enable file system caching</li>
+  </ul>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Configuring experimental options<br><br></div>
+  <ul class="deselect">
+    <li class="deselect"><b>Deselect all</b></li>
+  </ul>
+  <br><br>
+</div>
+</div>
+</div>
+</div>
+</details><br>
+<br>
+</section>
+</section>
+<section id="installations-that-propagate-to-wsl-kernels">
+<h2><a class="toc-backref" href="#contents" role="doc-backlink">Installations that Propagate to WSL Kernels</a><a class="headerlink" href="#installations-that-propagate-to-wsl-kernels" title="Link to this heading">¶</a></h2>
+<section id="docker-desktop">
+<h3><a class="toc-backref" href="#contents" role="doc-backlink">Docker Desktop</a><a class="headerlink" href="#docker-desktop" title="Link to this heading">¶</a></h3>
+<p>Unload <a class="reference external" href="https://www.docker.com/products/docker-desktop/">Docker Desktop</a>, subsequently install.  During installation</p>
+<ul class="contains-task-list simple">
+<li class="task-list-item"><p><input class="task-list-item-checkbox" checked="checked" disabled="disabled" type="checkbox"> Use WSL-2 instead of Hyper-V  [<strong>Select</strong>]</p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Add shortcut to desktop [<strong>Deselect</strong>]</p></li>
+</ul>
+<br>
+</section>
+<section id="intellij-idea-ultimate">
+<h3><a class="toc-backref" href="#contents" role="doc-backlink">IntelliJ IDEA Ultimate</a><a class="headerlink" href="#intellij-idea-ultimate" title="Link to this heading">¶</a></h3>
+<p>Unload <a class="reference external" href="https://www.jetbrains.com/idea/download/?section=windows">IntelliJ IDEA Ultimate</a>, subsequently install.  During the product’s initial launch, a licence screen appears.  Activate your licence via one of the presented methods, e.g., via an <strong>Activation Code</strong>.</p>
+<br>
+</section>
+<section id="vs-code">
+<h3><a class="toc-backref" href="#contents" role="doc-backlink">VS Code</a><a class="headerlink" href="#vs-code" title="Link to this heading">¶</a></h3>
+<p>Study the <a class="reference external" href="https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode">Visual Studio CODE</a> installation <a class="reference external" href="https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode#install-vs-code-and-the-wsl-extension">notes</a>.  Whilst installing VS Code</p>
+<ul class="disc">
+  <li class="disc">Select Destination Location (This is about the installation directory)</li>
+  <li class="disc">Select Start Menu Folder (Leave default text)</li>
+  <li class="disc">Select Additional Tasks (Ensure `Add to PATH (requires <i>shell</i> restart)` is selected.  Deselect everything else.)</li>
+</ul>
+<p>Subsequently, and after launching VS Code, install the <a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack">Remote Development</a> extension pack via the extension button.</p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</section>
+</section>
+</section>
+
+
+					 </div>
+					 
+					</div>
+					<footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="gpu.html" class="btn btn-neutral float-right" title="Graphics Processing Unit, etc." accesskey="n" rel="next">Next &nbsp;<b>⟶</b></a>
+      
+      
+        <a href="linux.html" class="btn btn-neutral float-left" title="Fundamental Software: Linux" accesskey="p" rel="prev"><b>⟵</b>&nbsp; Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, The Artificial Intelligence Unit.</p>
+  </div>
+	  <br>
+      
+      
+      
+      Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+      
+      <a href="https://github.com/revitron/revitron-sphinx-theme">theme</a>
+      
+      provided by <a href="https://github.com/revitron">Revitron</a>. 
+
+</footer>
+				</div>
+			</div>
+
+		</section>
+
+	</div>
+	
+
+	<script type="text/javascript">
+			jQuery(function () {
+					SphinxRtdTheme.Navigation.enable(true);
+			});
+	</script> 
+
+ 
+</body>	
+</html>
