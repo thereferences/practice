@@ -181,7 +181,7 @@ Sometimes it might be necessary to downgrade NVIDIA CUDA Toolkit after upgrading
 <ul class="disc">
   <li class="disc">Uninstall 12.5 / All NVIDIA Components: Restart the machine as many times as necessary.</li>
   <li class="disc">Downgrade to 12.2; <a href="https://developer.nvidia.com/cuda-12-2-0-download-archive?target_os=Windows&target_arch=x86_64&target_version=11">download</a>.</li>
-  <li class="disc">Install<ul class="circle"><li class="circle">Opt for custom installation: deselect visual studio integration.</li></ul></li>
+  <li class="disc">Install<ul class="circle"><li class="circle"><b>Opt for custom installation</b>: deselect visual studio integration.</li></ul></li>
   <li class="disc">Check environment variable paths</li>
   <li class="disc">Re-start</li>
   <li class="disc">Re-configure linux container toolkit settings: <a href="https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html#configuring-docker">Configuring Docker</a></li>
