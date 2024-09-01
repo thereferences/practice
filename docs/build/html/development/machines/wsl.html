@@ -1,426 +1,211 @@
 
+	
+
 <!DOCTYPE html>
+<html class="writer-html5 light" lang="en" >
+<head>
+	<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="Linux & Windows Subsystem for Linux (WSL)" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="development/machines/wsl.html" />
+<meta property="og:site_name" content="&nbsp; <span style=&quot;vertical-align: middle; padding-top: 0; padding-bottom: 20px&quot;>Code of Practice</span>" />
+<meta property="og:description" content="Using a Linux Kernel requires(a) activating WSL, and(b) installing a Linux distribution. The auto-script approach sometimes fails. This section outlines the semi-manual approach. For reference purp..." />
+<meta name="description" content="Using a Linux Kernel requires(a) activating WSL, and(b) installing a Linux distribution. The auto-script approach sometimes fails. This section outlines the semi-manual approach. For reference purp..." />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Linux &amp; Windows Subsystem for Linux (WSL) &mdash; CODE OF PRACTICE</title>
+		  <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+		  <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=cf2327ab" />
+		  <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+		  <link rel="stylesheet" type="text/css" href="https://unpkg.com/tabulator-tables/dist/css/tabulator.min.css" />
+		  <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=5ae659b7" />
+		  <link rel="stylesheet" type="text/css" href="../../_static/css/tooltips.css?v=8085b9f4" />
+		  <link rel="stylesheet" type="text/css" href="../../_static/css/slides.css?v=6ae19c5b" />
+		  <link rel="stylesheet" type="text/css" href="../../_static/css/generic.css?v=30c2a153" />
+		  <link rel="stylesheet" type="text/css" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+		  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/themes/prism.min.css" />
+
+	
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+		<link rel="canonical" href="https://thereferences.github.io/systems/development/machines/wsl.html"/>
+			
+				<script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+					<script src="../../_static/jquery.js?v=5d32c60e"></script>
+					<script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+					<script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+					<script src="../../_static/doctools.js?v=9a2dae69"></script>
+					<script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+					<script src="../../_static/design-tabs.js?v=f930bc37"></script>
+					<script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+					<script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+					<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+					<script src="https://code.highcharts.com/stock/highstock.js"></script>
+					<script src="https://code.highcharts.com/stock/modules/data.js"></script>
+					<script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+					<script src="https://code.highcharts.com/stock/modules/export-data.js"></script>
+					<script src="https://code.highcharts.com/stock/modules/accessibility.js"></script>
+					<script src="https://code.highcharts.com/highcharts.js"></script>
+					<script src="https://code.highcharts.com/modules/networkgraph.js"></script>
+					<script src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
+					<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+					<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js"></script>
+					<script src="../../_static/js/slides.js?v=1f70e8f7"></script>
+			
+			
+			<script src="../../_static/js/theme.js"></script>
+		<link rel="index" title="Index" href="../../genindex.html" />
+		<link rel="search" title="Search" href="../../search.html" />
+		<link rel="next" title="Fundamental Software: Linux" href="linux.html" />
+		<link rel="prev" title="Machines" href="../machines.html" /> 
+</head>
+<body class="wy-body-for-nav">
 
 
-<html lang="en" data-content_root="../../" >
+	 
+	<div class="wy-grid-for-nav">
+		
+		<nav data-toggle="wy-nav-shift" class="wy-nav-side">
+		  <div class="wy-side-scroll">
+			<div class="wy-side-nav-search" >
 
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <title>Linux &amp; Windows Subsystem for Linux (WSL) &#8212; Code of Practice v0.1.8 documentation</title>
-  
-  
-  
-  <script data-cfasync="false">
-    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
-  </script>
-  
-  <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
-
-  
-  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
-
-    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
-    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=384b581d" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=87e54e7c" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/figures.css?v=28bf0955" />
-    <link rel="stylesheet" type="text/css" href="https://unpkg.com/tabulator-tables/dist/css/tabulator.min.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.min.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/slides.css?v=6ae19c5b" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/generic.css?v=e96dd23a" />
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/themes/prism.min.css" />
-  
-  <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341" />
-  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=3ee479438cf8b5e0d341"></script>
-
-    <script src="../../_static/documentation_options.js?v=0bc63189"></script>
-    <script src="../../_static/doctools.js?v=9a2dae69"></script>
-    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script src="../../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
-    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'development/machines/wsl';</script>
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-    <script src="https://code.highcharts.com/stock/highstock.js"></script>
-    <script src="https://code.highcharts.com/stock/modules/data.js"></script>
-    <script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
-    <script src="https://code.highcharts.com/stock/modules/export-data.js"></script>
-    <script src="https://code.highcharts.com/stock/modules/accessibility.js"></script>
-    <script src="https://code.highcharts.com/highcharts.js"></script>
-    <script src="https://code.highcharts.com/modules/networkgraph.js"></script>
-    <script src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.pkgd.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js"></script>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Fundamental Software: Linux" href="linux.html" />
-    <link rel="prev" title="Machines" href="../machines.html" />
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="en"/>
-  </head>
-  
-  
-  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
-
-  
-  
-  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
-  
-  <div id="pst-scroll-pixel-helper"></div>
-  
-  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
-
-  
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-primary-sidebar-checkbox"/>
-  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
-  
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-secondary-sidebar-checkbox"/>
-  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
-  
-  <div class="search-button__wrapper">
-    <div class="search-button__overlay"></div>
-    <div class="search-button__search-container">
-<form class="bd-search d-flex align-items-center"
-      action="../../search.html"
-      method="get">
-  <i class="fa-solid fa-magnifying-glass"></i>
-  <input type="search"
-         class="form-control"
-         name="q"
-         id="search-input"
-         placeholder="Search..."
-         aria-label="Search..."
-         autocomplete="off"
-         autocorrect="off"
-         autocapitalize="off"
-         spellcheck="false"/>
-  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form></div>
-  </div>
-
-  <div class="pst-async-banner-revealer d-none">
-  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+			  
+			  
+			  <a href="../../index.html" class="icon icon-home">
+				&nbsp; <span style="vertical-align: middle; padding-top: 0; padding-bottom: 20px">Code of Practice</span>
+			  </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
 </div>
-
-  
-    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
-    </header>
-  
-
-  <div class="bd-container">
-    <div class="bd-container__inner bd-page-width">
-      
-      
-      
-      <div class="bd-sidebar-primary bd-sidebar">
-        
-
-  
-  <div class="sidebar-header-items sidebar-primary__section">
-    
-    
-    
-    
-  </div>
-  
-    <div class="sidebar-primary-items__start sidebar-primary__section">
-        <div class="sidebar-primary-item">
-
-  
-
-<a class="navbar-brand logo" href="../../index.html">
-  
-  
-  
-  
-  
-  
-    <p class="title logo__title">Code of Practice v0.1.8 documentation</p>
-  
-</a></div>
-        <div class="sidebar-primary-item">
-
- <script>
- document.write(`
-   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <span class="search-button__default-text">Search</span>
-    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-   </button>
- `);
- </script></div>
-        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
-    <div class="bd-toc-item navbar-nav active">
-        
-        <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1">
-                <a class="reference internal" href="../../index.html">
-                    CODE OF PRACTICE
-                </a>
-            </li>
-        </ul>
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Services</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../../services/mlp.html">For Machine Learning Dependent Projects</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../services/algorithms.html">Algorithms Inquiries</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../services/mle.html">Machine Learning Engineering</a></li>
+			</div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+				  <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../about/about.html">About</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Technologies &amp; Development Practices</span></p>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../background.html">Background</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../integration.html">Continuous Integration, Delivery, &amp; Deployment</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../integration/ic.html">Images &amp; Containers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../integration/resources.html">Resources</a></li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../services/services.html">Services</a></li>
 </ul>
-</details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../cloud.html">Cloud Platform</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../cloud/architectures.html">Amazon Web Services &amp; Solution Architectures</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../cloud/impact.html">Impact Assessment</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../cloud/risks.html">Risks &amp; Mitigation Policies</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../cloud/threats.html">Threat Actors</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../development.html">Technologies &amp; Development Practices</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../cloud.html">Cloud Platform</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../machines.html">Machines</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Linux &amp; Windows Subsystem for Linux (WSL)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="linux.html">Fundamental Software: Linux</a></li>
+<li class="toctree-l3"><a class="reference internal" href="windows.html">Fundamental Software: Windows</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gpu.html">Graphics Processing Unit, etc.</a></li>
 </ul>
-</details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../languages.html">Languages &amp; Programming</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../languages/python.html">Python</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../languages/scala.html">Scala</a></li>
-</ul>
-</details></li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="../machines.html">Machines</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Linux &amp; Windows Subsystem for Linux (WSL)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="linux.html">Fundamental Software: Linux</a></li>
-<li class="toctree-l2"><a class="reference internal" href="windows.html">Fundamental Software: Windows</a></li>
-<li class="toctree-l2"><a class="reference internal" href="gpu.html">Graphics Processing Unit, etc.</a></li>
-</ul>
-</details></li>
-</ul>
-
-    </div>
-</nav></div>
-    </div>
-  
-  
-  <div class="sidebar-primary-items__end sidebar-primary__section">
-  </div>
-  
-  <div id="rtd-footer-container"></div>
-
-
-      </div>
-      
-      <main id="main-content" class="bd-main" role="main">
-        
-        
-
-<div class="sbt-scroll-pixel-helper"></div>
-
-          <div class="bd-content">
-            <div class="bd-article-container">
-              
-              <div class="bd-header-article d-print-none">
-<div class="header-article-items header-article__inner">
-  
-    <div class="header-article-items__start">
-      
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-  <span class="fa-solid fa-bars"></span>
-</label></div>
-      
-    </div>
-  
-  
-    <div class="header-article-items__end">
-      
-        <div class="header-article-item">
-
-<div class="article-header-buttons">
-
-
-
-
-
-<div class="dropdown dropdown-download-buttons">
-  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
-    <i class="fas fa-download"></i>
-  </button>
-  <ul class="dropdown-menu">
-      
-      
-      
-      <li><a href="../../_sources/development/machines/wsl.md" target="_blank"
-   class="btn btn-sm btn-download-source-button dropdown-item"
-   title="Download source file"
-   data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  <i class="fas fa-file"></i>
-  </span>
-<span class="btn__text-container">.md</span>
-</a>
 </li>
-      
-      
-      
-      
-      <li>
-<button onclick="window.print()"
-  class="btn btn-sm btn-download-pdf-button dropdown-item"
-  title="Print to PDF"
-  data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  <i class="fas fa-file-pdf"></i>
-  </span>
-<span class="btn__text-container">.pdf</span>
-</button>
-</li>
-      
-  </ul>
-</div>
-
-
-
-
-<button onclick="toggleFullScreen()"
-  class="btn btn-sm btn-fullscreen-button"
-  title="Fullscreen mode"
-  data-bs-placement="bottom" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  <i class="fas fa-expand"></i>
-  </span>
-
-</button>
-
-
-
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
-  </button>
-`);
-</script>
-
-
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-  </button>
-`);
-</script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</label>
-</div></div>
-      
-    </div>
-  
-</div>
-</div>
-              
-              
-
-<div id="jb-print-docs-body" class="onlyprint">
-    <h1>Linux & Windows Subsystem for Linux (WSL)</h1>
-    <!-- Table of contents -->
-    <div id="print-main-content">
-        <div id="jb-print-toc">
-            
-            <div>
-                <h2> PRACTICE </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#activate-windows-subsystem-for-linux">Activate Windows Subsystem for Linux</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-the-virtual-machine-feature-via-powershell-administrator-mode">Enable the virtual machine feature via PowerShell; administrator mode.</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#linux-kernel-update-package">Linux Kernel Update Package</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#download-install-a-linux-distribution">Download &amp; Install a Linux Distribution</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#commands">Commands</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integration.html">Continuous Integration, Delivery, &amp; Deployment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../languages.html">Languages &amp; Programming</a></li>
 </ul>
-            </nav>
-        </div>
-    </div>
-</div>
+</li>
+</ul>
 
-              
-                
-<div id="searchbox"></div>
-                <article class="bd-article">
-                  
-  <br>
-<section class="tex2jax_ignore mathjax_ignore" id="linux-windows-subsystem-for-linux-wsl">
-<h1>Linux &amp; Windows Subsystem for Linux (WSL)<a class="headerlink" href="#linux-windows-subsystem-for-linux-wsl" title="Link to this heading">#</a></h1>
-<p>Using a Linux requires (a) activating WSL, and (b) installing a Linux distribution.  The auto-script approach sometimes
+			</div>
+		  </div>
+		</nav>
+
+		<section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+				  <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+				  <a href="../../index.html">&nbsp; <span style="vertical-align: middle; padding-top: 0; padding-bottom: 20px">Code of Practice</span></a>
+			  </nav>
+
+
+			<div class="wy-nav-content">
+				
+				<div class="rst-content">
+				
+					
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+	<ul class="wy-breadcrumbs">
+		
+			
+			<li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+			
+				<li class="breadcrumb-item"><a href="../development.html">Technologies &amp; Development Practices</a> ⁄&nbsp;</li>
+			
+				<li class="breadcrumb-item"><a href="../machines.html">Machines</a> ⁄&nbsp;</li>
+			
+			 <li class="breadcrumb-item active">Linux &amp; Windows Subsystem for Linux (WSL)</li>
+			
+		
+		  <li class="wy-breadcrumbs-aside">
+				  <a href="https://github.com/thereferences/practice/blob/develop/docs/source/development/machines/wsl.md" class="fa fa-github"></a>
+		  </li>
+	</ul>
+	<hr/>
+
+</div>
+					<div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+					 <div itemprop="articleBody">
+						
+  <section class="tex2jax_ignore mathjax_ignore" id="linux-windows-subsystem-for-linux-wsl">
+<h1>Linux &amp; Windows Subsystem for Linux (WSL)<a class="headerlink" href="#linux-windows-subsystem-for-linux-wsl" title="Link to this heading">¶</a></h1>
+<p>Using a Linux Kernel requires <strong>(a)</strong> activating WSL, and <strong>(b)</strong> installing a Linux distribution.  The auto-script approach sometimes
 fails.  This section outlines the semi-manual approach.  For reference purposes:</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://learn.microsoft.com/en-us/windows/wsl/install">Auto</a></p></li>
-<li><p><a class="reference external" href="https://learn.microsoft.com/en-us/windows/wsl/install-manual#step-2---check-requirements-for-running-wsl-2">Manual</a></p></li>
+<ul class="disc">
+<li class="disc"><a href="https://learn.microsoft.com/en-us/windows/wsl/install" target="_blank">Auto</a></li>
+<li class="disc"><a href="https://learn.microsoft.com/en-us/windows/wsl/install-manual#step-2---check-requirements-for-running-wsl-2" target="_blank">Manual</a></li>
 </ul>
 <br>
+<br>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Table of Contents</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<nav class="contents local" id="contents">
+<ul class="simple">
+<li><p class="sd-card-text"><a class="reference internal" href="#activate-windows-subsystem-for-linux" id="id1">Activate Windows Subsystem for Linux</a></p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="#enable-the-virtual-machine-feature-via-powershell-administrator-mode" id="id2">Enable the virtual machine feature via PowerShell; administrator mode.</a></p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="#linux-kernel-update-package" id="id3">Linux Kernel Update Package</a></p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="#download-install-a-linux-distribution" id="id4">Download &amp; Install a Linux Distribution</a></p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="#commands" id="id5">Commands</a></p></li>
+</ul>
+</nav>
+</div>
+</details><br>
 <section id="activate-windows-subsystem-for-linux">
-<h2>Activate Windows Subsystem for Linux<a class="headerlink" href="#activate-windows-subsystem-for-linux" title="Link to this heading">#</a></h2>
+<h2><a class="toc-backref" href="#contents" role="doc-backlink">Activate Windows Subsystem for Linux</a><a class="headerlink" href="#activate-windows-subsystem-for-linux" title="Link to this heading">¶</a></h2>
 <p>The activation steps are</p>
 <blockquote>
 <div><p>Control Panel <span class="math notranslate nohighlight">\(\rightarrow\)</span> Uninstall a program <span class="math notranslate nohighlight">\(\rightarrow\)</span> Turn Windows features on or off <span class="math notranslate nohighlight">\(\rightarrow\)</span> Windows Subsystem for Linux.</p>
 </div></blockquote>
-<br>
 <p>Subsequently, re-start the machine.</p>
 <br>
 </section>
 <section id="enable-the-virtual-machine-feature-via-powershell-administrator-mode">
-<h2>Enable the virtual machine feature via PowerShell; administrator mode.<a class="headerlink" href="#enable-the-virtual-machine-feature-via-powershell-administrator-mode" title="Link to this heading">#</a></h2>
+<h2><a class="toc-backref" href="#contents" role="doc-backlink">Enable the virtual machine feature via PowerShell; administrator mode.</a><a class="headerlink" href="#enable-the-virtual-machine-feature-via-powershell-administrator-mode" title="Link to this heading">¶</a></h2>
 <p>For details visit <a class="reference external" href="https://learn.microsoft.com/en-us/windows/wsl/install-manual#step-3---enable-virtual-machine-feature">enable virtual machine feature</a>.</p>
-<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="n">dism</span><span class="p">.</span><span class="n">exe</span> <span class="p">/</span><span class="n">online</span> <span class="p">/</span><span class="nb">enable-feature</span> <span class="p">/</span><span class="n">featurename</span><span class="p">:</span><span class="n">VirtualMachinePlatform</span> <span class="p">/</span><span class="n">all</span> <span class="p">/</span><span class="n">norestart</span>
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span>  <span class="n">dism</span><span class="p">.</span><span class="n">exe</span> <span class="p">/</span><span class="n">online</span> <span class="p">/</span><span class="nb">enable-feature</span> 
+    <span class="p">/</span><span class="n">featurename</span><span class="p">:</span><span class="n">VirtualMachinePlatform</span> <span class="p">/</span><span class="n">all</span> <span class="p">/</span><span class="n">norestart</span>
 </pre></div>
 </div>
 <br>
 </section>
 <section id="linux-kernel-update-package">
-<h2>Linux Kernel Update Package<a class="headerlink" href="#linux-kernel-update-package" title="Link to this heading">#</a></h2>
+<h2><a class="toc-backref" href="#contents" role="doc-backlink">Linux Kernel Update Package</a><a class="headerlink" href="#linux-kernel-update-package" title="Link to this heading">¶</a></h2>
 <blockquote>
 <div><p><a class="reference external" href="https://learn.microsoft.com/en-us/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package">Download and install</a> the package.</p>
 </div></blockquote>
 <br>
 </section>
 <section id="download-install-a-linux-distribution">
-<h2>Download &amp; Install a Linux Distribution<a class="headerlink" href="#download-install-a-linux-distribution" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p><a class="reference external" href="https://learn.microsoft.com/en-us/windows/wsl/install-manual#downloading-distributions">Download</a></p></li>
-<li><p>To install, run <code class="docutils literal notranslate"><span class="pre">Add-AppxPackage</span> <span class="pre">.\app_name.appx</span></code></p></li>
-<li><p>Double-click on the installed app, which will exists within the applications’ menu, to activate it.  You will be asked to set up credentials.</p></li>
+<h2><a class="toc-backref" href="#contents" role="doc-backlink">Download &amp; Install a Linux Distribution</a><a class="headerlink" href="#download-install-a-linux-distribution" title="Link to this heading">¶</a></h2>
+<ul class="disc">
+<li class="disc"><a href="https://learn.microsoft.com/en-us/windows/wsl/install-manual#downloading-distributions" target="_blank">Download</a></li>
+<li class="disc">To install, run `Add-AppxPackage .\app_name.appx`</li>
+<li class="disc">Double-click on the installed app, which will exists within the applications' menu, to activate it.  You will be asked to set up credentials.</li>
 </ul>
 <br>
 </section>
 <section id="commands">
-<h2>Commands<a class="headerlink" href="#commands" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p><a class="reference external" href="https://learn.microsoft.com/en-us/windows/wsl/basic-commands">Basic Commands</a></p></li>
-</ul>
+<h2><a class="toc-backref" href="#contents" role="doc-backlink">Commands</a><a class="headerlink" href="#commands" title="Link to this heading">¶</a></h2>
+<blockquote>
+<div><p><a href="https://learn.microsoft.com/en-us/windows/wsl/basic-commands" target="_blank">Basic Commands</a></p>
+</div></blockquote>
 <br>
 <br>
 <br>
@@ -433,107 +218,51 @@ fails.  This section outlines the semi-manual approach.  For reference purposes:
 </section>
 
 
-                </article>
-              
-
-              
-              
-              
-              
-                <footer class="prev-next-footer d-print-none">
-                  
-<div class="prev-next-area">
-    <a class="left-prev"
-       href="../machines.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Machines</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="linux.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Fundamental Software: Linux</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
-</div>
-                </footer>
-              
-            </div>
-            
-            
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> PRACTICE
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#activate-windows-subsystem-for-linux">Activate Windows Subsystem for Linux</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-the-virtual-machine-feature-via-powershell-administrator-mode">Enable the virtual machine feature via PowerShell; administrator mode.</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#linux-kernel-update-package">Linux Kernel Update Package</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#download-install-a-linux-distribution">Download &amp; Install a Linux Distribution</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#commands">Commands</a></li>
-</ul>
-  </nav></div>
-
-</div></div>
-              
-            
-          </div>
-          <footer class="bd-footer-content">
-            
-<div class="bd-footer-content__inner container">
+					 </div>
+					 
+					</div>
+					<footer>
   
-  <div class="footer-item">
-    
-<p class="component-author">
-By @greyhypotheses
-</p>
-
-  </div>
-  
-  <div class="footer-item">
-    
-
-  <p class="copyright">
-    
-      © Copyright 2024, The Artificial Intelligence Unit.
-      <br/>
-    
-  </p>
-
-  </div>
-  
-  <div class="footer-item">
-    
-  </div>
-  
-  <div class="footer-item">
-    
-  </div>
-  
-</div>
-          </footer>
-        
-
-      </main>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="linux.html" class="btn btn-neutral float-right" title="Fundamental Software: Linux" accesskey="n" rel="next">Next &nbsp;<b>⟶</b></a>
+      
+      
+        <a href="../machines.html" class="btn btn-neutral float-left" title="Machines" accesskey="p" rel="prev"><b>⟵</b>&nbsp; Previous</a>
+      
     </div>
-  </div>
   
-  <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341"></script>
 
-  <footer class="bd-footer">
-  </footer>
-  </body>
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, The Artificial Intelligence Unit.</p>
+  </div>
+	  <br>
+      
+      
+      
+      Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+      
+      <a href="https://github.com/revitron/revitron-sphinx-theme">theme</a>
+      
+      provided by <a href="https://github.com/revitron">Revitron</a>. 
+
+</footer>
+				</div>
+			</div>
+
+		</section>
+
+	</div>
+	
+
+	<script type="text/javascript">
+			jQuery(function () {
+					SphinxRtdTheme.Navigation.enable(true);
+			});
+	</script> 
+
+ 
+</body>	
 </html>

@@ -1,8 +1,8 @@
-name: transcribe
+name: design
 channels:
   - conda-forge
 dependencies:
-  - python>=3.12.*
+  - python==3.11.9
   - pip
   - pip:
       - -r .devcontainer/requirements.txt

@@ -14,13 +14,13 @@ The container image depends on
 The requirements file lists the packages/libraries required for development.  Next, an image is built via the command
 
 ```shell
-docker build . --file .devcontainer/Dockerfile --tag transcribe
+docker build . --file .devcontainer/Dockerfile --tag design
 ```
 
 Subsequently, a development container is initialised via the command
 
 ```shell
-docker run --rm -i -t -p 127.0.0.1:10000:8888 -w /app --mount type=bind,src="$(pwd)",target=/app transcribe
+docker run --rm -i -t -p 127.0.0.1:10000:8888 -w /app --mount type=bind,src="$(pwd)",target=/app design
 ```
 
 <br>
@@ -61,6 +61,9 @@ sphinx-build -E -b html docs/source docs/build/html
 
 * [Sphinx](https://www.sphinx-doc.org/en/master/index.html)
   * [Sphinx Directives](https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html)
+  * [Local Table of Contents: `backlinks`](https://myst-parser.readthedocs.io/en/latest/docutils.html#single-page-builds)
+  * [Content](https://myst-parser.readthedocs.io/en/latest/syntax/organising_content.html)
+  * [code blocks](https://sublime-and-sphinx-guide.readthedocs.io/en/latest/code_blocks.html)
 * [reStructuredText](https://docutils.sourceforge.io/rst.html)
   * [Sphinx reStructuredText Primer](https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html)
   * [reStructuredText Card](https://bashtage.github.io/sphinx-material/rst-cheatsheet/rst-cheatsheet.html)
