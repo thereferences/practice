@@ -22,7 +22,7 @@ Code of Practice
 
    <br>
 
-   <img class="normal" src="https://img.shields.io/github/v/tag/thereferences/systems?label=Release&style=flat-square&labelColor=292b2e&color=292b2e" alt="SHIELD" />
+   <img class="normal" src="https://img.shields.io/github/v/tag/thereferences/practice?label=Release&style=flat-square&labelColor=292b2e&color=292b2e" alt="SHIELD" />
 
 .. raw:: html
 
