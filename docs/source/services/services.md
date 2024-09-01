@@ -1,6 +1,6 @@
 # Services
 
-The team's current focus.
+Focus:
 
 ```{toctree}
 :maxdepth: 1
