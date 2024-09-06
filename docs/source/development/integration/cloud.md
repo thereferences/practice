@@ -5,10 +5,11 @@ After connecting to an Amazon Web Services (AWS) account, directly or via an ide
 
 ## AWS CLI
 
+### Key Parameters & Arguments
 
 <img src="../../_static/images/aws_access_portal.png" alt="Access Portal">
 
-Foremost, the key values of the `aws configure` parameters are set via the directives below.  Use the image above, and below, to determine most of the parameter values, i.e., the values in brackets. 
+The key values of the `aws configure` parameters are set via the directives below.  Use the image above, and below, to determine most of the parameter values, i.e., the values in brackets. 
 
 ```shell
 aws configure set sso_session {sso.session.string} --profile default
@@ -20,7 +21,6 @@ aws configure set region {region} --profile default
 aws configure set output {output.string} --profile default
 ```
 
-
 Notes: 
 * The value of the `sso_session` parameter is user dependent.  It is a string that names a session, e.g., to name a session `alpha`
   > aws configure set sso_session **alpha** --profile default
@@ -28,8 +28,22 @@ Notes:
 * `aws configure` output [options](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html#cli-config-output).  Example
   > aws configure set output **json** --profile default
 
+<br>
+<br>
 
+### Single Sign On (SSO)
+
+The image above has a link names Access keys; each account within a portal page will have its own access keys link.  Within your AWS access portal, click on the Access keys link of the account of interest.  A pop-up, similar to   
+
+<img src="../../_static/images/aws_access_credentials.png" alt="Access Credentials">
+
+
+Type
+
+```shell
 aws configure sso
+```
+
 
 SSO session name [sso.session.string]: {sso.session.string}
 SSO start URL [None]: {url}
