@@ -1,7 +1,10 @@
 
 # Local, GitHub, Amazon
 
-After connecting to an Amazon Web Services (AWS) account directly or via an identity service, the `AWS access portal` screen appears.  The details herein are for ...
+After connecting to an Amazon Web Services (AWS) account, directly or via an identity service, the `AWS access portal` screen appears.  The details therein are critical to setting up programmatic, and continuous integation, access to AWS directly, and via GitHub; we will require more details later.
+
+## AWS CLI
+
 
 <img src="../../_static/images/aws_access_portal.png" alt="Access Portal">
 
