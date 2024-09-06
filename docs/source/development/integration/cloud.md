@@ -3,18 +3,27 @@
 
 After connecting to an Amazon Web Services (AWS) account directly or via an identity service, the `AWS access portal` screen appears.  The details herein are for ...
 
-
 <img src="../../_static/images/aws_access_portal.png" alt="Access Portal">
 
-Foremost, the key values of the `aws configure` parameters are set via the directives below.  Use the image above, and below, to determine most of the parameter values; the values enclosed in brackets. 
+Foremost, the key values of the `aws configure` parameters are set via the directives below.  Use the image above, and below, to determine most of the parameter values, i.e., the values in brackets. 
 
+```shell
 aws configure set sso_session {sso.session.string} --profile default
 aws configure set sso_account_id {account id} --profile default
 aws configure set sso_role_name {aws sso role name} --profile default
 aws configure set region {region} --profile default
-aws configure set output {output.string} --profile default
 
-The
+# Refer to the notes below
+aws configure set output {output.string} --profile default
+```
+
+
+Notes: 
+* The value of the `sso_session` parameter is user dependent.  It is a string that names a session, e.g., to name a session `alpha`
+  > aws configure set sso_session **alpha** --profile default
+
+* `aws configure` output [options](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html#cli-config-output).  Example
+  > aws configure set output **json** --profile default
 
 
 aws configure sso
