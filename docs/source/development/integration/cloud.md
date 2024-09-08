@@ -78,13 +78,13 @@ SSO registration scopes [sso:account:access]: sso:account:access
 
 ### Via Command Line
 
-Listing Amazon S3 objects.
+[Listing Amazon S3 objects](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3/ls.html).
 
 ```shell
 aws s3 ls
 ```
 
-Listing the images of an Amazon ECR (Elastic Container Registry) repository of an account.
+[Listing the images](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecr/list-images.html) of an Amazon ECR (Elastic Container Registry) repository of an account.
 
 ```shell
 aws ecr list-images --registry-id {account.identifer} --repository-name {repository.name}
