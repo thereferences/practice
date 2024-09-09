@@ -72,6 +72,16 @@ SSO registration scopes [sso:account:access]: sso:account:access
 ```
 
 <br>
+
+### Hence, Programmatic Single Sign On (SSO)
+
+
+```shell
+aws sso login --profile {profile.name}
+```
+
+
+<br>
 <br>
 
 ## Testing Programmatic Access
