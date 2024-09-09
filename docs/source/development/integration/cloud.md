@@ -1,7 +1,9 @@
 
 # Amazon Web Services
 
-After connecting to an Amazon Web Services (AWS) account, directly or via an identity service, the `AWS access portal` screen appears.  The details therein are critical to setting up programmatic access to AWS directly.
+After connecting to an Amazon Web Services (AWS) account, directly or via an identity service, the **AWS access portal** screen appears.  The details therein are critical to setting up programmatic access to AWS directly.
+
+<br>
 
 :::{dropdown} Table of Contents
 ```{contents}
@@ -17,7 +19,7 @@ After connecting to an Amazon Web Services (AWS) account, directly or via an ide
 
 ### Install AWS CLI
 
-Foremost, install [AWS CLI (Command Line Interface)](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html#getting-started-install-instructions).  If using a machine that has Windows Subsystem for Linux, install `aws cli` within Windows, and relevant Linux Kernels, however all the steps below should be repeated within Windows; all outcomes propagate to Linux Kernels.
+Foremost, install [AWS CLI (Command Line Interface)](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html#getting-started-install-instructions).  If using a machine that has Windows Subsystem for Linux, install **aws cli** within Windows, and relevant Linux Kernels, however all the steps below should be repeated within Windows; all outcomes propagate to Linux Kernels.
 
 <br>
 
@@ -25,27 +27,39 @@ Foremost, install [AWS CLI (Command Line Interface)](https://docs.aws.amazon.com
 
 Via key parameters and arguments.
 
+<br>
+
 <img src="../../_static/images/aws_access_portal.png" alt="Access Portal">
 
-The key values of the `aws configure` parameters are set via the directives below.  Use the image above, and below, to determine most of the parameter values, i.e., the values in brackets. 
+<br>
+
+The key values of the **aws configure** parameters are set via the directives below.  Use the image above, and below, to determine most of the parameter values, i.e., the values in brackets. 
 
 ```shell
 aws configure set sso_session {sso.session.string} --profile default
 aws configure set sso_account_id {account id} --profile default
 aws configure set sso_role_name {aws sso role name} --profile default
 aws configure set region {region} --profile default
-
-# Refer to the notes below
 aws configure set output {output.string} --profile default
 ```
 
-Notes: 
-* The value of the `sso_session` parameter is user dependent.  It is a string that names a session, e.g., to name a session `alpha`
-  > aws configure set sso_session **alpha** --profile default
+Note, the value of the **sso_session** parameter is user dependent.  It is a string that names a session, e.g., to name a session **alpha**
 
-* `aws configure` output [options](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html#cli-config-output).  Example
-  > aws configure set output **json** --profile default
+```shell
+aws configure set sso_session alpha --profile default
+```  
 
+There are a few **output** value [options](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html#cli-config-output), e.g.,  
+
+```shell
+aws configure set output json --profile default
+```
+
+or 
+
+```shell
+aws configure set output yaml --profile default
+```
 
 <br>
 
