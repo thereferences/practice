@@ -64,7 +64,7 @@ aws configure sso
 
 Subsequently, and aided by the image above, answer the questions below
 
-```command
+```
 SSO session name [sso.session.string]: {sso.session.string}
 SSO start URL [None]: {url}
 SSO region [None]: {region}
