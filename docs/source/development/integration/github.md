@@ -22,7 +22,7 @@ Subsequently, create an AWS IAM (Identity & Asset Management) role for GitHub OI
   <li class="disc"><a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-idp_oidc.html#idp_oidc_Create_GitHub" target="_blank">ascertain configuration</a></li>
 </ul>
 
-During the policy step, select a policy, or policies, in relation to the purpose of this role, e.g., for delivering images to Amazon ECR (Elastic Container Registry) ([REF: Point 8](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-idp_oidc.html#idp_oidc_Create))
+During the policy step, select a policy, or policies, in relation to the purpose of the role being created, e.g., for delivering images to Amazon ECR (Elastic Container Registry) ([REF: Point 8](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-idp_oidc.html#idp_oidc_Create))
 
 > ... IAM includes a list of the AWS managed and customer managed policies in your account. Select the policy to use for the permissions policy ...
 
