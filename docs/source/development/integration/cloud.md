@@ -21,7 +21,6 @@ After connecting to an Amazon Web Services (AWS) account, directly or via an ide
 
 Foremost, install [AWS CLI (Command Line Interface)](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html#getting-started-install-instructions).  If using a machine that has Windows Subsystem for Linux, install **aws cli** within Windows, and relevant Linux Kernels, however all the steps below should be repeated within Windows; all outcomes propagate to Linux Kernels.
 
-<br>
 
 ### Basic Configuration
 
@@ -61,16 +60,18 @@ or
 aws configure set output yaml --profile default
 ```
 
-<br>
 
 ### Single Sign On (SSO) Configuration
 
-The image above has a link named `Access keys`; each account within a portal page will have its own `Access keys` link.  Within your AWS access portal, click on the Access keys link of the account of interest.  A pop-up, similar to   
+The image above has a link named **Access keys**; each account within a portal page will have its own **Access keys** link.  Within your AWS access portal, click on the Access keys link of the account of interest.  A pop-up, similar to   
+
+<br>
 
 <img src="../../_static/images/aws_access_credentials.png" alt="Access Credentials">
 
+<br>
 
-Type
+Hence, to configure/set single sign on settings, type
 
 ```shell
 aws configure sso
@@ -85,7 +86,6 @@ SSO region [None]: {region}
 SSO registration scopes [sso:account:access]: sso:account:access
 ```
 
-<br>
 
 ### Hence, Programmatic Single Sign On (SSO)
 
@@ -93,7 +93,6 @@ SSO registration scopes [sso:account:access]: sso:account:access
 ```shell
 aws sso login --profile {profile.name}
 ```
-
 
 <br>
 <br>
@@ -114,7 +113,6 @@ aws s3 ls
 aws ecr list-images --registry-id {account.identifer} --repository-name {repository.name}
 ```
 
-<br>
 
 ### Via Software Programs
 
@@ -122,17 +120,17 @@ aws ecr list-images --registry-id {account.identifer} --repository-name {reposit
 A link is upcoming.
 :::
 
-
 <br>
 <br>
 
 ## References
 
-* <a href="https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-sso.html"><abbr title="Amazon Web Services">AWS</abbr> <abbr title="Command Line Interface">CLI</abbr> with <abbr title="Identity & Access Management">IAM</abbr> Identity Centre</a>
-* [IAM (Identity & Access Management) Roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html)
-* [Amazon Web Services Managed Policies](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/policy-list.html)
-* [Changing or setting a region](https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/select-region.html)
-
+<ul>
+  <li><a href="https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-sso.html" target="_blank"><abbr title="Amazon Web Services">AWS</abbr> <abbr title="Command Line Interface">CLI</abbr> with <abbr title="Identity & Access Management">IAM</abbr> Identity Centre</a></li>
+  <li><a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html" target="_blank">IAM (Identity & Access Management) Roles</a></li>
+  <li><a href="https://docs.aws.amazon.com/aws-managed-policy/latest/reference/policy-list.html" target="_blank">Amazon Web Services Managed Policies</a></li>
+  <li><a href="https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/select-region.html" target="_blank">Changing or setting a region</a></li>
+</ul>
 
 <br>
 <br>
