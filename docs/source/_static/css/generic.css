@@ -160,6 +160,11 @@ img.further {
     margin-left: 65px;
 }
 
+img {
+    margin-bottom: 35px;
+    margin-top: 35px;
+}
+
 
 /* Table */
 table {
