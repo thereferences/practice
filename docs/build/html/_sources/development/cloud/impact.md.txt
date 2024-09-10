@@ -4,6 +4,7 @@ The team does not have a standard workload.  Solutions that it designs, develops
 clients/colleagues. This brief assessment considers a hypothetical, but partially representative, scenario.
 
 <br>
+<br>
 
 :::{dropdown} Table of Contents
 ```{contents}
