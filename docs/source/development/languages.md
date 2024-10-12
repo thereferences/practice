@@ -20,6 +20,7 @@ Important:
             <li class="circle">Container image building and registration features.</li>
         </ul>
     </li>
+    <li class="disc">If using a Windows Subsystem for Linux enabled machine, beware of <a href="https://learn.microsoft.com/en-gb/windows/wsl/setup/environment#file-storage" target="_blank">file storage practices</a>.</li>
 </ul>
 
 <br>
