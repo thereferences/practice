@@ -1,0 +1,236 @@
+
+	
+
+<!DOCTYPE html>
+<html class="writer-html5 light" lang="en" >
+<head>
+	<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="Technologies & Development Practices" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="development/development.html" />
+<meta property="og:site_name" content="&nbsp; <span style=&quot;vertical-align: super; padding-top: 0; padding-bottom: 20px&quot;>Code of Practice</span>" />
+<meta property="og:description" content="Guidelines for Content: Cloud Platform- Amazon Web Services & Solution Architectures, Impact Assessment, Risks & Mitigation Policies, Threat Actors., Machines- Linux & Windows Subsystem for Linux (..." />
+<meta name="description" content="Guidelines for Content: Cloud Platform- Amazon Web Services & Solution Architectures, Impact Assessment, Risks & Mitigation Policies, Threat Actors., Machines- Linux & Windows Subsystem for Linux (..." />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Technologies &amp; Development Practices &mdash; CODE OF PRACTICE</title>
+		  <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+		  <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=cf2327ab" />
+		  <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+		  <link rel="stylesheet" type="text/css" href="https://unpkg.com/tabulator-tables/dist/css/tabulator.min.css" />
+		  <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=5ae659b7" />
+		  <link rel="stylesheet" type="text/css" href="../_static/css/tooltips.css?v=8085b9f4" />
+		  <link rel="stylesheet" type="text/css" href="../_static/css/slides.css?v=6ae19c5b" />
+		  <link rel="stylesheet" type="text/css" href="../_static/css/generic.css?v=868eb141" />
+		  <link rel="stylesheet" type="text/css" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+		  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/themes/prism.min.css" />
+
+	
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+		<link rel="canonical" href="https://thereferences.github.io/systems/development/development.html"/>
+			
+				<script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+					<script src="../_static/jquery.js?v=5d32c60e"></script>
+					<script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+					<script src="../_static/documentation_options.js?v=5929fcd5"></script>
+					<script src="../_static/doctools.js?v=9a2dae69"></script>
+					<script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+					<script src="../_static/design-tabs.js?v=f930bc37"></script>
+					<script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+					<script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+					<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+					<script src="https://code.highcharts.com/stock/highstock.js"></script>
+					<script src="https://code.highcharts.com/stock/modules/data.js"></script>
+					<script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+					<script src="https://code.highcharts.com/stock/modules/export-data.js"></script>
+					<script src="https://code.highcharts.com/stock/modules/accessibility.js"></script>
+					<script src="https://code.highcharts.com/highcharts.js"></script>
+					<script src="https://code.highcharts.com/modules/networkgraph.js"></script>
+					<script src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
+					<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+					<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js"></script>
+					<script src="../_static/js/slides.js?v=1f70e8f7"></script>
+			
+			
+			<script src="../_static/js/theme.js"></script>
+		<link rel="index" title="Index" href="../genindex.html" />
+		<link rel="search" title="Search" href="../search.html" />
+		<link rel="next" title="Cloud Platform" href="cloud.html" />
+		<link rel="prev" title="Machine Learning Engineering Services" href="../services/mle.html" /> 
+</head>
+<body class="wy-body-for-nav">
+
+
+	 
+	<div class="wy-grid-for-nav">
+		
+		<nav data-toggle="wy-nav-shift" class="wy-nav-side">
+		  <div class="wy-side-scroll">
+			<div class="wy-side-nav-search" >
+
+			  
+			  
+			  <a href="../index.html" class="icon icon-home">
+				&nbsp; <span style="vertical-align: super; padding-top: 0; padding-bottom: 20px">Code of Practice</span>
+			  </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+			</div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+				  <ul>
+<li class="toctree-l1"><a class="reference internal" href="../about/about.html">About</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../services/services.html">Services</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Technologies &amp; Development Practices</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cloud.html">Cloud Platform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="machines.html">Machines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="integration.html">Continuous Integration, Delivery, &amp; Deployment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="languages.html">Languages &amp; Programming</a></li>
+</ul>
+</li>
+</ul>
+
+			</div>
+		  </div>
+		</nav>
+
+		<section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+				  <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+				  <a href="../index.html">&nbsp; <span style="vertical-align: super; padding-top: 0; padding-bottom: 20px">Code of Practice</span></a>
+			  </nav>
+
+
+			<div class="wy-nav-content">
+				
+				<div class="rst-content">
+				
+					
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+	<ul class="wy-breadcrumbs">
+		
+			
+			<li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+			
+			 <li class="breadcrumb-item active">Technologies &amp; Development Practices</li>
+			
+		
+		  <li class="wy-breadcrumbs-aside">
+				  <a href="https://github.com/thereferences/practice/blob/develop/docs/source/development/development.md" class="fa fa-github"></a>
+		  </li>
+	</ul>
+	<hr/>
+
+</div>
+					<div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+					 <div itemprop="articleBody">
+						
+  <section class="tex2jax_ignore mathjax_ignore" id="technologies-development-practices">
+<h1>Technologies &amp; Development Practices<a class="headerlink" href="#technologies-development-practices" title="Link to this heading">¶</a></h1>
+<p>Guidelines for</p>
+<ul class="disc">
+  <li class="disc">The design, development, and/or deployment of machine learning components that <b>(a)</b> are in-line with software engineering, i.e., programming, best practices, <b>(b)</b> are secure, <b>(c)</b> are available, reliable, maintainable, and resilient, and <b>(d)</b> seamlessly integrate with overarching products.</li>
+  <li class="disc">Operating, developing, within secure continuous integration, deployment, and delivery settings.</li>
+  <li class="disc">Documentation: We will use Sphinx, and specifically the Sphinx Revitron Theme; <a href="https://github.com/thetemplates/python-sphinx-illustration" target="_blank">template</a>.</li>
+</ul>
+<br>
+<br>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Content</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="cloud.html">Cloud Platform</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cloud/architectures.html">Amazon Web Services &amp; Solution Architectures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cloud/impact.html">Impact Assessment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cloud/risks.html">Risks &amp; Mitigation Policies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cloud/threats.html">Threat Actors</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="machines.html">Machines</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="machines/wsl.html">Linux &amp; Windows Subsystem for Linux (WSL)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="machines/linux.html">Fundamental Software: Linux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="machines/windows.html">Fundamental Software: Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="machines/gpu.html">Graphics Processing Unit, etc.</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="integration.html">Continuous Integration, Delivery, &amp; Deployment</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="integration/cloud.html">Amazon Web Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="integration/github.html">The GitHub Route</a></li>
+<li class="toctree-l2"><a class="reference internal" href="integration/ic.html">Images &amp; Containers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="integration/resources.html">Resources</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="languages.html">Languages &amp; Programming</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="languages/python.html">Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="languages/scala.html">Scala</a></li>
+<li class="toctree-l2"><a class="reference internal" href="languages/shell.html">Shell</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</section>
+
+
+					 </div>
+					 
+					</div>
+					<footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="cloud.html" class="btn btn-neutral float-right" title="Cloud Platform" accesskey="n" rel="next">Next &nbsp;<b>⟶</b></a>
+      
+      
+        <a href="../services/mle.html" class="btn btn-neutral float-left" title="Machine Learning Engineering Services" accesskey="p" rel="prev"><b>⟵</b>&nbsp; Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, The Artificial Intelligence Unit.</p>
+  </div>
+	  <br>
+      
+      
+      
+      Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+      
+      <a href="https://github.com/revitron/revitron-sphinx-theme">theme</a>
+      
+      provided by <a href="https://github.com/revitron">Revitron</a>. 
+
+</footer>
+				</div>
+			</div>
+
+		</section>
+
+	</div>
+	
+
+	<script type="text/javascript">
+			jQuery(function () {
+					SphinxRtdTheme.Navigation.enable(true);
+			});
+	</script> 
+
+ 
+</body>	
+</html>
