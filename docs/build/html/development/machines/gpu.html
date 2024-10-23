@@ -21,7 +21,7 @@
 		  <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=5ae659b7" />
 		  <link rel="stylesheet" type="text/css" href="../../_static/css/tooltips.css?v=8085b9f4" />
 		  <link rel="stylesheet" type="text/css" href="../../_static/css/slides.css?v=6ae19c5b" />
-		  <link rel="stylesheet" type="text/css" href="../../_static/css/generic.css?v=868eb141" />
+		  <link rel="stylesheet" type="text/css" href="../../_static/css/generic.css?v=db3356c6" />
 		  <link rel="stylesheet" type="text/css" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
 		  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/themes/prism.min.css" />
 
@@ -269,7 +269,7 @@
 </section>
 <section id="testing">
 <h4><a class="toc-backref" href="#contents" role="doc-backlink">Testing</a><a class="headerlink" href="#testing" title="Link to this heading">¶</a></h4>
-<p>Foremost, determine the machines CUDA version, i.e.,  {major}.{minor}.{build}, via</p>
+<p>Foremost, determine the machines <span class="tooltip">CUDA<span class="tooltiptext">Compute Unified Device Architecture</span></span> version, i.e.,  {major}.{minor}.{build}, via</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>nvidia-smi
 </pre></div>
 </div>
@@ -282,9 +282,10 @@
 </pre></div>
 </div>
 <p>to create and run a CUDA test command, e.g.,</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker<span class="w"> </span>run<span class="w"> </span>--rm<span class="w"> </span>--gpus<span class="w"> </span>all<span class="w"> </span>nvidia/cuda:12.5.0-base-ubuntu22.04<span class="w"> </span>nvidia-smi
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker<span class="w"> </span>run<span class="w"> </span>--rm<span class="w"> </span>--gpus<span class="w"> </span>all<span class="w"> </span>nvidia/cuda:12.5.1-base-ubuntu22.04<span class="w"> </span>nvidia-smi
 </pre></div>
 </div>
+<p>The <span class="tooltip">CUDA<span class="tooltiptext">Compute Unified Device Architecture</span></span> version must match the machines CUDA version.  Sometimes the required CUDA &amp; Ubuntu versions combination might not exist, alternative &amp; close Ubuntu versions sometimes suffice.</p>
 <br>
 </section>
 <section id="downgrading">

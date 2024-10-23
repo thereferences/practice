@@ -25,12 +25,17 @@
     margin-bottom: 8px;
 }
 
-.wy-side-nav-search {
-    padding: 2.45rem 2.5rem 0 2.5rem;
+.wy-nav-side {
+    width: 19.5rem;
 }
 
 .wy-menu-vertical {
     padding-top: 1.225rem;
+    width: 21rem;
+}
+
+.wy-side-nav-search {
+    padding: 2.45rem 2.5rem 0 2.5rem;
 }
 
 .wy-form {
@@ -229,6 +234,7 @@ dd a, td a, figcaption a {
 p.sd-card-text {
     margin-bottom: 5px;
     margin-top: 5px;
+    font-size: small;
 }
 
 

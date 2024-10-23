@@ -35,7 +35,7 @@ The <a href="https://www.gnu.org/software/wget/manual/wget.html" target="_blank"
 wget --version
 ```
 
-Installing `wget`, `ca-certificates`
+If `wget` does not exist, install it; additionally, install `ca-certificates`:
 
 ```shell
 sudo apt install wget ca-certificates
@@ -49,11 +49,20 @@ sudo apt install wget ca-certificates
 
 ### Installing Java
 
-For more details study [this tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-22-04) by [DigitalOcean](https://www.digitalocean.com/about).  Example:
+For more details study [this tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-22-04) by [DigitalOcean](https://www.digitalocean.com/about).  Example, **pre Ubuntu 24.04 era**:
 
 ```shell
 # jdk & jre
 sudo apt install openjdk-19-jdk-headless
+java --version
+javac --version
+```
+
+For <a href="https://linuxiac.com/how-to-install-java-on-ubuntu-24-04-lts/" target='_blank'>Ubuntu 24.04 LTS (Long Term Supported)</a>
+
+```shell
+# jdk & jre
+sudo apt install default-jdk
 java --version
 javac --version
 ```
@@ -101,13 +110,20 @@ The command `i` starts the edit mode, `ESC` exits the mode, and `:wq` saves; [`v
 
 ## GIT
 
-Update `git` via the `git-core/ppa` <abbr title="Personal Package Archive">PPA</abbr> (Personal Package Archive).
+Update `git` via the `git-core/ppa` <abbr title="Personal Package Archive">PPA</abbr> (Personal Package Archive).  **Pre Ubuntu 24.04 era**:
 
 ```shell
 sudo add-apt-repository ppa:git-core/ppa
 sudo apt update
-sudo apt list --upgradable
 sudo apt install git-all
+```
+
+Case <a href="https://ubuntu.com/blog/canonical-releases-ubuntu-24-04-noble-numbat">Ubuntu 24.04 LTS (Long Term Supported)</a>
+
+```shell
+sudo add-apt-repository ppa:git-core/ppa
+sudo apt update
+sudo apt upgrade
 ```
 
 Subsequently, [set up & configure](https://git-scm.com/book/en/v2/Appendix-C%3A-Git-Commands-Setup-and-Config) `git` ...
