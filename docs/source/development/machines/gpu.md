@@ -136,7 +136,7 @@ Subsequently, restart docker via docker desktop.
 
 #### Testing
 
-Foremost, determine the machines CUDA version, i.e.,  {major}.{minor}.{build}, via
+Foremost, determine the machines <span class="tooltip">CUDA<span class="tooltiptext">Compute Unified Device Architecture</span></span> version, i.e.,  {major}.{minor}.{build}, via
 
 ```bash
 nvidia-smi
@@ -157,8 +157,10 @@ docker run --rm --gpus all nvidia/cuda:{cuda_version}-base-ubuntu{ubuntu_version
 to create and run a CUDA test command, e.g.,
 
 ```bash
-docker run --rm --gpus all nvidia/cuda:12.5.0-base-ubuntu22.04 nvidia-smi
+docker run --rm --gpus all nvidia/cuda:12.5.1-base-ubuntu22.04 nvidia-smi
 ```
+
+The <span class="tooltip">CUDA<span class="tooltiptext">Compute Unified Device Architecture</span></span> version must match the machines CUDA version.  Sometimes the required CUDA & Ubuntu versions combination might not exist, alternative & close Ubuntu versions sometimes suffice.
 
 <br>
 
