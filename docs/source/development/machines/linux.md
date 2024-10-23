@@ -110,13 +110,20 @@ The command `i` starts the edit mode, `ESC` exits the mode, and `:wq` saves; [`v
 
 ## GIT
 
-Update `git` via the `git-core/ppa` <abbr title="Personal Package Archive">PPA</abbr> (Personal Package Archive).
+Update `git` via the `git-core/ppa` <abbr title="Personal Package Archive">PPA</abbr> (Personal Package Archive).  **Pre Ubuntu 24.04 era**:
 
 ```shell
 sudo add-apt-repository ppa:git-core/ppa
 sudo apt update
-sudo apt list --upgradable
 sudo apt install git-all
+```
+
+Case <a href="https://ubuntu.com/blog/canonical-releases-ubuntu-24-04-noble-numbat">Ubuntu 24.04 LTS (Long Term Supported)</a>
+
+```shell
+sudo add-apt-repository ppa:git-core/ppa
+sudo apt update
+sudo apt upgrade
 ```
 
 Subsequently, [set up & configure](https://git-scm.com/book/en/v2/Appendix-C%3A-Git-Commands-Setup-and-Config) `git` ...
