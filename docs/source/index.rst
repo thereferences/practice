@@ -6,7 +6,7 @@ Code of Practice
 
 .. container:: .large
 
-   These pages continuously outline the data science team's operating practices.
+   These pages continuously outline the data science team’s operating practices vis-à-vis designing, developing, and deploying solutions, i.e., development practices.  The pages ensure that we have the same understanding of the team’s practices; the pages will be updated continuously, therefore each team member must study the pages often.
 
 .. raw:: html
 
@@ -14,8 +14,6 @@ Code of Practice
 
 .. container:: .buttons
 
-    `About <about/about.html>`_
-    `Services <services/services.html>`_
     `Development Practices <development/development.html>`_
 
 .. raw:: html
@@ -27,13 +25,6 @@ Code of Practice
 .. raw:: html
 
    <br>
-
-.. toctree::
-   :maxdepth: 2
-   :glob:
-   :hidden:
-
-   about/about
 
 .. toctree::
    :maxdepth: 1
