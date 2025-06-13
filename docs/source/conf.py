@@ -184,7 +184,7 @@ html_context = {
             {'title': '<b>Parent</b>',
              'url': 'https://github.com/theartificialintelligenceunit'},
             {'title': '<b>About</b>',
-             'url': 'about/about.html'}
+             'url': 'about.html'}
         ]
     },
     'display_github': True,
