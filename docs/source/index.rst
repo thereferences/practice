@@ -14,7 +14,7 @@ Code of Practice
 
 .. container:: .buttons
 
-    `Development Practices <development/development.html>`_
+    `Development Practices <about.html>`_
 
 .. raw:: html
 
@@ -31,7 +31,35 @@ Code of Practice
    :glob:
    :hidden:
 
-   development/development
+   about
+
+.. toctree::
+   :maxdepth: 1
+   :glob:
+   :hidden:
+
+   machines
+
+.. toctree::
+   :maxdepth: 1
+   :glob:
+   :hidden:
+
+   cloud
+
+.. toctree::
+   :maxdepth: 1
+   :glob:
+   :hidden:
+
+   integration
+
+.. toctree::
+   :maxdepth: 1
+   :glob:
+   :hidden:
+
+   languages
 
 .. raw:: html
 
