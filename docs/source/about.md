@@ -10,19 +10,6 @@ Continuous documentation of guidelines for
 
 <br>
 <br>
-
-```{toctree}
-:caption: Content
-:maxdepth: 2
-
-cloud
-machines
-integration
-languages
-```
-
-<br>
-<br>
 <br>
 <br>
 
