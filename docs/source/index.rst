@@ -36,14 +36,6 @@ Code of Practice
    about/about
 
 .. toctree::
-   :maxdepth: 2
-   :glob:
-   :hidden:
-   :titlesonly:
-
-   services/services
-
-.. toctree::
    :maxdepth: 1
    :glob:
    :hidden:
