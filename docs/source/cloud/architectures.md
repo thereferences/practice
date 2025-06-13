@@ -173,7 +173,7 @@ href="https://docs.aws.amazon.com/cli/latest/userguide/sso-configure-profile-tok
 
 ### Via Step Functions
 
-<img class="further" width="65%" src="../../../../assets/step-functions.png" alt="Step Functions">
+<img class="further" width="65%" src="../../../assets/step-functions.png" alt="Step Functions">
 
 <figure>
 <figcaption>Deploying an end-to-end solution via <a href="https://docs.aws.amazon.com/step-functions/latest/dg/welcome.
@@ -284,7 +284,7 @@ securty group and subnet settings, (c) notification settings, (d) time-boxing/au
 <br>
 
 :::{dropdown} Afterwards
-```{image} ../../../../assets/step-functions-afterwards.png
+```{image} ../../../assets/step-functions-afterwards.png
 :alt: Step Functions
 :width: 85%
 ```
