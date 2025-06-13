@@ -29,7 +29,7 @@ Via key parameters and arguments.
 
 <br>
 
-<img src="../../_static/images/aws_access_portal.png" alt="Access Portal">
+<img src="../_static/images/aws_access_portal.png" alt="Access Portal">
 
 <br>
 
@@ -68,7 +68,7 @@ The image above has a link named **Access keys**; each account within a portal p
 
 <br>
 
-<img src="../../_static/images/aws_access_credentials.png" alt="Access Credentials">
+<img src="../_static/images/aws_access_credentials.png" alt="Access Credentials">
 
 <br>
 
