@@ -5,16 +5,6 @@
 
 <br>
 
-:::{dropdown} Table of Contents
-```{contents}
-:depth: 3
-:local:
-:backlinks: top
-```
-:::
-
-<br>
-
 ## Key Windows Settings
 
 The references herein outline the fundamental NVIDIA installations **required within Windows 11** that ensure the ability **to run CUDA dependent programs/containers within Windows 11 or a WSL (Windows Subsystem for Linux) kernel**. 
