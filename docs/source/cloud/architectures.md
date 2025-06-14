@@ -8,7 +8,7 @@ time, more Amazon Web Services (AWS) details will be added.
 ## DELIVERING ASSETS
 
 <iframe style="overflow:hidden; width:100%; height:330px; border:none; margin-left:65px" 
-        src="../../../../../assets/beforehand.html"></iframe>
+        src="../../../../assets/beforehand.html"></iframe>
 <figure>
 <figcaption>For more details hover over the icons; a few icons have links to more details.  Assets, e.g., 
 container images, will be automatically & securely delivered to Amazon Web Services (AWS) via GitHub.  The illustration highlights security tools along transfer paths.    [Independent code analysis via <a 
@@ -28,7 +28,7 @@ href="https://github.com/enqueter/pollutants/actions/runs/8443640990/job/2312766
 #### With a public subnet
 
 <iframe style="overflow:hidden; width:100%; height:430px; border:none; margin-left:65px"
-        src="../../../../../assets/ec2.html"></iframe>
+        src="../../../../assets/ec2.html"></iframe>
 <figure>
 <figcaption>In general, containers will be run via the <a href="https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate.html" target="_blank">Fargate</a> option of Amazon's <abbr title="Elastic Container Service">ECS</abbr>. Sometimes, containers will be tested via an EC2 (Elastic Cloud Compute) using a set-up such as this; launched via a launch template.  Within each team member's machine AWS CLI (Command Line Interface) will be configured to use the <a href="https://docs.aws.amazon.com/cli/latest/userguide/sso-configure-profile-token.html#sso-configure-profile-token-auto-sso" target="_blank">AWS Identity & Access Management's identity centre for authentication.
 </a></figcaption>
@@ -133,7 +133,7 @@ href="https://github.com/enqueter/pollutants/actions/runs/8443640990/job/2312766
 #### With a private subnet
 
 <iframe style="overflow:hidden; width:100%; height:485px; border:none; margin-left:65px" 
-        src="../../../../../assets/endpoint-connect.html"></iframe>
+        src="../../../../assets/endpoint-connect.html"></iframe>
 <figure>
 <figcaption>Similar to the previous illustration, using a private subnet requires a slightly different design.  Click on the 
 Private Subnet symbol link to read more.  Within each team member's machine AWS CLI (Command Line Interface) will be configured to use <a 
@@ -287,7 +287,7 @@ securty group and subnet settings, (c) notification settings, (d) time-boxing/au
 
 <iframe
 style="overflow:hidden; width:100%; height:375px; border:none; margin-left:65px"
-src="../../../../../assets/emr.html"></iframe>
+src="../../../../assets/emr.html"></iframe>
 <figure>
 <figcaption>An illustration of an EMR (Elastic MapReduce) cluster set-up.  The set-up includes virtual private cloud 
 settings, security groups, auto-termination settings, and much more.  The team's launch templates repository, i.e., 
