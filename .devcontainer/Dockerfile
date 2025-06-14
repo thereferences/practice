@@ -1,5 +1,5 @@
 # Base Image
-FROM python:3.13-bookworm
+FROM python:3.12.8-bookworm
 
 # If the steps of a `Dockerfile` use files that are different from the `context` file, COPY the
 # file of each step separately; and RUN the file immediately after COPY
