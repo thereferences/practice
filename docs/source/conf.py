@@ -19,15 +19,13 @@ import os
 import sys
 import datetime
 
-# noinspection PyUnresolvedReferences
-import revitron_sphinx_theme
-
 
 '''
 Path
-'''
+
 sys.path.insert(0, os.path.abspath('../..'))
 sys.path.append(os.path.join(os.path.dirname(__file__), '../../revitron'))
+'''
 
 
 '''
@@ -41,7 +39,7 @@ Basic
 '''
 project = '&nbsp; <span style="vertical-align: super; padding-top: 0; padding-bottom: 20px">Code of Practice</span>'
 project_copyright = '{}, The Artificial Intelligence Unit'.format(datetime.datetime.now().year)
-author = '@greyhypotheses'
+author = 'The Artificial Intelligence Unit'
 
 
 '''
@@ -56,10 +54,8 @@ extensions = [
     'sphinx.ext.mathjax',
     'sphinx.ext.viewcode',
     'sphinx.ext.githubpages',
-    'revitron_sphinx_theme',
     'autodocsumm',
     'sphinxcontrib.httpdomain',
-    'sphinx.ext.napoleon',
     'sphinxext.opengraph',
     'sphinxcontrib.jquery',
     'myst_parser',
@@ -88,18 +84,6 @@ myst_enable_extensions = [
 myst_heading_anchors = 4
 
 add_module_names = False
-
-napoleon_google_docstring = True
-napoleon_include_init_with_doc = True
-napoleon_include_private_with_doc = False
-napoleon_include_special_with_doc = True
-napoleon_use_admonition_for_examples = False
-napoleon_use_admonition_for_notes = True
-napoleon_use_admonition_for_references = True
-napoleon_use_ivar = False
-napoleon_use_param = True
-napoleon_use_rtype = True
-napoleon_preprocess_types = False
 
 
 '''
@@ -135,18 +119,13 @@ https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-o
 'style_nav_header_background': '#343131'
 '''
 
-html_theme = 'revitron_sphinx_theme'
+html_theme = 'sphinx_book_theme'
 
 html_theme_options = {
-    'canonical_url': 'https://thereferences.github.io/systems/',
-    'style_external_links': False,
+    'show_prev_next': True,
+    'secondary_sidebar_items': ['page-toc', 'edit-this-page'],
     'collapse_navigation': True,
-    'sticky_navigation': True,
-    'navigation_depth': 3,
-    'includehidden': True,
-    'titles_only': False,
-    'github_url': 'https://www.github.com/thereferences/systems',
-    'logo_mobile': '_static/32x32.svg'
+    'navigation_depth': 3
 }
 
 html_static_path: list[str] = ['_static']
@@ -184,7 +163,7 @@ html_context = {
             {'title': '<b>Parent</b>',
              'url': 'https://github.com/theartificialintelligenceunit'},
             {'title': '<b>About</b>',
-             'url': 'about/about.html'}
+             'url': 'about.html'}
         ]
     },
     'display_github': True,
@@ -202,4 +181,3 @@ https://www.sphinx-doc.org/en/master/usage/extensions/intersphinx.html#configura
 intersphinx_mapping = {
     'python': ('https://docs.python.org/3', None),
 }
-
