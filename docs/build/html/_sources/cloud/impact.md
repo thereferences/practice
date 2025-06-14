@@ -36,7 +36,7 @@ These are:
 </ul>
 
 
-<iframe style="overflow:hidden; width:100%; height:330px; border:none;" src="../../../../../assets/beforehand.html"></iframe>
+<iframe style="overflow:hidden; width:100%; height:330px; border:none;" src="../../../../assets/beforehand.html"></iframe>
 <figure>
   <figcaption>An illustration of a team member's interaction with cloud services</figcaption>
 </figure>
