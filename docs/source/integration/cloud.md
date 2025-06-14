@@ -4,17 +4,7 @@
 After connecting to an Amazon Web Services (AWS) account, directly or via an identity service, the **AWS access portal** screen appears.  The details therein are critical to setting up programmatic access to AWS directly.
 
 <br>
-<br>
 
-:::{dropdown} Table of Contents
-```{contents}
-:depth: 2
-:local:
-:backlinks: top
-```
-:::
-
-<br>
 
 ## Programmatic Access
 
@@ -61,6 +51,8 @@ or
 aws configure set output yaml --profile default
 ```
 
+<br>
+
 
 ### Single Sign On (SSO) Configuration
 
@@ -86,6 +78,9 @@ SSO start URL [None]: {url}
 SSO region [None]: {region}
 SSO registration scopes [sso:account:access]: sso:account:access
 ```
+
+
+<br>
 
 
 ### Hence, Programmatic Single Sign On (SSO)
@@ -114,6 +109,7 @@ aws s3 ls
 aws ecr list-images --registry-id {account.identifer} --repository-name {repository.name}
 ```
 
+<br>
 
 ### Via Software Programs
 
