@@ -1,13 +1,5 @@
 # Threat Actors
 
-:::{dropdown} Table of Contents
-```{contents}
-:depth: 1
-:local:
-:backlinks: top
-```
-:::
-
 <br>
 
 ## Background
