@@ -146,7 +146,7 @@ href="https://docs.aws.amazon.com/cli/latest/userguide/sso-configure-profile-tok
 
 ### Simple Storage Service (S3)
 
-<iframe style="overflow:hidden; width:100%; height:430px; margin-left:65px; border:none;" src="../../../../../assets/endpoint-interface.html"></iframe>
+<iframe style="overflow:hidden; width:100%; height:430px; margin-left:65px; border:none;" src="../../../../assets/endpoint-interface.html"></iframe>
 <figure>
 <figcaption>Interacting with Amazon S3 (Simple Storage Service) via <a href="https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html" target="_blank">AWS CLI (Command Line Interface)</a> and a private subnet. Within each team member's machine AWS CLI will be configured to use <a href="https://docs.aws.amazon.com/cli/latest/userguide/sso-configure-profile-token.html#sso-configure-profile-token-auto-sso" title="Amazon Web Services (AWS) Identity & Access Management (IAM) Identity Centre (IC)">AWS IAM IC</a> for authentication.</figcaption>
 </figure>
