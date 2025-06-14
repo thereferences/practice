@@ -156,7 +156,7 @@ The <span class="tooltip">CUDA<span class="tooltiptext">Compute Unified Device A
 
 #### Downgrading
 
-:::{tip}
+:::{note}
 The <a href="https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/#cuda-toolkit-major-component-versions" target="_blank">components matrix</a> of an NVIDIA CUDA Toolkit Release outlines the components of the toolkit release, and the version of each component.   [<a href="https://docs.nvidia.com/cuda/archive/" target="">Archive</a>]
 :::
 
