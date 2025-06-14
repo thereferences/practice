@@ -20,6 +20,10 @@
     margin-bottom: 0.5rem;
 }
 
+.bd-article-container h2 {
+    font-variant: small-caps;
+}
+
 .wy-breadcrumbs li {
     vertical-align: middle;
     margin-bottom: 8px;
@@ -192,7 +196,7 @@ figcaption {
     color: #333333;
     font-size: 1.0em;
     padding: 2px;
-    margin-left:65px;
+    margin-left: 65px;
     margin-right: 15px;
     text-align: left;
 }
@@ -202,19 +206,17 @@ figcaption {
  * dl, dt, dd
  */
 .rst-content dl dt {
-    font-weight: calc(900*var(--font-weight-factor));
+    font-weight: calc(900*var(0.1));
     font-variant-caps: small-caps;
 }
 
 
-/* hyperlinks */
+/* hyperlinks text-decoration-color: #6c757d; */
 dd a, td a, figcaption a {
     position: relative;
-    color: var(--link);
-    font-weight: calc(580*var(--font-weight-factor));
+    font-weight: calc(580*var(0.1));
     text-decoration-line: underline;
-    text-decoration-style: solid;
-    text-decoration-color: #6c757d;
+    text-decoration-style: dashed;
     text-decoration-thickness: auto;
 }
 
