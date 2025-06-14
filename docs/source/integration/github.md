@@ -4,17 +4,6 @@
 Automatically delivering assets to Amazon Web Services (AWS) via GitHub, hence enabling continuous integration, delivery, and deployments.
 
 <br>
-<br>
-
-:::{dropdown} Table of Contents
-```{contents}
-:depth: 1
-:local:
-:backlinks: top
-```
-:::
-
-<br>
 
 ## Identity Provider
 
