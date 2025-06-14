@@ -1,17 +1,9 @@
 
 # Fundamental Software: Windows
 
-:::{dropdown} Table of Contents
-```{contents}
-:depth: 2
-:local:
-:backlinks: top
-```
-:::
-
 <br>
 
-## Core
+## CORE
 
 ### Basic Tools
 
@@ -22,9 +14,14 @@ Foremost, install
   <li class="disc"><a href="https://adoptium.net/en-GB/temurin" target="_blank">Java: [JDK & JRE]</a></li>
 </ul>
 
+
+<br>
+
 ### Open Office
 
 Unload the core executable & language pack of [OpenOffice](https://www.openoffice.org/download/index.html).
+
+<br>
 
 ### Git
 
@@ -137,7 +134,7 @@ Select
 <br>
 <br>
 
-## Installations that Propagate to WSL Kernels
+## INSTALLATIONS THAT PROPAGATE TO WSL KERNELS
 
 ### Docker Desktop
 
