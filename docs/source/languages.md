@@ -1,7 +1,7 @@
 
 # Languages & Programming
 
-:::{tip}
+:::{note}
 <a href="https://github.com/thetemplates" target="_blank">For a quick start to remote development via containers, try the templates herein.</a>
 <br>
 :::
