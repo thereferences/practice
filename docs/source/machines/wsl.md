@@ -12,21 +12,13 @@ fails.  This section outlines the semi-manual approach.  For reference purposes:
 <br>
 <br>
 
-:::{dropdown} Table of Contents
-```{contents}
-:depth: 1
-:local:
-:backlinks: top
-```
-:::
-
-<br>
-
 ## Activate Windows Subsystem for Linux
 
 The activation steps are
 
+
 > Control Panel $\rightarrow$ Uninstall a program $\rightarrow$ Turn Windows features on or off $\rightarrow$ Windows Subsystem for Linux.
+
 
 Subsequently, re-start the machine.
 
@@ -45,11 +37,13 @@ For details visit [enable virtual machine feature](https://learn.microsoft.com/e
 
 ## Linux Kernel Update Package
 
-> [Download and install](https://learn.microsoft.com/en-us/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package) the package.
+[Download and install](https://learn.microsoft.com/en-us/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package) the package.
 
 <br>
 
 ## Download & Install a Linux Distribution
+
+Steps:
 
 <ul class="disc">
 <li class="disc"><a href="https://learn.microsoft.com/en-us/windows/wsl/install-manual#downloading-distributions" target="_blank">Download</a></li>
@@ -61,7 +55,7 @@ For details visit [enable virtual machine feature](https://learn.microsoft.com/e
 
 ## Commands
 
-> <a href="https://learn.microsoft.com/en-us/windows/wsl/basic-commands" target="_blank">Basic Commands</a>
+<a href="https://learn.microsoft.com/en-us/windows/wsl/basic-commands" target="_blank">Basic Commands</a>
 
 <br>
 <br>
