@@ -1,11 +1,10 @@
-Sphinx>=8.2.1
+Sphinx==8.1.3
 sphinx-book-theme
 sphinx-rtd-theme
 pydata-sphinx-theme
 sphinx_design
 furo
 myst-parser
-revitron-sphinx-theme @ https://github.com/thirdreading/hub/raw/develop/software/python/revitron-sphinx-theme-future.zip
 sphinx-copybutton
 sphinx-togglebutton
 sphinx-issues
