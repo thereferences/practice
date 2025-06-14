@@ -14,13 +14,13 @@ Code of Practice
 
 .. container:: .buttons
 
-    `Development Practices <about.html>`_
+    `ABOUT <about.html>`_
 
 .. raw:: html
 
    <br>
 
-   <img class="normal" src="https://img.shields.io/github/v/tag/thereferences/practice?label=Release&style=flat-square&labelColor=292b2e&color=292b2e" alt="SHIELD" />
+   <img class="normal" src="https://img.shields.io/github/v/tag/thereferences/practice?label=Release&style=plastic&labelColor=292b2e&color=292b2e" alt="SHIELD" />
 
 .. raw:: html
 
